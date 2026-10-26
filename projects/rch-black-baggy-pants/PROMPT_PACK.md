@@ -9,6 +9,22 @@ https://drive.google.com/file/d/1QgHfV6v-XTKqvglRsnfNl5urhfuHzwzZ/view
 **Project assets folder:**
 https://drive.google.com/drive/folders/10zUTEpuNS2McdVVWibpxr_jr9NJHcriM
 
+**Local copy of the front product photo:** [`reference/product-front.jpg`](reference/product-front.jpg)
+
+### Product details (from the front product photo)
+
+| Feature | What the photo shows |
+|---|---|
+| Fabric | Solid black, lightweight woven track-pant fabric (nylon look) with a soft matte sheen |
+| Silhouette | Relaxed high-rise, wide straight legs, full length, hems pooling slightly over the sneakers |
+| Waistband | Wide gathered elastic waistband |
+| Drawstrings | Black cord with white flecks, tied in a bow at center front, ends hanging to mid-thigh |
+| Logo | Small white italic "RCH" inside an oval swoosh outline, on the wearer's left front hip just below the waistband |
+| Upper piping | Thin white piping on each leg starts at the waistband near center front, arches outward over the hip and runs straight down the front of the thigh to about the knee |
+| Lower piping | A second white piping line on each leg runs down the outer side and sweeps in a gentle S-curve across the lower leg to the hem |
+| Knee seam | Horizontal panel seam across each leg at about knee height |
+| Pockets | Side slant pockets at the hips (hands fit inside) |
+
 Always attach this image as the **image / product / ingredient reference** in the
 video tool. The text prompt alone cannot reproduce the exact piping and logo.
 
@@ -49,11 +65,16 @@ and her weight rests on one leg.
 Outfit: a fitted white baby tee with short sleeves, a body-hugging slim fit and
 plain white cotton with no logo, slightly cropped so it ends at the waistband.
 She wears the EXACT black RCH baggy pants from the reference image. Keep their
-solid black fabric, oversized wide-leg silhouette, elastic waistband, black
-adjustable drawstrings, curved white piping across the upper front, long white
-piping running down the front of both legs, curved white piping near the lower
-legs, the small RCH logo near the waistband and the original pocket placement.
-The pant hems pool slightly over clean white casual sneakers. Minimal
+solid black lightweight track-pant fabric with a soft matte sheen, relaxed
+high-rise wide straight-leg silhouette, wide gathered elastic waistband and
+black drawstrings with white flecks tied in a bow at center front. On each leg,
+thin white piping starts at the waistband near center front, arches outward
+over the hip and runs straight down the front of the thigh to the knee, and a
+second white piping line runs down the outer side and sweeps in a gentle
+S-curve across the lower leg to the hem. Keep the horizontal knee seam, the
+side slant pockets and the small white italic "RCH" logo in an oval swoosh on
+her left front hip just below the waistband. The full-length hems pool
+slightly over clean white casual sneakers. Minimal
 accessories: small earrings, maybe a thin bracelet.
 
 Modern Korean-inspired casual streetwear. Soft daylight from a window, neutral
@@ -76,12 +97,14 @@ straight dark hair and realistic skin texture, wears a fitted white cropped
 baby tee (plain, no logo), the exact black RCH baggy pants from the reference
 image, and clean white sneakers.
 
-The pants must match the reference exactly in every frame: solid black fabric,
-oversized wide-leg silhouette, elastic waistband with black drawstrings, curved
-white piping across the upper front, long white piping down the front of both
-legs, curved white piping near the lower legs, the small RCH logo at the
-waistband and the original pockets. The piping stays continuous and the
-lines stay consistent while the fabric moves.
+The pants must match the reference exactly in every frame: solid black
+lightweight track-pant fabric, relaxed wide straight legs, a wide elastic
+waistband with black white-flecked drawstrings tied at center front, white
+piping that arches from the waistband over each hip and runs down the front of
+each thigh to the knee, a second white piping line curving in an S-shape down
+the outer lower leg to the hem, the knee seam, the side slant pockets and the
+small white italic "RCH" oval-swoosh logo on her left hip. The piping stays
+continuous and the lines stay consistent while the fabric moves.
 
 Action: she holds the phone at chest height facing the mirror. She shifts her
 weight, turns her hips left and right to show the wide-leg drape, takes one
@@ -101,9 +124,11 @@ cartoon, CGI, 3D render, plastic skin, airbrushed, beauty filter, doll face,
 extra fingers, deformed hands, distorted phone, phone floating, mirror
 reflection mismatch, second person, oversized shirt, jacket, hoodie, crop top
 showing midriff gap too large, logo on t-shirt, skinny jeans, leggings, shorts,
-grey pants, blue pants, missing white piping, extra stripes, side stripes
-instead of front piping, broken or flickering piping, wrong logo, large logo,
-text artifacts, changed pocket position, heels, black shoes, dirty shoes, heavy
+grey pants, blue pants, cargo pants, jogger cuffs, tapered legs, missing white
+piping, extra stripes, straight side stripes instead of curved front piping,
+broken or flickering piping, plain black drawstrings, white drawstrings, wrong
+logo, large logo, logo on the wrong hip, text artifacts, changed pocket
+position, heels, black shoes, dirty shoes, heavy
 jewelry, cinematic color grade, slow motion, drone shot, dolly zoom, watermark,
 subtitles
 ```
@@ -116,7 +141,7 @@ subtitles
 |---|------|------|--------|---------|
 | 1 | 0–3 s | Full-body mirror selfie | She steps into frame, adjusts her stance, and tilts the phone slightly | Hook: the full outfit at a glance |
 | 2 | 3–6 s | Full body, small hip turns | She turns left, then right, so the wide legs swing | Shows the baggy silhouette and the drape |
-| 3 | 6–9 s | Phone tilted down to the waist | Her free hand tugs the drawstring and the RCH logo is visible | Waistband, drawstrings, logo and piping detail |
+| 3 | 6–9 s | Phone tilted down to the waist | Her free hand tugs the white-flecked drawstring and the RCH logo on her left hip is visible | Waistband, drawstrings, logo and piping detail |
 | 4 | 9–12 s | Phone tilted down to the legs and sneakers | One step forward, the fabric pools over the sneakers | Front leg piping, lower curved piping, length |
 | 5 | 12–15 s | Back to full body | A quick spin to the back view, turns forward, smiles, pose | Back view, then the call-to-action moment |
 
@@ -151,13 +176,13 @@ Library, which affiliate posts must use.
 Check every generated clip frame by frame before posting:
 
 - [ ] The pants are solid black with no colour shift to grey or navy
-- [ ] The oversized wide-leg silhouette holds and the legs never turn into skinny or straight legs
-- [ ] The elastic waistband and the black drawstrings are visible
-- [ ] The curved white piping across the upper front is present
-- [ ] The long white piping runs down the front of **both** legs and stays continuous without flicker
-- [ ] The curved piping near the lower legs is present
-- [ ] The small RCH logo is near the waistband at the correct size, with no garbled letters
-- [ ] The pocket placement matches the reference
+- [ ] The wide straight-leg silhouette holds and the legs never taper, cuff or turn skinny
+- [ ] The wide elastic waistband is visible and the drawstrings are black with white flecks, tied at center front
+- [ ] On **both** legs the white piping arches from the waistband over the hip and runs down the front of the thigh to the knee, continuous and without flicker
+- [ ] On **both** legs the second piping line curves down the outer lower leg to the hem
+- [ ] The knee seam is visible
+- [ ] The white italic "RCH" oval-swoosh logo is small, on her left hip, with no garbled letters
+- [ ] The side slant pockets match the reference
 - [ ] The tee is white, fitted, cropped at the waistband and has no logo
 - [ ] The sneakers are clean and white
 - [ ] Hands, fingers, the phone and the mirror reflection look physically correct
