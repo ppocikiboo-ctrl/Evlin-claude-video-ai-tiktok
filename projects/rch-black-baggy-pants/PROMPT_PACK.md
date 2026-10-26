@@ -6,6 +6,9 @@ mirror selfie OOTD on an iPhone, modeling the black RCH baggy pants.
 **Product reference (primary visual reference):**
 https://drive.google.com/file/d/1QgHfV6v-XTKqvglRsnfNl5urhfuHzwzZ/view
 
+**Project assets folder:**
+https://drive.google.com/drive/folders/10zUTEpuNS2McdVVWibpxr_jr9NJHcriM
+
 Always attach this image as the **image / product / ingredient reference** in the
 video tool. The text prompt alone cannot reproduce the exact piping and logo.
 
