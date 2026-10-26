@@ -25,6 +25,20 @@ https://drive.google.com/drive/folders/10zUTEpuNS2McdVVWibpxr_jr9NJHcriM
 | Knee seam | Horizontal panel seam across each leg at about knee height |
 | Pockets | Side slant pockets at the hips (hands fit inside) |
 
+### How the real pants look (from the example phone video)
+
+The example video (frames in [`reference/example-frames.jpg`](reference/example-frames.jpg))
+shows the real product in indoor light, which differs a little from the studio photo.
+The prompts below follow the real product:
+
+- **Fabric:** thin, lightweight crinkled nylon (windbreaker / taslan type), with
+  soft creases and a subtle sheen. In room light it reads as very dark
+  charcoal-black, not flat jet black.
+- **Piping:** thin white piping with a slight sheen; in shadow it looks light grey.
+- **Logo:** a small white embroidered emblem on the wearer's left hip, next to the drawstrings.
+- **Back:** plain black, with the side piping visible at the edges.
+- **Drape:** the fabric is light, so the wide legs swing and fold easily when moved.
+
 Always attach this image as the **image / product / ingredient reference** in the
 video tool. The text prompt alone cannot reproduce the exact piping and logo.
 
@@ -65,7 +79,8 @@ and her weight rests on one leg.
 Outfit: a fitted white baby tee with short sleeves, a body-hugging slim fit and
 plain white cotton with no logo, slightly cropped so it ends at the waistband.
 She wears the EXACT black RCH baggy pants from the reference image. Keep their
-solid black lightweight track-pant fabric with a soft matte sheen, relaxed
+solid black lightweight crinkled nylon fabric with soft creases and a subtle
+sheen, relaxed
 high-rise wide straight-leg silhouette, wide gathered elastic waistband and
 black drawstrings with white flecks tied in a bow at center front. On each leg,
 thin white piping starts at the waistband near center front, arches outward
@@ -98,7 +113,7 @@ baby tee (plain, no logo), the exact black RCH baggy pants from the reference
 image, and clean white sneakers.
 
 The pants must match the reference exactly in every frame: solid black
-lightweight track-pant fabric, relaxed wide straight legs, a wide elastic
+lightweight crinkled nylon fabric, relaxed wide straight legs, a wide elastic
 waistband with black white-flecked drawstrings tied at center front, white
 piping that arches from the waistband over each hip and runs down the front of
 each thigh to the knee, a second white piping line curving in an S-shape down
@@ -112,8 +127,8 @@ small step forward so the fabric swings, tugs the drawstring lightly, turns
 around for a quick back view, and turns back with a relaxed smile. Natural,
 unposed movement and casual confidence.
 
-Photorealistic with real fabric physics: matte black fabric with soft folds,
-and the wide legs sway naturally. No cinematic grading, no slow motion, no
+Photorealistic with real fabric physics: light nylon with soft crinkles and a
+subtle sheen, and the wide legs swing and fold naturally. No cinematic grading, no slow motion, no
 camera moves other than her handheld phone.
 ```
 
@@ -144,6 +159,61 @@ subtitles
 | 3 | 6–9 s | Phone tilted down to the waist | Her free hand tugs the white-flecked drawstring and the RCH logo on her left hip is visible | Waistband, drawstrings, logo and piping detail |
 | 4 | 9–12 s | Phone tilted down to the legs and sneakers | One step forward, the fabric pools over the sneakers | Front leg piping, lower curved piping, length |
 | 5 | 12–15 s | Back to full body | A quick spin to the back view, turns forward, smiles, pose | Back view, then the call-to-action moment |
+
+---
+
+## 4b. Format 2 — hands-on product showcase (matches the example video)
+
+The example video is a faceless "real product" clip: one person holds the
+pants up in a bedroom and shows each detail. This style looks very authentic,
+and since no face or full body is needed, AI tools get the pants right more
+often. Use it as its own post, or cut 3–5 s of it into the mirror selfie video
+as B-roll.
+
+**Tip:** your real footage of the pants always beats AI here. If you have the
+pants, film this format yourself and use AI only for the mirror selfie.
+
+### Prompt C — showcase video (15 s, 9:16)
+
+```
+15-second vertical 9:16 video, authentic handheld phone footage for TikTok,
+filmed by a real person in a small bedroom: a light grey curtain on the left,
+a white wall, a white drawer cabinet and a black headboard behind, pink bedding
+at the bottom edge. Indoor daylight, slightly flat iPhone exposure, small
+natural hand shake. No face is shown; only her hands and forearms.
+
+She shows the exact black RCH baggy pants from the reference image. The pants
+are thin, lightweight crinkled black nylon with a subtle sheen, a wide
+gathered elastic waistband, black drawstrings with white flecks, a small white
+embroidered logo on the left hip, thin white piping that arches from the
+waistband over each hip and runs down the front of the thigh to the knee, and
+a second white piping line that curves in an S-shape down the outer lower leg
+to the hem. Wide straight legs, full length.
+
+Action: she starts with the pants folded and held up in one hand, then lets
+them unfold so the full length drops. She holds them up by the waistband
+against the wall, smooths the leg to show the curved piping, then holds the
+waistband at her own waist to show the length and drape. She stretches the
+elastic waistband and lets the drawstrings swing, turns the pants to show the
+plain back, then gives the leg a light shake so the light nylon swings.
+
+Photorealistic real fabric: crinkles, creases and a soft sheen, with the
+piping staying continuous on the moving fabric. No studio lighting, no
+cinematic grading, no slow motion.
+```
+
+Use the same **Negative prompt** as above, and add: `face, mannequin, hanger,
+studio backdrop, flat lay, folded neatly in packaging`.
+
+### Shot list
+
+| # | Time | Shot | Action | Purpose |
+|---|------|------|--------|---------|
+| 1 | 0–3 s | Pants folded, held up in one hand | She lets the pants unfold and drop to full length | Hook: the reveal |
+| 2 | 3–6 s | Full length against the wall | Holds them by the waistband and smooths one leg | Silhouette, arched piping |
+| 3 | 6–9 s | Waistband close-up | Stretches the elastic, the drawstrings swing, the logo is visible | Waistband, drawstrings, logo |
+| 4 | 9–12 s | Held at her own waist | Lines the waistband up with her waist and shows the length to the floor | Fit and length |
+| 5 | 12–15 s | Back view, then a lower leg close-up | Turns the pants around, then shakes the leg so the S-curve piping moves | Back view, lower piping, fabric movement |
 
 ---
 
