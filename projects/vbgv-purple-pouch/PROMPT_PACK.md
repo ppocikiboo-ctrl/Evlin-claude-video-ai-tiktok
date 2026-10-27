@@ -203,6 +203,33 @@ no slow motion.
 - Negative prompt: guna yang sama seperti di atas, **tetapi buang** perkataan `face`
   dan `person's body`, dan tambah `hijab, different woman, face changing, extra arm`.
 
+### Skrip promosi + hook (5 variasi, ~10 s setiap satu)
+
+Struktur: **Hook (0–2 s)** untuk hentikan scroll → **Isi (2–7 s)** tunjuk produk →
+**CTA (7–10 s)** suruh tekan beg kuning. Hook bermain dengan rasa ingin tahu, FOMO
+dan bukti sosial, bukan dengan janji hasil pada badan.
+
+Sebelum guna, semak tanda *(jika benar)*: harga promo, logo halal JAKIM pada pek,
+dan jumlah jualan mesti betul pada hari awak post.
+
+| # | Hook (teks atas skrin + ayat pertama) | Skrip penuh (lip-sync) |
+|---|---|---|
+| 1 | **"Stop scroll kejap!"** | "Stop scroll kejap! Ni la pek ungu yang viral tu, VBGV. Ramai DM tanya mana nak beli. Link dah ada, tekan beg kuning bawah ni." |
+| 2 | **"Korang dah try belum yang ungu ni?"** | "Korang dah try belum yang ungu ni? VBGV. Pek dia kecik, senang bawak dalam beg. Tengah promo hari ni, tekan beg kuning sebelum harga naik balik." *(promo jika benar)* |
+| 3 | **"Jangan beli lagi kalau…"** | "Jangan beli lagi kalau tak check harga promo hari ni dulu. VBGV ni tengah murah kat TikTok Shop. Tekan beg kuning, tengok sendiri harga dia." *(promo jika benar)* |
+| 4 | **"Sold out minggu lepas, dah restock!"** | "Pek ungu ni sold out minggu lepas, sekarang dah restock. VBGV. Stok terhad, jadi kalau nak, checkout sekarang kat beg kuning." *(sold out & restock jika benar)* |
+| 5 | **"Ramai checkout bulan ni, ni sebabnya"** | "Bulan ni je dah ramai checkout benda ni. VBGV, versi halal, pek ungu ni. Nak tahu kenapa ramai pilih, tekan beg kuning, baca review pembeli sendiri." *(halal jika ada logo JAKIM)* |
+
+**Tip hook:**
+- 2 saat pertama paling penting. Letak hook sebagai **teks besar di tengah atas** dan
+  sebut dengan suara pada masa yang sama.
+- Uji **satu hook bagi setiap video**. Selepas 3 hari, kekalkan hook yang dapat paling banyak
+  item terjual.
+- Akhiri video dengan pek dipegang dekat muka dan teks **"Tekan beg kuning 🛒"**.
+
+**Jangan masukkan** dalam skrip: "turun X kg", "kurus", "putih", "effect macam
+Mounjaro/cucuk", "saya dah guna" (watak AI), atau angka promo yang tidak betul.
+
 ---
 
 ## 6. Teks atas skrin, caption & hashtag
