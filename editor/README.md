@@ -98,7 +98,7 @@ To compare, use **Before | After split**, **Before**, or hold **B**.
 - Separate volume controls exist for master, music, sound effects and original audio. Original
   audio is muted (0) by default.
 - The master bus has gentle compression, a 12.5 kHz soft top and a limiter, so the mix does
-  not clip. In the test render the mix peaked at about −3 dBFS.
+  not clip. In the test render of your clip the mix peaked at −2.2 dBFS, with a steady loudness of about −15 dB RMS.
 
 ## Export
 
