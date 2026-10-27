@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ageless Studio — NYO3 TikTok Editor</title>
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">A</span>
+      <div>
+        <div class="brand-title">Ageless Studio</div>
+        <div class="brand-sub">My Self-Care Era Before 30 · Ageless by NYO3</div>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <label class="btn btn-gold" for="videoFile">Upload original MP4</label>
+      <input id="videoFile" type="file" accept="video/mp4,video/quicktime,video/*" hidden>
+      <button class="btn" id="saveProject" title="Download the project (text, timing, grade, keyframes) as JSON">Save project</button>
+      <label class="btn" for="loadProject">Open project</label>
+      <input id="loadProject" type="file" accept="application/json,.json" hidden>
+      <button class="btn btn-ghost" id="resetProject" title="Restore the default Ageless by NYO3 edit">Reset</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="panel" id="panel">
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-tab="text">Text</button>
+        <button class="tab" data-tab="labels">Labels &amp; Tracking</button>
+        <button class="tab" data-tab="color">Colour</button>
+        <button class="tab" data-tab="audio">Audio</button>
+        <button class="tab" data-tab="layout">Layout</button>
+        <button class="tab" data-tab="export">Export</button>
+      </nav>
+      <div class="tab-body" id="tabBody"></div>
+    </aside>
+
+    <section class="stage">
+      <div class="preview-wrap" id="previewWrap">
+        <canvas id="preview" width="540" height="960"></canvas>
+        <div class="drop-hint" id="dropHint">Drop your MP4 here</div>
+      </div>
+      <div class="transport">
+        <button class="icon-btn" id="btnStart" title="Go to start (Home)">⏮</button>
+        <button class="icon-btn" id="btnPrev" title="Previous frame (←)">◀︎|</button>
+        <button class="icon-btn play" id="btnPlay" title="Play / pause (Space)">▶</button>
+        <button class="icon-btn" id="btnNext" title="Next frame (→)">|▶︎</button>
+        <div class="timecode" id="timecode">00:00.00 · f0</div>
+        <div class="spacer"></div>
+        <label class="mini-toggle" title="Compare before/after colour grading (hold B for a quick look)">
+          <select id="compareMode">
+            <option value="off">After (graded)</option>
+            <option value="split">Before | After split</option>
+            <option value="before">Before (original)</option>
+          </select>
+        </label>
+        <label class="chk"><input type="checkbox" id="safeZones"> Safe zones</label>
+      </div>
+    </section>
+  </main>
+
+  <section class="timeline" id="timeline">
+    <div class="tl-toolbar">
+      <span class="tl-title">Timeline</span>
+      <button class="btn btn-sm" id="addCaption">+ Caption</button>
+      <button class="btn btn-sm" id="addLabel">+ Label</button>
+      <button class="btn btn-sm" id="addSfx">+ Sound at playhead</button>
+      <div class="spacer"></div>
+      <span class="hint">Drag clips to move · drag edges to trim · ←/→ frame step · K keyframe</span>
+      <label class="zoom">Zoom <input type="range" id="tlZoom" min="20" max="240" value="40"></label>
+    </div>
+    <div class="tl-body">
+      <div class="tl-heads" id="tlHeads"></div>
+      <div class="tl-scroll" id="tlScroll">
+        <div class="tl-content" id="tlContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <video id="video" playsinline muted preload="auto" crossorigin="anonymous"></video>
+  <video id="trackVideo" playsinline muted preload="auto"></video>
+  <div class="toast" id="toast"></div>
+
+  <script src="vendor/mp4-muxer.js"></script>
+  <script src="js/project.js"></script>
+  <script src="js/grade.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/compositor.js"></script>
+  <script src="js/exporter.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
