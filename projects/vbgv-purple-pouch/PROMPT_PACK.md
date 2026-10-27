@@ -162,6 +162,49 @@ setting, watermark, subtitles, cinematic color grade, slow motion, drone shot
 
 ---
 
+## 5b. Format 2 — AI presenter dalam kereta (selfie, 10 s)
+
+Keyframe sedia ada: [`reference/presenter-car-keyframe.png`](reference/presenter-car-keyframe.png),
+iaitu watak AI perempuan, rambut lepas, baju-T coklat, pegang pek VBGV dalam kereta.
+Upload gambar ini sebagai **frame pertama** dalam Kling / Veo 3 / Hailuo.
+
+**Peraturan format ini:** watak ini AI, jadi dia **tidak boleh** bercakap seolah-olah
+dia sudah guna produk ("effect dia macam...", "saya dah turun..."). Dia hanya
+memperkenalkan produk dan promo. Jangan ambil video creator lain lalu tukar muka,
+kerana itu melanggar hak cipta dan merupakan deepfake orang sebenar.
+
+### Prompt E — video
+
+```
+10-second vertical 9:16 video, authentic front-camera selfie footage filmed
+handheld on a phone inside a parked car on an overcast day, daylight from the
+side windows, black car interior and seat belt visible. Use the reference image
+as the first frame and keep the same young woman exactly: long loose dark-brown
+hair with a small half-up bun, brown eyes, natural glowing skin, fitted brown
+ribbed t-shirt. She holds the exact VBGV pouch from the reference in her left
+hand: vivid violet-purple matte pouch, zip-lock near the top, gold serif "VBGV"
+logo, sharp and correctly spelled in every frame.
+
+Action: she looks into the camera and talks casually, raises the pouch next to
+her cheek, taps the logo with one finger, turns the pouch to show the back for
+a moment, then brings it back beside her face and gives a small smile and a
+nod. Natural lip movement, natural blinking, slight arm-held camera shake.
+Photorealistic, real phone quality, no beauty filter, no cinematic grading,
+no slow motion.
+```
+
+### Skrip voiceover / lip-sync (Bahasa Melayu santai, ~9 s)
+
+> "Korang, ni la VBGV yang korang selalu tanya tu. Pek ungu ni. Hari ni ada
+> promo, so kalau nak, tekan beg kuning bawah tu cepat sebelum habis."
+
+- Guna hanya jika promo itu benar. Jangan tambah dakwaan kurus/putih atau Mounjaro.
+- Teks atas skrin: **"Pek ungu ni yang korang cari 💜"**.
+- Negative prompt: guna yang sama seperti di atas, **tetapi buang** perkataan `face`
+  dan `person's body`, dan tambah `hijab, different woman, face changing, extra arm`.
+
+---
+
 ## 6. Teks atas skrin, caption & hashtag
 
 Teks atas skrin (pilih satu bagi setiap video, 1–2 baris):
