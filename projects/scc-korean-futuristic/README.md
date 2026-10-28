@@ -18,44 +18,44 @@ Every graphic is a layer that fades or animates in and out on top. The SCC
 name, logo, pack text and colours, the hands and the original movement are
 untouched, and nothing is drawn over the label.
 
-## Text: six lines, one at a time, each with its own style
+## Text: six lines, one at a time, each in its own solid style
 
-| Frames | Line | Style | Placement |
-|---|---|---|---|
-| 2–56 | SELF-CARE BUKAN SEKADAR SKINCARE! ✦ | **hologram**: glass panel switches on, digital decode typing | top |
-| 64–118 | JANGAN LUPA PENJAGAAN BADAN ✨ | **glass bubble**: wobbly bubble pops in, words pop one by one, tiny bubbles rise | bottom, below the big pack |
-| 124–170 | KENALI SCC ✨ | **zoom**: zooms in from 2.8× out of a blur, letters pull together, light-burst ring on landing | top |
-| 174–228 | WHITE KIDNEY BEAN + L-CARNITINE | **moving digital text**: HUD strip opens, characters slide in from the right as glowing blocks, scan line, progress bar | top |
-| 236–284 | JADIKAN SELF-CARE SATU RUTIN 🌸 | **neon**: neon frame draws itself, words flicker on like neon tubes, stars twinkle | top |
-| 296–345 | KENALI PRODUK INI ✨ | **slide**: glass panel slides in from the left with a star trail, words slide in | top, stays to the end |
+None of the text styles use see-through glass. Each line enters differently.
 
-Every line has **KLIK** (appears), **TIK-TIK** (text moving in) and **TING**
-(animation complete). There is a **WHOOSH** at each transition, and a
-**sparkle** whenever stars, butterflies or sakura appear (`src/timeline.ts`).
+| Frames | Line | Style | Sound | Placement |
+|---|---|---|---|---|
+| 2–56 | SELF-CARE BUKAN SEKADAR SKINCARE! ✦ | **sticker**: white sticker pops in with a wiggle, letters bounce in one by one | KLIK + pop, BOING ×2, TING | top left |
+| 64–118 | JANGAN LUPA PENJAGAAN BADAN ✨ | **ribbon banner**: pink ribbon with folded tails unfurls, text wipes in | SWISH, KLIK, TIK-TIK, TING | bottom, below the big pack |
+| 124–170 | KENALI SCC ✨ | **3D extruded zoom**: chunky 3D letters flip up and spring in, land with coloured dots | WHOOSH, KLIK, TIK-TIK, THUMP, TING | top |
+| 174–228 | WHITE KIDNEY BEAN + L-CARNITINE | **split-flap board**: airport-style tiles clatter through letters and settle | WHOOSH, KLIK, FLAP clatter, TING | top |
+| 236–284 | JADIKAN SELF-CARE SATU RUTIN 🌸 | **neon sign** on a solid dark plate: words flicker on, stars twinkle | WHOOSH, KLIK, TIK-TIK, TING | top |
+| 296–345 | KENALI PRODUK INI ✨ | **3D button**: pops in, words jump up, the button presses down like a stamp, confetti bursts, shine sweeps | WHOOSH, KLIK, TIK-TIK, THUMP + CONFETTI, CHIME | top, stays to the end |
+
+All cues live in `src/timeline.ts`.
 
 ## Rotating animation layers
 
-| Frames | Layer |
-|---|---|
-| 0–345 | twinkling stars, **floating routine counters** at the edges, drifting sakura petals, glow particles, white/pastel-pink light, pearl sheen |
-| 6–58 | **hologram woman** builds up from her feet beside the product |
-| 62–130 | sakura burst |
-| 150–186 | glass badges with a **water bottle, walking shoe and lotus** (self-care), each with a light circling it; **digital light ring** around the pack |
-| 186–290 | **hologram butterflies** |
-| 200–300 | **3D Korean-style woman** in modest sportswear doing light stretches: arms up, side bend left and right, arms out, rest |
-| 296–345 | sakura burst, butterflies up the sides, **light ring around the product** |
+| Frames | Layer | Sound |
+|---|---|---|
+| 0–345 | twinkling stars, **floating routine counters** at the edges, drifting sakura, glow particles, white/pastel-pink light, pearl sheen | sparkle |
+| 6–58 | **hologram woman** builds up from her feet beside the product | |
+| 62–130 | sakura burst | sparkle |
+| 146–184 | **food plate**: a generous portion; a fork takes three bites and food is left on the plate | pop, BITE ×3 |
+| 190–300 | **3D Korean-style woman** in modest sportswear: arms up, side bends, then light presses with **colourful dumbbells**; glowing **light-drop sweat** comes off her; warm **light lines circle her body** | pop, CLINK per rep, swish, PLINK |
+| 205–290 | solid badges: **3 L water bottle** filling up (0.0 → 3.0 LITER), **walking shoe** (JALAN), **lotus** (SELF-CARE) | BLOOP, pop |
+| 296–345 | sakura burst, butterflies up the sides, **light ring around the product** | sparkle |
 
-There are no heart (love) animations. The **routine counters** are small glass
-chips with digital-display numbers that roll up like a scale or fitness-tracker
-readout: LANGKAH 0 → 8,000, GELAS AIR 0/8 → 8/8, RUTIN PAGI 06:30 → 07:00 and
-MINIT REGANGAN 0 → 10. They show lifestyle numbers only. Body weight and scale
-readings are deliberately left out, because TikTok treats them as weight-loss
-claims on diet products (`FloatingCounters` in `src/components/Atmosphere.tsx`).
+The **routine counters** are solid pastel chips with digital-display numbers
+that roll up: LANGKAH 0 → 8,000, AIR 0.0 → 3.0 L, RUTIN PAGI 06:30 → 07:00 and
+MINIT REGANGAN 0 → 10. They show lifestyle numbers only. There are no body-weight
+or scale readings, because TikTok treats them as weight-loss claims on diet
+products. There are no heart (love) animations.
 
 The woman (`src/components/KoreanWoman.tsx`) wears a loose long-sleeved
 sweatshirt, long joggers and sneakers, with natural proportions. Only her
-pose changes; her body shape and size never change. She fades in and out
-rather than scaling.
+pose changes; her body shape and size never change, and she fades in and out
+rather than scaling. The light lines around her body show general
+"using energy" while she moves. They have no fat-burning label or claim.
 
 ## Run it
 
@@ -80,16 +80,17 @@ all of the woman's poses on one sheet, run `npx remotion still WomanTest out/wom
 input/original.mp4             your untouched upload
 scripts/prep_footage.sh        whole clip -> 11.5 s @ 30 fps H.264, light denoise/brighten/sharpen
 scripts/make_audio.py          K-beauty electro-pop bed (120 BPM, IV-V-iii-vi, bouncy off-beat stabs)
-                               + KLIK / TIK-TIK / TING / WHOOSH / SPARKLE
-src/timeline.ts                every frame number: lines, layers, SFX cues, volumes
+                               + KLIK / TIK-TIK / TING / WHOOSH / SPARKLE and playful SFX:
+                               pop, boing, swish, flap, thump, chime, clink, plink, bite, bloop, confetti
+src/timeline.ts                every frame number: lines, layers, SFX cues, volumes; SHOW_PLATE switch
 src/SccKorean.tsx              the composition: footage, layers, six lines, audio
-src/components/TextStyles.tsx  the six text styles (hologram, bubble, zoom, digital, neon, slide)
-src/components/KoreanWoman.tsx 3D-style woman: solid + hologram variants, stretch routine
+src/components/TextStyles.tsx  the six solid text styles (sticker, ribbon, 3D zoom, split-flap, neon, button)
+src/components/KoreanWoman.tsx 3D-style woman: solid + hologram variants, stretches, dumbbell presses,
+                               light-drop sweat, energy light lines
 src/components/Atmosphere.tsx  light/grading, pearl sheen, sakura, stars, routine counters, particles, light rings
 src/components/Butterfly.tsx   flapping hologram butterflies on smooth paths
-src/components/CareIcons.tsx   water bottle, sneaker, lotus, glowing icon badges
-src/components/GlassPanel.tsx  glassmorphism panel (open / slide right / slide left / scan)
-src/components/DecodeText.tsx  digital decode typing
+src/components/FoodPlate.tsx   plate with a big portion, fork bites, leftovers
+src/components/CareIcons.tsx   3 L water bottle (fills up), sneaker, lotus, solid icon badges
 src/dev/WomanTest.tsx          pose check sheet (development only)
 ```
 
@@ -105,7 +106,12 @@ The centre of the frame, where the product is, is kept clean.
 
 - There are no weight-loss, fat-burning or body-change claims, no before/after,
   and no product-efficacy visuals. The woman shows a general healthy routine
-  (stretching, water, walking).
+  (stretching, light dumbbells, 3 L of water, walking).
+- **The food plate is the riskiest element.** Food left over on a plate can be
+  read as "eating less" (appetite control), which TikTok does not allow diet
+  products to imply. It is kept away from the product name and tablets and has
+  no text. If review objects, set `SHOW_PLATE = false` in `src/timeline.ts` and
+  re-render; this removes the plate and its sounds.
 - The only product facts on screen are the name and the ingredients printed on
   the pack.
 - The original pack says "DIET SUPPORT" and "Supports Weight Management". It is

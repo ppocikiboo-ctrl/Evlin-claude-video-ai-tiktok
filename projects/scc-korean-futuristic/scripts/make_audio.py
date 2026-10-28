@@ -7,6 +7,8 @@ Writes to public/audio/:
   ting.wav     panel fully activated
   whoosh.wav   panel sliding in
   sparkle.wav  stars / butterflies / sakura appearing
+  pop, boing, swish, flap, thump, chime     playful text-entrance sounds
+  clink, plink, bite, bloop, confetti       dumbbells, sweat drops, plate bites, water, party popper
 
 Everything is generated here from scratch (no samples), so the audio is free
 to use commercially. Remotion places the SFX on the timeline (src/timeline.ts).
@@ -232,6 +234,114 @@ def sparkle(dur=0.9, count=16):
     return reverb(stereo(out), 0.8, 0.3, 0.3)
 
 
+# ------------------------------------------------------------------ playful sfx
+
+def pop():
+    """Bubbly pop: quick upward pitch blip."""
+    t = tt(int(0.14 * SR))
+    f = 300 + 1200 * (1 - np.exp(-t * 40))
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 30) * 0.8
+
+
+def boing():
+    """Cartoon spring for bouncing letters: wobbling pitch that settles."""
+    t = tt(int(0.45 * SR))
+    f = 260 + 180 * np.exp(-t * 6) * np.sin(2 * np.pi * 14 * t) + 140 * np.exp(-t * 4)
+    v = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.3 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+    return v * np.minimum(1, t / 0.004) * np.exp(-t * 7) * 0.6
+
+
+def swish(dur=0.45):
+    """Ribbon/fabric swish: bright noise sweep, quicker and airier than the whoosh."""
+    n = int(dur * SR)
+    t = tt(n)
+    p = t / dur
+    x = band(rng.standard_normal(n), lo=1800, hi=9000)
+    env = np.sin(np.pi * p) ** 2 * (0.6 + 0.4 * np.sin(2 * np.pi * 9 * t))
+    pan = -0.7 + 1.4 * p
+    y = x * env
+    return np.stack([y * np.cos((pan + 1) * np.pi / 4), y * np.sin((pan + 1) * np.pi / 4)], axis=1) * 0.8
+
+
+def flap(dur=0.75):
+    """Split-flap board clatter: a fast run of tiny clicks that slows down."""
+    out = np.zeros(int((dur + 0.1) * SR))
+    t = 0.0
+    gap = 0.018
+    while t < dur:
+        c = tik(rng.uniform(2500, 3800)) * rng.uniform(0.5, 1.0)
+        i = int(t * SR)
+        out[i:i + len(c)] += c[: len(out) - i]
+        t += gap
+        gap *= 1.06
+    return out
+
+
+def thump():
+    """Soft stamp/landing thump with a little paper slap."""
+    t = tt(int(0.35 * SR))
+    f = 55 + 90 * np.exp(-t * 25)
+    body = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 12)
+    slap = band(rng.standard_normal(len(t)), lo=800, hi=4000) * np.exp(-t * 60) * 0.5
+    return np.tanh((body + slap) * 1.5)
+
+
+def chime():
+    """Rising three-note chime (major arpeggio) for the closing line."""
+    out = np.zeros(int(1.4 * SR))
+    for k, m in enumerate((84, 88, 91, 96)):
+        b = bell_pluck(m, 1.0)
+        i = int(k * 0.07 * SR)
+        out[i:i + len(b)] += b
+    return reverb(stereo(out), 1.0, 0.45, 0.3)
+
+
+def clink():
+    """Light dumbbell clink: two inharmonic metallic partials."""
+    t = tt(int(0.5 * SR))
+    v = sum(a * np.sin(2 * np.pi * f * t) * np.exp(-t * d) for f, a, d in ((1850, 1, 9), (2940, 0.6, 12), (4720, 0.35, 16)))
+    return v * np.minimum(1, t / 0.001) * 0.45
+
+
+def plink():
+    """Water-drop plink for the sweat light drops."""
+    t = tt(int(0.3 * SR))
+    f = 900 + 1400 * np.exp(-t * 35)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 18) * 0.6
+
+
+def bite():
+    """Gentle crunchy bite: short low pop plus a crisp noise burst."""
+    t = tt(int(0.18 * SR))
+    low = np.sin(2 * np.pi * (180 - 400 * t) * t) * np.exp(-t * 35)
+    crunch = band(rng.standard_normal(len(t)), lo=2000, hi=7000) * np.exp(-t * 45) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 60 * t)))
+    return low * 0.7 + crunch * 0.35
+
+
+def bloop():
+    """Water filling: a few rising bubble bloops."""
+    out = np.zeros(int(0.7 * SR))
+    for k in range(5):
+        t = tt(int(0.12 * SR))
+        f0 = 350 + k * 90 + rng.uniform(-20, 20)
+        f = f0 + f0 * 1.5 * (1 - np.exp(-t * 50))
+        b = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 28) * 0.5
+        i = int(k * 0.11 * SR)
+        out[i:i + len(b)] += b
+    return out
+
+
+def confetti():
+    """Party-popper burst: a pop followed by a sparkly fizz."""
+    p = np.zeros(int(1.0 * SR))
+    pp = pop() * 1.2
+    p[:len(pp)] += pp
+    sp = sparkle(0.6, 14)[:, 0]
+    i = int(0.04 * SR)
+    p[i:i + len(sp)] += sp[: len(p) - i] * 0.8
+    return p
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     write("music.wav", music(), peak=0.8)
@@ -240,6 +350,17 @@ def main():
     write("ting.wav", ting(), peak=0.75)
     write("whoosh.wav", whoosh(), peak=0.7)
     write("sparkle.wav", sparkle(), peak=0.6)
+    write("pop.wav", pop(), peak=0.7)
+    write("boing.wav", boing(), peak=0.6)
+    write("swish.wav", swish(), peak=0.6)
+    write("flap.wav", flap(), peak=0.65)
+    write("thump.wav", thump(), peak=0.85)
+    write("chime.wav", chime(), peak=0.7)
+    write("clink.wav", clink(), peak=0.55)
+    write("plink.wav", plink(), peak=0.55)
+    write("bite.wav", bite(), peak=0.6)
+    write("bloop.wav", bloop(), peak=0.6)
+    write("confetti.wav", confetti(), peak=0.7)
 
 
 if __name__ == "__main__":

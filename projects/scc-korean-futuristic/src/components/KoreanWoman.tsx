@@ -1,7 +1,7 @@
 // Adult woman in a Korean-beauty illustration style, in modest sportswear:
 // a loose long-sleeved sweatshirt, long jogger pants and sneakers. Natural,
-// constant body proportions: only her pose changes (light stretches), never
-// her shape or size.
+// constant body proportions: only her pose changes (light stretches, light
+// dumbbell presses), never her shape or size.
 //
 // variant "solid"     soft 3D shading (gradients, rim light, ground shadow)
 // variant "hologram"  same figure as translucent pink light with scan lines
@@ -16,10 +16,12 @@ export type Pose = {
   rA2: number;
 };
 
-export const POSES: Record<'rest' | 'up' | 'tee', Pose> = {
+export const POSES: Record<'rest' | 'up' | 'tee' | 'goal' | 'press', Pose> = {
   rest: {lean: 0, lA1: 10, lA2: -8, rA1: -10, rA2: 8},
   up: {lean: 0, lA1: 165, lA2: 52, rA1: -165, rA2: -52}, // hands clasped overhead
   tee: {lean: 0, lA1: 88, lA2: 0, rA1: -88, rA2: 0}, // arms out to the sides
+  goal: {lean: 0, lA1: 90, lA2: 90, rA1: -90, rA2: -90}, // dumbbells at shoulder height
+  press: {lean: 0, lA1: 160, lA2: 20, rA1: -160, rA2: -20}, // dumbbells pressed overhead
 };
 
 const mix = (a: Pose, b: Pose, t: number): Pose => ({
@@ -45,30 +47,73 @@ export const stretchRoutine = (t: number): Pose => {
   return mix(POSES.tee, POSES.rest, ease((t - 92) / 14));
 };
 
+// Full routine for the solid woman, `t` in frames since she appeared:
+//   arms up -> side bend each way -> dumbbells to shoulders -> light presses
+export const workoutRoutine = (t: number, w: {dumbbellsAt: number; pressFrom: number; rep: number; reps: number}): Pose => {
+  if (t < 16) return mix(POSES.rest, POSES.up, ease(t / 16));
+  if (t < 40) return {...POSES.up, lean: Math.sin(((t - 16) / 24) * Math.PI * 2) * 12};
+  if (t < w.dumbbellsAt) return mix(POSES.up, POSES.rest, ease((t - 40) / (w.dumbbellsAt - 40)));
+  if (t < w.pressFrom) return mix(POSES.rest, POSES.goal, ease((t - w.dumbbellsAt) / (w.pressFrom - w.dumbbellsAt)));
+  const k = (t - w.pressFrom) / w.rep;
+  if (k >= w.reps) return POSES.goal;
+  return mix(POSES.goal, POSES.press, Math.sin((k % 1) * Math.PI));
+};
+
 type Props = {
   height: number;
   pose: Pose;
   variant?: 'solid' | 'hologram';
   reveal?: number; // hologram build-up from the feet, 0..1
   opacity?: number;
+  dumbbells?: number; // 0..1 pop-in scale of the dumbbells in her hands
+  sweat?: number; // 0..1 intensity of the symbolic light-drop "sweat"
+  energy?: number; // 0..1 visibility of the light lines circling her body
 };
 
 const VB_W = 220;
 const VB_H = 580;
 const PINK = '#ff7ad1';
 
-const Arm: React.FC<{x: number; y: number; a1: number; a2: number; sleeve: string; skin: string; stroke: string; sw: number}> = ({x, y, a1, a2, sleeve, skin, stroke, sw}) => (
+// Light, colourful dumbbell, kept level whatever the arm angle is.
+const Dumbbell: React.FC<{color: string; scale: number}> = ({color, scale}) => (
+  <g transform={`scale(${scale})`}>
+    <rect x={-20} y={-3.5} width={40} height={7} rx={3.5} fill="#f4f1f7" stroke="#b9a7d6" strokeWidth={1} />
+    {[-1, 1].map((side) => (
+      <g key={side}>
+        <rect x={side * 20 - 7} y={-17} width={14} height={34} rx={6} fill={color} stroke="#fff" strokeWidth={1.6} />
+        <rect x={side * 20 - 4} y={-13} width={4} height={26} rx={2} fill="#fff" opacity={0.55} />
+      </g>
+    ))}
+  </g>
+);
+
+const Arm: React.FC<{x: number; y: number; a1: number; a2: number; sleeve: string; skin: string; stroke: string; sw: number; dumbbell?: {color: string; scale: number}}> = ({
+  x,
+  y,
+  a1,
+  a2,
+  sleeve,
+  skin,
+  stroke,
+  sw,
+  dumbbell,
+}) => (
   <g transform={`translate(${x} ${y}) rotate(${a1})`}>
     <rect x={-12} y={-6} width={24} height={84} rx={12} fill={sleeve} stroke={stroke} strokeWidth={sw} />
     <g transform={`translate(0 74) rotate(${a2})`}>
       <rect x={-11} y={-4} width={22} height={70} rx={11} fill={sleeve} stroke={stroke} strokeWidth={sw} />
       <rect x={-11} y={56} width={22} height={10} rx={4} fill={sleeve} stroke={stroke} strokeWidth={sw} opacity={0.9} />
       <ellipse cx={0} cy={76} rx={9} ry={11} fill={skin} stroke={stroke} strokeWidth={sw} />
+      {dumbbell && dumbbell.scale > 0 && (
+        <g transform={`translate(0 76) rotate(${-(a1 + a2)})`}>
+          <Dumbbell {...dumbbell} />
+        </g>
+      )}
     </g>
   </g>
 );
 
-export const KoreanWoman: React.FC<Props> = ({height, pose, variant = 'solid', reveal = 1, opacity = 1}) => {
+export const KoreanWoman: React.FC<Props> = ({height, pose, variant = 'solid', reveal = 1, opacity = 1, dumbbells = 0, sweat = 0, energy = 0}) => {
   const f = useCurrentFrame();
   const u = React.useId().replace(/:/g, '');
   const holo = variant === 'hologram';
@@ -102,8 +147,8 @@ export const KoreanWoman: React.FC<Props> = ({height, pose, variant = 'solid', r
         <path d="M110 162 L110 214" stroke={holo ? p.stroke : '#e889b4'} strokeWidth={2} />
         <path d="M68 312 Q110 324 152 312" fill="none" stroke={holo ? p.stroke : '#e889b4'} strokeWidth={2} opacity={0.7} />
         {/* arms in front of the torso */}
-        <Arm x={78} y={172} a1={pose.lA1} a2={pose.lA2} sleeve={p.top} skin={p.skin} stroke={holo ? p.stroke : 'rgba(220,120,170,0.7)'} sw={p.sw} />
-        <Arm x={142} y={172} a1={pose.rA1} a2={pose.rA2} sleeve={p.top} skin={p.skin} stroke={holo ? p.stroke : 'rgba(220,120,170,0.7)'} sw={p.sw} />
+        <Arm x={78} y={172} a1={pose.lA1} a2={pose.lA2} sleeve={p.top} skin={p.skin} stroke={holo ? p.stroke : 'rgba(220,120,170,0.7)'} sw={p.sw} dumbbell={{color: '#ff7fb6', scale: dumbbells}} />
+        <Arm x={142} y={172} a1={pose.rA1} a2={pose.rA2} sleeve={p.top} skin={p.skin} stroke={holo ? p.stroke : 'rgba(220,120,170,0.7)'} sw={p.sw} dumbbell={{color: '#5fd4c4', scale: dumbbells}} />
         {/* head */}
         <ellipse cx={110} cy={98} rx={30} ry={35} fill={p.skin} stroke={p.stroke} strokeWidth={p.sw} />
         {/* hair cap with soft see-through bangs */}
@@ -186,8 +231,11 @@ export const KoreanWoman: React.FC<Props> = ({height, pose, variant = 'solid', r
         <>
           {/* soft ground shadow */}
           <ellipse cx="110" cy="530" rx="70" ry="10" fill="rgba(30,0,40,0.35)" style={{filter: 'blur(3px)'}} />
+          {energy > 0 && <EnergyLines f={f} amount={energy} half="back" />}
           {figure(P)}
           {face}
+          {energy > 0 && <EnergyLines f={f} amount={energy} half="front" />}
+          {sweat > 0 && <SweatDrops f={f} amount={sweat} lean={pose.lean} />}
           {/* pink rim light on the right edge for the 3D look */}
           <g transform={`rotate(${pose.lean} 110 318)`} opacity={0.5}>
             <path d="M150 170 Q158 210 154 252 L152 320" fill="none" stroke="#ff8fd0" strokeWidth={3} style={{filter: 'blur(1.5px)'}} />
@@ -199,3 +247,62 @@ export const KoreanWoman: React.FC<Props> = ({height, pose, variant = 'solid', r
     </svg>
   );
 };
+
+// Warm light lines travelling around her body while she moves: a general
+// "using energy" visual, with no fat-burning or product claim attached.
+const RINGS = [
+  {y: 210, rx: 96, speed: 0.11, phase: 0},
+  {y: 320, rx: 104, speed: -0.09, phase: 2},
+  {y: 440, rx: 84, speed: 0.13, phase: 4},
+];
+
+const EnergyLines: React.FC<{f: number; amount: number; half: 'front' | 'back'}> = ({f, amount, half}) => (
+  <g opacity={amount * (half === 'front' ? 1 : 0.45)} style={{filter: 'drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #ff9a5c)'}}>
+    {RINGS.map((r, i) => {
+      const y = r.y + Math.sin(f / 12 + r.phase) * 14;
+      // front half = lower arc of the ellipse (towards the viewer)
+      const d = half === 'front' ? `M${110 + r.rx} ${y} A${r.rx} 20 0 0 1 ${110 - r.rx} ${y}` : `M${110 - r.rx} ${y} A${r.rx} 20 0 0 1 ${110 + r.rx} ${y}`;
+      return (
+        <path
+          key={i}
+          d={d}
+          fill="none"
+          stroke={i === 1 ? '#ffd27a' : '#ff8a6e'}
+          strokeWidth={3.5}
+          strokeLinecap="round"
+          pathLength={1}
+          strokeDasharray="0.35 0.65"
+          strokeDashoffset={(f * r.speed) % 1}
+        />
+      );
+    })}
+  </g>
+);
+
+// Symbolic "sweat": little glowing light drops that pop off the head and
+// shoulders and fall away while she works out.
+const DROP_SOURCES = [
+  [84, 88, -1],
+  [136, 84, 1],
+  [76, 170, -1],
+  [146, 170, 1],
+  [110, 60, 0],
+];
+
+const SweatDrops: React.FC<{f: number; amount: number; lean: number}> = ({f, amount, lean}) => (
+  <g transform={`rotate(${lean} 110 318)`} opacity={amount}>
+    {DROP_SOURCES.map(([x0, y0, dir], i) => {
+      const period = 22;
+      const t = ((f + i * 7) % period) / period;
+      const x = x0 + dir * t * 34 + (dir === 0 ? Math.sin(i + f / 9) * 10 : 0);
+      const y = y0 - 12 * Math.sin(t * Math.PI) + t * t * 46;
+      const a = Math.sin(t * Math.PI);
+      return (
+        <g key={i} transform={`translate(${x} ${y}) rotate(${dir * 25}) scale(1.5)`} opacity={a}>
+          <path d="M0 -9 C5 -2 7 3 7 6 A7 7 0 0 1 -7 6 C-7 3 -5 -2 0 -9 Z" fill="#dff7ff" stroke="#fff" strokeWidth={1.2} style={{filter: 'drop-shadow(0 0 4px #9fe6ff) drop-shadow(0 0 8px #ffffff)'}} />
+          <circle cx={-2} cy={4} r={1.8} fill="#fff" />
+        </g>
+      );
+    })}
+  </g>
+);

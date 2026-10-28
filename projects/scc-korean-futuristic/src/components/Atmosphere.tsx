@@ -71,8 +71,8 @@ export const Stars: React.FC = () => {
 
 // ---------------------------------------------------------------- routine counters
 
-// Glass chips with digital-display numbers that roll up like a scale or
-// fitness-tracker readout: steps, glasses of water, morning-routine time and
+// Solid pastel chips with digital-display numbers that roll up like a scale or
+// fitness-tracker readout: steps, litres of water (3 L), morning-routine time and
 // stretch minutes. Lifestyle numbers only, never body weight.
 type Counter = {label: string; icon: React.ReactNode; value: (p: number) => string; ghost: string};
 
@@ -87,7 +87,7 @@ const pad2 = (n: number) => String(n).padStart(2, '0');
 
 const COUNTERS: Counter[] = [
   {label: 'LANGKAH', icon: <Sneaker size={34} />, value: (p) => Math.round(8000 * p).toLocaleString('en-US'), ghost: '8,888'},
-  {label: 'GELAS AIR', icon: <WaterBottle size={34} />, value: (p) => `${Math.round(8 * p)}/8`, ghost: '8/8'},
+  {label: 'AIR', icon: <WaterBottle size={34} />, value: (p) => `${(3 * p).toFixed(1)} L`, ghost: '8.8 L'},
   {
     label: 'RUTIN PAGI',
     icon: <Clock size={30} />,
@@ -133,13 +133,12 @@ export const FloatingCounters: React.FC<{amount?: number}> = ({amount = 1}) => {
               width: 172,
               padding: '8px 12px 10px',
               borderRadius: 18,
-              background: 'linear-gradient(135deg, rgba(255,255,255,0.22), rgba(60,20,100,0.4))',
-              border: `1.5px solid ${done ? 'rgba(255,170,225,0.95)' : 'rgba(215,190,255,0.8)'}`,
-              boxShadow: `0 0 ${done ? 18 : 10}px rgba(255,120,210,0.55), inset 0 0 14px rgba(255,255,255,0.18)`,
-              backdropFilter: 'blur(6px)',
-              opacity: 0.88 * amount,
+              background: 'linear-gradient(180deg, #ffffff, #ffe6f2)',
+              border: `3px solid ${done ? '#ff7fb6' : '#ffffff'}`,
+              boxShadow: '0 5px 0 #d985b8, 0 8px 14px rgba(40,0,50,0.4)',
+              opacity: amount,
               fontFamily: FONT,
-              color: '#fff',
+              color: '#7a2a8c',
             }}
           >
             <div style={{fontSize: 15, fontWeight: 700, letterSpacing: 1.5, opacity: 0.85}}>{counter.label}</div>
@@ -147,8 +146,8 @@ export const FloatingCounters: React.FC<{amount?: number}> = ({amount = 1}) => {
               {counter.icon}
               <div style={{position: 'relative', fontSize: 34, fontWeight: 800, fontVariantNumeric: 'tabular-nums', lineHeight: 1}}>
                 {/* faint "all segments" ghost, like an LCD readout */}
-                <span style={{position: 'absolute', left: 0, opacity: 0.12}}>{counter.ghost}</span>
-                <span style={{position: 'relative', textShadow: '0 0 8px rgba(255,140,215,0.95), 0 0 18px rgba(200,160,255,0.7)'}}>{counter.value(p)}</span>
+                <span style={{position: 'absolute', left: 0, opacity: 0.1}}>{counter.ghost}</span>
+                <span style={{position: 'relative', color: '#e0347f'}}>{counter.value(p)}</span>
               </div>
             </div>
           </div>

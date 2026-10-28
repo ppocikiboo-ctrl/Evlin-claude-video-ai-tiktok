@@ -2,12 +2,13 @@ import React from 'react';
 import {AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FloatingCounters, GlowParticles, LightRing, PearlSheen, Sakura, SoftLight, Stars} from './components/Atmosphere';
 import {ButterflyFlight} from './components/Butterfly';
-import {IconBadge, Lotus, Sneaker, WaterBottle} from './components/CareIcons';
+import {IconBadge, Lotus, Sneaker, WaterBottle3L} from './components/CareIcons';
+import {FoodPlate} from './components/FoodPlate';
 import {Sparkles, Star4} from './components/Icons';
-import {KoreanWoman, POSES, stretchRoutine} from './components/KoreanWoman';
-import {BubbleText, DigitalText, HologramText, NeonText, SlideText, ZoomText} from './components/TextStyles';
+import {KoreanWoman, POSES, workoutRoutine} from './components/KoreanWoman';
+import {ButtonText, Extrude3DText, FlipBoardText, NeonText, RibbonText, StickerText} from './components/TextStyles';
 import {loadFonts} from './theme';
-import {DURATION, LAYERS, LINES, MUSIC_VOLUME, SFX_CUES, SFX_VOLUME} from './timeline';
+import {DURATION, LAYERS, LINES, MUSIC_VOLUME, PLATE_BITES, SFX_CUES, SFX_VOLUME, SHOW_PLATE, WOMAN} from './timeline';
 
 loadFonts();
 
@@ -52,34 +53,50 @@ const HologramWoman: React.FC = () => {
   );
 };
 
-const StretchingWoman: React.FC = () => {
+// Stretches, then light dumbbell presses with light-drop "sweat" and warm
+// light lines circling her body.
+const WorkoutWoman: React.FC = () => {
   const f = useCurrentFrame();
-  const {from, to} = LAYERS.koreanWoman;
+  const {fps} = useVideoConfig();
+  const {from, to} = LAYERS.woman;
   if (f < from || f >= to) return null;
-  const a = win(f, from, to, 12, 12);
+  const t = f - from;
+  const a = win(f, from, to, 12, 10);
   const rise = interpolate(f, [from, from + 14], [30, 0], clamp);
+  const dumbbells = t < WOMAN.dumbbellsAt ? 0 : spring({frame: t - WOMAN.dumbbellsAt, fps, config: {damping: 9, stiffness: 200}});
   return (
-    <div style={{position: 'absolute', left: 150, top: 440 + rise, opacity: a}}>
-      <KoreanWoman height={540} pose={stretchRoutine(f - from)} />
+    <div style={{position: 'absolute', left: 150, top: 450 + rise, opacity: a}}>
+      <KoreanWoman
+        height={540}
+        pose={workoutRoutine(t, WOMAN)}
+        dumbbells={dumbbells}
+        sweat={interpolate(t, [WOMAN.sweatFrom, WOMAN.sweatFrom + 10], [0, 1], clamp)}
+        energy={interpolate(t, [WOMAN.energyFrom, WOMAN.energyFrom + 10], [0, 1], clamp)}
+      />
     </div>
   );
 };
 
-const CareIconColumn: React.FC = () => {
+const CareIconRow: React.FC = () => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const {from, to} = LAYERS.careIcons;
   if (f < from || f >= to) return null;
   const out = interpolate(f, [to - 6, to], [1, 0], clamp);
-  const items: React.ReactNode[] = [<WaterBottle size={64} />, <Sneaker size={70} />, <Lotus size={78} />];
+  const waterFill = interpolate(f, [from + 2, from + 26], [0, 1], clamp);
+  const items: [React.ReactNode, string][] = [
+    [<WaterBottle3L size={70} fill={waterFill} />, `${(3 * waterFill).toFixed(1)} LITER`],
+    [<Sneaker size={70} />, 'JALAN'],
+    [<Lotus size={76} />, 'SELF-CARE'],
+  ];
   return (
     <>
-      {items.map((icon, i) => {
-        const at = from + i * 5;
+      {items.map(([icon, label], i) => {
+        const at = from + i * 6;
         const pop = f < at ? 0 : spring({frame: f - at, fps, config: {damping: 10, stiffness: 170}});
         return (
-          <div key={i} style={{position: 'absolute', left: 905 - 58, top: 640 + i * 160 + Math.sin(f / 10 + i) * 6, opacity: out}}>
-            <IconBadge size={116} pop={pop} seed={i * 2}>
+          <div key={i} style={{position: 'absolute', left: 640 + i * 160 - 58, top: 420 + Math.sin(f / 10 + i) * 6, opacity: out}}>
+            <IconBadge size={116} pop={pop} seed={i * 2} label={label}>
               {icon}
             </IconBadge>
           </div>
@@ -101,38 +118,32 @@ export const SccKorean: React.FC = () => {
       <PearlSheen />
       <GlowParticles />
       <Stars />
-      <FloatingCounters amount={0.8} />
+      <FloatingCounters amount={0.95} />
       <Sakura bursts={[LAYERS.sakuraBurst1, LAYERS.sakuraBurst2]} />
 
       <HologramWoman />
-      <CareIconColumn />
-      <LightRing cx={430} cy={960} rx={380} ry={520} from={LAYERS.ringPack.from} to={LAYERS.ringPack.to} drawFrames={16} tilt={-5} />
-      <StretchingWoman />
+      {SHOW_PLATE && (
+        <div style={{position: 'absolute', left: 750, top: 720}}>
+          <FoodPlate from={LAYERS.plate.from} to={LAYERS.plate.to} bites={PLATE_BITES} width={300} />
+        </div>
+      )}
+      <WorkoutWoman />
+      <CareIconRow />
       <ButterflyFlight
         flights={[
-          {from: 186, to: 290, path: [[-60, 1100], [120, 980], [420, 900], [560, 640], [420, 420], [140, 380], [-80, 300]], size: 74, seed: 0},
-          {from: 196, to: 290, path: [[640, -60], [600, 160], [520, 420], [600, 560], [520, 700], [300, 760], [-60, 820]], size: 60, hue: 'lilac', seed: 2},
           {from: 300, to: 345, path: [[-60, 1500], [60, 1300], [30, 1050], [110, 820], [50, 600]], size: 70, seed: 1},
           {from: 306, to: 345, path: [[1140, 1300], [990, 1150], [1010, 900], [940, 700]], size: 64, hue: 'lilac', seed: 3},
         ]}
       />
       <LightRing cx={470} cy={1000} rx={430} ry={600} from={LAYERS.ringFinal.from} to={DURATION + 10} drawFrames={30} tilt={-6} />
 
-      {/* the six lines, one at a time, each with its own entrance */}
-      <HologramText
-        line={L.selfCare}
-        cx={410}
-        cy={288}
-        width={720}
-        height={200}
-        lines={[['SELF-CARE BUKAN'], ['SEKADAR SKINCARE!', {icon: <Star4 size={44} color="#ffd98a" />}]]}
-        size={50}
-      />
-      <BubbleText line={L.badan} cx={520} cy={1540} rows={[['JANGAN', 'LUPA'], ['PENJAGAAN', 'BADAN', <Sparkles size={52} />]]} size={56} />
-      <ZoomText line={L.kenali} cx={540} cy={262} text="KENALI SCC" icon={<Sparkles size={72} />} size={104} />
-      <DigitalText line={L.bahan} cx={540} cy={285} rows={['WHITE KIDNEY BEAN +', 'L-CARNITINE']} size={56} width={900} />
+      {/* the six lines, one at a time, each with its own solid style */}
+      <StickerText line={L.selfCare} cx={410} cy={292} rows={[['SELF-CARE BUKAN'], ['SEKADAR SKINCARE!', <Star4 size={40} color="#ffc531" />]]} size={50} />
+      <RibbonText line={L.badan} cx={540} cy={1540} rows={[['JANGAN LUPA'], ['PENJAGAAN BADAN', <Sparkles size={50} />]]} size={52} width={800} height={160} />
+      <Extrude3DText line={L.kenali} cx={540} cy={262} text="KENALI SCC" icon={<Sparkles size={72} />} size={100} />
+      <FlipBoardText line={L.bahan} cx={540} cy={290} rows={['WHITE KIDNEY BEAN +', 'L-CARNITINE']} tile={58} />
       <NeonText line={L.rutin} cx={540} cy={290} rows={[['JADIKAN', 'SELF-CARE'], ['SATU', 'RUTIN', <Blossom size={60} />]]} size={58} width={880} height={200} />
-      <SlideText line={L.produk} cx={540} cy={300} width={860} height={150} words={['KENALI', 'PRODUK', 'INI', <Sparkles size={56} />]} size={62} />
+      <ButtonText line={L.produk} cx={540} cy={300} words={['KENALI', 'PRODUK', 'INI', <Sparkles size={56} />]} size={58} />
 
       {/* sound */}
       <Audio src={staticFile('audio/music.wav')} volume={MUSIC_VOLUME} />

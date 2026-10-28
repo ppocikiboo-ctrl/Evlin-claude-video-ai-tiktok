@@ -1,7 +1,8 @@
-// Self-care and ingredient icons as inline SVG, plus the glowing badge they
+// Self-care and ingredient icons as inline SVG, plus the solid badge they
 // float in.
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
+import {FONT} from '../theme';
 
 type P = {size?: number};
 
@@ -62,8 +63,8 @@ export const Lotus: React.FC<P & {draw?: number}> = ({size = 120, draw = 1}) => 
   </svg>
 );
 
-// round glass badge with a pink light dot circling it
-export const IconBadge: React.FC<{size?: number; children: React.ReactNode; pop?: number; seed?: number}> = ({size = 120, children, pop = 1, seed = 0}) => {
+// solid pastel badge with a pink light dot circling it
+export const IconBadge: React.FC<{size?: number; children: React.ReactNode; pop?: number; seed?: number; label?: string}> = ({size = 120, children, pop = 1, seed = 0, label}) => {
   const f = useCurrentFrame();
   const a = f / 9 + seed;
   const r = size / 2 + 6;
@@ -74,13 +75,33 @@ export const IconBadge: React.FC<{size?: number; children: React.ReactNode; pop?
           position: 'absolute',
           inset: 0,
           borderRadius: '50%',
-          background: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.45), rgba(230,200,255,0.18) 60%, rgba(255,120,210,0.18))',
-          border: '2.5px solid rgba(255,140,215,0.95)',
-          boxShadow: '0 0 16px rgba(255,110,200,0.8), inset 0 0 18px rgba(255,255,255,0.35)',
-          backdropFilter: 'blur(6px)',
+          background: 'radial-gradient(circle at 35% 30%, #ffffff, #ffe3f1 60%, #f6c9ff)',
+          border: '4px solid #ffffff',
+          boxShadow: '0 6px 0 #e58ac0, 0 10px 18px rgba(50,0,50,0.45)',
         }}
       />
       <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{children}</div>
+      {label && (
+        <div
+          style={{
+            position: 'absolute',
+            left: '50%',
+            bottom: -18,
+            transform: 'translateX(-50%)',
+            padding: '3px 12px',
+            borderRadius: 999,
+            background: '#f0479a',
+            color: '#fff',
+            fontFamily: FONT,
+            fontWeight: 800,
+            fontSize: 20,
+            whiteSpace: 'nowrap',
+            boxShadow: '0 3px 0 #a3125d',
+          }}
+        >
+          {label}
+        </div>
+      )}
       <div
         style={{
           position: 'absolute',
@@ -94,5 +115,28 @@ export const IconBadge: React.FC<{size?: number; children: React.ReactNode; pop?
         }}
       />
     </div>
+  );
+};
+
+// Water bottle that fills up to the 3 L mark, with tick marks for each litre.
+export const WaterBottle3L: React.FC<P & {fill?: number}> = ({size = 70, fill = 1}) => {
+  const top = 92 - 66 * fill;
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100">
+      <defs>
+        <clipPath id="bottle3l">
+          <path d="M36 20 H64 Q72 28 72 40 V86 Q72 94 64 94 H36 Q28 94 28 86 V40 Q28 28 36 20 Z" />
+        </clipPath>
+      </defs>
+      <rect x="40" y="6" width="20" height="12" rx="3" fill="#cfb2ff" />
+      <path d="M36 20 H64 Q72 28 72 40 V86 Q72 94 64 94 H36 Q28 94 28 86 V40 Q28 28 36 20 Z" fill="#eef8ff" stroke="#7fc4f5" strokeWidth="3" />
+      <g clipPath="url(#bottle3l)">
+        <path d={`M20 ${top} Q35 ${top - 4} 50 ${top} T80 ${top} V100 H20 Z`} fill="#6cc4ff" />
+      </g>
+      {[0, 1, 2].map((i) => (
+        <path key={i} d={`M62 ${70 - i * 18} H70`} stroke="#3f8fd0" strokeWidth="2.5" />
+      ))}
+      <path d="M40 34 V80" stroke="#fff" strokeWidth="4" strokeLinecap="round" opacity="0.8" />
+    </svg>
   );
 };
