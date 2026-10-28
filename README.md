@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [VTLM self-care — premium 3D animated ad (30s)](projects/vtlm-self-care-3d/PROMPT_PACK.md)
