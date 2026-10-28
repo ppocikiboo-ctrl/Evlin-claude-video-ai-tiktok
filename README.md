@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [O'CHEAL Hyalurose micellar water — UGC → premium K-beauty edit (rendered pipeline)](projects/ocheal-micellar-water/README.md)
