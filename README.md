@@ -9,3 +9,4 @@ video generators.
 - [VBGV L-Carnitine Candy — 30 s TikTok affiliate ad (rendered video + code)](projects/vbgv-lcarnitine-candy/README.md)
 - [Gedics Solution — 10 s romantic hologram glass edit (Remotion project + rendered video)](projects/gedics-solution-hologram/README.md)
 - [SCC — 11.5 s body-care hologram edit (Remotion project + rendered video)](projects/scc-body-care-hologram/README.md)
+- [SCC — Korean futuristic body care, 11.5 s continuous-take edit (Remotion project + rendered video)](projects/scc-korean-futuristic/README.md)
