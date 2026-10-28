@@ -1,0 +1,161 @@
+// Self-care and ingredient icons as inline SVG, plus the solid badge they
+// float in.
+import React from 'react';
+import {useCurrentFrame} from 'remotion';
+import {FONT} from '../theme';
+
+type P = {size?: number};
+
+export const WaterBottle: React.FC<P> = ({size = 70}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <rect x="40" y="6" width="20" height="12" rx="3" fill="#cfb2ff" />
+    <path d="M36 20 H64 Q72 28 72 40 V86 Q72 94 64 94 H36 Q28 94 28 86 V40 Q28 28 36 20 Z" fill="#e9f6ff" stroke="#9fd0ff" strokeWidth="3" />
+    <path d="M30 56 H70 V86 Q70 92 64 92 H36 Q30 92 30 86 Z" fill="#8fd0ff" opacity="0.8" />
+    <path d="M40 34 V80" stroke="#fff" strokeWidth="4" strokeLinecap="round" opacity="0.8" />
+  </svg>
+);
+
+export const Sneaker: React.FC<P> = ({size = 70}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <path d="M8 70 Q8 50 22 46 L40 40 Q48 52 60 54 L84 60 Q94 64 94 74 V78 H8 Z" fill="#ff8fcf" stroke="#fff" strokeWidth="3" strokeLinejoin="round" />
+    <rect x="6" y="76" width="90" height="10" rx="5" fill="#fff" />
+    <path d="M44 48 L52 44 M50 53 L58 49 M57 56 L64 53" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+  </svg>
+);
+
+export const KidneyBean: React.FC<P> = ({size = 60}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <path d="M30 20 C56 6 92 22 88 52 C84 80 52 94 30 80 C18 72 26 58 36 54 C46 50 46 40 36 36 C24 32 18 26 30 20 Z" fill="#fbf4ea" stroke="#e8cfa8" strokeWidth="3" />
+    <ellipse cx="62" cy="38" rx="10" ry="6" fill="#fff" opacity="0.8" transform="rotate(20 62 38)" />
+  </svg>
+);
+
+// simple molecule glyph for L-Carnitine (a label, not a claim)
+export const Molecule: React.FC<P> = ({size = 60}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <g stroke="#e9dcff" strokeWidth="5">
+      <line x1="50" y1="50" x2="22" y2="28" />
+      <line x1="50" y1="50" x2="80" y2="30" />
+      <line x1="50" y1="50" x2="50" y2="84" />
+    </g>
+    <circle cx="50" cy="50" r="13" fill="#cfb2ff" />
+    <circle cx="22" cy="28" r="10" fill="#ff9ad8" />
+    <circle cx="80" cy="30" r="10" fill="#ffffff" />
+    <circle cx="50" cy="84" r="10" fill="#ffd36e" />
+  </svg>
+);
+
+// self-care symbol: a lotus with a glowing pearl at its centre
+export const Lotus: React.FC<P & {draw?: number}> = ({size = 120, draw = 1}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100" style={{overflow: 'visible'}}>
+    <g fill="rgba(255,190,235,0.35)" stroke="#fff" strokeWidth="2.4" strokeLinejoin="round" style={{filter: 'drop-shadow(0 0 5px #ff7ad1)'}}>
+      {[
+        'M50 76 C36 60 38 36 50 22 C62 36 64 60 50 76 Z',
+        'M50 76 C30 72 18 56 20 38 C36 42 48 56 50 76 Z',
+        'M50 76 C70 72 82 56 80 38 C64 42 52 56 50 76 Z',
+        'M50 78 C30 80 12 72 6 58 C24 54 40 64 50 78 Z',
+        'M50 78 C70 80 88 72 94 58 C76 54 60 64 50 78 Z',
+      ].map((d) => (
+        <path key={d} d={d} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} fillOpacity={draw} />
+      ))}
+    </g>
+    <circle cx="50" cy="48" r="7" fill="#fff" opacity={draw} style={{filter: 'drop-shadow(0 0 6px #ff6fbf)'}} />
+  </svg>
+);
+
+// solid pastel badge with a pink light dot circling it
+export const IconBadge: React.FC<{size?: number; children: React.ReactNode; pop?: number; seed?: number; label?: string}> = ({size = 120, children, pop = 1, seed = 0, label}) => {
+  const f = useCurrentFrame();
+  const a = f / 9 + seed;
+  const r = size / 2 + 6;
+  return (
+    <div style={{position: 'relative', width: size, height: size, transform: `scale(${pop})`, opacity: Math.min(1, pop)}}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle at 35% 30%, #ffffff, #ffe3f1 60%, #f6c9ff)',
+          border: '4px solid #ffffff',
+          boxShadow: '0 6px 0 #e58ac0, 0 10px 18px rgba(50,0,50,0.45)',
+        }}
+      />
+      <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{children}</div>
+      {label && (
+        <div
+          style={{
+            position: 'absolute',
+            left: '50%',
+            bottom: -18,
+            transform: 'translateX(-50%)',
+            padding: '3px 12px',
+            borderRadius: 999,
+            background: '#f0479a',
+            color: '#fff',
+            fontFamily: FONT,
+            fontWeight: 800,
+            fontSize: 20,
+            whiteSpace: 'nowrap',
+            boxShadow: '0 3px 0 #a3125d',
+          }}
+        >
+          {label}
+        </div>
+      )}
+      <div
+        style={{
+          position: 'absolute',
+          left: size / 2 + Math.cos(a) * r - 7,
+          top: size / 2 + Math.sin(a) * r - 7,
+          width: 14,
+          height: 14,
+          borderRadius: '50%',
+          background: '#fff',
+          boxShadow: '0 0 10px #fff, 0 0 22px #ff6fcf',
+        }}
+      />
+    </div>
+  );
+};
+
+// Water bottle that fills up to the 3 L mark, with tick marks for each litre.
+export const WaterBottle3L: React.FC<P & {fill?: number}> = ({size = 70, fill = 1}) => {
+  const top = 92 - 66 * fill;
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100">
+      <defs>
+        <clipPath id="bottle3l">
+          <path d="M36 20 H64 Q72 28 72 40 V86 Q72 94 64 94 H36 Q28 94 28 86 V40 Q28 28 36 20 Z" />
+        </clipPath>
+      </defs>
+      <rect x="40" y="6" width="20" height="12" rx="3" fill="#cfb2ff" />
+      <path d="M36 20 H64 Q72 28 72 40 V86 Q72 94 64 94 H36 Q28 94 28 86 V40 Q28 28 36 20 Z" fill="#eef8ff" stroke="#7fc4f5" strokeWidth="3" />
+      <g clipPath="url(#bottle3l)">
+        <path d={`M20 ${top} Q35 ${top - 4} 50 ${top} T80 ${top} V100 H20 Z`} fill="#6cc4ff" />
+      </g>
+      {[0, 1, 2].map((i) => (
+        <path key={i} d={`M62 ${70 - i * 18} H70`} stroke="#3f8fd0" strokeWidth="2.5" />
+      ))}
+      <path d="M40 34 V80" stroke="#fff" strokeWidth="4" strokeLinecap="round" opacity="0.8" />
+    </svg>
+  );
+};
+
+// Balanced plate seen from above: half vegetables, a quarter protein and a
+// quarter rice: a general healthy-eating symbol.
+export const BalancedPlate: React.FC<P> = ({size = 70}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" fill="#ffffff" stroke="#e7d5ef" strokeWidth="3" />
+    <circle cx="50" cy="50" r="36" fill="#fbf5fd" />
+    {/* half: vegetables */}
+    <path d="M50 14 A36 36 0 0 0 50 86 Z" fill="#7ccf6a" />
+    <circle cx="34" cy="38" r="6" fill="#4fae4a" />
+    <circle cx="30" cy="56" r="6" fill="#4fae4a" />
+    <circle cx="40" cy="70" r="5" fill="#ff9a3c" />
+    {/* quarter: protein */}
+    <path d="M50 50 L50 14 A36 36 0 0 1 86 50 Z" fill="#e7a35c" />
+    {/* quarter: rice */}
+    <path d="M50 50 L86 50 A36 36 0 0 1 50 86 Z" fill="#fffaf0" stroke="#eee3cf" strokeWidth="1" />
+    <path d="M50 14 V86 M50 50 H86" stroke="#ffffff" strokeWidth="2.5" />
+  </svg>
+);

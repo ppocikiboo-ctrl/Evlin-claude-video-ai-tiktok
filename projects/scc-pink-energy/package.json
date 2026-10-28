@@ -1,0 +1,22 @@
+{
+  "name": "scc-pink-energy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SCC 11.5 s TikTok edit: Pink Energy x 3D body care, strong hook (Remotion)",
+  "scripts": {
+    "prep": "bash scripts/prep_footage.sh && python3 scripts/make_audio.py",
+    "studio": "remotion studio",
+    "render": "remotion render SccPinkEnergy out/SCC_Pink_Energy.mp4 --codec=h264 --video-bitrate=18M --audio-codec=aac --audio-bitrate=320k --jpeg-quality=95",
+    "still": "remotion still SccPinkEnergy"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
