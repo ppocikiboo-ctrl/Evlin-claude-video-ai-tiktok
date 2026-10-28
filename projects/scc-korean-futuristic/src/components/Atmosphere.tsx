@@ -1,9 +1,11 @@
 // Light and particle layers: white + pastel-purple grading light, twinkling
-// stars, floating hearts at the edges, soft glow particles, and light rings.
+// stars, floating routine counters at the edges, soft glow particles, and light rings.
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, random, useCurrentFrame} from 'remotion';
 import {HEIGHT, WIDTH} from '../timeline';
-import {PinkHeart, Star4} from './Icons';
+import {FONT} from '../theme';
+import {Sneaker, WaterBottle} from './CareIcons';
+import {Star4} from './Icons';
 
 export const SoftLight: React.FC = () => {
   const f = useCurrentFrame();
@@ -67,28 +69,88 @@ export const Stars: React.FC = () => {
   );
 };
 
-const HEARTS = Array.from({length: 12}, (_, i) => {
-  const side = i % 2 === 0;
-  return {
-    x: side ? 15 + random(`hx${i}`) * 140 : 900 + random(`hx${i}`) * 140,
-    size: 30 + random(`hs${i}`) * 40,
-    speed: 2 + random(`hv${i}`) * 2.5,
-    offset: random(`ho${i}`) * HEIGHT,
-    sway: 10 + random(`hw${i}`) * 22,
-    phase: random(`hp${i}`) * 6,
-  };
-});
+// ---------------------------------------------------------------- routine counters
 
-export const FloatingHearts: React.FC<{amount?: number}> = ({amount = 1}) => {
+// Glass chips with digital-display numbers that roll up like a scale or
+// fitness-tracker readout: steps, glasses of water, morning-routine time and
+// stretch minutes. Lifestyle numbers only, never body weight.
+type Counter = {label: string; icon: React.ReactNode; value: (p: number) => string; ghost: string};
+
+const Clock: React.FC<{size: number}> = ({size}) => (
+  <svg width={size} height={size} viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.2)" stroke="#fff" strokeWidth="7" />
+    <path d="M50 26 V50 L66 60" stroke="#ff9ad8" strokeWidth="7" strokeLinecap="round" fill="none" />
+  </svg>
+);
+
+const pad2 = (n: number) => String(n).padStart(2, '0');
+
+const COUNTERS: Counter[] = [
+  {label: 'LANGKAH', icon: <Sneaker size={34} />, value: (p) => Math.round(8000 * p).toLocaleString('en-US'), ghost: '8,888'},
+  {label: 'GELAS AIR', icon: <WaterBottle size={34} />, value: (p) => `${Math.round(8 * p)}/8`, ghost: '8/8'},
+  {
+    label: 'RUTIN PAGI',
+    icon: <Clock size={30} />,
+    value: (p) => {
+      const m = 30 + Math.round(30 * p);
+      return `${pad2(6 + Math.floor(m / 60))}:${pad2(m % 60)}`;
+    },
+    ghost: '88:88',
+  },
+  {label: 'MINIT REGANGAN', icon: <Star4 size={30} color="#ffd98a" />, value: (p) => String(Math.round(10 * p)), ghost: '88'},
+];
+
+const CHIPS = Array.from({length: 5}, (_, i) => ({
+  kind: i % COUNTERS.length,
+  // hugging the far left/right edges, away from the pack's label
+  x: i % 2 === 0 ? 6 + random(`cx${i}`) * 14 : 898 + random(`cx${i}`) * 10,
+  speed: 2.2 + random(`cv${i}`) * 1.4,
+  offset: (i / 5) * (HEIGHT + 300) + random(`co${i}`) * 120,
+  sway: 6 + random(`cw${i}`) * 10,
+  phase: random(`cp${i}`) * 6,
+}));
+
+export const FloatingCounters: React.FC<{amount?: number}> = ({amount = 1}) => {
   const f = useCurrentFrame();
+  const span = HEIGHT + 300;
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
-      {HEARTS.map((h, i) => {
-        const y = HEIGHT + 100 - ((h.offset + f * h.speed) % (HEIGHT + 200));
-        const x = h.x + Math.sin(f / 18 + h.phase) * h.sway;
+      {CHIPS.map((c, i) => {
+        const travelled = (c.offset + f * c.speed) % span;
+        const y = HEIGHT + 150 - travelled;
+        const q = travelled / span;
+        // numbers roll up during the first part of the chip's rise, then hold
+        const p = interpolate(q, [0.08, 0.42], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+        const counter = COUNTERS[c.kind];
+        const done = p >= 1;
         return (
-          <div key={i} style={{position: 'absolute', left: x, top: y, opacity: 0.5 * amount, transform: `rotate(${Math.sin(f / 15 + h.phase) * 12}deg)`}}>
-            <PinkHeart size={h.size} />
+          <div
+            key={i}
+            style={{
+              position: 'absolute',
+              left: c.x + Math.sin(f / 20 + c.phase) * c.sway,
+              top: y,
+              width: 172,
+              padding: '8px 12px 10px',
+              borderRadius: 18,
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.22), rgba(60,20,100,0.4))',
+              border: `1.5px solid ${done ? 'rgba(255,170,225,0.95)' : 'rgba(215,190,255,0.8)'}`,
+              boxShadow: `0 0 ${done ? 18 : 10}px rgba(255,120,210,0.55), inset 0 0 14px rgba(255,255,255,0.18)`,
+              backdropFilter: 'blur(6px)',
+              opacity: 0.88 * amount,
+              fontFamily: FONT,
+              color: '#fff',
+            }}
+          >
+            <div style={{fontSize: 15, fontWeight: 700, letterSpacing: 1.5, opacity: 0.85}}>{counter.label}</div>
+            <div style={{display: 'flex', alignItems: 'center', gap: 10, marginTop: 2}}>
+              {counter.icon}
+              <div style={{position: 'relative', fontSize: 34, fontWeight: 800, fontVariantNumeric: 'tabular-nums', lineHeight: 1}}>
+                {/* faint "all segments" ghost, like an LCD readout */}
+                <span style={{position: 'absolute', left: 0, opacity: 0.12}}>{counter.ghost}</span>
+                <span style={{position: 'relative', textShadow: '0 0 8px rgba(255,140,215,0.95), 0 0 18px rgba(200,160,255,0.7)'}}>{counter.value(p)}</span>
+              </div>
+            </div>
           </div>
         );
       })}

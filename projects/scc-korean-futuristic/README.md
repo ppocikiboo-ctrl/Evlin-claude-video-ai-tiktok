@@ -22,9 +22,9 @@ untouched, and nothing is drawn over the label.
 
 | Frames | Line | Style | Placement |
 |---|---|---|---|
-| 2–56 | SELF-CARE BUKAN SEKADAR SKINCARE! 💗 | **hologram**: glass panel switches on, digital decode typing | top |
+| 2–56 | SELF-CARE BUKAN SEKADAR SKINCARE! ✦ | **hologram**: glass panel switches on, digital decode typing | top |
 | 64–118 | JANGAN LUPA PENJAGAAN BADAN ✨ | **glass bubble**: wobbly bubble pops in, words pop one by one, tiny bubbles rise | bottom, below the big pack |
-| 124–170 | KENALI SCC 💕 | **zoom**: zooms in from 2.8× out of a blur, letters pull together, light-burst ring on landing | top |
+| 124–170 | KENALI SCC ✨ | **zoom**: zooms in from 2.8× out of a blur, letters pull together, light-burst ring on landing | top |
 | 174–228 | WHITE KIDNEY BEAN + L-CARNITINE | **moving digital text**: HUD strip opens, characters slide in from the right as glowing blocks, scan line, progress bar | top |
 | 236–284 | JADIKAN SELF-CARE SATU RUTIN 🌸 | **neon**: neon frame draws itself, words flicker on like neon tubes, stars twinkle | top |
 | 296–345 | KENALI PRODUK INI ✨ | **slide**: glass panel slides in from the left with a star trail, words slide in | top, stays to the end |
@@ -37,13 +37,20 @@ Every line has **KLIK** (appears), **TIK-TIK** (text moving in) and **TING**
 
 | Frames | Layer |
 |---|---|
-| 0–345 | twinkling stars, pink hearts at the edges, drifting sakura petals, glow particles, white/pastel-pink light, pearl sheen |
+| 0–345 | twinkling stars, **floating routine counters** at the edges, drifting sakura petals, glow particles, white/pastel-pink light, pearl sheen |
 | 6–58 | **hologram woman** builds up from her feet beside the product |
 | 62–130 | sakura burst |
 | 150–186 | glass badges with a **water bottle, walking shoe and lotus** (self-care), each with a light circling it; **digital light ring** around the pack |
 | 186–290 | **hologram butterflies** |
 | 200–300 | **3D Korean-style woman** in modest sportswear doing light stretches: arms up, side bend left and right, arms out, rest |
 | 296–345 | sakura burst, butterflies up the sides, **light ring around the product** |
+
+There are no heart (love) animations. The **routine counters** are small glass
+chips with digital-display numbers that roll up like a scale or fitness-tracker
+readout: LANGKAH 0 → 8,000, GELAS AIR 0/8 → 8/8, RUTIN PAGI 06:30 → 07:00 and
+MINIT REGANGAN 0 → 10. They show lifestyle numbers only. Body weight and scale
+readings are deliberately left out, because TikTok treats them as weight-loss
+claims on diet products (`FloatingCounters` in `src/components/Atmosphere.tsx`).
 
 The woman (`src/components/KoreanWoman.tsx`) wears a loose long-sleeved
 sweatshirt, long joggers and sneakers, with natural proportions. Only her
@@ -78,7 +85,7 @@ src/timeline.ts                every frame number: lines, layers, SFX cues, volu
 src/SccKorean.tsx              the composition: footage, layers, six lines, audio
 src/components/TextStyles.tsx  the six text styles (hologram, bubble, zoom, digital, neon, slide)
 src/components/KoreanWoman.tsx 3D-style woman: solid + hologram variants, stretch routine
-src/components/Atmosphere.tsx  light/grading, pearl sheen, sakura, stars, hearts, particles, light rings
+src/components/Atmosphere.tsx  light/grading, pearl sheen, sakura, stars, routine counters, particles, light rings
 src/components/Butterfly.tsx   flapping hologram butterflies on smooth paths
 src/components/CareIcons.tsx   water bottle, sneaker, lotus, glowing icon badges
 src/components/GlassPanel.tsx  glassmorphism panel (open / slide right / slide left / scan)

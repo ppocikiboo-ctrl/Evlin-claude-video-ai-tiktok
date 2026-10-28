@@ -1,9 +1,9 @@
 import React from 'react';
 import {AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {FloatingHearts, GlowParticles, LightRing, PearlSheen, Sakura, SoftLight, Stars} from './components/Atmosphere';
+import {FloatingCounters, GlowParticles, LightRing, PearlSheen, Sakura, SoftLight, Stars} from './components/Atmosphere';
 import {ButterflyFlight} from './components/Butterfly';
 import {IconBadge, Lotus, Sneaker, WaterBottle} from './components/CareIcons';
-import {PinkHeart, Sparkles} from './components/Icons';
+import {Sparkles, Star4} from './components/Icons';
 import {KoreanWoman, POSES, stretchRoutine} from './components/KoreanWoman';
 import {BubbleText, DigitalText, HologramText, NeonText, SlideText, ZoomText} from './components/TextStyles';
 import {loadFonts} from './theme';
@@ -28,13 +28,6 @@ const Footage: React.FC = () => {
     </AbsoluteFill>
   );
 };
-
-const HeartPair: React.FC<{size: number}> = ({size}) => (
-  <span style={{display: 'inline-flex', position: 'relative', width: size * 1.3, height: size}}>
-    <PinkHeart size={size * 0.85} style={{position: 'absolute', left: 0, top: size * 0.12}} />
-    <PinkHeart size={size * 0.7} color="#ff6fa8" style={{position: 'absolute', left: size * 0.55, top: -size * 0.04}} />
-  </span>
-);
 
 const Blossom: React.FC<{size: number}> = ({size}) => (
   <svg width={size} height={size} viewBox="-50 -50 100 100">
@@ -108,7 +101,7 @@ export const SccKorean: React.FC = () => {
       <PearlSheen />
       <GlowParticles />
       <Stars />
-      <FloatingHearts amount={0.7} />
+      <FloatingCounters amount={0.8} />
       <Sakura bursts={[LAYERS.sakuraBurst1, LAYERS.sakuraBurst2]} />
 
       <HologramWoman />
@@ -132,11 +125,11 @@ export const SccKorean: React.FC = () => {
         cy={288}
         width={720}
         height={200}
-        lines={[['SELF-CARE BUKAN'], ['SEKADAR SKINCARE!', {icon: <PinkHeart size={50} />}]]}
+        lines={[['SELF-CARE BUKAN'], ['SEKADAR SKINCARE!', {icon: <Star4 size={44} color="#ffd98a" />}]]}
         size={50}
       />
       <BubbleText line={L.badan} cx={520} cy={1540} rows={[['JANGAN', 'LUPA'], ['PENJAGAAN', 'BADAN', <Sparkles size={52} />]]} size={56} />
-      <ZoomText line={L.kenali} cx={540} cy={262} text="KENALI SCC" icon={<HeartPair size={70} />} size={104} />
+      <ZoomText line={L.kenali} cx={540} cy={262} text="KENALI SCC" icon={<Sparkles size={72} />} size={104} />
       <DigitalText line={L.bahan} cx={540} cy={285} rows={['WHITE KIDNEY BEAN +', 'L-CARNITINE']} size={56} width={900} />
       <NeonText line={L.rutin} cx={540} cy={290} rows={[['JADIKAN', 'SELF-CARE'], ['SATU', 'RUTIN', <Blossom size={60} />]]} size={58} width={880} height={200} />
       <SlideText line={L.produk} cx={540} cy={300} width={860} height={150} words={['KENALI', 'PRODUK', 'INI', <Sparkles size={56} />]} size={62} />

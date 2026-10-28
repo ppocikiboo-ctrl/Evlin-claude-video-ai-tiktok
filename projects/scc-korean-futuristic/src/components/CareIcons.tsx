@@ -44,7 +44,7 @@ export const Molecule: React.FC<P> = ({size = 60}) => (
   </svg>
 );
 
-// self-care symbol: a lotus with a small heart
+// self-care symbol: a lotus with a glowing pearl at its centre
 export const Lotus: React.FC<P & {draw?: number}> = ({size = 120, draw = 1}) => (
   <svg width={size} height={size} viewBox="0 0 100 100" style={{overflow: 'visible'}}>
     <g fill="rgba(255,190,235,0.35)" stroke="#fff" strokeWidth="2.4" strokeLinejoin="round" style={{filter: 'drop-shadow(0 0 5px #ff7ad1)'}}>
@@ -58,11 +58,7 @@ export const Lotus: React.FC<P & {draw?: number}> = ({size = 120, draw = 1}) => 
         <path key={d} d={d} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} fillOpacity={draw} />
       ))}
     </g>
-    <path
-      d="M50 54 C44 49 42 46 42 43 C42 40 45 38 47 38 C48.5 38 49.5 39 50 40 C50.5 39 51.5 38 53 38 C55 38 58 40 58 43 C58 46 56 49 50 54 Z"
-      fill="#ff6fbf"
-      opacity={draw}
-    />
+    <circle cx="50" cy="48" r="7" fill="#fff" opacity={draw} style={{filter: 'drop-shadow(0 0 6px #ff6fbf)'}} />
   </svg>
 );
 
