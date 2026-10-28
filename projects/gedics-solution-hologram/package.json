@@ -1,0 +1,22 @@
+{
+  "name": "gedics-solution-hologram",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gedics Solution 10 s TikTok edit: romantic hologram glass effect (Remotion)",
+  "scripts": {
+    "prep": "bash scripts/prep_footage.sh && python3 scripts/make_audio.py",
+    "studio": "remotion studio",
+    "render": "remotion render GedicsHologram out/Gedics_Hologram_10s.mp4 --codec=h264 --video-bitrate=18M --audio-codec=aac --audio-bitrate=320k --jpeg-quality=95",
+    "still": "remotion still GedicsHologram"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

@@ -7,3 +7,4 @@ video generators.
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
 - [VBGV L-Carnitine Candy — 30 s TikTok affiliate ad (rendered video + code)](projects/vbgv-lcarnitine-candy/README.md)
+- [Gedics Solution — 10 s romantic hologram glass edit (Remotion project + rendered video)](projects/gedics-solution-hologram/README.md)
