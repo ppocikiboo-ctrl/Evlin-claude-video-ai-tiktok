@@ -535,3 +535,12 @@ Free SFX sources: the CapCut sound library, Pixabay Sound Effects, Mixkit.
 5. TikTok post: link the VTLM product in TikTok Shop so the yellow basket appears.
    Suggested caption (Malay, no claims):
    `Masa untuk jaga diri 💜 #VTLM #rutinjagadiri #selfcare #fyp #tiktokshopmy`
+
+---
+
+## 11. Ready-made motion-graphics render
+
+[`render/`](render/README.md) contains a code-rendered version of this timeline:
+the real pouch, all the Malay typography, the transitions and an original
+synthesized soundtrack. Post it as it is, or use it as the timing guide and
+graphics layer when you cut in the AI-generated 3D character shots.
