@@ -23,15 +23,39 @@ export type PanelCue = Pick<Line, 'open' | 'type' | 'done'>;
 
 export const LINES = {
   hook: {open: 0, type: 0, done: 12, out: 52}, // KERJA DUDUK LAMA SEHARIAN?
-  rutin: {open: 54, type: 58, done: 74, out: 90}, // INI RUTIN KECIL SAYA
+  joging: {open: 54, type: 56, done: 72, out: 90}, // TAK SEMPAT JOGING? (+ clock)
   kenali: {open: 96, type: 100, done: 118, out: 206}, // KENALI VBGV + brand pill
-  ofis: {open: 216, type: 220, done: 240, out: 326}, // SENANG BAWA KE OFIS
-  cara: {open: 336, type: 340, done: 360, out: 416}, // 1/2 BIJI SELEPAS SARAPAN
-  air: {open: 424, type: 428, done: 444, out: 478}, // JANGAN LUPA MINUM AIR
-  cta: {open: 484, type: 488, done: 508, out: 555}, // NAK CUBA JUGA? TEKAN BEG KUNING
+  snek: {open: 214, type: 218, done: 236, out: 326}, // SELALU TERGODA NAK SNEK? (+ snacks)
+  cta: {open: 484, type: 488, done: 508, out: 555}, // CEK HARGA PROMO / TEKAN BEG KUNING
 } satisfies Record<string, Line>;
 
-export type Sfx = 'boom' | 'klik' | 'tiktik' | 'ting' | 'whoosh' | 'sparkle' | 'pop' | 'bloop';
+// Daily-routine checklist card (tablet + water shots). Each item ticks on a beat.
+export const CHECKLIST = {
+  open: 334,
+  out: 478,
+  ticks: [348, 364, 380, 432], // jalan kaki, makan seimbang, VBGV ikut label, minum air
+};
+
+export const SNACKS_AT = [222, 228, 234, 240]; // snack icons pop in
+export const CTA_TAP = 514; // finger taps toward the product bag
+
+export type Sfx =
+  | 'boom'
+  | 'klik'
+  | 'tiktik'
+  | 'ting'
+  | 'whoosh'
+  | 'sparkle'
+  | 'pop'
+  | 'bloop'
+  | 'ticktock'
+  | 'check1'
+  | 'check2'
+  | 'check3'
+  | 'check4'
+  | 'boing'
+  | 'tap'
+  | 'kaching';
 
 const lineSfx = (l: Line): [number, Sfx][] => [
   [l.open, 'klik'],
@@ -45,18 +69,26 @@ export const SFX_CUES: [number, Sfx][] = [
   [0, 'boom'],
   [1, 'klik'],
   [LINES.hook.done, 'ting'],
-  ...lineSfx(LINES.rutin),
+  // no time to jog: KLIK + fast clock
+  [LINES.joging.open, 'klik'],
+  [LINES.joging.type, 'ticktock'],
+  [LINES.joging.done + 4, 'ting'],
   // a whoosh on every shot change
   ...[SHOTS.pack, SHOTS.open, SHOTS.tablet, SHOTS.water, SHOTS.closeup].map((s) => [s.from - 4, 'whoosh'] as [number, Sfx]),
   [102, 'pop'], // the pack appears
   [104, 'sparkle'],
   ...lineSfx(LINES.kenali),
-  ...lineSfx(LINES.ofis),
-  ...lineSfx(LINES.cara),
-  ...lineSfx(LINES.air),
+  // tempted by snacks: snacks boing in
+  ...lineSfx(LINES.snek),
+  ...SNACKS_AT.map((t) => [t, 'boing'] as [number, Sfx]),
+  // checklist: rising dings
+  [CHECKLIST.open, 'klik'],
+  ...CHECKLIST.ticks.map((t, i) => [t, `check${i + 1}`] as [number, Sfx]),
   [SHOTS.water.from + 6, 'bloop'],
+  // CTA: tap -> ka-ching
   ...lineSfx(LINES.cta),
-  [LINES.cta.done + 2, 'sparkle'],
+  [CTA_TAP, 'tap'],
+  [CTA_TAP + 4, 'kaching'],
 ];
 
 export const SFX_VOLUME: Record<Sfx, number> = {
@@ -68,6 +100,14 @@ export const SFX_VOLUME: Record<Sfx, number> = {
   sparkle: 0.45,
   pop: 0.6,
   bloop: 0.45,
+  ticktock: 0.5,
+  check1: 0.6,
+  check2: 0.6,
+  check3: 0.6,
+  check4: 0.65,
+  boing: 0.5,
+  tap: 0.6,
+  kaching: 0.7,
 };
 
 export const MUSIC_VOLUME = 0.45;

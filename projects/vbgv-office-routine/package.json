@@ -6,7 +6,7 @@
   "scripts": {
     "prep": "bash scripts/prep_footage.sh && python3 scripts/make_audio.py",
     "studio": "remotion studio",
-    "render": "remotion render VbgvOffice out/VBGV_Office_Routine.mp4 --codec=h264 --video-bitrate=18M --audio-codec=aac --audio-bitrate=320k --jpeg-quality=95",
+    "render": "remotion render VbgvOffice out/VBGV_Office_Routine_v2.mp4 --codec=h264 --video-bitrate=18M --audio-codec=aac --audio-bitrate=320k --jpeg-quality=95",
     "still": "remotion still VbgvOffice"
   },
   "dependencies": {

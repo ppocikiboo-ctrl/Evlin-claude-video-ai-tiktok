@@ -3,8 +3,9 @@ import {AbsoluteFill, Audio, Easing, interpolate, OffthreadVideo, Sequence, spri
 import {GlowParticles, PearlSheen, SoftLight, Stars} from './components/Atmosphere';
 import {DecodeText} from './components/DecodeText';
 import {GlassPanel} from './components/GlassPanel';
-import {PinkHeart, Sparkles, Star4} from './components/Icons';
-import {ArrowDown, Drop, FastForward, Handbag, Laptop, ShopBag, Sun} from './components/VbgvIcons';
+import {Sparkles, Star4} from './components/Icons';
+import {CtaExtras, NoTimeJog, RoutineChecklist, SnackTemptation} from './components/PersuadeLayers';
+import {Clock, Donut, FastForward, Laptop, ShopBag} from './components/VbgvIcons';
 import {FONT, loadFonts} from './theme';
 import {DURATION, LINES, MUSIC_VOLUME, SFX_CUES, SFX_VOLUME, SHOTS} from './timeline';
 
@@ -13,7 +14,6 @@ loadFonts();
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const PURPLE = '#8b3dff';
 const GOLD = '#ffd98a';
-const PurpleHeart: React.FC<{size: number}> = ({size}) => <PinkHeart size={size} color="#9b5de5" />;
 
 // ------------------------------------------------------------------ footage
 
@@ -194,31 +194,6 @@ const BrandPill: React.FC = () => {
   );
 };
 
-const Footnote: React.FC<{text: string; from: number; to: number; top: number}> = ({text, from, to, top}) => {
-  const f = useCurrentFrame();
-  if (f < from || f >= to) return null;
-  const a = Math.min(interpolate(f, [from, from + 8], [0, 1], clamp), interpolate(f, [to - 6, to], [1, 0], clamp));
-  return (
-    <div style={{position: 'absolute', left: 0, right: 0, top, textAlign: 'center', opacity: a, fontFamily: FONT, fontWeight: 700, fontSize: 32, color: '#fff', textShadow: '0 2px 6px rgba(20,0,40,0.9)'}}>
-      {text}
-    </div>
-  );
-};
-
-// CTA arrow bouncing toward TikTok's yellow product bag (bottom left)
-const CtaArrow: React.FC = () => {
-  const f = useCurrentFrame();
-  const at = LINES.cta.done;
-  if (f < at) return null;
-  const a = interpolate(f, [at, at + 6], [0, 1], clamp);
-  const bounce = Math.abs(Math.sin(((f - at) / 15) * Math.PI)) * 18;
-  return (
-    <div style={{position: 'absolute', left: 150, top: 1640 + bounce, opacity: a, transform: 'rotate(20deg)'}}>
-      <ArrowDown size={70} />
-    </div>
-  );
-};
-
 // ------------------------------------------------------------------ composition
 
 export const VbgvOffice: React.FC = () => {
@@ -236,9 +211,10 @@ export const VbgvOffice: React.FC = () => {
 
       <Hook />
       <SpeedBadge />
-      <GlassPanel cue={L.rutin} entrance="open" cx={540} cy={280} width={900} height={150} exitAt={L.rutin.out}>
-        <DecodeText lines={[['INI RUTIN KECIL SAYA', {icon: <PurpleHeart size={60} />}]]} start={L.rutin.type} end={L.rutin.done - 2} size={62} />
+      <GlassPanel cue={L.joging} entrance="open" cx={540} cy={280} width={900} height={150} exitAt={L.joging.out}>
+        <DecodeText lines={[['TAK SEMPAT JOGING?', {icon: <Clock size={66} t={0.15} />}]]} start={L.joging.type} end={L.joging.done - 2} size={66} />
       </GlassPanel>
+      <NoTimeJog />
 
       <PackSparkles />
       <GlassPanel cue={L.kenali} entrance="scan" cx={540} cy={270} width={720} height={170} exitAt={L.kenali.out}>
@@ -246,23 +222,17 @@ export const VbgvOffice: React.FC = () => {
       </GlassPanel>
       <BrandPill />
 
-      <GlassPanel cue={L.ofis} entrance="slideRight" cx={540} cy={280} width={900} height={150} exitAt={L.ofis.out}>
-        <DecodeText lines={[['SENANG BAWA KE OFIS', {icon: <Handbag size={70} />}]]} start={L.ofis.type} end={L.ofis.done - 2} size={64} />
+      <GlassPanel cue={L.snek} entrance="slideRight" cx={540} cy={290} width={900} height={210} exitAt={L.snek.out}>
+        <DecodeText lines={[['SELALU TERGODA'], ['NAK SNEK?', {icon: <Donut size={74} />}]]} start={L.snek.type} end={L.snek.done - 2} size={70} />
       </GlassPanel>
+      <SnackTemptation />
 
-      <GlassPanel cue={L.cara} entrance="open" cx={540} cy={290} width={940} height={210} exitAt={L.cara.out}>
-        <DecodeText lines={[['1/2 BIJI SELEPAS'], ['SARAPAN PAGI', {icon: <Sun size={70} />}]]} start={L.cara.type} end={L.cara.done - 2} size={64} />
-      </GlassPanel>
-      <Footnote text="*Ikut arahan pada label produk" from={L.cara.done} to={L.cara.out} top={410} />
-
-      <GlassPanel cue={L.air} entrance="slideRight" cx={540} cy={280} width={920} height={150} exitAt={L.air.out}>
-        <DecodeText lines={[['JANGAN LUPA MINUM AIR', {icon: <Drop size={64} />}]]} start={L.air.type} end={L.air.done - 2} size={62} />
-      </GlassPanel>
+      <RoutineChecklist />
 
       <GlassPanel cue={L.cta} entrance="open" cx={540} cy={1440} width={900} height={210}>
-        <DecodeText lines={[['NAK CUBA JUGA?', {icon: <ShopBag size={70} />}], ['TEKAN BEG KUNING']]} start={L.cta.type} end={L.cta.done - 2} size={68} />
+        <DecodeText lines={[['CEK HARGA PROMO', {icon: <ShopBag size={70} />}], ['TEKAN BEG KUNING']]} start={L.cta.type} end={L.cta.done - 2} size={68} />
       </GlassPanel>
-      <CtaArrow />
+      <CtaExtras />
 
       {/* sound: original audio removed; new music from frame 0 + SFX on cue */}
       <Audio src={staticFile('audio/music.wav')} volume={MUSIC_VOLUME} />

@@ -8,6 +8,8 @@ Writes to public/audio/:
   whoosh.wav   panel sliding in
   sparkle.wav  stars / butterflies / sakura appearing
   boom.wav     the hook's opening impact (frame 0)
+  ticktock, check1-4, boing, tap, kaching    v2: no-time clock, checklist dings,
+                                             snack pops, CTA tap, cash register
   pop, clink, plink, bloop   icon pops, dumbbell reps, sweat drops, water bottle
 
 Everything is generated here from scratch (no samples), so the audio is free
@@ -297,6 +299,62 @@ def boom():
     return reverb(stereo(np.tanh((sub + body + crack) * 1.6)), 1.4, 0.5, 0.2)
 
 
+# ------------------------------------------------------------------ v2 sfx
+
+def ticktock(dur=1.2, rate=8.0):
+    """Fast clock tick-tock for 'tak sempat' (no time)."""
+    out = np.zeros(int(dur * SR))
+    k = 0
+    t = 0.0
+    while t < dur:
+        c = tik(2600 if k % 2 else 3400) * 0.9
+        i = int(t * SR)
+        out[i:i + len(c)] += c[: len(out) - i]
+        t += 1 / rate
+        k += 1
+    return out
+
+
+def check(step):
+    """Checklist ding; each step is a note higher (C6 E6 G6 C7)."""
+    m = [84, 88, 91, 96][step]
+    t = tt(int(0.7 * SR))
+    f = hz(m)
+    v = np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * f * 2 * t) * np.exp(-t * 8)
+    pop_ = np.sin(2 * np.pi * (300 + 900 * (1 - np.exp(-t * 60))) * t) * np.exp(-t * 50) * 0.5
+    return (v * np.exp(-t * 6) + pop_) * np.minimum(1, t / 0.002) * 0.6
+
+
+def boing():
+    """Cartoon spring for the snacks popping in."""
+    t = tt(int(0.45 * SR))
+    f = 260 + 180 * np.exp(-t * 6) * np.sin(2 * np.pi * 14 * t) + 140 * np.exp(-t * 4)
+    v = np.sin(2 * np.pi * np.cumsum(f) / SR) + 0.3 * np.sin(4 * np.pi * np.cumsum(f) / SR)
+    return v * np.minimum(1, t / 0.004) * np.exp(-t * 7) * 0.6
+
+
+def tap():
+    """Finger tap on the screen."""
+    t = tt(int(0.08 * SR))
+    return (np.sin(2 * np.pi * 900 * t) * 0.6 + band(rng.standard_normal(len(t)), lo=1500, hi=6000) * 0.5) * np.exp(-t * 90)
+
+
+def kaching():
+    """Cash register 'ka-ching': mechanical clack, then a bright bell chord."""
+    out = np.zeros(int(1.3 * SR))
+    t = tt(int(0.06 * SR))
+    clack = band(rng.standard_normal(len(t)), lo=800, hi=5000) * np.exp(-t * 80)
+    out[:len(clack)] += clack * 0.8
+    i = int(0.08 * SR)
+    t = tt(int(1.2 * SR))
+    bell = sum(a * np.sin(2 * np.pi * f * t) * np.exp(-t * d) for f, a, d in ((2093, 1, 4), (2637, 0.8, 4.5), (3136, 0.6, 5), (4186, 0.35, 7)))
+    out[i:i + len(bell)] += bell[: len(out) - i] * 0.5
+    sp = sparkle(0.5, 8)[:, 0]
+    j = int(0.12 * SR)
+    out[j:j + len(sp)] += sp[: len(out) - j] * 0.5
+    return out
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     write("music.wav", music(), peak=0.8)
@@ -310,6 +368,12 @@ def main():
     write("clink.wav", clink(), peak=0.55)
     write("plink.wav", plink(), peak=0.55)
     write("bloop.wav", bloop(), peak=0.6)
+    write("ticktock.wav", ticktock(), peak=0.55)
+    for k in range(4):
+        write(f"check{k + 1}.wav", check(k), peak=0.6)
+    write("boing.wav", boing(), peak=0.55)
+    write("tap.wav", tap(), peak=0.6)
+    write("kaching.wav", kaching(), peak=0.75)
 
 
 if __name__ == "__main__":
