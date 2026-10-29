@@ -1036,14 +1036,13 @@ def pluck(freq, d, seed=0):
     return out
 
 
-def make_music(dur):
-    """Original 116 BPM K-beauty pop bed: pad, pluck arps, soft drums, sub bass."""
-    bpm = 116
+def make_music(dur, bpm=116, chords=None):
+    """Original K-beauty pop bed: pad, pluck arps, soft drums, sub bass."""
     beat = 60 / bpm
     n = int((dur + 2.5) * SR)
     mix = np.zeros((n, 2))
-    # IV - V - iii - vi in D major, one bar each
-    chords = [[55, 59, 62, 66], [57, 61, 64, 67], [54, 57, 61, 64], [59, 62, 66, 69]]
+    # default: IV - V - iii - vi in D major, one bar each
+    chords = chords or [[55, 59, 62, 66], [57, 61, 64, 67], [54, 57, 61, 64], [59, 62, 66, 69]]
     bar = 4 * beat
     nbars = int(dur / bar) + 2
     pad_t = _t(bar)
@@ -1092,9 +1091,9 @@ def make_music(dur):
     return mix[:n]
 
 
-def make_audio(cues, path):
-    music = make_music(TOTAL)
-    fx = make_sfx()
+def make_audio(cues, path, music=None, fx=None):
+    music = make_music(TOTAL) if music is None else music
+    fx = fx or make_sfx()
     n = int((TOTAL + 0.05) * SR)
     out = music[:n].copy()
     # fade the bed out with the final chime
