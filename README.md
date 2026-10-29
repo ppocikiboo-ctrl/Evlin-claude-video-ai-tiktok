@@ -11,3 +11,4 @@ video generators.
 - [SCC — 11.5 s body-care hologram edit (Remotion project + rendered video)](projects/scc-body-care-hologram/README.md)
 - [SCC — Korean futuristic body care, 11.5 s continuous-take edit (Remotion project + rendered video)](projects/scc-korean-futuristic/README.md)
 - [SCC — Pink Energy with a strong hook, 11.5 s (Remotion project + rendered video)](projects/scc-pink-energy/README.md)
+- [VBGV — office routine affiliate video, 18.5 s with a strong hook (Remotion project + rendered video)](projects/vbgv-office-routine/README.md)
