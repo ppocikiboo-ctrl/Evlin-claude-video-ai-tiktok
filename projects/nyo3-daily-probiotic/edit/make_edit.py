@@ -25,12 +25,23 @@ TEAL = (0, 200, 190, 255)
 WHITE = (255, 255, 255, 255)
 BLACK = (0, 0, 0, 255)
 
-# (source start, source end) in seconds of the original clip.
+# (source start, source end, speed) in seconds of the original clip.
+# The back shots run a little slower so the benefit list has time to be read.
 SEGMENTS = [
-    (0.00, 1.90),  # bottle drops into hand / flip  -> hook
-    (2.20, 5.90),  # front label
-    (7.70, 9.15),  # back: ingredients
-    (10.20, 12.60),  # back: description + directions -> CTA
+    (0.00, 1.90, 1.0),  # bottle drops into hand / flip  -> hook
+    (2.20, 5.90, 1.0),  # front label
+    (7.70, 9.15, 0.75),  # back: ingredients -> benefits
+    (10.20, 12.60, 0.75),  # back: description + directions -> CTA
+]
+
+# Benefits as printed on the bottle's label.
+BENEFITS = [
+    "Kurangkan perut kembung & angin",
+    "Bantu atasi sembelit",
+    "Kurangkan cirit-birit",
+    "Bantu masalah tak tahan laktosa",
+    "Sokong usus & sistem imun",
+    "Bantu proses pecahkan lemak",
 ]
 
 
@@ -82,8 +93,8 @@ def stack(cards, gap=14, align="center"):
 def build_overlays(d):
     """Return a list of (png, out_start, out_end, x, y) overlays."""
     cut = [0.0]
-    for s, e in SEGMENTS:
-        cut.append(cut[-1] + (e - s))
+    for s, e, sp in SEGMENTS:
+        cut.append(cut[-1] + (e - s) / sp)
     ov = []
 
     def add(img, name, t0, t1, x, y):
@@ -109,19 +120,21 @@ def build_overlays(d):
         add(text_card(s, 54, box=bg, fill=fg), f"spec{i}", t + 0.6 + i * 0.55, cut[2],
             60, 400 + i * 118)
 
-    # 3. Benefits (from the back label)
-    t = cut[2]
-    add(stack([text_card("Bantu kurangkan", 72),
-               text_card("KEMBUNG & SEMBELIT", 84, fill=YELLOW)]), "benefit",
-        t + 0.05, cut[3], "c", 230)
+    # 3-4. Benefit checklist (from the label), built up one line at a time
+    t, end = cut[2], cut[4] - 1.3
+    add(text_card("KEBAIKAN DIA", 88, fill=YELLOW, emoji="\U0001F447"), "benefit_title",
+        t + 0.05, end, "c", 190)
+    for i, b in enumerate(BENEFITS):
+        add(text_card(b, 46, box=(255, 255, 255, 235), fill=BLACK, font=FONT_BOLD,
+                      pad=(26, 14), radius=20, emoji="\u2705"),
+            f"benefit{i}", t + 0.35 + i * 0.5, end, 50, 330 + i * 98)
+    add(text_card("1-2 kapsul sehari je", 54, box=TEAL, fill=BLACK, emoji="\U0001F48A"),
+        "dose", t + 0.35 + len(BENEFITS) * 0.5, end, 50, 330 + len(BENEFITS) * 98 + 14)
 
-    # 4. Directions + CTA
-    t = cut[3]
-    add(text_card("1-2 kapsul sehari je", 70, box=WHITE, fill=BLACK, emoji="\U0001F48A"),
-        "dose", t + 0.05, cut[4] - 1.1, "c", 250)
+    # CTA
     add(stack([text_card("TEKAN BEG KUNING", 96, fill=YELLOW),
                text_card("sebelum stok habis!", 58, box=RED, font=FONT_BOLD, emoji="\U0001F6D2")]),
-        "cta", cut[4] - 1.1, cut[4] + 1.0, "c", 260)
+        "cta", end, cut[4] + 1.0, "c", 260)
     return ov, cut
 
 
@@ -142,14 +155,14 @@ def main(src, out):
 
     fc = []
     vlabels, alabels = [], []
-    for i, (s, e) in enumerate(SEGMENTS):
-        dur = e - s
+    for i, (s, e, sp) in enumerate(SEGMENTS):
+        dur = (e - s) / sp
         z = zoom_expr(dur, 0.0 if i == 0 else 0.22)
         fc.append(
-            f"[0:v]trim={s}:{e},setpts=PTS-STARTPTS,fps={FPS},"
+            f"[0:v]trim={s}:{e},setpts=(PTS-STARTPTS)/{sp},fps={FPS},"
             f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame,"
             f"crop={W}:{H},setsar=1[v{i}]")
-        fc.append(f"[0:a]atrim={s}:{e},asetpts=PTS-STARTPTS[a{i}]")
+        fc.append(f"[0:a]atrim={s}:{e},asetpts=PTS-STARTPTS,atempo={sp}[a{i}]")
         vlabels.append(f"[v{i}]")
         alabels.append(f"[a{i}]")
     fc.append(f"{''.join(vlabels)}concat=n={len(SEGMENTS)}:v=1:a=0[vc]")
