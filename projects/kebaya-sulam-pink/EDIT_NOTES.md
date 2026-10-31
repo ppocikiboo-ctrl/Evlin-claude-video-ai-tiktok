@@ -16,7 +16,7 @@ Edited from the original AI clip (Veo, 8 s, 720x1280).
 | 24 fps, which reads as cinematic | Converted to 30 fps, like a phone recording |
 | Generator metadata | Stripped by the re-encode |
 
-## Hook text (burned in, placed over the skirt so the face and the kebaya top stay clear)
+## Hook text (burned in, small and left-aligned at the left edge, over the background so it covers neither her nor the product)
 
 | Time | Text |
 |---|---|
