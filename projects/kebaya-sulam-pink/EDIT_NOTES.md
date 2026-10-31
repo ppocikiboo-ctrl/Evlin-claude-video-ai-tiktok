@@ -2,7 +2,7 @@
 
 Edited from the original AI clip (Veo, 8 s, 720x1280).
 
-- **Video:** [`kebaya_hook_natural.mp4`](kebaya_hook_natural.mp4)
+- **Video:** [`kebaya_natural.mp4`](kebaya_natural.mp4)
 - **Preview:** [`preview-frames.jpg`](preview-frames.jpg)
 
 ## What was changed to make it look more natural
@@ -16,13 +16,12 @@ Edited from the original AI clip (Veo, 8 s, 720x1280).
 | 24 fps, which reads as cinematic | Converted to 30 fps, like a phone recording |
 | Generator metadata | Stripped by the re-encode |
 
-## Hook text (burned in, small and left-aligned at the left edge, over the background so it covers neither her nor the product)
+## Hook text
 
-| Time | Text |
-|---|---|
-| 0–2.8 s | Pakai ni pergi kelas, semua tanya beli kat mana |
-| 2.8–5.2 s | Sulam bunga penuh, siap sepasang atas & bawah |
-| 5.2 s–end | Link kat beg kuning ↓ |
+The video has no burned-in text. Add the hook in TikTok's own text tool, or
+just use it as the caption opener. Suggested hook:
+
+- `Pakai ni pergi kelas, semua tanya beli kat mana`
 
 ### Other hooks to test (A/B)
 
