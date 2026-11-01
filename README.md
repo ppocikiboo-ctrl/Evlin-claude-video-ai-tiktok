@@ -10,3 +10,4 @@ video generators.
 - [Baju kurung cream — mirror selfie (edited, natural look)](projects/baju-kurung-cream-mirror/EDIT_NOTES.md)
 - [Baju kurung sage floral — mirror selfie (colour matched, natural look)](projects/kurung-sage-floral-mirror/EDIT_NOTES.md)
 - [Polka-dot peplum blouse + wide-leg jeans — mirror selfie prompt pack](projects/peplum-blouse-wide-jeans-mirror/PROMPT_PACK.md)
+- [Sunset beach — crop tee + white shorts (teeth fixed, natural look)](projects/sunset-beach-white-shorts/EDIT_NOTES.md)
