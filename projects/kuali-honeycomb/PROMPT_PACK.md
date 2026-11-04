@@ -128,3 +128,63 @@ voiceover in Malaysian Malay, off-screen, natural pace:
 lama, dan boleh masak kurang minyak!"
 No subtitles, no music, no watermark.
 ```
+
+---
+
+## 5. Konsep 2 — Ujian Telur Tak Melekat (8s, tangan sahaja)
+
+```
+Vertical 9:16 ultra-realistic TikTok video, 8 seconds, filmed on a smartphone.
+ONLY HANDS visible, a Malaysian woman's hands, no face or body ever in frame.
+Bright modern kitchen, glossy white tiled wall, black glass gas stove, soft
+daylight.
+
+The product: a deep round black wok with a silver honeycomb hexagon pattern
+inside, a silver flame/leaf pattern band around the upper inner rim and two
+gold loop handles with silver rivets. Keep it exactly like the reference image.
+
+Shot 1 (0–2s): close-up, one hand pours only a few drops of oil into the hot
+honeycomb wok on a gas flame.
+Shot 2 (2–5s): the hand cracks two eggs into the wok, the whites sizzle and
+turn crispy at the edges, bright orange yolks.
+Shot 3 (5–8s): one hand holds the gold handle and gently tilts and shakes the
+wok; both fried eggs slide freely across the honeycomb surface without
+sticking. Slow push-in on the eggs gliding.
+
+Audio: loud satisfying sizzling ASMR, plus a warm, excited female voiceover
+in Malaysian Malay accent, off-screen, starting at 0.5 seconds, natural lively
+pace:
+"Tengok ni, minyak sikit je... telur langsung tak melekat! Kuali honeycomb,
+haba sekata, masak lebih sihat."
+
+Realistic, natural colors, sharp focus, smooth handheld movement. No
+subtitles, no on-screen text, no music, no watermark.
+```
+
+## 6. Konsep 3 — Senang Cuci Lepas Masak (8s, tangan sahaja)
+
+```
+Vertical 9:16 ultra-realistic TikTok video, 8 seconds, filmed on a smartphone.
+ONLY HANDS visible, a Malaysian woman's hands, no face or body ever in frame.
+Bright white kitchen with a stainless steel sink.
+
+The product: a deep round black wok with a silver honeycomb hexagon pattern
+inside, a silver flame/leaf pattern band around the upper inner rim and two
+gold loop handles with silver rivets. Keep it exactly like the reference image.
+
+Shot 1 (0–2.5s): close-up of the honeycomb wok just after cooking, with
+leftover sticky red sambal sauce coating the inside.
+Shot 2 (2.5–6s): at the sink, one hand holds the gold handle under running
+tap water, the other wipes once with a soft yellow sponge; the sauce rinses
+off instantly, revealing the clean shiny honeycomb pattern.
+Shot 3 (6–8s): the hands lift the clean, glossy wok toward the camera,
+showing the honeycomb surface and gold handles catching the light.
+
+Audio: running water and light sponge sounds, plus a warm, cheerful female
+voiceover in Malaysian Malay accent, off-screen, starting at 0.5 seconds:
+"Masak sambal pun tak melekat. Bilas sikit je, terus bersih! Kuali honeycomb
+ni memang tahan lama."
+
+Realistic, natural colors, sharp focus, smooth handheld movement. No
+subtitles, no on-screen text, no music, no watermark.
+```
