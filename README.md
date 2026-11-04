@@ -12,3 +12,4 @@ video generators.
 - [Lilac floral peplum kurung set — Google Flow OOTD with Malay dialogue (8s)](projects/lilac-floral-kurung-set/PROMPT_PACK.md)
 - [Burgundy ruffle babydoll top with back bow — Google Flow joget front-to-back (8s, silent)](projects/burgundy-ruffle-bow-babydoll-top/PROMPT_PACK.md)
 - [Polka dot halter ruffle blouse — Google Flow OOTD + sunlit close-up (8s)](projects/polka-dot-halter-ruffle-blouse/FLOW_PROMPTS.md)
+- [Red textured bow peplum top — Google Flow front-to-back + sunlit close-up (8s)](projects/red-textured-bow-peplum-top/PROMPT_PACK.md)
