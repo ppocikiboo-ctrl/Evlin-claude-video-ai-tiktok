@@ -17,3 +17,4 @@ video generators.
 - [Burgundy ruffle babydoll top — window sunlight close-up (8s, silent)](projects/burgundy-ruffle-bow-babydoll-top/WINDOW_CLOSEUP_PROMPT.md)
 - [Burgundy halter set — first-person elegant speaking prompt (8s)](projects/burgundy-halter-wide-leg-set/SPEAKING_PROMPT.md)
 - [Cream vest + wide-leg set (hijab) — Google Flow speaking + sunlit walk forward (8s)](projects/cream-vest-wide-leg-set/PROMPT_PACK.md)
+- [Yellow gingham tie-front top — Google Flow OOTD mirror selfie (8s)](projects/yellow-gingham-tie-front-top/PROMPT_PACK.md)
