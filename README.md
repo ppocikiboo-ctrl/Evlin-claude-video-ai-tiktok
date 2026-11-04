@@ -9,3 +9,4 @@ video generators.
 - [Polka dot halter ruffle blouse — mirror selfie OOTD (8s, silent)](projects/polka-dot-halter-ruffle-blouse/PROMPT_PACK.md)
 - [Brown cargo mini skirt — Google Flow OOTD with Malay dialogue (8s)](projects/brown-cargo-mini-skirt/PROMPT_PACK.md)
 - [Burgundy halter top + wide-leg pants set — Google Flow OOTD with Malay dialogue (8s)](projects/burgundy-halter-wide-leg-set/PROMPT_PACK.md)
+- [Lilac floral peplum kurung set — Google Flow OOTD with Malay dialogue (8s)](projects/lilac-floral-kurung-set/PROMPT_PACK.md)
