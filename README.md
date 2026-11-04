@@ -18,3 +18,4 @@ video generators.
 - [Burgundy halter set — first-person elegant speaking prompt (8s)](projects/burgundy-halter-wide-leg-set/SPEAKING_PROMPT.md)
 - [Cream vest + wide-leg set (hijab) — Google Flow speaking + sunlit walk forward (8s)](projects/cream-vest-wide-leg-set/PROMPT_PACK.md)
 - [Yellow gingham tie-front top — Google Flow OOTD mirror selfie (8s)](projects/yellow-gingham-tie-front-top/PROMPT_PACK.md)
+- [Yellow gingham top — short prompt when Flow fails](projects/yellow-gingham-tie-front-top/SHORT_PROMPT.md)
