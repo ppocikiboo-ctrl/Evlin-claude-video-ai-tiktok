@@ -14,3 +14,4 @@ video generators.
 - [Polka dot halter ruffle blouse — Google Flow OOTD + sunlit close-up (8s)](projects/polka-dot-halter-ruffle-blouse/FLOW_PROMPTS.md)
 - [Red textured bow peplum top — Google Flow front-to-back + sunlit close-up (8s)](projects/red-textured-bow-peplum-top/PROMPT_PACK.md)
 - [Red textured bow peplum top — extra prompts: talking, joget, walking, hands-only](projects/red-textured-bow-peplum-top/MORE_PROMPTS.md)
+- [Burgundy ruffle babydoll top — window sunlight close-up (8s, silent)](projects/burgundy-ruffle-bow-babydoll-top/WINDOW_CLOSEUP_PROMPT.md)
