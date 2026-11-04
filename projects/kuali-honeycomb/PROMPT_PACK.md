@@ -188,3 +188,84 @@ ni memang tahan lama."
 Realistic, natural colors, sharp focus, smooth handheld movement. No
 subtitles, no on-screen text, no music, no watermark.
 ```
+
+---
+
+## 7. Konsep 4 — Kuali Lama vs Kuali Honeycomb (8s, tangan sahaja)
+
+```
+Vertical 9:16 ultra-realistic TikTok comparison video, 8 seconds, filmed on a
+smartphone. ONLY HANDS visible, a Malaysian woman's hands, no face or body
+ever in frame. Home kitchen with white tiled wall and a black glass gas stove.
+
+Shot 1 (0–3s): close-up of an old, scratched, worn grey frying pan. The hand
+tries to flip fried fish with a spatula but the fish skin sticks, tears and
+burns onto the pan. Frustrated small hand gesture.
+Shot 2 (3–8s): quick cut to the product: a deep round black wok with a silver
+honeycomb hexagon pattern inside, a silver flame/leaf pattern band around the
+upper inner rim and two gold loop handles with silver rivets (exactly like
+the reference image). The hand flips a golden crispy fried fish easily; the
+skin stays whole and lifts off cleanly with no sticking. Slow push-in on the
+crispy fish and the honeycomb surface.
+
+Audio: sizzling oil ASMR, plus a warm, expressive female voiceover in
+Malaysian Malay accent, off-screen, starting at 0.5 seconds, lively pace:
+"Dulu goreng ikan mesti melekat... Sekarang guna kuali honeycomb, ikan
+cantik, tak melekat langsung!"
+
+Realistic, natural colors, sharp focus, handheld movement. No subtitles, no
+on-screen text, no music, no watermark.
+```
+
+## 8. Konsep 5 — Unboxing & Kesan Pertama (8s, tangan sahaja)
+
+```
+Vertical 9:16 ultra-realistic TikTok unboxing video, 8 seconds, filmed on a
+smartphone from a top-down angle. ONLY HANDS visible, a Malaysian woman's
+hands, no face or body ever in frame. Light wooden table near a window,
+soft daylight.
+
+Shot 1 (0–2.5s): the hands open a brown shipping box and pull out a wok
+wrapped in protective foam.
+Shot 2 (2.5–5.5s): the hands remove the wrapping and reveal the product: a
+deep round black wok with a silver honeycomb hexagon pattern inside, a silver
+flame/leaf pattern band around the upper inner rim and two gold loop handles
+with silver rivets (exactly like the reference image). One finger runs slowly
+across the honeycomb texture.
+Shot 3 (5.5–8s): the hands lift the wok by both gold handles toward the
+camera and tilt it so the honeycomb pattern shimmers in the light.
+
+Audio: box and wrapping rustling ASMR, plus a happy, surprised female
+voiceover in Malaysian Malay accent, off-screen, starting at 0.5 seconds:
+"Kuali honeycomb dah sampai! Cantiknya, pemegang emas, tebal dan kukuh.
+Memang rasa premium!"
+
+Realistic, natural colors, sharp focus, smooth handheld movement. No
+subtitles, no on-screen text, no music, no watermark.
+```
+
+## 9. Konsep 6 — Iklan Sinematik Slow-Motion (8s, tangan sahaja)
+
+```
+Vertical 9:16 cinematic product commercial, 8 seconds, ultra-realistic,
+shallow depth of field, moody warm lighting in a dark modern kitchen. ONLY
+HANDS visible, no face or body ever in frame.
+
+The product: a deep round black wok with a silver honeycomb hexagon pattern
+inside, a silver flame/leaf pattern band around the upper inner rim and two
+gold loop handles with silver rivets (exactly like the reference image).
+
+Shot 1 (0–2.5s): extreme macro slow-motion sweep across the honeycomb
+surface, a blue gas flame glowing underneath, the gold handle gleaming.
+Shot 2 (2.5–5.5s): slow motion, the hands toss prawns, kailan, garlic and red
+chili high into the air from the wok, sauce droplets and steam lit by
+warm backlight.
+Shot 3 (5.5–8s): the food lands back in the wok; the camera pulls back to a
+hero shot of the wok on the stove with steam rising.
+
+Audio: deep cinematic whoosh and sizzle sound design, plus a confident, warm
+female voiceover in Malaysian Malay accent, off-screen, slow and clear:
+"Kuali honeycomb. Haba sekata, tak melekat, kurang minyak."
+
+No subtitles, no on-screen text, no music, no watermark.
+```
