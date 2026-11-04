@@ -13,3 +13,4 @@ video generators.
 - [Burgundy ruffle babydoll top with back bow — Google Flow joget front-to-back (8s, silent)](projects/burgundy-ruffle-bow-babydoll-top/PROMPT_PACK.md)
 - [Polka dot halter ruffle blouse — Google Flow OOTD + sunlit close-up (8s)](projects/polka-dot-halter-ruffle-blouse/FLOW_PROMPTS.md)
 - [Red textured bow peplum top — Google Flow front-to-back + sunlit close-up (8s)](projects/red-textured-bow-peplum-top/PROMPT_PACK.md)
+- [Red textured bow peplum top — extra prompts: talking, joget, walking, hands-only](projects/red-textured-bow-peplum-top/MORE_PROMPTS.md)
