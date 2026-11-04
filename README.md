@@ -16,3 +16,4 @@ video generators.
 - [Red textured bow peplum top — extra prompts: talking, joget, walking, hands-only](projects/red-textured-bow-peplum-top/MORE_PROMPTS.md)
 - [Burgundy ruffle babydoll top — window sunlight close-up (8s, silent)](projects/burgundy-ruffle-bow-babydoll-top/WINDOW_CLOSEUP_PROMPT.md)
 - [Burgundy halter set — first-person elegant speaking prompt (8s)](projects/burgundy-halter-wide-leg-set/SPEAKING_PROMPT.md)
+- [Cream vest + wide-leg set (hijab) — Google Flow speaking + sunlit walk forward (8s)](projects/cream-vest-wide-leg-set/PROMPT_PACK.md)
