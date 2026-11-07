@@ -118,18 +118,20 @@ def pill(text, sub=None, bg=PINK, fg=WHITE, size=54):
 def hook_card():
     img = Image.new("RGBA", (W, 700), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
     # question bubble
-    q = "Ramai tanya: kenapa kena jaga Sample Score?"
+    q = "Ramai tanya: kenapa sample asyik kena reject?"
     fq = font(FONT_BOLD, 40); qw = d.textlength(q, font=fq)
     bx0 = (W - qw) / 2 - 36; bx1 = (W + qw) / 2 + 36
     d.rounded_rectangle((bx0, 20, bx1, 110), radius=26, fill=(255, 255, 255, 245))
     d.polygon([(bx0 + 60, 108), (bx0 + 100, 108), (bx0 + 62, 140)], fill=(255, 255, 255, 245))
     d.text((W / 2, 65), q, font=fq, fill=DARK, anchor="mm")
-    f1 = font(FONT_BLACK, 96); f2 = font(FONT_BLACK, 106)
-    for txt, y, f, col in [("CARA TENGOK", 230, f1, WHITE), ("SAMPLE SCORE", 360, f2, YEL)]:
+    def fit(txt, size):
+        while d.textlength(txt, font=font(FONT_BLACK, size)) > W - 120: size -= 2
+        return font(FONT_BLACK, size)
+    for txt, y, f, col in [("KENAPA SAMPLE", 230, fit("KENAPA SAMPLE", 100), WHITE), ("SUSAH APPROVE?", 360, fit("SUSAH APPROVE?", 110), YEL)]:
         d.text((W / 2 + 6, y + 8), txt, font=f, fill=PINK, anchor="mm", stroke_width=10, stroke_fill=PINK)
         d.text((W / 2 - 4, y - 4), txt, font=f, fill=CYAN, anchor="mm", stroke_width=10, stroke_fill=CYAN)
         d.text((W / 2, y), txt, font=f, fill=col, anchor="mm", stroke_width=10, stroke_fill=(0, 0, 0))
-    sub = pill("Seller laju approve sample!", bg=PINK, size=50)
+    sub = pill("Jawapannya: Sample Score kamu!", bg=PINK, size=50)
     img.alpha_composite(sub, ((W - sub.width) // 2, 470))
     return img
 

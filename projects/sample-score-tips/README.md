@@ -7,7 +7,7 @@ Final: `sample-score-tips-edited.mp4` (1080x1920, 30 fps, ~65 s)
   compressed, loudness-normalised to -14 LUFS (TikTok level).
 - **Pacing:** dead air cut (~6 s removed) at 0–0.85 s, 21.6–23.15 s, 25.0–27.45 s, 31.15–31.95 s.
 - **Colour:** highlights tamed on the over-bright tablet screen, more contrast/saturation, sharpened.
-- **Visuals:** hook title (0–3.4 s), STEP 1–4 labels, 1/4–4/4 metric callouts with punch-in zoom,
+- **Visuals:** hook "Kenapa sample susah approve?" (0–3.4 s), STEP 1–4 labels, 1/4–4/4 metric callouts with punch-in zoom,
   animated word captions with keyword highlight, end card with follow CTA.
 
 ## Scripts
