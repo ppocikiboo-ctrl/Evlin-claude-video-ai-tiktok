@@ -38,27 +38,28 @@ GREEN = (24, 92, 62)
 CREAM = (255, 248, 230)
 
 # (name, src_in, src_out, speed, audio_gain)
-SEGMENTS = [
-    ("hook", 102.6, 105.7, 1.0, 0.0),
-    ("intro", 0.00, 5.40, SP, 1.0),
-    ("items", 5.40, 8.00, SP, 1.0),
-    ("soak", 14.70, 29.12, SP, 1.0),
-    ("dry", 29.10, 36.40, SP, 1.0),
-    ("water", 36.40, 40.30, SP, 1.0),
-    ("dates", 41.80, 45.70, SP, 1.0),
-    ("gum", 53.30, 56.55, SP, 1.0),
-    ("lotus", 60.22, 63.10, SP, 1.0),
-    ("boil", 70.40, 74.45, SP, 1.0),
-    ("sugar", 81.75, 88.50, SP, 1.0),
-    ("nest", 88.90, 92.40, SP, 1.0),
-    ("stir", 95.50, 99.05, SP, 1.0),
-    ("lid", 108.10, 110.45, SP, 1.0),
-    ("cta", 99.30, 103.80, 1.0, 0.0),
+SEGMENTS = [  # timings for the full-quality source (5 parts joined in order)
+    ("hook", 103.0, 106.1, 1.0, 0.0),
+    ("intro", 0.00, 5.46, SP, 1.0),
+    ("items", 5.46, 8.05, SP, 1.0),
+    ("soak", 14.40, 29.18, SP, 1.0),
+    ("dry", 29.16, 36.40, SP, 1.0),
+    ("water", 36.45, 40.35, SP, 1.0),
+    ("dates", 41.85, 45.75, SP, 1.0),
+    ("gum", 53.85, 56.80, SP, 1.0),
+    ("lotus", 60.40, 64.05, SP, 1.0),
+    ("boil", 71.75, 75.45, SP, 1.0),
+    ("sugar", 82.70, 88.55, SP, 1.0),
+    ("nest", 89.30, 92.70, SP, 1.0),
+    ("stir", 96.05, 99.35, SP, 1.0),
+    ("lid", 108.60, 110.90, SP, 1.0),
+    ("cta", 99.60, 104.10, 1.0, 0.0),
 ]
 
 # Spelling fixes for the auto-transcript.
 FIX = {"telongan": "longan", "telongan.": "longan.", "melakak": "Melaka",
-       "melakak.": "Melaka.", "1500": "1500ML", "ml": None, "just": "just"}
+       "melakak.": "Melaka.", "melaka": "Melaka", "melaka.": "Melaka.", "geta": "getah",
+       "juci": "cuci", "akhir,": "akhir,", "1500": "1500ML", "ml": None, "just": "just"}
 
 
 # ---------------------------------------------------------------- timeline
@@ -345,21 +346,21 @@ def section_start(name):
 def callouts():
     """(text, emoji, src_time, bg) ingredient pills triggered by narration."""
     return [
-        ("Sarang Burung Salji", "🤍", 15.14, GREEN),
-        ("Biji Teratai Salji", "🌸", 17.58, GREEN),
-        ("Getah Peach", "🍑", 20.26, GREEN),
-        ("Kurma Merah", "❤️", 29.68, GREEN),
-        ("Longan Kering", "🟤", 30.84, GREEN),
-        ("Gula Melaka", "🍯", 32.06, GREEN),
+        ("Sarang Burung Salji", "🤍", 15.20, GREEN),
+        ("Biji Teratai Salji", "🌸", 17.64, GREEN),
+        ("Getah Peach", "🍑", 19.90, GREEN),
+        ("Kurma Merah", "❤️", 29.74, GREEN),
+        ("Longan Kering", "🟤", 30.88, GREEN),
+        ("Gula Melaka", "🍯", 32.10, GREEN),
     ]
 
 
 CALL = [(pill(t, 50, bg, emo=e), src2out(ts), ts) for t, e, ts, bg in callouts()]
 
 BIG_NUMS = [  # (text, sub, out_time, duration, color)
-    ("24 JAM", "rendam dalam peti sejuk", src2out(25.96), 2.2, YELLOW),
-    ("1.5 LITER", "air (1500ml)", src2out(38.34), 1.9, YELLOW),
-    ("45 MINIT", "masa rebus", src2out(72.80), 1.8, YELLOW),
+    ("24 JAM", "rendam dalam peti sejuk", src2out(26.02), 2.2, YELLOW),
+    ("1.5 LITER", "air (1500ml)", src2out(38.38), 1.9, YELLOW),
+    ("45 MINIT", "masa rebus", src2out(73.54), 1.8, YELLOW),
 ]
 BIG_IMGS = [(text_img(a, 150, c, 12), text_img(s, 54, (255, 255, 255), 7, path=FONT_BOLD), t, d)
             for a, s, t, d, c in BIG_NUMS]
@@ -517,7 +518,7 @@ def main(src, dst):
                           stdout=subprocess.PIPE)
     wr = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
                            "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", tmp,
-                           "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", "20",
+                           "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", "17",
                            "-preset", "medium", "-pix_fmt", "yuv420p", "-profile:v", "high",
                            "-c:a", "aac", "-b:a", "160k", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
                            "-movflags", "+faststart", "-shortest", dst], stdin=subprocess.PIPE)

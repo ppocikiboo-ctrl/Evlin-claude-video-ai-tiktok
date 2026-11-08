@@ -1,7 +1,7 @@
 # Red Sea Herbs Collagen Soup — TikTok Shop video edit
 
-Output: [`collagen_soup_tiktok.mp4`](collagen_soup_tiktok.mp4). It is 63 s long, 1080x1920, 30 fps, with the audio normalised to -14 LUFS.
-To render it again, run `python3 edit.py SOURCE.mp4 OUT.mp4`. The script needs ffmpeg, Pillow and numpy.
+Output: [`collagen_soup_tiktok.mp4`](collagen_soup_tiktok.mp4). It is 62 s long, 1080x1920, 30 fps, about 9.5 Mbps, with the audio normalised to -14 LUFS.
+The source is the full-quality recording, uploaded in 5 parts and joined in this order: `144538` → `144924` → `144944` → `144807` → `145453`. The timings in `SEGMENTS` match that joined file. To render it again, run `python3 edit.py SOURCE.mp4 OUT.mp4`. The script needs ffmpeg, Pillow and numpy.
 
 ## Structure
 
