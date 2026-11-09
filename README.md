@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [Durimex Coffee — kopi durian belanda + kunyit hitam (edit video)](projects/durimex-coffee/README.md)
