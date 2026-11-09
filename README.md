@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [SCC White Kidney Bean candy — edited TikTok video](projects/scc-white-kidney-bean-candy/README.md)
