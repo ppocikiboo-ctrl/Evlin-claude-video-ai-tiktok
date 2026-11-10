@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [Breast boost patch — sarikata video review](projects/breast-boost-patch-sarikata/README.md)

@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Black,74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,4,2,110,110,560,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.38,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}Nanti {\c&HFFFFFF&}satu {\c&HFFFFFF&}saja {\c&HFFFFFF&}pula {\c&HFFFFFF&}yang {\c&HB469FF&}besar!
+Dialogue: 0,0:00:00.38,0:00:00.52,Cap,,0,0,0,,{\c&HFFFFFF&}Nanti {\c&H00E1FF&}satu {\c&HFFFFFF&}saja {\c&HFFFFFF&}pula {\c&HFFFFFF&}yang {\c&HB469FF&}besar!
+Dialogue: 0,0:00:00.52,0:00:00.80,Cap,,0,0,0,,{\c&HFFFFFF&}Nanti {\c&HFFFFFF&}satu {\c&H00E1FF&}saja {\c&HFFFFFF&}pula {\c&HFFFFFF&}yang {\c&HB469FF&}besar!
+Dialogue: 0,0:00:00.80,0:00:01.02,Cap,,0,0,0,,{\c&HFFFFFF&}Nanti {\c&HFFFFFF&}satu {\c&HFFFFFF&}saja {\c&H00E1FF&}pula {\c&HFFFFFF&}yang {\c&HB469FF&}besar!
+Dialogue: 0,0:00:01.02,0:00:01.12,Cap,,0,0,0,,{\c&HFFFFFF&}Nanti {\c&HFFFFFF&}satu {\c&HFFFFFF&}saja {\c&HFFFFFF&}pula {\c&H00E1FF&}yang {\c&HB469FF&}besar!
+Dialogue: 0,0:00:01.12,0:00:01.40,Cap,,0,0,0,,{\c&HFFFFFF&}Nanti {\c&HFFFFFF&}satu {\c&HFFFFFF&}saja {\c&HFFFFFF&}pula {\c&HFFFFFF&}yang {\c&H00E1FF&}besar!
+Dialogue: 0,0:00:01.48,0:00:01.74,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}Mesti {\c&HB469FF&}dua-dua {\c&HFFFFFF&}kamu {\c&HFFFFFF&}pergi {\c&HB469FF&}tampal.
+Dialogue: 0,0:00:01.74,0:00:02.12,Cap,,0,0,0,,{\c&HFFFFFF&}Mesti {\c&H00E1FF&}dua-dua {\c&HFFFFFF&}kamu {\c&HFFFFFF&}pergi {\c&HB469FF&}tampal.
+Dialogue: 0,0:00:02.12,0:00:02.22,Cap,,0,0,0,,{\c&HFFFFFF&}Mesti {\c&HB469FF&}dua-dua {\c&H00E1FF&}kamu {\c&HFFFFFF&}pergi {\c&HB469FF&}tampal.
+Dialogue: 0,0:00:02.22,0:00:02.42,Cap,,0,0,0,,{\c&HFFFFFF&}Mesti {\c&HB469FF&}dua-dua {\c&HFFFFFF&}kamu {\c&H00E1FF&}pergi {\c&HB469FF&}tampal.
+Dialogue: 0,0:00:02.42,0:00:03.10,Cap,,0,0,0,,{\c&HFFFFFF&}Mesti {\c&HB469FF&}dua-dua {\c&HFFFFFF&}kamu {\c&HFFFFFF&}pergi {\c&H00E1FF&}tampal.
+Dialogue: 0,0:00:03.16,0:00:03.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}Kalau {\c&HFFFFFF&}kamu {\c&HFFFFFF&}tidak {\c&HB469FF&}percaya,
+Dialogue: 0,0:00:03.26,0:00:03.44,Cap,,0,0,0,,{\c&HFFFFFF&}Kalau {\c&H00E1FF&}kamu {\c&HFFFFFF&}tidak {\c&HB469FF&}percaya,
+Dialogue: 0,0:00:03.44,0:00:03.64,Cap,,0,0,0,,{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}kamu {\c&H00E1FF&}tidak {\c&HB469FF&}percaya,
+Dialogue: 0,0:00:03.64,0:00:04.05,Cap,,0,0,0,,{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}kamu {\c&HFFFFFF&}tidak {\c&H00E1FF&}percaya,
+Dialogue: 0,0:00:04.10,0:00:04.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}kamu {\c&HB469FF&}try {\c&HFFFFFF&}lah, {\c&HFFFFFF&}okey!
+Dialogue: 0,0:00:04.24,0:00:04.54,Cap,,0,0,0,,{\c&HFFFFFF&}kamu {\c&H00E1FF&}try {\c&HFFFFFF&}lah, {\c&HFFFFFF&}okey!
+Dialogue: 0,0:00:04.54,0:00:04.84,Cap,,0,0,0,,{\c&HFFFFFF&}kamu {\c&HB469FF&}try {\c&H00E1FF&}lah, {\c&HFFFFFF&}okey!
+Dialogue: 0,0:00:04.84,0:00:05.40,Cap,,0,0,0,,{\c&HFFFFFF&}kamu {\c&HB469FF&}try {\c&HFFFFFF&}lah, {\c&H00E1FF&}okey!
+Dialogue: 0,0:00:06.28,0:00:06.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}Okey, {\c&HFFFFFF&}bagi {\c&HFFFFFF&}yang {\c&HB469FF&}tertanya-tanya
+Dialogue: 0,0:00:06.76,0:00:07.00,Cap,,0,0,0,,{\c&HFFFFFF&}Okey, {\c&H00E1FF&}bagi {\c&HFFFFFF&}yang {\c&HB469FF&}tertanya-tanya
+Dialogue: 0,0:00:07.00,0:00:07.02,Cap,,0,0,0,,{\c&HFFFFFF&}Okey, {\c&HFFFFFF&}bagi {\c&H00E1FF&}yang {\c&HB469FF&}tertanya-tanya
+Dialogue: 0,0:00:07.02,0:00:07.56,Cap,,0,0,0,,{\c&HFFFFFF&}Okey, {\c&HFFFFFF&}bagi {\c&HFFFFFF&}yang {\c&H00E1FF&}tertanya-tanya
+Dialogue: 0,0:00:07.56,0:00:07.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}apakah {\c&HB469FF&}fungsi {\c&HFFFFFF&}sticker {\c&HFFFFFF&}ni,
+Dialogue: 0,0:00:07.90,0:00:08.12,Cap,,0,0,0,,{\c&HFFFFFF&}apakah {\c&H00E1FF&}fungsi {\c&HFFFFFF&}sticker {\c&HFFFFFF&}ni,
+Dialogue: 0,0:00:08.12,0:00:08.44,Cap,,0,0,0,,{\c&HFFFFFF&}apakah {\c&HB469FF&}fungsi {\c&H00E1FF&}sticker {\c&HFFFFFF&}ni,
+Dialogue: 0,0:00:08.44,0:00:08.80,Cap,,0,0,0,,{\c&HFFFFFF&}apakah {\c&HB469FF&}fungsi {\c&HFFFFFF&}sticker {\c&H00E1FF&}ni,
+Dialogue: 0,0:00:08.86,0:00:09.38,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}fungsi {\c&HFFFFFF&}sticker {\c&HFFFFFF&}ni {\c&HFFFFFF&}dia {\c&HFFFFFF&}boleh
+Dialogue: 0,0:00:09.38,0:00:09.76,Cap,,0,0,0,,{\c&HFFFFFF&}fungsi {\c&H00E1FF&}sticker {\c&HFFFFFF&}ni {\c&HFFFFFF&}dia {\c&HFFFFFF&}boleh
+Dialogue: 0,0:00:09.76,0:00:10.10,Cap,,0,0,0,,{\c&HFFFFFF&}fungsi {\c&HFFFFFF&}sticker {\c&H00E1FF&}ni {\c&HFFFFFF&}dia {\c&HFFFFFF&}boleh
+Dialogue: 0,0:00:10.10,0:00:10.32,Cap,,0,0,0,,{\c&HFFFFFF&}fungsi {\c&HFFFFFF&}sticker {\c&HFFFFFF&}ni {\c&H00E1FF&}dia {\c&HFFFFFF&}boleh
+Dialogue: 0,0:00:10.32,0:00:10.56,Cap,,0,0,0,,{\c&HFFFFFF&}fungsi {\c&HFFFFFF&}sticker {\c&HFFFFFF&}ni {\c&HFFFFFF&}dia {\c&H00E1FF&}boleh
+Dialogue: 0,0:00:10.56,0:00:12.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,160,\fscx100\fscy100)}{\c&H00E1FF&}UP {\c&HFFFFFF&}lagi {\c&HFFFFFF&}benda {\c&HFFFFFF&}yang...
+Dialogue: 0,0:00:12.16,0:00:12.46,Cap,,0,0,0,,{\c&HB469FF&}UP {\c&H00E1FF&}lagi {\c&HFFFFFF&}benda {\c&HFFFFFF&}yang...
+Dialogue: 0,0:00:12.46,0:00:12.90,Cap,,0,0,0,,{\c&HB469FF&}UP {\c&HFFFFFF&}lagi {\c&H00E1FF&}benda {\c&HFFFFFF&}yang...
+Dialogue: 0,0:00:12.90,0:00:13.27,Cap,,0,0,0,,{\c&HB469FF&}UP {\c&HFFFFFF&}lagi {\c&HFFFFFF&}benda {\c&H00E1FF&}yang...

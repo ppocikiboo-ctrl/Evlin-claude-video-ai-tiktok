@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:01,400
+Nanti satu saja pula yang besar!
+
+2
+00:00:01,480 --> 00:00:03,100
+Mesti dua-dua kamu pergi tampal.
+
+3
+00:00:03,160 --> 00:00:04,050
+Kalau kamu tidak percaya,
+
+4
+00:00:04,100 --> 00:00:05,400
+kamu try lah, okey!
+
+5
+00:00:06,280 --> 00:00:07,560
+Okey, bagi yang tertanya-tanya
+
+6
+00:00:07,560 --> 00:00:08,800
+apakah fungsi sticker ni,
+
+7
+00:00:08,860 --> 00:00:10,560
+fungsi sticker ni dia boleh
+
+8
+00:00:10,560 --> 00:00:13,270
+UP lagi benda yang...
