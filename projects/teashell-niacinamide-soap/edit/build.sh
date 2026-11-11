@@ -48,7 +48,7 @@ cards = [
     ("c_foamfine", P2 + 6.1, P2 + 8.5),   # "busa ni / so senang kita nak apply"
     ("c_foam3s",   P2 + 11.0, P2 + 13.2), # "kalau korang nak cuba..."
 ]
-CW = 936; X = (1080 - CW) // 2; Y = 110; A = 0.22
+CW = 460; X = 16; Y = 60; A = 0.22
 inputs, chain, sfx = [], [], []
 prev = "0:v"
 for i, (c, s, e) in enumerate(cards):

@@ -13,15 +13,15 @@ def content(name):
     return Image.open(U + name).convert("RGB").crop((0, 428, 1600, 2028))
 
 
-def card(name, out, size=840, radius=40, border=8):
+def card(name, out, size=400, radius=22, border=6):
     im = content(name).resize((size, size), Image.LANCZOS)
     full = size + border * 2
-    pad = 40
+    pad = 24
     canvas = Image.new("RGBA", (full + pad * 2, full + pad * 2), (0, 0, 0, 0))
     shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     ImageDraw.Draw(shadow).rounded_rectangle(
-        (pad, pad + 14, pad + full, pad + full + 14), radius + border, fill=(0, 0, 0, 150))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(18))
+        (pad, pad + 8, pad + full, pad + full + 8), radius + border, fill=(0, 0, 0, 150))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(10))
     canvas.alpha_composite(shadow)
     frame = Image.new("RGBA", (full, full), (0, 0, 0, 0))
     ImageDraw.Draw(frame).rounded_rectangle((0, 0, full - 1, full - 1), radius + border, fill=(255, 255, 255, 255))
