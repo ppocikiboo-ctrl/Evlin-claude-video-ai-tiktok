@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Pink,Inter Black,92,&H00FFFFFF,&H00FFFFFF,&H00B469FF,&H00000000,-1,0,0,0,100,100,2,0,3,22,0,8,40,40,330,1
+Style: Yellow,Inter Black,84,&H00141414,&H00FFFFFF,&H0000D7FF,&H00000000,-1,0,0,0,100,100,1,0,3,24,0,8,40,40,330,1
+Style: Promo,Inter Black,70,&H00FFFFFF,&H00FFFFFF,&H00B469FF,&H00000000,-1,0,0,0,100,100,1,0,3,18,0,8,40,40,500,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.05,0:00:02.60,Pink,,0,0,0,,{\fscx30\fscy30\t(0,140,\fscx115\fscy115)\t(140,240,\fscx100\fscy100)\frz-4}VIRAL DI FYP!
+Dialogue: 1,0:00:25.73,0:00:26.23,Yellow,,0,0,0,,{\fscx30\fscy30\t(0,140,\fscx115\fscy115)\t(140,240,\fscx100\fscy100)}TEKAN BEG KUNING ↓
+Dialogue: 1,0:00:26.23,0:00:26.73,Yellow,,0,0,0,,{\t(0,120,\fscx108\fscy108)\t(120,300,\fscx100\fscy100)}TEKAN BEG KUNING ↓
+Dialogue: 1,0:00:26.73,0:00:27.23,Yellow,,0,0,0,,{\t(0,120,\fscx108\fscy108)\t(120,300,\fscx100\fscy100)}TEKAN BEG KUNING ↓
+Dialogue: 1,0:00:27.23,0:00:27.73,Yellow,,0,0,0,,{\t(0,120,\fscx108\fscy108)\t(120,300,\fscx100\fscy100)}TEKAN BEG KUNING ↓
+Dialogue: 1,0:00:27.73,0:00:27.95,Yellow,,0,0,0,,{\t(0,120,\fscx108\fscy108)\t(120,300,\fscx100\fscy100)}TEKAN BEG KUNING ↓
+Dialogue: 1,0:00:27.35,0:00:27.95,Promo,,0,0,0,,{\fscx30\fscy30\t(0,140,\fscx115\fscy115)\t(140,240,\fscx100\fscy100)\frz3}HARGA PROMO!
