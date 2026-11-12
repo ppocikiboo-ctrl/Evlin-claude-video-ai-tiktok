@@ -17,7 +17,10 @@ NYO.SFX_TYPES = {
   riseShimmer: 'Rising shimmer',
   chime: 'Glass chime',
   tick: 'Sparkle tick',
-  piano: 'Piano resolution'
+  piano: 'Piano resolution',
+  impact: 'Soft cinematic impact',
+  riser: 'Tension riser',
+  snap: 'Crisp snap / tick'
 };
 
 NYO.AudioEngine = (function () {
@@ -286,6 +289,66 @@ NYO.AudioEngine = (function () {
     }
   }
 
+  /* "Pulse": brighter modern pop groove for the bold FAB template.
+   * Fmaj7 – G6 – Em7 – Am7, pluck synth, warm four-on-the-floor (soft),
+   * claps, off-beat hats, rounded sub bass. Drums drop out inside
+   * project.audio.breaks so a riser can build into the CTA. */
+  const PULSE = [
+    { root: 41, voicing: [57, 60, 64, 69], arp: [69, 72, 76, 79] },
+    { root: 43, voicing: [55, 59, 62, 64], arp: [67, 71, 74, 76] },
+    { root: 40, voicing: [55, 59, 62, 64], arp: [64, 67, 71, 74] },
+    { root: 45, voicing: [55, 60, 64, 67], arp: [69, 72, 76, 79] }
+  ];
+
+  function pluck(G, out, w, midi, vel) {
+    const ctx = G.ctx, f = mtof(midi);
+    const o = ctx.createOscillator(); o.type = 'sawtooth'; o.frequency.value = f;
+    const o2 = ctx.createOscillator(); o2.type = 'square'; o2.frequency.value = f * 1.003;
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.Q.value = 3;
+    lp.frequency.setValueAtTime(Math.min(5200, f * 9), w);
+    lp.frequency.exponentialRampToValueAtTime(Math.max(300, f * 1.5), w + 0.22);
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(0.06 * vel, w + 0.004);
+    g.gain.exponentialRampToValueAtTime(0.0001, w + 0.42);
+    const g2 = ctx.createGain(); g2.gain.value = 0.4;
+    o.connect(lp); o2.connect(g2); g2.connect(lp); lp.connect(g); g.connect(out);
+    o.start(w); o2.start(w); o.stop(w + 0.5); o2.stop(w + 0.5);
+  }
+
+  function clap(G, out, w, vel) {
+    [0, 0.011, 0.022].forEach((d, i) => noiseHit(G, out, w + d, 'bandpass', 1300, 1.2, (i === 2 ? 0.14 : 0.07) * vel, i === 2 ? 0.2 : 0.03, 0.2 + i * 0.1));
+  }
+
+  function scheduleMusicPulse(G, project, from, when, dur) {
+    const bpm = Math.max(100, Math.min(128, project.audio.bpm || 118));
+    const beat = 60 / bpm, bar = beat * 4;
+    const out = G.musicIn;
+    const at = (T) => when + (T - from);
+    const breaks = project.audio.breaks || [];
+    const inBreak = (T) => breaks.some((b) => T >= b[0] && T < b[1]);
+    const nBars = Math.ceil(dur / bar) + 1;
+    const r = prng(91);
+    for (let b = 0; b < nBars; b++) {
+      const T0 = b * bar;
+      if (T0 > dur) break;
+      const ch = PULSE[b % 4];
+      if (T0 + bar + 1.4 >= from - 0.001 && T0 >= from - 0.05) pad(G, out, at(T0), ch.voicing.map((m) => m - 12), bar, 0.035);
+      for (let s = 0; s < 16; s++) {
+        const T = T0 + s * beat / 4;
+        if (T < from - 0.01 || T > dur - 0.6) continue;
+        const brk = inBreak(T);
+        // Pluck pattern (syncopated 16ths), continues through breaks.
+        if ([0, 3, 6, 8, 10, 13].indexOf(s) >= 0) pluck(G, out, at(T), ch.arp[(s + b) % 4], (s === 0 ? 1 : 0.7) * (0.85 + r() * 0.15));
+        if (brk) continue;
+        if (s % 4 === 0) kick(G, out, at(T), s === 0 ? 0.95 : 0.8);
+        if (s === 4 || s === 12) clap(G, out, at(T), 0.9);
+        if (s % 4 === 2) hat(G, out, at(T), 1.1);
+        else if (s % 2 === 1) hat(G, out, at(T), 0.35);
+        if (s === 0 || s === 6 || s === 10) bass(G, out, at(T), ch.root, beat * (s === 0 ? 1.3 : 0.7));
+      }
+    }
+  }
+
   /* ---------- sound effects ---------- */
 
   const SFX = {
@@ -331,6 +394,39 @@ NYO.AudioEngine = (function () {
     tick(G, w, gain) {
       bellTone(G, G.sfxIn, w, 96, 0.9 * gain, 0.35);
       bellTone(G, G.sfxIn, w + 0.035, 103, 0.35 * gain, 0.25);
+    },
+    impact(G, w, gain) {
+      // Rounded low "thump" + short air burst: weight without harsh bass.
+      const ctx = G.ctx;
+      const o = ctx.createOscillator(); o.type = 'sine';
+      o.frequency.setValueAtTime(140, w); o.frequency.exponentialRampToValueAtTime(42, w + 0.35);
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(0.5 * gain, w + 0.006);
+      g.gain.exponentialRampToValueAtTime(0.0001, w + 0.7);
+      const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 900;
+      o.connect(g); g.connect(lp); lp.connect(G.sfxIn); o.start(w); o.stop(w + 0.75);
+      noiseHit(G, G.sfxIn, w, 'lowpass', 2400, 0.5, 0.12 * gain, 0.35, 0.7);
+    },
+    riser(G, w, gain) {
+      // 1.2 s filtered-noise + pitch rise that resolves into the next hit.
+      swell(G, w, gain * 1.1, 1.2, 300, 6000, 'bandpass');
+      const ctx = G.ctx;
+      const o = ctx.createOscillator(); o.type = 'triangle';
+      o.frequency.setValueAtTime(220, w); o.frequency.exponentialRampToValueAtTime(880, w + 1.15);
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(0.05 * gain, w + 1.05);
+      g.gain.linearRampToValueAtTime(0.0001, w + 1.2);
+      o.connect(g); g.connect(G.sfxIn); o.start(w); o.stop(w + 1.25);
+    },
+    snap(G, w, gain) {
+      noiseHit(G, G.sfxIn, w, 'bandpass', 3200, 2.2, 0.22 * gain, 0.06, 1.1);
+      const ctx = G.ctx;
+      const o = ctx.createOscillator(); o.type = 'sine';
+      o.frequency.setValueAtTime(1900, w); o.frequency.exponentialRampToValueAtTime(1100, w + 0.04);
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(0.14 * gain, w + 0.002);
+      g.gain.exponentialRampToValueAtTime(0.0001, w + 0.08);
+      o.connect(g); g.connect(G.sfxIn); o.start(w); o.stop(w + 0.1);
     },
     piano(G, w, gain) {
       // Gentle piano resolution on F major (add9): F3 C4 A4 E5 G5 F5.
@@ -407,7 +503,8 @@ NYO.AudioEngine = (function () {
       const off = (a.musicOffset || 0) + from;
       if (off < buffers.music.duration) { s.start(when, off); s.stop(atT(dur) + 0.05); sources.push(s); }
     } else if (a.music === 'generated') {
-      scheduleMusic(G, project, from, when, dur);
+      if (a.style === 'pulse') scheduleMusicPulse(G, project, from, when, dur);
+      else scheduleMusic(G, project, from, when, dur);
     }
 
     if (a.originalVolume > 0 && buffers && buffers.original) {

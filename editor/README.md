@@ -18,7 +18,16 @@ Your edit is saved in the browser automatically. Use **Save project** / **Open p
 to keep it as a JSON file. The video file itself is never uploaded anywhere: it stays on your
 computer.
 
-## What's in the default edit
+## Templates
+
+Pick a template from the selector in the top bar. Each template keeps its own saved edit, so switching never loses work, and **Reset** restores only the current template.
+
+| Template | Look | Structure |
+|---|---|---|
+| **Luxe Ivory: My Self-Care Era** (video 1) | soft ivory & champagne, Playfair serif, frosted cards, dreamy ~100 BPM piano | mood-led story |
+| **Bold FAB + CTA: 2 biji sehari** (video 2) | ruby red, black & white editorial, bold Poppins, kinetic type, checklist cards, chapter bar, cut-zooms & flashes, ~118 BPM pop groove | Hook → Advantages → Emotion → Why → Features → Benefits → CTA |
+
+## Template 1: what's in the edit
 
 | Time | Element | Animation | Sound |
 |---|---|---|---|
@@ -61,7 +70,40 @@ and the **black column on the right**. The labels follow the real capsule colour
   is smoothed so it floats naturally with the hand. The dot sits beside the capsule (dot
   offset), never on top of it.
 
-## Colour grade: "Warm Ivory & Champagne Luxury"
+## Template 2: Bold FAB + CTA
+
+The same original footage with a different edit, built as a sales structure. Each beat sits on
+the footage that fits it.
+
+| Time | Beat | On screen | Footage |
+|---|---|---|---|
+| 0–2.75 s | **HOOK** | "2 BIJI **SEHARI.**" punch-zoom + flash; "Ini sebab saya tak pernah skip 👇" word by word | holding the box, then the blister |
+| 1.0–2.7 s | labels | **PAGI ☀️** (red card) → red softgel, **MALAM 🌙** (black card) → black softgel, tracked | blister in view |
+| 2.85–7.95 s | **ADVANTAGES** | ✓ Formula PAGI & MALAM berasingan · ✓ Hanya 2 softgel sehari · ✓ Mudah: ambil bersama makanan | taking a softgel |
+| 8.0–12.7 s | **EMOTION** | "*Bukan nak nampak muda selamanya…*" → "…cuma nak **YAKIN** tengok cermin, *tanpa filter* 🤍" | drinking water, smiling |
+| 12.7–14.1 s | **WHY** | "Skincare luar dah ada… Yang dari **DALAM?** 🤔" | smiling to camera |
+| 14.1–17.0 s | **FEATURES** | Ageless by NYO3 · Ergothioneine & PQQ Day & Night Softgels | box front |
+| 17.0–20.8 s | **FEATURES** | ☀️ red softgel: Astaxanthin 5mg · PQQ 15mg · SOD 20mg · Vitamin C 20mg | box back (MORNING table) |
+| 20.8–24.4 s | **FEATURES** | 🌙 black softgel: L-Ergothioneine 30mg · Krill Oil 50mg · Sage Extract 50mg · Zinc · B2 & B3 | box back (EVENING table) |
+| 24.4–27.0 s | **BENEFITS** | ✓ Bantu sokong kulit nampak sihat & berseri · ✓ Antioksidan bantu lindungi sel daripada tekanan oksidatif | box side |
+| 27.0–30.1 s | **CTA** (Action → Reason → Benefit) | "TEKAN BEG **KUNING** 👇" · "Mulakan rutin 30 hari anda minggu ini" · "untuk sokongan antioksidan pagi & malam ✨" | holding box & blister |
+
+- **Product facts:** every amount is copied from the printed pack. The benefit lines follow the
+  pack's own wording ("helps support", "helps shield cells from oxidative stress"). There are
+  no anti-ageing, wrinkle or medical claims, and no invented promotions. If you have a real
+  promo, add it to the CTA.
+- **Music:** "Pulse" style, original and synthesised in code: pluck synth, soft four-on-the-floor,
+  claps, off-beat hats and a rounded sub bass. The drums drop out from 25.9 s while a riser
+  builds into an impact on the CTA.
+- **Sound effects:** impact, snap ticks synced to every ✓, swooshes, sparkle, riser.
+- **Grade:** "Crisp Clean Editorial", with more contrast and clarity, still using skin and
+  product protection.
+- **New editor features:** animations *Punch zoom*, *Word-by-word pop* and *Checklist slide-in*;
+  a *Solid card* backdrop with an accent bar; line options *Section chip*, *Checkmark ✓*,
+  *Bounce* and *Solid box* highlight; *Solid colour* label cards; a project-level chapter bar,
+  cut-zooms and flashes (`fx` in the project JSON); the *Pulse* music style.
+
+## Colour grade: "Warm Ivory & Champagne Luxury" (template 1)
 
 This is real per-pixel GPU processing (a WebGL shader), not a tinted overlay. Every value
 below has its own slider.
@@ -140,5 +182,5 @@ editor/
   js/exporter.js      WebCodecs → MP4 export, real-time fallback
   js/app.js           app state, playback, panels
   vendor/mp4-muxer.js MP4 muxer (MIT)
-  fonts/              Playfair Display + Poppins woff2 (SIL OFL)
+  fonts/              Playfair Display + Poppins 300–800 woff2 (SIL OFL)
 ```

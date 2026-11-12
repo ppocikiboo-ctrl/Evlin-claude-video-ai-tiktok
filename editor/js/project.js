@@ -159,6 +159,7 @@ NYO.defaultProject = function () {
 
   return {
     version: 1,
+    template: 'luxe',
     duration: 30.1,
     layout: { fit: 'fit', background: 'blur', ivory: '#EFE6DA', zoom: 1, offsetY: 0 },
     view: { safeZones: false },
@@ -196,18 +197,214 @@ NYO.retimeProject = function (project, newDuration) {
     l.keyframes.forEach((kf) => { kf[0] = scale(kf[0]); });
   });
   project.sfx.forEach((s) => { if (!s.link) s.t = scale(s.t); });
+  if (project.fx) {
+    if (project.fx.chapters) project.fx.chapters = project.fx.chapters.map(scale);
+    (project.fx.punches || []).forEach((p) => { p.t = scale(p.t); });
+    (project.fx.flashes || []).forEach((f) => { f.t = scale(f.t); });
+  }
+  if (project.audio && project.audio.breaks) project.audio.breaks = project.audio.breaks.map((b) => b.map(scale));
   project.duration = newDuration;
 };
 
+/* Each template keeps its own saved edit, so switching never loses work. */
 NYO.saveProjectLocal = function (project) {
-  try { localStorage.setItem('nyo3-editor-project', JSON.stringify(project)); } catch (e) { /* storage unavailable */ }
+  try {
+    const tpl = project.template || 'luxe';
+    localStorage.setItem('nyo3-editor-project:' + tpl, JSON.stringify(project));
+    localStorage.setItem('nyo3-editor-template', tpl);
+  } catch (e) { /* storage unavailable */ }
 };
 
-NYO.loadProjectLocal = function () {
+NYO.loadProjectLocal = function (template) {
   try {
-    const raw = localStorage.getItem('nyo3-editor-project');
+    const tpl = template || localStorage.getItem('nyo3-editor-template') || 'luxe';
+    const raw = localStorage.getItem('nyo3-editor-project:' + tpl) || (tpl === 'luxe' ? localStorage.getItem('nyo3-editor-project') : null);
     if (!raw) return null;
     const p = JSON.parse(raw);
     return p && p.version === 1 ? p : null;
   } catch (e) { return null; }
+};
+
+/* ===================== Template 2: Bold FAB + CTA =====================
+ * Same original footage, a different edit: bold editorial look (ruby red,
+ * black, white), kinetic type, checklist cards and a clear sales structure:
+ * Hook → Advantages → Emotion → Why → Features → Benefits → CTA.
+ * Every product fact comes from the printed pack (see editor/README.md). */
+NYO.GRADE_PRESETS['crisp-editorial'] = {
+  name: 'Crisp Clean Editorial',
+  values: {
+    exposure: 0.15, brightness: 4, contrast: 14, highlights: -14, shadows: 8,
+    whites: 8, blacks: -8, saturation: 6, vibrance: 10, temperature: 3, tint: 0,
+    castCorrection: 40, skinProtect: 75, productProtect: 85, sharpen: 18,
+    denoise: 25, vignette: 8, rolloff: 35, midWarmth: 5
+  }
+};
+
+NYO.fabProject = function () {
+  const RED = '#B3122E', BLACK = '#141414', WHITE = '#FFFFFF', YELLOW = '#FFC400';
+  const L = NYO.line;
+  const bt = NYO.BUNDLED_TRACK;
+  const copyKeys = (arr) => arr.map((k) => k.slice());
+  const sans = (text, o) => L(text, Object.assign({ font: 'sans', weight: 600, color: WHITE }, o || {}));
+  const chip = (text, o) => sans(text, Object.assign({ weight: 700, size: 26, tracking: 3, chip: true, chipColor: RED, shadow: false }, o || {}));
+  const item = (text, color, o) => sans(text, Object.assign({ size: 41, color: color, check: true, checkColor: RED, shadow: false }, o || {}));
+
+  const card = (o) => Object.assign({
+    x: 0.5, y: 0.17, align: 'left', anim: 'checklist', stagger: 0.45, inDur: 0.4, outDur: 0.3,
+    backdrop: 'box', backdropColor: WHITE, backdropOpacity: 0.95, accentColor: RED, maxWidth: 0.84
+  }, o);
+
+  const captions = [
+    {
+      id: 'h1', name: 'HOOK · 2 biji sehari', start: 0.0, end: 2.75, x: 0.5, y: 0.155,
+      anim: 'punch', inDur: 0.35, outDur: 0.25, backdrop: 'scrim', backdropOpacity: 0.42, maxWidth: 0.92,
+      lines: [sans('2 BIJI SEHARI.', { weight: 800, size: 96, lineHeight: 1.15, highlight: 'SEHARI.', hlStyle: 'box', highlightColor: RED })]
+    },
+    {
+      id: 'h2', name: 'HOOK · sebab tak skip', start: 0.35, end: 2.75, x: 0.5, y: 0.228,
+      anim: 'wordPop', wordGap: 0.11, inDur: 0.3, outDur: 0.25, backdrop: 'none', maxWidth: 0.9,
+      lines: [sans('Ini sebab saya tak pernah skip 👇', { size: 46 })]
+    },
+    card({
+      id: 'adv', name: 'KELEBIHAN · 2 softgel', start: 2.85, end: 7.95, stagger: 0.55,
+      lines: [
+        chip('KELEBIHAN'),
+        item('Formula PAGI & MALAM berasingan', BLACK, { highlight: 'PAGI', hlStyle: 'box', highlightColor: RED }),
+        item('Hanya 2 softgel sehari', BLACK),
+        item('Mudah: ambil bersama makanan', BLACK)
+      ]
+    }),
+    {
+      id: 'emo1', name: 'EMOSI · bukan nak muda', start: 8.0, end: 10.6, x: 0.5, y: 0.17,
+      anim: 'wordPop', wordGap: 0.13, inDur: 0.35, outDur: 0.35, backdrop: 'scrim', backdropOpacity: 0.4, maxWidth: 0.86,
+      lines: [L('Bukan nak nampak muda selamanya…', { italic: true, weight: 500, size: 64, color: WHITE })]
+    },
+    {
+      id: 'emo2', name: 'EMOSI · yakin tanpa filter', start: 10.6, end: 12.7, x: 0.5, y: 0.17,
+      anim: 'wordPop', wordGap: 0.1, inDur: 0.3, outDur: 0.3, backdrop: 'scrim', backdropOpacity: 0.4, maxWidth: 0.9,
+      lines: [
+        sans('…cuma nak YAKIN tengok cermin', { weight: 700, size: 54, highlight: 'YAKIN', hlStyle: 'box', highlightColor: RED }),
+        L('tanpa filter 🤍', { italic: true, weight: 500, size: 62, color: WHITE })
+      ]
+    },
+    {
+      id: 'why', name: 'WHY · dari dalam?', start: 12.7, end: 14.1, x: 0.5, y: 0.17,
+      anim: 'punch', inDur: 0.3, outDur: 0.2, backdrop: 'scrim', backdropOpacity: 0.42, maxWidth: 0.9,
+      lines: [
+        sans('Skincare luar dah ada…', { size: 44 }),
+        sans('Yang dari DALAM? 🤔', { weight: 800, size: 78, lineHeight: 1.2, highlight: 'DALAM?', hlStyle: 'box', highlightColor: RED })
+      ]
+    },
+    card({
+      id: 'prod', name: 'CIRI · Ageless by NYO3', start: 14.1, end: 17.0, y: 0.14, stagger: 0.22, align: 'center',
+      backdropColor: BLACK, backdropOpacity: 0.9,
+      lines: [
+        chip('CIRI PRODUK'),
+        L('Ageless by NYO3', { weight: 600, size: 62, color: WHITE, shadow: false }),
+        sans('Ergothioneine & PQQ · Day & Night Softgels', { weight: 400, size: 26, color: '#E6E6E6', shadow: false })
+      ]
+    }),
+    card({
+      id: 'am', name: 'CIRI · softgel merah (pagi)', start: 17.0, end: 20.8, y: 0.165,
+      lines: [
+        chip('☀️ SOFTGEL MERAH · PAGI'),
+        item('Astaxanthin 5mg', BLACK),
+        item('PQQ 15mg  ·  SOD 20mg', BLACK),
+        item('Vitamin C 20mg', BLACK)
+      ]
+    }),
+    card({
+      id: 'pm', name: 'CIRI · softgel hitam (malam)', start: 20.8, end: 24.4, y: 0.165,
+      backdropColor: BLACK, backdropOpacity: 0.92, accentColor: WHITE,
+      lines: [
+        chip('🌙 SOFTGEL HITAM · MALAM', { chipColor: WHITE, color: BLACK }),
+        item('L-Ergothioneine 30mg', WHITE),
+        item('Krill Oil 50mg  ·  Sage Extract 50mg', WHITE),
+        item('Zinc  ·  Vitamin B2 & B3', WHITE)
+      ]
+    }),
+    card({
+      id: 'ben', name: 'MANFAAT', start: 24.4, end: 27.0, stagger: 0.5, maxWidth: 0.82,
+      lines: [
+        chip('MANFAAT'),
+        item('Bantu sokong kulit nampak sihat & berseri', BLACK, { size: 37 }),
+        item('Antioksidan bantu lindungi sel daripada tekanan oksidatif', BLACK, { size: 37 })
+      ]
+    }),
+    {
+      id: 'cta', name: 'CTA · beg kuning', start: 27.0, end: 30.1, x: 0.5, y: 0.175,
+      anim: 'wordPop', wordGap: 0.06, inDur: 0.28, outDur: 0.4, backdrop: 'scrim', backdropOpacity: 0.5, maxWidth: 0.92,
+      lines: [
+        sans('TEKAN BEG KUNING 👇', { weight: 800, size: 70, lineHeight: 1.25, highlight: 'KUNING', hlStyle: 'box', highlightColor: YELLOW, hlTextColor: BLACK, bounce: true }),
+        sans('Mulakan rutin 30 hari anda minggu ini', { size: 38 }),
+        sans('untuk sokongan antioksidan pagi & malam ✨', { weight: 400, size: 32 })
+      ]
+    }
+  ];
+
+  const lab = {
+    cardStyle: 'solid', titleFont: 'sans', titleWeight: 700, subWeight: 500, titleSize: 40, subSize: 23,
+    titleColor: WHITE, accent: WHITE, inDur: 0.45, outDur: 0.3, maxGap: 0.6, enabled: true, connector: 'tracked'
+  };
+  const labels = [
+    Object.assign({}, lab, {
+      id: 'f_day', name: 'PAGI → red softgel (tracked)', title: 'PAGI ☀️', subtitle: 'Softgel merah',
+      start: 1.0, end: 2.7, target: 'red', side: 'left', cardColor: RED, subColor: '#FFDCE3',
+      freeX: 0.25, freeY: 0.5, cardDx: -70, cardDy: -150, dotDx: -36, dotDy: 0, keyframes: copyKeys(bt.red)
+    }),
+    Object.assign({}, lab, {
+      id: 'f_night', name: 'MALAM → black softgel (tracked)', title: 'MALAM 🌙', subtitle: 'Softgel hitam',
+      start: 1.2, end: 2.7, target: 'black', side: 'right', cardColor: BLACK, subColor: '#D6D6D6',
+      freeX: 0.75, freeY: 0.5, cardDx: 18, cardDy: 50, dotDx: 36, dotDy: 0, keyframes: copyKeys(bt.black)
+    })
+  ];
+
+  const cue = (id, type, link, offset, gain) => ({ id, type, link, offset, t: 0, gain });
+  const sfx = [
+    cue('y1', 'impact', 'h1', 0.0, 0.7),
+    cue('y2', 'snap', 'h2', 0.0, 0.5),
+    cue('y3', 'pop', 'f_day', 0.05, 0.45),
+    cue('y4', 'snap', 'f_night', 0.05, 0.45),
+    cue('y5', 'swoosh', 'adv', 0.0, 0.55),
+    cue('y6', 'snap', 'adv', 0.55, 0.5), cue('y7', 'snap', 'adv', 1.1, 0.5), cue('y8', 'snap', 'adv', 1.65, 0.5),
+    cue('y9', 'whoosh', 'emo1', 0.0, 0.4),
+    cue('y10', 'sparkle', 'emo2', 0.35, 0.45),
+    cue('y11', 'impact', 'why', 0.0, 0.45),
+    cue('y12', 'impact', 'prod', 0.0, 0.65), cue('y13', 'shimmer', 'prod', 0.1, 0.4),
+    cue('y14', 'swoosh', 'am', 0.0, 0.5), cue('y15', 'snap', 'am', 0.45, 0.5), cue('y16', 'snap', 'am', 0.9, 0.5), cue('y17', 'snap', 'am', 1.35, 0.5),
+    cue('y18', 'swoosh', 'pm', 0.0, 0.5), cue('y19', 'snap', 'pm', 0.45, 0.5), cue('y20', 'snap', 'pm', 0.9, 0.5), cue('y21', 'snap', 'pm', 1.35, 0.5),
+    cue('y22', 'swoosh', 'ben', 0.0, 0.5), cue('y23', 'snap', 'ben', 0.5, 0.5), cue('y24', 'snap', 'ben', 1.0, 0.5),
+    { id: 'y25', type: 'riser', link: null, offset: 0, t: 25.8, gain: 0.6 },
+    cue('y26', 'impact', 'cta', 0.0, 0.75)
+  ];
+
+  return {
+    version: 1,
+    template: 'fab',
+    duration: 30.1,
+    layout: { fit: 'fit', background: 'blur', ivory: '#1B1B1B', zoom: 1, offsetY: 0 },
+    view: { safeZones: false },
+    grade: Object.assign({ enabled: true, preset: 'crisp-editorial' }, NYO.GRADE_PRESETS['crisp-editorial'].values),
+    fx: {
+      chapters: [0, 2.8, 8.0, 14.1, 24.4, 27.0],
+      chapterColor: WHITE,
+      punches: [
+        { t: 0, amount: 0.1, dur: 0.5 }, { t: 2.85, amount: 0.04 }, { t: 8.0, amount: 0.04 }, { t: 12.7, amount: 0.05 },
+        { t: 14.1, amount: 0.07 }, { t: 17.0, amount: 0.04 }, { t: 20.8, amount: 0.04 }, { t: 24.4, amount: 0.04 }, { t: 27.0, amount: 0.08 }
+      ],
+      flashes: [{ t: 0, alpha: 0.6 }, { t: 14.1, alpha: 0.45 }, { t: 27.0, alpha: 0.5 }]
+    },
+    captions: captions,
+    labels: labels,
+    sfx: sfx,
+    audio: {
+      music: 'generated', style: 'pulse', bpm: 118, musicVolume: 0.6, sfxVolume: 0.9, originalVolume: 0,
+      master: 0.9, fadeIn: 0, fadeOut: 1.2, musicOffset: 0, breaks: [[25.9, 27.0]]
+    }
+  };
+};
+
+NYO.TEMPLATES = {
+  luxe: { name: 'Luxe Ivory: My Self-Care Era (video 1)', build: NYO.defaultProject },
+  fab: { name: 'Bold FAB + CTA: 2 biji sehari (video 2)', build: NYO.fabProject }
 };

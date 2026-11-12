@@ -140,7 +140,7 @@ NYO.Timeline = class {
     bar.style.left = this.x(0) + 'px';
     bar.style.width = (p.duration * this.pps) + 'px';
     const a = p.audio;
-    bar.textContent = a.music === 'generated' ? `Original score · ${a.bpm} BPM · fade-out ${a.fadeOut}s` : a.music === 'file' ? `Music: ${app.musicName || 'uploaded track'}` : 'No music';
+    bar.textContent = a.music === 'generated' ? `Original score (${a.style === 'pulse' ? 'Pulse' : 'Luxe'}) · ${a.bpm} BPM · fade-out ${a.fadeOut}s` : a.music === 'file' ? `Music: ${app.musicName || 'uploaded track'}` : 'No music';
     const fo = Math.max(0, a.fadeOut) * this.pps;
     bar.style.maskImage = `linear-gradient(90deg, rgba(0,0,0,.35), #000 ${Math.max(1, a.fadeIn * this.pps)}px, #000 calc(100% - ${fo}px), rgba(0,0,0,.25))`;
     mt.appendChild(bar);
