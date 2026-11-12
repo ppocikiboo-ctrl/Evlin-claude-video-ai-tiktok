@@ -37,3 +37,10 @@ Voice removed; whole clip kept at 1.10x (31.9 s). Outputs:
 | 27.6–end | CTA "KLIK BEG KUNING SEKARANG" + why now + cost of waiting + disclaimer |
 
 No "craving" wording and no buyer-review text in v2 (TikTok strike risk); only layered/figurative lines.
+
+## House style for future edits (agreed with owner)
+- Remove the owner's voice; tell the story with on-screen text (silent export + optional generated beat).
+- Never say "craving", never show buyer-review text, no direct weight/diet claims or timeline promises.
+- Layered/figurative lines only (e.g. "baju impian", "baju lama 'senyum' balik").
+- Structure: hook → product → CARA MAKAN checklist → routine lines → figurative benefit → CTA (what / why now / cost of waiting) + disclaimer.
+- Captions/hashtags: no craving, kurus, turun berat, weightloss or diet words.
