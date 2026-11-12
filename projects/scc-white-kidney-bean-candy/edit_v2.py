@@ -54,11 +54,11 @@ def build_overlays(tmp):
         img.save(p)
         ov.append((p, t0, t1, (W - img.width) // 2 if x is None else x, y, anim))
 
-    # HOOK
-    add("h1", text_card(["Craving tak boleh", "tahan lagi?"], size=88, highlight="Craving"),
-        0.0, 3.3, 230, anim="pop")
-    add("h2", text_card(["Baju impian masih", "tergantung dalam almari?"], size=72, bg=DEEP,
-                        highlight="Baju impian"), 3.3, 6.4, 230, anim="pop")
+    # HOOK (layered wording, no direct diet claims)
+    add("h1", text_card(["Baju impian masih", "tergantung dalam almari?"], size=76,
+                        highlight="Baju impian"), 0.0, 3.3, 230, anim="pop")
+    add("h2", text_card(["Dah tiba masa dia", "'keluar' dari almari..."], size=76, bg=DEEP,
+                        highlight="'keluar'"), 3.3, 6.4, 230, anim="pop")
     add("h3", text_card(["Ini rahsia saya..."], size=50, bg=None), 0.4, 6.4, 1560)
     # PRODUCT
     add("prod", text_card(["SCC White Kidney Bean", "+ L-Carnitine Candy"], size=58,
@@ -70,23 +70,23 @@ def build_overlays(tmp):
              ("Makan selepas sarapan", 12.9), ("Minum air 3 liter sehari", 14.8)]
     for i, (txt, t0) in enumerate(items):
         add(f"f{i}", check_item(i + 1, txt), t0, t_end, 290 + i * 118, x=60, anim="left")
-    # REVIEWS
-    add("rev1", review_card(os.path.join(HERE, "reference/review-1.jpg"), crop_bottom=30),
-        17.8, 20.4, 170)
-    add("rev2", review_card(os.path.join(HERE, "reference/review-2.jpg"), crop_top=110,
-                            label="DAH BELI KALI KE-5"), 20.4, 22.8, 170)
-    # ADVANTAGES (soft wording)
-    add("adv1", text_card(["Badan makin ringan,", "makin 'berkeping'..."], size=72,
-                          highlight="'berkeping'..."), 22.8, 25.4, 230, anim="pop")
-    add("adv2", text_card(["Kenapa tunggu tahun depan?", "Bulan depan, cuba sarung", "baju impian tu!"],
-                          size=62, bg=DEEP, highlight="Bulan depan,"), 25.4, 27.6, 230, anim="pop")
+    # ROUTINE (replaces buyer reviews)
+    add("r1", text_card(["Rutin kecil,", "langkah besar"], size=80, highlight="langkah besar"),
+        17.8, 20.4, 230, anim="pop")
+    add("r2", text_card(["Simple, comel,", "muat dalam beg tangan"], size=70, bg=DEEP,
+                        highlight="muat"), 20.4, 22.8, 230, anim="pop")
+    # BENEFITS (figurative)
+    add("adv1", text_card(["Baju lama pun mula", "'senyum' balik..."], size=72,
+                          highlight="'senyum'"), 22.8, 25.4, 230, anim="pop")
+    add("adv2", text_card(["Tak perlu tunggu tahun depan,", "biar baju impian", "yang tunggu awak"],
+                          size=60, bg=DEEP, highlight="baju impian"), 25.4, 27.6, 230, anim="pop")
     # CTA: what / why now / cost of waiting
     add("cta", text_card(["KLIK BEG KUNING", "SEKARANG"], size=90, fg=(30, 30, 30), bg=YELLOW),
         27.6, 99, 200, anim="pop")
-    add("why", text_card(["Kenapa sekarang?", "Lagi awal mula, lagi dekat", "dengan baju impian"],
+    add("why", text_card(["Kenapa sekarang?", "Mula hari ini, esok selangkah", "lebih dekat"],
                          size=46, bg=GREEN, highlight="Kenapa sekarang?"), 28.3, 99, 1180, anim="up")
-    add("lose", text_card(["Tangguh lagi = craving menang lagi,", "baju impian terus tunggu di almari"],
-                          size=40, bg=(20, 20, 20), highlight="craving menang lagi,"),
+    add("lose", text_card(["Tangguh lagi?", "Baju impian terus berhabuk dalam almari"],
+                          size=40, bg=(20, 20, 20), highlight="Tangguh lagi?"),
         29.6, 99, 1440, anim="up")
     add("disc", text_card(["Hasil berbeza mengikut individu.",
                            "Amalkan pemakanan seimbang & minum air secukupnya."],

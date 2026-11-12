@@ -29,9 +29,11 @@ Voice removed; whole clip kept at 1.10x (31.9 s). Outputs:
 
 | Time (s) | Overlay |
 |---|---|
-| 0–6.4 | Hook: "Craving tak boleh tahan lagi?" / "Baju impian masih tergantung dalam almari?" |
+| 0–6.4 | Hook: "Baju impian masih tergantung dalam almari?" / "Dah tiba masa dia 'keluar' dari almari..." |
 | 6.4–8.8 | Product name |
 | 8.8–17.8 | CARA MAKAN checklist: 1 pack = 5 biji · Belah 2 - 1/2 biji sehari · Makan selepas sarapan · Minum air 3 liter sehari |
-| 17.8–22.8 | Two buyer reviews |
-| 22.8–27.6 | Benefits: "Badan makin ringan, makin 'berkeping'..." / "Kenapa tunggu tahun depan? Bulan depan, cuba sarung baju impian tu!" |
+| 17.8–22.8 | "Rutin kecil, langkah besar" / "Simple, comel, muat dalam beg tangan" |
+| 22.8–27.6 | "Baju lama pun mula 'senyum' balik..." / "Tak perlu tunggu tahun depan, biar baju impian yang tunggu awak" |
 | 27.6–end | CTA "KLIK BEG KUNING SEKARANG" + why now + cost of waiting + disclaimer |
+
+No "craving" wording and no buyer-review text in v2 (TikTok strike risk); only layered/figurative lines.
