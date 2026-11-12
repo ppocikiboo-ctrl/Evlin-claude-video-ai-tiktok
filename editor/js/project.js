@@ -399,7 +399,7 @@ NYO.fabProject = function () {
     sfx: sfx,
     audio: {
       music: 'generated', style: 'pulse', bpm: 118, musicVolume: 0.6, sfxVolume: 0.9, originalVolume: 0,
-      master: 0.9, fadeIn: 0, fadeOut: 1.2, musicOffset: 0, breaks: [[25.9, 27.0]]
+      master: 1.25, fadeIn: 0, fadeOut: 1.2, musicOffset: 0, breaks: [[25.9, 27.0]]
     }
   };
 };
