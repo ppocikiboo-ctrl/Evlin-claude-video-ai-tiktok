@@ -21,3 +21,17 @@ Source: talking/hand-demo clip, 35.6 s → final edit **25.4 s** (`output/scc-ti
 python3 edit.py <input.mp4> output/scc-tiktok-edit.mp4
 ```
 Edit `SEGMENTS`, `SPEED` and `build_overlays()` in `edit.py` to change cuts, speed or text.
+
+## Version 2 — no voice, text-led (`edit_v2.py`)
+Voice removed; whole clip kept at 1.10x (31.9 s). Outputs:
+- `output/scc-tiktok-v2-features.mp4` — with a soft generated background beat (royalty-free)
+- `output/scc-tiktok-v2-features-nosound.mp4` — silent, add a TikTok library sound in-app
+
+| Time (s) | Overlay |
+|---|---|
+| 0–6.4 | Hook: "Craving tak boleh tahan lagi?" / "Baju impian masih tergantung dalam almari?" |
+| 6.4–8.8 | Product name |
+| 8.8–17.8 | CARA MAKAN checklist: 1 pack = 5 biji · Belah 2 - 1/2 biji sehari · Makan selepas sarapan · Minum air 3 liter sehari |
+| 17.8–22.8 | Two buyer reviews |
+| 22.8–27.6 | Benefits: "Badan makin ringan, makin 'berkeping'..." / "Kenapa tunggu tahun depan? Bulan depan, cuba sarung baju impian tu!" |
+| 27.6–end | CTA "KLIK BEG KUNING SEKARANG" + why now + cost of waiting + disclaimer |
