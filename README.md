@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [VBGV — baju lama vs baju baru OOTD edit](projects/vbgv-ootd-baju-lama/README.md)
