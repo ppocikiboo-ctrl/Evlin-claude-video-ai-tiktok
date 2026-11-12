@@ -282,7 +282,9 @@ def vgrad(top, bottom, glow=None, glow_pos=(0.5, 0.42), glow_r=0.7):
 
 # --------------------------------------------------------------------- text
 EMOJI = {"🧡": "1f9e1", "👀": "1f440", "💧": "1f4a7", "✨": "2728", "🌸": "1f338",
-         "🧬": "1f9ec", "🛒": "1f6d2", "👋": "1f44b", "⭐": "2b50"}
+         "🧬": "1f9ec", "🛒": "1f6d2", "👋": "1f44b", "⭐": "2b50", "😳": "1f633", "✅": "2705",
+         "⏰": "23f0", "😩": "1f629", "👇": "1f447", "🔥": "1f525", "👉": "1f449", "❌": "274c",
+         "🚨": "1f6a8"}
 FONT_FILES = {"xb": "Poppins-ExtraBold.ttf", "b": "Poppins-Bold.ttf", "sb": "Poppins-SemiBold.ttf",
               "m": "Poppins-Medium.ttf", "serif": "PlayfairDisplay-Italic.ttf"}
 
