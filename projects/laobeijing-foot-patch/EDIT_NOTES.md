@@ -34,3 +34,35 @@ Captions follow your own narration. It was transcribed with Whisper and correcte
 - **Check the price.** The listing says "From RM9.99", which may be the price of the cheapest variant (reviews mention both 10 PCS and 50 PCS boxes). If RM9.99 is not the 50-piece box, change `PRICE` / `PRICE_OLD` / `DISCOUNT` at the top of `edit.py`, or change "50 KEPING" to match, and render again.
 - The last ~7 s have no sound. Add a trending sound from the TikTok **Commercial Music Library** inside the app at about 10–15% volume.
 - Link the product (yellow basket) when posting.
+
+---
+
+# Version 2 — different visual style
+
+Output: [`laobeijing_foot_patch_tiktok_v2.mp4`](laobeijing_foot_patch_tiktok_v2.mp4). It is 29.7 s long, 1080x1920, 30 fps, -14 LUFS.
+To render it again, run `python3 edit_v2.py SOURCE.mp4 OUT.mp4`. It reuses the helpers and the narration from `edit.py`.
+
+## New hook (0–1.8 s)
+
+The video opens on the **result**: both feet with the patches on, in slow motion. Your voice says "siapa-siapa yang rasa lenguh-lenguh kaki" over it. The text reads **"KAKI LENGUH? / TAMPAL NI MASA TIDUR"**, and a gold stamp **"CUMA RM0.20 SEKEPING!"** slams in with a bass hit, shake and glitch. A whip-pan then cuts into the unboxing.
+
+## What's different from v1
+
+| | v1 | v2 |
+|---|---|---|
+| Look | White and red pills | Red-gold theme like the box, warm colour grade, vignette, gold progress bar along the top |
+| Captions | Phrase karaoke | One big word at a time; key words (lenguh, 50, keping, mahal, selesa, tampal…) bigger and in gold |
+| Transitions | Punch-in zoom | Whip-pan blur, camera shake, RGB-split glitch on stamps |
+| 50 keping | Static text | Counter rolling 0 → 50 with ticks |
+| Price | Static card | Price rolling down RM36.00 → RM9.99, "-72% JIMAT HARI NI" stamp, "= RM0.20 SEKEPING" |
+| Social proof | Review card | TikTok-comment style bubble, stars filling to 4.7, sold counter rolling up to 44,300+ |
+| Steps | Pill banners | Gold-ringed numbers (01–04) spin in, with the step text sliding from the right |
+| Guide image | Pop-up card | Dropped in like a taped photo that swings |
+| Benefits | Sliding pills | A checklist that ticks itself |
+| CTA | Static | Light sweep on the product and button, confetti, price slam |
+| Sound | Voice only | Voice plus synthesised SFX: whoosh, pop, ticks, cha-ching, sparkle |
+
+## Before posting
+
+- The RM0.20 per piece is RM9.99 ÷ 50. **If RM9.99 is not the 50-piece box, change `PRICE` in `edit.py`** and render again; the per-piece price updates by itself.
+- The sound effects are generated in the script, so there are no copyright problems. Still add a trending sound from the Commercial Music Library at about 10% volume for the last ~7 s.
