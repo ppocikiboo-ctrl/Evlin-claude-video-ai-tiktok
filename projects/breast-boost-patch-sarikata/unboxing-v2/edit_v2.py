@@ -6,6 +6,9 @@
   perkataan terbaru hijau lime, kata kunci coral, atas jalur "frosted glass"
   (jalur ini juga menutup sarikata lama dari app).
 - Bunyi: impact boom, swish pendek, bubble "bloop", sparkle, riser, coin ding.
+- Hook: FLASH-FORWARD (babak "orang tak nampak" ditunjuk dulu + teks soalan cop),
+  kemudian efek pita REWIND ke awal cerita.
+- Penutup: kad CTA penuh (TEKAN BEG KUNING + anak panah ke link produk).
 Guna: python3 edit_v2.py <klip1_hook.mp4> <klip2_cta.mp4>"""
 import difflib, os, re, subprocess, sys, wave
 import numpy as np
@@ -17,7 +20,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ---------- Rancangan potongan: (input, mula, tamat, laju, zoom_mula, zoom_tamat, gaya) ----------
 SEGS = [
- (0, 0.25, 3.50, 1.0, 1.12, 1.00, "glitch"),   # HOOK
+ (1, 9.85, 11.32, 1.0, 1.12, 1.04, "teaser"),  # HOOK flash-forward: "pakai baju pun orang tak nampak"
+ (1, 7.60, 11.30, 6.0, 1.04, 1.04, "rewind"),  # pita rewind (main terbalik, laju)
+ (0, 0.25, 3.50, 1.0, 1.10, 1.00, "slide"),    # cerita bermula
  (0, 3.80, 7.25, 1.0, 1.12, 1.04, "slide"),    # patch 3 in 1
  (0, 7.25, 10.45, 2.2, 1.12, 1.06, "slide"),   # buka bungkusan (laju)
  (0, 10.45, 12.15, 1.0, 1.10, 1.04, ""),       # 7 keping
@@ -28,11 +33,14 @@ SEGS = [
  (1, 1.20, 3.75, 1.0, 1.00, 1.06, ""),         # expiry 2029
  (1, 4.75, 7.28, 1.0, 1.12, 1.03, "slide"),    # cara guna
  (1, 7.50, 11.32, 1.0, 1.00, 1.08, ""),        # tampal 4-6 jam
- (1, 12.20, 16.10, 1.0, 1.12, 1.00, "glitch"), # CTA
+ (1, 12.20, 16.00, 1.0, 1.12, 1.00, "glitch"), # CTA suara
+ (1, 15.94, 16.00, 1.0, 1.00, 1.00, "endcard"), # kad CTA penutup (frame beku)
 ]
+ENDCARD_DUR = 2.6
 
 # ---------- Sarikata ("/" = baris baru, * = kata kunci) ----------
 SCRIPT = """
+Pakai baju pun / orang *tak *nampak?! /
 Benda yang asyik lalu / dekat *FYP korang tu / dah sampai tangan saya! /
 Ni dia, patch / *3 dalam 1! /
 Satu kotak ni ada / *7 keping, / boleh guna untuk / dada dan punggung. /
@@ -109,11 +117,26 @@ def coin():
         i = int(i0 * SR); out[i:i + n] += sq[:len(out) - i]
     return st(out / np.abs(out).max())
 
-SFX = {"impact": (impact(), .55), "swish": (swish(), .40), "bloop": (bloop(), .30),
+def rewind_snd(d=0.62):
+    n = int(d * SR); t = np.arange(n) / SR
+    f = 900 + 600 * np.sin(2 * np.pi * 13 * t) + np.linspace(0, 900, n)   # pita berputar laju
+    saw = 2 * ((np.cumsum(f) / SR) % 1) - 1
+    x = onepole(saw, 3500) * 0.6 + rng.standard_normal(n) * 0.15
+    x *= np.minimum(1, t / 0.02) * np.minimum(1, (d - t) / 0.04)
+    return st(x / np.abs(x).max())
+
+def tape_stop(d=0.35):
+    n = int(d * SR); t = np.arange(n) / SR
+    f = np.geomspace(700, 40, n); saw = 2 * ((np.cumsum(f) / SR) % 1) - 1
+    x = onepole(saw, 1800) * (1 - t / d); return st(x / np.abs(x).max())
+
+SFX = {"rewind": (rewind_snd(), .30), "tapestop": (tape_stop(), .30), "impact": (impact(), .55), "swish": (swish(), .40), "bloop": (bloop(), .30),
        "sparkle": (sparkle(), .22), "tick": (woodtick(), .22), "riser": (riser(), .25), "coin": (coin(), .40)}
 
 # ---------------- Utiliti ----------------
-def seg_dur(seg): return (seg[2] - seg[1]) / (seg[3] * SPEED)
+def seg_dur(seg):
+    if seg[6] == "endcard": return ENDCARD_DUR
+    return (seg[2] - seg[1]) / (seg[3] * SPEED)
 def seg_start(k): return sum(seg_dur(s) for s in SEGS[:k])
 def total(): return seg_start(len(SEGS))
 
@@ -136,18 +159,30 @@ def run(cmd): subprocess.run(cmd, check=True)
 # ---------------- Pass 1: visual + suara ----------------
 def render_base(inputs, out):
     parts, labels = [], ""
-    for i, (inp, s, e, sp, z0, z1, style) in enumerate(SEGS):
-        sp2 = sp * SPEED; d = (e - s) / sp2
+    for i, seg in enumerate(SEGS):
+        inp, s, e, sp, z0, z1, style = seg
+        sp2 = sp * SPEED; d = seg_dur(seg)
+        silent = f"anullsrc=r=44100:cl=stereo,atrim=0:{d:.3f}[a{i}]"
+        if style == "endcard":
+            parts.append(f"[{inp}:v]trim={s}:{e},setpts=PTS-STARTPTS,fps=30,"
+                         f"tpad=stop_mode=clone:stop_duration={d + 0.2},trim=0:{d:.3f},setpts=PTS-STARTPTS,"
+                         f"gblur=sigma=16,eq=brightness=-0.22:saturation=0.8,setsar=1[v{i}]")
+            parts.append(silent); labels += f"[v{i}][a{i}]"; continue
+        if style == "rewind":
+            parts.append(f"[{inp}:v]trim={s}:{e},setpts=PTS-STARTPTS,reverse,setpts=PTS/{sp2},fps=30,"
+                         f"scale=1210:2150,crop=1080:1920:'65+40*sin(t*60)':115,hue=s=0.35,"
+                         f"rgbashift=rh=-18:bh=18,noise=alls=35:allf=t,setsar=1[v{i}]")
+            parts.append(silent); labels += f"[v{i}][a{i}]"; continue
         z = f"({z0}+({z1}-{z0})*t/{d:.3f})"
         xoff = "0"
         if style == "slide":  xoff = "70*exp(-t*16)"                       # whip masuk dari kanan
-        if style == "glitch": xoff = "-12*sin(t*90)*lt(t\\,0.35)"            # gegar
+        if style in ("glitch", "teaser"): xoff = "-12*sin(t*90)*lt(t\\,0.35)"  # gegar
         v = (f"[{inp}:v]trim={s}:{e},setpts=(PTS-STARTPTS)/{sp2},fps=30,"
              f"scale=w='trunc(1080*{z}/2)*2':h='trunc(1920*{z}/2)*2':eval=frame,"
              f"crop=1080:1920:x='max(0\\,(iw-1080)/2-({xoff}))':y='(ih-1920)/2',setsar=1")
         if style == "slide":
             v += ",gblur=sigma=30:sigmaV=0.5:enable='lt(t,0.12)'"
-        if style == "glitch":
+        if style in ("glitch", "teaser"):
             v += ",rgbashift=rh=-14:bh=14:gv=6:enable='lt(t,0.35)'"
         parts.append(v + f"[v{i}]")
         f = min(0.015, d / 4)
@@ -216,6 +251,12 @@ ScaledBorderAndShadow: yes
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,Anton,118,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1.5,0,1,3,5,5,40,40,0,1
 Style: Stk,Poppins ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00141414,&H00000000,-1,-1,0,0,100,100,1,0,3,20,0,5,40,40,0,1
+Style: Hook,Anton,104,&H00FFFFFF,&H00FFFFFF,&H00B469FF,&H00000000,0,0,0,0,100,100,1,0,3,22,0,5,40,40,0,1
+Style: Vhs,JetBrains Mono ExtraBold,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,3,0,7,0,0,0,1
+Style: End1,Poppins ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,-1,0,0,100,100,1,0,1,4,4,5,40,40,0,1
+Style: End2,Anton,132,&H00141414,&H00FFFFFF,&H0000D7FF,&H00000000,0,0,0,0,100,100,1,0,3,30,0,5,40,40,0,1
+Style: End3,Anton,70,&H00FFFFFF,&H00FFFFFF,&H00B469FF,&H00000000,0,0,0,0,100,100,1,0,3,18,0,5,40,40,0,1
+Style: Arrow,Anton,10,&H0000D7FF,&H00FFFFFF,&H00141414,&H00000000,0,0,0,0,100,100,0,0,1,6,0,7,0,0,0,1
 Style: Bar,Anton,10,&H00B469FF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
 
 [Events]
@@ -225,12 +266,25 @@ LIME, CORAL, WHITE = r"\c&H3BFFB6&", r"\c&H5B5EFF&", r"\c&HFFFFFF&"
 
 def build_ass(lines, times, path):
     ev = []
+    end0 = seg_start(len(SEGS) - 1)                    # mula kad CTA
+    teaser_end = seg_start(1); rew_end = seg_start(2)
+    # HOOK: teks soalan "cop" (masuk besar + kabur -> tepat), 2 baris
+    stamp = r"{\fscx260\fscy260\blur12\alpha&H60&\t(0,140,\fscx100\fscy100\blur0\alpha&H00&)\t(140,220,\fscx108\fscy108)\t(220,300,\fscx100\fscy100)"
+    ev.append(f"Dialogue: 5,{ass_t(0.0)},{ass_t(teaser_end)},Hook,,0,0,0,,{stamp}\\frz-3\\pos(540,430)}}TAMPAL 4-6 JAM...")
+    ev.append(f"Dialogue: 5,{ass_t(0.35)},{ass_t(teaser_end)},Hook,,0,0,0,,{stamp}\\frz2\\3c&H141414&\\pos(540,590)}}TAPI ORANG TAK NAMPAK?")
+    # REWIND: label pita berkelip
+    t = teaser_end
+    while t < rew_end:
+        ev.append(f"Dialogue: 5,{ass_t(t)},{ass_t(min(t + 0.15, rew_end))},Vhs,,0,0,0,,{{\\pos(70,170)}}<< REWIND")
+        t += 0.3
+    ev.append(f"Dialogue: 5,{ass_t(rew_end)},{ass_t(rew_end + 0.9)},Vhs,,0,0,0,,{{\\pos(70,170)\\fad(0,250)}}PLAY >  MULA DARI AWAL")
     words = [w for l in lines for w in l]
     idx = 0
     for li, line in enumerate(lines):
         first = idx; last = idx + len(line) - 1
-        line_end = times[last + 1][0] if last + 1 < len(words) else total()
+        line_end = times[last + 1][0] if last + 1 < len(words) else end0
         if last + 1 < len(words): line_end = min(line_end, times[last][1] + 0.6)
+        if times[last][0] < teaser_end: line_end = min(line_end, teaser_end)   # tiada sarikata semasa rewind
         for k in range(len(line)):
             s = times[first + k][0]
             e = times[first + k + 1][0] if k < len(line) - 1 else line_end
@@ -247,12 +301,31 @@ def build_ass(lines, times, path):
     for trig, text, bg in STICKERS:
         i = next(i for i, (w, _) in enumerate(words) if norm(w).startswith(trig))
         s = times[i][0]; e = min(s + 2.2, total())
-        if trig == "tekan": e = total()
+        if trig == "tekan": e = end0
         col = r"\c&H141414&" if bg == "&H0000D7FF" else ""
         ev.append(f"Dialogue: 3,{ass_t(s)},{ass_t(e)},Stk,,0,0,0,,"
                   rf"{{\3c{bg}{col}\frz6\move(1300,330,540,330,0,180)\t(0,180,\frz-3)\fad(0,150)}}{text}")
+    # KAD CTA PENUTUP
+    T = total(); fly = r"{\fad(120,0)\move(540,%d,540,%d,0,200)}"
+    ev.append(f"Dialogue: 6,{ass_t(end0)},{ass_t(T)},End1,,0,0,0,,{fly % (560, 600)}MAHU CUBA?")
+    k = 0; t = end0 + 0.15
+    while t < T:
+        e = min(t + 0.45, T)
+        a = (r"{\pos(540,790)\fscx40\fscy40\t(0,150,\fscx112\fscy112)\t(150,260,\fscx100\fscy100)}" if k == 0
+             else r"{\pos(540,790)\t(0,120,\fscx107\fscy107)\t(120,280,\fscx100\fscy100)}")
+        ev.append(f"Dialogue: 6,{ass_t(t)},{ass_t(e)},End2,,0,0,0,,{a}TEKAN BEG KUNING")
+        t = e; k += 1
+    ev.append(f"Dialogue: 6,{ass_t(end0 + 0.45)},{ass_t(T)},End3,,0,0,0,,{{\\fad(100,0)\\frz-2\\pos(540,975)}}HARGA PROMO SEKARANG!")
+    # anak panah kuning melantun ke arah link produk (kiri bawah)
+    arrow = "m -28 0 l 28 0 l 28 90 l 70 90 l 0 170 l -70 90 l -28 90"
+    t = end0 + 0.6
+    while t < T:
+        e = min(t + 0.5, T)
+        ev.append(f"Dialogue: 6,{ass_t(t)},{ass_t(e)},Arrow,,0,0,0,,"
+                  rf"{{\move(250,1080,215,1160,0,250)\frz-20\p1}}{arrow}{{\p0}}")
+        t = e
     # progress bar pink di atas
-    T = total(); ms = int(T * 1000)
+    ms = int(T * 1000)
     ev.append(f"Dialogue: 4,{ass_t(0)},{ass_t(T)},Bar,,0,0,0,,"
               rf"{{\pos(0,0)\clip(0,0,0,12)\t(0,{ms},\clip(0,0,1080,12))\p1}}m 0 0 l 1080 0 1080 12 0 12{{\p0}}")
     open(path, "w").write(HEAD + "\n".join(ev) + "\n")
@@ -265,7 +338,9 @@ def build_sfx(lines, times, path):
     put(0, "impact")
     for k, seg in enumerate(SEGS[1:], 1):
         t0 = seg_start(k)
-        if seg[6] == "slide": put(t0 - 0.08, "swish")
+        if seg[6] == "rewind": put(t0 - 0.1, "tapestop"); put(t0 + 0.05, "rewind")
+        elif seg[6] == "endcard": put(t0 - 0.08, "swish"); put(t0 + 0.12, "impact"); put(t0 + 0.6, "sparkle")
+        elif seg[6] == "slide": put(t0 - 0.08, "swish")
         elif seg[6] == "glitch": put(t0 - 0.9, "riser"); put(t0, "impact")
     idx = 0                      # 'tick' kayu lembut setiap baris sarikata baru
     for line in lines:
