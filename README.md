@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [VTLM gummy — edited TikTok video, script & effects](projects/vtlm-gummy-edit/SKRIP.md)
