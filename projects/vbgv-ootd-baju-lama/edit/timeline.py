@@ -70,8 +70,8 @@ OVERLAYS = [
                 ("untuk OOTD idaman? 🛍️", "big")]),
     # --- Ayat berlapis while explaining ---
     dict(t0=6.05, t1=9.9, y=400, anim="pop",
-         lines=[("Bukan baju yang mengecil… 😏", "mid"),
-                ("cuma kita yang perlukan 'kawan' baru", "hl")]),
+         lines=[("Almari penuh, tapi 'tiada baju'? 😏", "mid"),
+                ("jom bagi baju lama peluang kedua", "hl")]),
     dict(t0=11.0, t1=14.6, y=400, anim="pop",
          lines=[("Zip naik tanpa tahan nafas 🤭", "mid"),
                 ("butang pun tak 'menjerit' lagi", "hl")]),
