@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [Loan scam — video tugasan MPU 3182 (HyperFrames)](projects/loan-scam-mpu3182/NOTES.md)

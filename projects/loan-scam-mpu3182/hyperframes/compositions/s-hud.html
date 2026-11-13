@@ -1,0 +1,22 @@
+<template>
+<style>
+#s-hud { position:absolute; inset:0; pointer-events:none; }
+#s-hud .hud-bar { position:absolute; left:0; top:0; height:8px; width:1080px; background:#E5383B; transform-origin:0 50%; }
+#s-hud .hud-tag { position:absolute; right:40px; top:48px; font:600 26px/1 'IBM Plex Mono', monospace; letter-spacing:.12em; color:#EFE8DA;
+  background:rgba(13,23,38,.72); padding:10px 14px; border:1px solid rgba(239,232,218,.35); }
+#s-hud .hud-tag b { color:#E5383B; }
+</style>
+<div id="s-hud" data-composition-id="s-hud" data-width="1080" data-height="1920" data-duration="553.15">
+  <div id="hud-bar" class="clip hud-bar" data-start="0" data-duration="553.15"></div>
+  <div id="hud-tag" class="clip hud-tag" data-start="11.2" data-duration="541.95"><b>●</b> FAIL KES · LOAN SCAM</div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#hud-bar", { scaleX: 0 }, { scaleX: 1, duration: 553.15, ease: "none" }, 0);
+tl.fromTo("#hud-tag", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 11.2);
+window.__timelines = window.__timelines || {};
+window.__timelines["s-hud"] = tl;
+})();
+</script>
+</template>

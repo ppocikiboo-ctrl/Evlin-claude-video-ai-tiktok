@@ -1,0 +1,211 @@
+#ROOT { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
+  font-family:'Inter', sans-serif; color:var(--ink); }
+#ROOT .card { position:absolute; }
+#ROOT .zone-top { left:54px; top:150px; width:972px; }
+#ROOT .zone-dock { left:40px; top:44px; }
+#ROOT .zone-bottom { left:54px; width:972px; top:1470px; }
+#ROOT .zone-full { left:0; top:0; width:1080px; height:1920px; }
+#ROOT .card-in { position:relative; }
+
+/* paper card */
+#ROOT .paper { position:relative; background:var(--paper); padding:30px 40px 34px 50px; box-shadow:0 18px 50px rgba(5,10,20,.35);
+  border-radius:4px; overflow:visible; }
+#ROOT .paper::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:var(--red); border-radius:4px 0 0 4px; }
+#ROOT .paper::after { content:""; position:absolute; inset:0; pointer-events:none; border-radius:4px;
+  background:repeating-linear-gradient(0deg, rgba(13,23,38,.035) 0 1px, transparent 1px 44px); }
+#ROOT .paper-dark { background:var(--ink); color:var(--paper); border:1px solid rgba(239,232,218,.18); }
+#ROOT .paper-dark::before { background:var(--amber); }
+#ROOT .paper-dark::after { background:repeating-linear-gradient(0deg, rgba(239,232,218,.04) 0 1px, transparent 1px 44px); }
+
+#ROOT .kicker { display:inline-flex; align-items:center; gap:12px; font:600 26px/1.15 'IBM Plex Mono', monospace; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--red); margin-bottom:14px; }
+#ROOT .kicker.k-amber { color:var(--amber); }
+#ROOT .kdot { width:14px; height:14px; background:currentColor; border-radius:50%; flex:none; }
+#ROOT .head { font-family:'Playfair Display', serif; font-weight:900; font-size:66px; line-height:1.04; letter-spacing:-.01em; }
+#ROOT .head-light { color:var(--paper); }
+#ROOT .body { font-size:34px; line-height:1.3; margin-top:12px; color:#26334a; }
+#ROOT .body-light { color:#cfd6e2; }
+#ROOT .hl { background:linear-gradient(transparent 58%, rgba(229,56,59,.32) 58%); }
+#ROOT .hl-red { color:var(--red); }
+#ROOT .hl-amber { color:var(--amber); }
+#ROOT .src { font:500 28px/1.2 'IBM Plex Mono', monospace; color:var(--slate); margin-top:14px; letter-spacing:.03em; }
+#ROOT .src-light { color:#9aa6ba; }
+
+/* stats */
+#ROOT .hk-lbl { font:600 28px/1.2 'IBM Plex Mono', monospace; letter-spacing:.06em; color:#cfd6e2; }
+#ROOT .hk-lbl.dark { color:var(--slate); }
+#ROOT .stat { display:flex; align-items:baseline; gap:10px; font-family:'Oswald', sans-serif; font-weight:700; line-height:1; margin-top:6px; }
+#ROOT .stat-pre { font-size:64px; color:var(--red); }
+#ROOT .stat-num { font-size:150px; letter-spacing:-.01em; font-variant-numeric:tabular-nums; }
+#ROOT .stat-suf { font-size:64px; color:var(--red); }
+#ROOT .stat-xl .stat-num { font-size:168px; color:var(--paper); }
+#ROOT .stat-xl .stat-pre { font-size:76px; color:var(--amber); }
+
+/* chapter slate + dock */
+#ROOT .slate { background:var(--ink); color:var(--paper); padding:30px 44px 36px; border-left:12px solid var(--red); box-shadow:0 18px 50px rgba(5,10,20,.4); }
+#ROOT .slate-num { font:600 28px/1 'IBM Plex Mono', monospace; letter-spacing:.2em; color:var(--amber); }
+#ROOT .slate-rule { height:4px; background:var(--red); margin:18px 0 16px; transform-origin:0 50%; width:240px; }
+#ROOT .slate-title { font-family:'Playfair Display', serif; font-style:italic; font-weight:900; font-size:96px; line-height:.98; }
+#ROOT .slate-sub { font:500 26px/1.2 'IBM Plex Mono', monospace; color:#9aa6ba; margin-top:16px; letter-spacing:.05em; text-transform:uppercase; }
+#ROOT .dock { display:inline-flex; align-items:center; gap:12px; background:rgba(13,23,38,.82); border:1px solid rgba(239,232,218,.3);
+  padding:9px 16px 9px 9px; font:600 28px/1 'IBM Plex Mono', monospace; color:var(--paper); letter-spacing:.06em; text-transform:uppercase; }
+#ROOT .dock-num { background:var(--red); color:#fff; padding:6px 9px; }
+
+/* title card */
+#ROOT .title-card { background:var(--ink); color:var(--paper); padding:34px 44px 40px; border-top:10px solid var(--red); box-shadow:0 18px 50px rgba(5,10,20,.45); }
+#ROOT .tc-kick { font:600 28px/1 'IBM Plex Mono', monospace; color:var(--amber); letter-spacing:.18em; }
+#ROOT .tc-main { font-family:'League Gothic', sans-serif; font-size:170px; line-height:.86; letter-spacing:.01em; margin-top:16px; color:var(--paper); }
+#ROOT .tc-rule { height:6px; width:100%; background:var(--red); margin:18px 0 16px; transform-origin:0 50%; }
+#ROOT .tc-sub { font-family:'Playfair Display', serif; font-style:italic; font-size:40px; line-height:1.15; }
+
+/* lower third */
+#ROOT .lt { position:relative; background:rgba(13,23,38,.88); color:var(--paper); padding:24px 34px 26px 40px; display:inline-block; }
+#ROOT .lt-bar { position:absolute; left:0; top:0; bottom:0; width:10px; background:var(--red); transform-origin:50% 100%; }
+#ROOT .lt-name { font-family:'Playfair Display', serif; font-weight:900; font-size:58px; line-height:1; }
+#ROOT .lt-role { font:500 26px/1.3 'IBM Plex Mono', monospace; color:#cfd6e2; margin-top:10px; letter-spacing:.02em; }
+#ROOT .btag { display:inline-block; background:rgba(13,23,38,.88); color:var(--paper); font-size:34px; line-height:1.3; padding:18px 28px; border-left:10px solid var(--red); }
+#ROOT .bt-amber { border-left-color:var(--amber); }
+
+/* steps */
+#ROOT .steps { display:flex; flex-direction:column; gap:16px; margin-top:6px; }
+#ROOT .step { display:flex; gap:22px; align-items:flex-start; }
+#ROOT .step-n { flex:none; width:64px; height:64px; background:var(--ink); color:var(--paper); font:700 34px/64px 'Oswald', sans-serif; text-align:center; }
+#ROOT .step-t { font-family:'Playfair Display', serif; font-weight:800; font-size:42px; line-height:1.08; }
+#ROOT .step-s { font-size:28px; line-height:1.25; color:#3d4a60; margin-top:4px; }
+
+/* chips */
+#ROOT .chips { display:flex; flex-wrap:wrap; gap:14px; margin-top:20px; }
+#ROOT .chip { font:600 32px/1 'Inter', sans-serif; background:var(--ink); color:var(--paper); padding:16px 22px; border-radius:40px; }
+#ROOT .chip:nth-child(2n) { background:var(--red); color:#fff; }
+#ROOT .mini-row { display:flex; gap:14px; margin-top:18px; flex-wrap:wrap; }
+#ROOT .mini { font:600 30px/1 'Inter', sans-serif; background:var(--ink); color:var(--paper); padding:14px 20px; }
+#ROOT .mini-red { background:var(--red); color:#fff; }
+
+/* versus rows */
+#ROOT .vs { display:flex; flex-direction:column; gap:12px; margin-top:20px; }
+#ROOT .vs-row { display:flex; align-items:center; gap:18px; background:var(--paper2); padding:14px 18px; }
+#ROOT .vs-k { font:700 28px/1 'IBM Plex Mono', monospace; letter-spacing:.08em; background:var(--ink); color:var(--paper); padding:10px 12px; flex:none; }
+#ROOT .vs-v { font-size:34px; line-height:1.2; font-weight:600; }
+#ROOT .vs-bad .vs-k { background:var(--red); color:#fff; }
+#ROOT .vs-good .vs-k { background:#1f7a4d; }
+
+/* stamp */
+#ROOT .stamp { position:absolute; right:30px; bottom:22px; font-family:'League Gothic', sans-serif; letter-spacing:.06em; line-height:.9;
+  padding:8px 22px 4px; border:8px solid currentColor; border-radius:8px; color:var(--red); background:rgba(239,232,218,.12); mix-blend-mode:multiply; }
+#ROOT .paper-dark .stamp, #ROOT .admock .stamp { mix-blend-mode:normal; background:rgba(13,23,38,.0); }
+#ROOT .hk-c { padding-bottom:130px; }
+#ROOT .hk-c .stamp { right:30px; bottom:22px; }
+
+/* evidence photo */
+#ROOT .photo { position:relative; background:#fbf8f1; padding:16px 16px 0; box-shadow:0 22px 60px rgba(5,10,20,.45); margin:0 auto; }
+#ROOT .tape { position:absolute; left:50%; top:-18px; width:170px; height:40px; margin-left:-85px; background:rgba(244,185,66,.78); z-index:2; }
+#ROOT .photo-win { position:relative; overflow:hidden; background:#ddd; }
+#ROOT .photo-img { position:absolute; left:0; top:0; width:100%; height:100%; display:block; }
+#ROOT .pan-img { height:auto; }
+#ROOT .photo-cap { font:500 28px/1.3 'IBM Plex Mono', monospace; color:#3d4a60; padding:14px 4px 16px; display:flex; gap:12px; align-items:flex-start; }
+#ROOT .cap-tag { background:var(--red); color:#fff; padding:3px 8px; font-weight:700; flex:none; }
+
+/* ad mock */
+#ROOT .admock { position:relative; width:820px; margin:0 auto; background:#fff; border-radius:18px; box-shadow:0 22px 60px rgba(5,10,20,.45); overflow:hidden; }
+#ROOT .ad-top { display:flex; align-items:center; gap:16px; padding:20px 24px; border-bottom:1px solid #e3e3e3; }
+#ROOT .ad-logo { width:64px; height:64px; border-radius:50%; background:#1d4ed8; color:#fff; font:800 34px/64px 'Inter'; text-align:center; }
+#ROOT .ad-name { font:700 30px/1.1 'Inter'; color:#111; }
+#ROOT .ad-spon { font:400 28px/1.2 'Inter'; color:#777; margin-top:4px; }
+#ROOT .ad-body { background:linear-gradient(135deg,#0f3d91,#1d6fd8); color:#fff; padding:26px 30px 28px; }
+#ROOT .ad-big { font:900 60px/1 'Inter'; letter-spacing:-.01em; }
+#ROOT .ad-line { font:700 38px/1.25 'Inter'; margin-top:10px; color:#ffe27a; }
+#ROOT .ad-btn { display:inline-block; margin-top:18px; background:#22c55e; color:#fff; font:800 28px/1 'Inter'; padding:16px 24px; border-radius:10px; }
+#ROOT .ad-logo-note { font:500 28px/1.2 'IBM Plex Mono', monospace; color:#555; padding:14px 24px 18px; }
+
+/* chat */
+#ROOT .chat { display:flex; flex-direction:column; gap:14px; margin-top:8px; background:#e9e2d5; padding:20px; border-radius:10px; }
+#ROOT .bub { max-width:80%; font-size:32px; line-height:1.25; padding:14px 18px; border-radius:16px; box-shadow:0 2px 0 rgba(0,0,0,.08); }
+#ROOT .bub-in { background:#fff; align-self:flex-start; border-top-left-radius:4px; }
+#ROOT .bub-out { background:#d6f5c6; align-self:flex-end; border-top-right-radius:4px; }
+
+/* range */
+#ROOT .range { display:flex; align-items:center; gap:22px; margin-top:6px; }
+#ROOT .range-a { font:700 64px/1 'Oswald'; }
+#ROOT .range-arrow { height:6px; flex:1; background:var(--red); transform-origin:0 50%; position:relative; }
+#ROOT .range-b { font:700 64px/1 'Oswald'; color:var(--red); }
+
+/* accounts grid */
+#ROOT .accts { display:grid; grid-template-columns:repeat(9, 1fr); gap:10px; margin-top:22px; }
+#ROOT .acct { background:var(--ink); color:var(--paper); text-align:center; padding:14px 0 10px; }
+#ROOT .acct-ic { width:34px; height:24px; margin:0 auto 8px; border:3px solid var(--amber); border-radius:4px; }
+#ROOT .acct-n { font:700 30px/1.1 'IBM Plex Mono', monospace; letter-spacing:.02em; }
+
+/* threat rows */
+#ROOT .threat { display:flex; flex-direction:column; gap:16px; margin-top:6px; }
+#ROOT .th-row { display:flex; gap:18px; align-items:center; font-size:38px; line-height:1.2; color:var(--paper); }
+#ROOT .th-ic { flex:none; width:56px; height:56px; border-radius:50%; background:var(--amber); color:var(--ink); font:800 38px/56px 'Inter'; text-align:center; }
+#ROOT .th-hot .th-ic { background:var(--red); color:#fff; }
+#ROOT .th-hot b { color:#ff8a8c; }
+
+/* impact rows */
+#ROOT .impact-rows { display:flex; flex-direction:column; gap:14px; }
+#ROOT .ir { display:flex; align-items:center; gap:18px; background:var(--paper2); padding:16px 18px; }
+#ROOT .ir-k { flex:none; width:250px; font:700 26px/1 'IBM Plex Mono', monospace; letter-spacing:.06em; }
+#ROOT .ir-v { font-size:34px; line-height:1.2; }
+#ROOT .ir-hot { background:var(--ink); color:var(--paper); }
+#ROOT .ir-hot .ir-k { color:var(--amber); }
+
+/* two columns */
+#ROOT .two { display:flex; gap:18px; margin-top:10px; }
+#ROOT .two-c { flex:1; background:var(--ink); color:var(--paper); padding:20px 24px 24px; }
+#ROOT .two-n { font:700 34px/1 'IBM Plex Mono', monospace; color:var(--amber); }
+#ROOT .two-t { font-family:'Playfair Display', serif; font-weight:900; font-size:52px; line-height:1.02; margin-top:10px; }
+
+/* quote */
+#ROOT .quote .q { font-family:'Playfair Display', serif; font-style:italic; font-weight:700; font-size:58px; line-height:1.12; padding-bottom:96px; }
+#ROOT .quote .q-light { color:var(--paper); padding-bottom:0; }
+#ROOT .q { font-family:'Playfair Display', serif; font-style:italic; font-weight:700; font-size:58px; line-height:1.12; }
+#ROOT .verdict { margin-top:18px; background:var(--red); color:#fff; font:800 40px/1.15 'Inter'; padding:16px 22px; display:inline-block; }
+
+/* law + ring + bars */
+#ROOT .law { font:700 104px/1 'Oswald'; margin-top:4px; }
+#ROOT .ring-row { display:flex; align-items:center; gap:34px; }
+#ROOT .ring { position:relative; width:260px; height:260px; flex:none; }
+#ROOT .ring svg { width:260px; height:260px; transform:rotate(-90deg); }
+#ROOT .ring-bg { fill:none; stroke:var(--paper2); stroke-width:14; }
+#ROOT .ring-fg { fill:none; stroke:var(--red); stroke-width:14; stroke-dasharray:314.16; stroke-dashoffset:314.16; stroke-linecap:round; }
+#ROOT .ring-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font:700 84px/1 'Oswald'; }
+#ROOT .ring-num .stat-num { font-size:96px; }
+#ROOT .ring-txt { font-size:38px; line-height:1.25; }
+#ROOT .bars { display:flex; flex-direction:column; gap:22px; margin-top:12px; }
+#ROOT .bar-row { display:flex; align-items:center; gap:18px; }
+#ROOT .bar-k { width:230px; flex:none; font:600 28px/1.1 'IBM Plex Mono', monospace; }
+#ROOT .bar-track { flex:1; height:58px; background:var(--paper2); position:relative; }
+#ROOT .bar { position:absolute; left:0; top:0; bottom:0; width:100%; transform-origin:0 50%; }
+#ROOT .bar-ink { background:var(--ink); }
+#ROOT .bar-red { background:var(--red); }
+#ROOT .bar-v { width:130px; text-align:right; font:700 64px/1 'Oswald'; }
+#ROOT .bar-v-red { color:var(--red); }
+
+/* chain */
+#ROOT .chain { position:relative; display:flex; gap:0; align-items:center; justify-content:space-between; margin:8px 0 6px; }
+#ROOT .link { font:700 30px/1 'IBM Plex Mono', monospace; letter-spacing:.04em; border:6px solid var(--ink); border-radius:46px; padding:22px 26px; background:var(--paper); position:relative; z-index:1; }
+#ROOT .link.l1 { background:var(--red); color:#fff; border-color:var(--red); }
+#ROOT .chain::before { content:""; position:absolute; left:40px; right:40px; top:50%; height:6px; background:var(--ink); margin-top:-3px; }
+#ROOT .chain-cut { position:absolute; left:50%; top:-26px; width:10px; height:140px; margin-left:-5px; background:var(--red); transform-origin:50% 50%; z-index:3; }
+
+/* plates */
+#ROOT .plates { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+#ROOT .plate { display:flex; align-items:center; gap:18px; background:var(--ink); color:var(--paper); font-family:'Playfair Display', serif; font-weight:800; font-size:44px; line-height:1.05; padding:18px 22px; }
+#ROOT .plate.p1 { margin-left:30px; } #ROOT .plate.p2 { margin-left:60px; background:var(--red); }
+#ROOT .plate-n { font:700 30px/1 'IBM Plex Mono', monospace; color:var(--amber); }
+#ROOT .plate.p2 .plate-n { color:#fff; }
+
+/* logos */
+#ROOT .logos { display:flex; gap:22px; margin-top:8px; }
+#ROOT .logo-tile { flex:1; background:#fff; padding:18px 10px 14px; text-align:center; font:600 28px/1 'Inter'; box-shadow:0 4px 0 rgba(0,0,0,.08); }
+#ROOT .logo-crop { width:150px; height:150px; margin:0 auto 12px; background-size:auto 366px; background-repeat:no-repeat; border-radius:50%; }
+
+/* end card */
+#ROOT .endcard { position:absolute; inset:0; width:1080px; height:1920px; background:var(--ink); color:var(--paper); padding:520px 80px 0; }
+#ROOT .ec-k { font:600 30px/1 'IBM Plex Mono', monospace; letter-spacing:.22em; color:var(--amber); }
+#ROOT .ec-t { font-family:'League Gothic', sans-serif; font-size:250px; line-height:.86; margin-top:24px; }
+#ROOT .ec-rule { height:8px; width:100%; background:var(--red); margin:26px 0 34px; transform-origin:0 50%; }
+#ROOT .ec-n { font-family:'Playfair Display', serif; font-weight:900; font-size:72px; }
+#ROOT .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
+#ROOT .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }

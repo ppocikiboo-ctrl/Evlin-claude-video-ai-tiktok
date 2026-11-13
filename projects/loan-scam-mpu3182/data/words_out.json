@@ -1,0 +1,8090 @@
+[
+{
+"text": "syarikat",
+"start": 2.12,
+"end": 2.64,
+"src": "v3",
+"sec": "hook1",
+"srcT": 12.62
+},
+{
+"text": "di",
+"start": 2.64,
+"end": 2.82,
+"src": "v3",
+"sec": "hook1",
+"srcT": 13.14
+},
+{
+"text": "kota",
+"start": 2.82,
+"end": 3.06,
+"src": "v3",
+"sec": "hook1",
+"srcT": 13.32
+},
+{
+"text": "tinggi",
+"start": 3.06,
+"end": 3.4,
+"src": "v3",
+"sec": "hook1",
+"srcT": 13.56
+},
+{
+"text": "kerugian",
+"start": 3.4,
+"end": 3.92,
+"src": "v3",
+"sec": "hook1",
+"srcT": 13.9
+},
+{
+"text": "sekitar",
+"start": 3.92,
+"end": 4.34,
+"src": "v3",
+"sec": "hook1",
+"srcT": 14.42
+},
+{
+"text": "Rp167",
+"start": 4.34,
+"end": 5.46,
+"src": "v3",
+"sec": "hook1",
+"srcT": 14.84
+},
+{
+"text": "ada",
+"start": 6.467,
+"end": 6.667,
+"src": "v3",
+"sec": "hook2",
+"srcT": 56.02
+},
+{
+"text": "rumah",
+"start": 6.667,
+"end": 6.907,
+"src": "v3",
+"sec": "hook2",
+"srcT": 56.3
+},
+{
+"text": "mangsa",
+"start": 6.907,
+"end": 7.287,
+"src": "v3",
+"sec": "hook2",
+"srcT": 56.54
+},
+{
+"text": "yang",
+"start": 7.287,
+"end": 7.527,
+"src": "v3",
+"sec": "hook2",
+"srcT": 56.92
+},
+{
+"text": "dibaling",
+"start": 7.527,
+"end": 7.947,
+"src": "v3",
+"sec": "hook2",
+"srcT": 57.16
+},
+{
+"text": "bom",
+"start": 7.947,
+"end": 8.187,
+"src": "v3",
+"sec": "hook2",
+"srcT": 57.58
+},
+{
+"text": "petrol.",
+"start": 8.187,
+"end": 8.607,
+"src": "v3",
+"sec": "hook2",
+"srcT": 57.82
+},
+{
+"text": "bukanlah",
+"start": 9.14,
+"end": 9.7,
+"src": "v3",
+"sec": "hook3",
+"srcT": 2.24
+},
+{
+"text": "cerita",
+"start": 9.7,
+"end": 10.1,
+"src": "v3",
+"sec": "hook3",
+"srcT": 2.8
+},
+{
+"text": "rekaan",
+"start": 10.1,
+"end": 10.8,
+"src": "v3",
+"sec": "hook3",
+"srcT": 3.2
+},
+{
+"text": "Hai",
+"start": 11.18,
+"end": 11.94,
+"src": "v1",
+"sec": "intro",
+"srcT": 0.58
+},
+{
+"text": "semua,",
+"start": 11.94,
+"end": 12.42,
+"src": "v1",
+"sec": "intro",
+"srcT": 1.34
+},
+{
+"text": "salam",
+"start": 12.78,
+"end": 13.0,
+"src": "v1",
+"sec": "intro",
+"srcT": 2.18
+},
+{
+"text": "sejahtera",
+"start": 13.0,
+"end": 13.46,
+"src": "v1",
+"sec": "intro",
+"srcT": 2.4
+},
+{
+"text": "kepada",
+"start": 13.46,
+"end": 13.8,
+"src": "v1",
+"sec": "intro",
+"srcT": 2.86
+},
+{
+"text": "Puan",
+"start": 13.8,
+"end": 14.14,
+"src": "v1",
+"sec": "intro",
+"srcT": 3.2
+},
+{
+"text": "Rusniyati",
+"start": 14.14,
+"end": 14.92,
+"src": "v1",
+"sec": "intro",
+"srcT": 3.54
+},
+{
+"text": "dan",
+"start": 14.92,
+"end": 15.42,
+"src": "v1",
+"sec": "intro",
+"srcT": 4.32
+},
+{
+"text": "semua",
+"start": 15.42,
+"end": 15.78,
+"src": "v1",
+"sec": "intro",
+"srcT": 4.82
+},
+{
+"text": "yang",
+"start": 15.78,
+"end": 15.98,
+"src": "v1",
+"sec": "intro",
+"srcT": 5.18
+},
+{
+"text": "menonton.",
+"start": 15.98,
+"end": 16.6,
+"src": "v1",
+"sec": "intro",
+"srcT": 5.38
+},
+{
+"text": "Nama",
+"start": 17.2,
+"end": 17.86,
+"src": "v1",
+"sec": "intro",
+"srcT": 6.6
+},
+{
+"text": "saya",
+"start": 17.86,
+"end": 18.22,
+"src": "v1",
+"sec": "intro",
+"srcT": 7.26
+},
+{
+"text": "Evelyn",
+"start": 18.22,
+"end": 18.68,
+"src": "v1",
+"sec": "intro",
+"srcT": 7.62
+},
+{
+"text": "Sofidu,",
+"start": 18.68,
+"end": 19.24,
+"src": "v1",
+"sec": "intro",
+"srcT": 8.08
+},
+{
+"text": "pelajar",
+"start": 19.4,
+"end": 19.86,
+"src": "v1",
+"sec": "intro",
+"srcT": 8.8
+},
+{
+"text": "MPU",
+"start": 19.86,
+"end": 20.34,
+"src": "v1",
+"sec": "intro",
+"srcT": 9.26
+},
+{
+"text": "3182,",
+"start": 20.34,
+"end": 21.6,
+"src": "v1",
+"sec": "intro",
+"srcT": 9.74
+},
+{
+"text": "Penghayatan",
+"start": 21.76,
+"end": 22.28,
+"src": "v1",
+"sec": "intro",
+"srcT": 11.16
+},
+{
+"text": "Etika",
+"start": 22.28,
+"end": 22.78,
+"src": "v1",
+"sec": "intro",
+"srcT": 11.68
+},
+{
+"text": "dan",
+"start": 22.78,
+"end": 23.02,
+"src": "v1",
+"sec": "intro",
+"srcT": 12.18
+},
+{
+"text": "Peradaban",
+"start": 23.02,
+"end": 23.58,
+"src": "v1",
+"sec": "intro",
+"srcT": 12.42
+},
+{
+"text": "2.",
+"start": 23.58,
+"end": 23.8,
+"src": "v1",
+"sec": "intro",
+"srcT": 12.98
+},
+{
+"text": "Dalam",
+"start": 24.18,
+"end": 24.86,
+"src": "v1",
+"sec": "intro",
+"srcT": 13.58
+},
+{
+"text": "video",
+"start": 24.86,
+"end": 25.12,
+"src": "v1",
+"sec": "intro",
+"srcT": 14.26
+},
+{
+"text": "ini,",
+"start": 25.12,
+"end": 25.42,
+"src": "v1",
+"sec": "intro",
+"srcT": 14.52
+},
+{
+"text": "saya",
+"start": 25.7,
+"end": 25.78,
+"src": "v1",
+"sec": "intro",
+"srcT": 15.1
+},
+{
+"text": "akan",
+"start": 25.78,
+"end": 26.02,
+"src": "v1",
+"sec": "intro",
+"srcT": 15.18
+},
+{
+"text": "mempincangkan",
+"start": 26.02,
+"end": 27.0,
+"src": "v1",
+"sec": "intro",
+"srcT": 15.42
+},
+{
+"text": "satu",
+"start": 27.0,
+"end": 27.32,
+"src": "v1",
+"sec": "intro",
+"srcT": 16.4
+},
+{
+"text": "isu",
+"start": 27.32,
+"end": 27.7,
+"src": "v1",
+"sec": "intro",
+"srcT": 16.72
+},
+{
+"text": "yang",
+"start": 27.7,
+"end": 27.88,
+"src": "v1",
+"sec": "intro",
+"srcT": 17.1
+},
+{
+"text": "dekat",
+"start": 27.88,
+"end": 28.18,
+"src": "v1",
+"sec": "intro",
+"srcT": 17.28
+},
+{
+"text": "dengan",
+"start": 28.18,
+"end": 28.38,
+"src": "v1",
+"sec": "intro",
+"srcT": 17.58
+},
+{
+"text": "kita",
+"start": 28.38,
+"end": 28.64,
+"src": "v1",
+"sec": "intro",
+"srcT": 17.78
+},
+{
+"text": "semua,",
+"start": 28.64,
+"end": 29.12,
+"src": "v1",
+"sec": "intro",
+"srcT": 18.04
+},
+{
+"text": "yaitu",
+"start": 29.42,
+"end": 30.06,
+"src": "v1",
+"sec": "intro",
+"srcT": 18.82
+},
+{
+"text": "penipuan",
+"start": 30.06,
+"end": 30.62,
+"src": "v1",
+"sec": "intro",
+"srcT": 19.46
+},
+{
+"text": "pinjaman",
+"start": 30.62,
+"end": 31.1,
+"src": "v1",
+"sec": "intro",
+"srcT": 20.02
+},
+{
+"text": "yang",
+"start": 31.1,
+"end": 31.3,
+"src": "v1",
+"sec": "intro",
+"srcT": 20.5
+},
+{
+"text": "tidak",
+"start": 31.3,
+"end": 31.54,
+"src": "v1",
+"sec": "intro",
+"srcT": 20.7
+},
+{
+"text": "wujud",
+"start": 31.54,
+"end": 31.98,
+"src": "v1",
+"sec": "intro",
+"srcT": 20.94
+},
+{
+"text": "atau",
+"start": 31.98,
+"end": 32.28,
+"src": "v1",
+"sec": "intro",
+"srcT": 21.38
+},
+{
+"text": "loan",
+"start": 32.28,
+"end": 32.56,
+"src": "v1",
+"sec": "intro",
+"srcT": 21.68
+},
+{
+"text": "scam.",
+"start": 32.56,
+"end": 32.92,
+"src": "v1",
+"sec": "intro",
+"srcT": 21.96
+},
+{
+"text": "firstly,",
+"start": 33.607,
+"end": 34.187,
+"src": "v1",
+"sec": "data",
+"srcT": 25.04
+},
+{
+"text": "mari",
+"start": 34.547,
+"end": 34.647,
+"src": "v1",
+"sec": "data",
+"srcT": 25.98
+},
+{
+"text": "kita",
+"start": 34.647,
+"end": 34.987,
+"src": "v1",
+"sec": "data",
+"srcT": 26.08
+},
+{
+"text": "mulakan",
+"start": 34.987,
+"end": 35.527,
+"src": "v1",
+"sec": "data",
+"srcT": 26.42
+},
+{
+"text": "dengan",
+"start": 35.527,
+"end": 35.807,
+"src": "v1",
+"sec": "data",
+"srcT": 26.96
+},
+{
+"text": "data",
+"start": 35.807,
+"end": 36.227,
+"src": "v1",
+"sec": "data",
+"srcT": 27.24
+},
+{
+"text": "infografik",
+"start": 36.227,
+"end": 38.367,
+"src": "v1",
+"sec": "data",
+"srcT": 27.66
+},
+{
+"text": "bernama",
+"start": 38.367,
+"end": 39.067,
+"src": "v1",
+"sec": "data",
+"srcT": 29.8
+},
+{
+"text": "yang",
+"start": 39.067,
+"end": 39.687,
+"src": "v1",
+"sec": "data",
+"srcT": 30.5
+},
+{
+"text": "diterbitkan",
+"start": 39.687,
+"end": 40.347,
+"src": "v1",
+"sec": "data",
+"srcT": 31.12
+},
+{
+"text": "pada",
+"start": 40.347,
+"end": 40.587,
+"src": "v1",
+"sec": "data",
+"srcT": 31.78
+},
+{
+"text": "4",
+"start": 40.587,
+"end": 40.907,
+"src": "v1",
+"sec": "data",
+"srcT": 32.02
+},
+{
+"text": "Ogos",
+"start": 40.907,
+"end": 41.447,
+"src": "v1",
+"sec": "data",
+"srcT": 32.34
+},
+{
+"text": "2026",
+"start": 41.447,
+"end": 42.287,
+"src": "v1",
+"sec": "data",
+"srcT": 32.88
+},
+{
+"text": "menunjukkan",
+"start": 42.287,
+"end": 42.947,
+"src": "v1",
+"sec": "data",
+"srcT": 33.72
+},
+{
+"text": "bahwa",
+"start": 42.947,
+"end": 43.387,
+"src": "v1",
+"sec": "data",
+"srcT": 34.38
+},
+{
+"text": "sejak",
+"start": 43.387,
+"end": 44.007,
+"src": "v1",
+"sec": "data",
+"srcT": 34.82
+},
+{
+"text": "tahun",
+"start": 44.007,
+"end": 44.307,
+"src": "v1",
+"sec": "data",
+"srcT": 35.44
+},
+{
+"text": "2022,",
+"start": 44.307,
+"end": 45.127,
+"src": "v1",
+"sec": "data",
+"srcT": 35.74
+},
+{
+"text": "SKMM",
+"start": 46.647,
+"end": 47.887,
+"src": "v1",
+"sec": "data",
+"srcT": 38.08
+},
+{
+"text": "telah",
+"start": 47.887,
+"end": 48.347,
+"src": "v1",
+"sec": "data",
+"srcT": 39.32
+},
+{
+"text": "menurunkan",
+"start": 48.347,
+"end": 49.047,
+"src": "v1",
+"sec": "data",
+"srcT": 39.78
+},
+{
+"text": "hampir",
+"start": 49.047,
+"end": 49.527,
+"src": "v1",
+"sec": "data",
+"srcT": 40.48
+},
+{
+"text": "280",
+"start": 49.527,
+"end": 50.367,
+"src": "v1",
+"sec": "data",
+"srcT": 40.96
+},
+{
+"text": "ribu",
+"start": 50.367,
+"end": 51.087,
+"src": "v1",
+"sec": "data",
+"srcT": 41.8
+},
+{
+"text": "kandungan",
+"start": 51.087,
+"end": 51.687,
+"src": "v1",
+"sec": "data",
+"srcT": 42.52
+},
+{
+"text": "penipuan",
+"start": 51.687,
+"end": 52.227,
+"src": "v1",
+"sec": "data",
+"srcT": 43.12
+},
+{
+"text": "dan",
+"start": 52.227,
+"end": 52.407,
+"src": "v1",
+"sec": "data",
+"srcT": 43.66
+},
+{
+"text": "ekan",
+"start": 52.407,
+"end": 52.707,
+"src": "v1",
+"sec": "data",
+"srcT": 43.84
+},
+{
+"text": "pasu.",
+"start": 52.707,
+"end": 53.247,
+"src": "v1",
+"sec": "data",
+"srcT": 44.14
+},
+{
+"text": "Pada",
+"start": 53.447,
+"end": 53.867,
+"src": "v1",
+"sec": "data",
+"srcT": 44.88
+},
+{
+"text": "tahun",
+"start": 53.867,
+"end": 54.167,
+"src": "v1",
+"sec": "data",
+"srcT": 45.3
+},
+{
+"text": "2025",
+"start": 54.167,
+"end": 54.887,
+"src": "v1",
+"sec": "data",
+"srcT": 45.6
+},
+{
+"text": "pula,",
+"start": 54.887,
+"end": 55.507,
+"src": "v1",
+"sec": "data",
+"srcT": 46.32
+},
+{
+"text": "kerugian",
+"start": 55.847,
+"end": 56.267,
+"src": "v1",
+"sec": "data",
+"srcT": 47.28
+},
+{
+"text": "akibat",
+"start": 56.267,
+"end": 56.707,
+"src": "v1",
+"sec": "data",
+"srcT": 47.7
+},
+{
+"text": "penipuan",
+"start": 56.707,
+"end": 57.227,
+"src": "v1",
+"sec": "data",
+"srcT": 48.14
+},
+{
+"text": "dalam",
+"start": 57.227,
+"end": 57.487,
+"src": "v1",
+"sec": "data",
+"srcT": 48.66
+},
+{
+"text": "talian",
+"start": 57.487,
+"end": 57.967,
+"src": "v1",
+"sec": "data",
+"srcT": 48.92
+},
+{
+"text": "melebihi",
+"start": 57.967,
+"end": 58.547,
+"src": "v1",
+"sec": "data",
+"srcT": 49.4
+},
+{
+"text": "3",
+"start": 58.547,
+"end": 58.847,
+"src": "v1",
+"sec": "data",
+"srcT": 49.98
+},
+{
+"text": "bilion.",
+"start": 58.847,
+"end": 59.267,
+"src": "v1",
+"sec": "data",
+"srcT": 50.28
+},
+{
+"text": "dan",
+"start": 59.267,
+"end": 60.487,
+"src": "v1",
+"sec": "data",
+"srcT": 50.7
+},
+{
+"text": "telah",
+"start": 60.487,
+"end": 60.847,
+"src": "v1",
+"sec": "data",
+"srcT": 51.92
+},
+{
+"text": "merugikan",
+"start": 60.847,
+"end": 61.547,
+"src": "v1",
+"sec": "data",
+"srcT": 52.28
+},
+{
+"text": "ramai",
+"start": 61.547,
+"end": 62.427,
+"src": "v1",
+"sec": "data",
+"srcT": 52.98
+},
+{
+"text": "sasaran.",
+"start": 62.427,
+"end": 63.027,
+"src": "v1",
+"sec": "data",
+"srcT": 53.86
+},
+{
+"text": "Sasarannya",
+"start": 63.467,
+"end": 64.367,
+"src": "v1",
+"sec": "data",
+"srcT": 54.9
+},
+{
+"text": "ialah",
+"start": 64.367,
+"end": 64.707,
+"src": "v1",
+"sec": "data",
+"srcT": 55.8
+},
+{
+"text": "orang",
+"start": 64.707,
+"end": 65.027,
+"src": "v1",
+"sec": "data",
+"srcT": 56.14
+},
+{
+"text": "yang",
+"start": 65.027,
+"end": 65.227,
+"src": "v1",
+"sec": "data",
+"srcT": 56.46
+},
+{
+"text": "sedang",
+"start": 65.227,
+"end": 65.547,
+"src": "v1",
+"sec": "data",
+"srcT": 56.66
+},
+{
+"text": "susah",
+"start": 65.547,
+"end": 65.987,
+"src": "v1",
+"sec": "data",
+"srcT": 56.98
+},
+{
+"text": "dan",
+"start": 65.987,
+"end": 66.227,
+"src": "v1",
+"sec": "data",
+"srcT": 57.42
+},
+{
+"text": "memerlukan",
+"start": 66.227,
+"end": 67.047,
+"src": "v1",
+"sec": "data",
+"srcT": 57.66
+},
+{
+"text": "uang.",
+"start": 67.047,
+"end": 67.407,
+"src": "v1",
+"sec": "data",
+"srcT": 58.48
+},
+{
+"text": "Mangsa",
+"start": 67.907,
+"end": 68.687,
+"src": "v1",
+"sec": "data",
+"srcT": 59.34
+},
+{
+"text": "dijanjikan",
+"start": 68.687,
+"end": 69.507,
+"src": "v1",
+"sec": "data",
+"srcT": 60.12
+},
+{
+"text": "pinjaman",
+"start": 69.507,
+"end": 69.987,
+"src": "v1",
+"sec": "data",
+"srcT": 60.94
+},
+{
+"text": "yang",
+"start": 69.987,
+"end": 70.187,
+"src": "v1",
+"sec": "data",
+"srcT": 61.42
+},
+{
+"text": "mudah",
+"start": 70.187,
+"end": 70.747,
+"src": "v1",
+"sec": "data",
+"srcT": 61.62
+},
+{
+"text": "dan",
+"start": 70.747,
+"end": 71.067,
+"src": "v1",
+"sec": "data",
+"srcT": 62.18
+},
+{
+"text": "cepat",
+"start": 71.067,
+"end": 71.447,
+"src": "v1",
+"sec": "data",
+"srcT": 62.5
+},
+{
+"text": "lulus,",
+"start": 71.447,
+"end": 71.907,
+"src": "v1",
+"sec": "data",
+"srcT": 62.88
+},
+{
+"text": "tetapi",
+"start": 72.0,
+"end": 72.46,
+"src": "v1",
+"sec": "data",
+"srcT": 63.6
+},
+{
+"text": "akhirnya",
+"start": 72.46,
+"end": 73.06,
+"src": "v1",
+"sec": "data",
+"srcT": 64.26
+},
+{
+"text": "dia",
+"start": 73.06,
+"end": 73.32,
+"src": "v1",
+"sec": "data",
+"srcT": 64.86
+},
+{
+"text": "sendiri",
+"start": 73.32,
+"end": 73.78,
+"src": "v1",
+"sec": "data",
+"srcT": 65.12
+},
+{
+"text": "yang",
+"start": 73.78,
+"end": 74.04,
+"src": "v1",
+"sec": "data",
+"srcT": 65.58
+},
+{
+"text": "kehilangan",
+"start": 74.04,
+"end": 74.54,
+"src": "v1",
+"sec": "data",
+"srcT": 65.84
+},
+{
+"text": "uang.",
+"start": 74.54,
+"end": 74.9,
+"src": "v1",
+"sec": "data",
+"srcT": 66.34
+},
+{
+"text": "Por",
+"start": 76.08,
+"end": 76.5,
+"src": "v1",
+"sec": "jerat",
+"srcT": 68.08
+},
+{
+"text": "soalannya,",
+"start": 76.5,
+"end": 77.3,
+"src": "v1",
+"sec": "jerat",
+"srcT": 68.5
+},
+{
+"text": "di",
+"start": 77.54,
+"end": 77.74,
+"src": "v1",
+"sec": "jerat",
+"srcT": 69.54
+},
+{
+"text": "mana",
+"start": 77.74,
+"end": 77.94,
+"src": "v1",
+"sec": "jerat",
+"srcT": 69.74
+},
+{
+"text": "sindiket",
+"start": 77.94,
+"end": 78.46,
+"src": "v1",
+"sec": "jerat",
+"srcT": 69.94
+},
+{
+"text": "ini",
+"start": 78.46,
+"end": 78.7,
+"src": "v1",
+"sec": "jerat",
+"srcT": 70.46
+},
+{
+"text": "memasang",
+"start": 78.7,
+"end": 79.2,
+"src": "v1",
+"sec": "jerat",
+"srcT": 70.7
+},
+{
+"text": "jerat?",
+"start": 79.2,
+"end": 79.58,
+"src": "v1",
+"sec": "jerat",
+"srcT": 71.2
+},
+{
+"text": "Kebanyakannya",
+"start": 79.633,
+"end": 80.407,
+"src": "v1",
+"sec": "jerat",
+"srcT": 73.14
+},
+{
+"text": "bermula",
+"start": 80.407,
+"end": 80.927,
+"src": "v1",
+"sec": "jerat",
+"srcT": 74.04
+},
+{
+"text": "dengan",
+"start": 80.927,
+"end": 81.147,
+"src": "v1",
+"sec": "jerat",
+"srcT": 74.56
+},
+{
+"text": "iklan",
+"start": 81.147,
+"end": 81.587,
+"src": "v1",
+"sec": "jerat",
+"srcT": 74.78
+},
+{
+"text": "berbayar",
+"start": 81.587,
+"end": 82.287,
+"src": "v1",
+"sec": "jerat",
+"srcT": 75.22
+},
+{
+"text": "di",
+"start": 82.287,
+"end": 82.427,
+"src": "v1",
+"sec": "jerat",
+"srcT": 75.92
+},
+{
+"text": "Facebook,",
+"start": 82.427,
+"end": 82.947,
+"src": "v1",
+"sec": "jerat",
+"srcT": 76.06
+},
+{
+"text": "Instagram,",
+"start": 83.1,
+"end": 83.687,
+"src": "v1",
+"sec": "jerat",
+"srcT": 76.92
+},
+{
+"text": "ataupun",
+"start": 83.947,
+"end": 84.287,
+"src": "v1",
+"sec": "jerat",
+"srcT": 77.78
+},
+{
+"text": "TikTok.",
+"start": 84.287,
+"end": 84.787,
+"src": "v1",
+"sec": "jerat",
+"srcT": 78.12
+},
+{
+"text": "aplikasi",
+"start": 84.9,
+"end": 85.6,
+"src": "v1",
+"sec": "jerat",
+"srcT": 79.64
+},
+{
+"text": "seperti",
+"start": 85.6,
+"end": 85.96,
+"src": "v1",
+"sec": "jerat",
+"srcT": 80.4
+},
+{
+"text": "ini",
+"start": 85.96,
+"end": 86.34,
+"src": "v1",
+"sec": "jerat",
+"srcT": 80.76
+},
+{
+"text": "memang",
+"start": 86.34,
+"end": 86.72,
+"src": "v1",
+"sec": "jerat",
+"srcT": 81.14
+},
+{
+"text": "tidak",
+"start": 86.72,
+"end": 87.06,
+"src": "v1",
+"sec": "jerat",
+"srcT": 81.52
+},
+{
+"text": "lagilah",
+"start": 87.9,
+"end": 88.38,
+"src": "v1",
+"sec": "jerat",
+"srcT": 85.5
+},
+{
+"text": "buat",
+"start": 88.38,
+"end": 88.68,
+"src": "v1",
+"sec": "jerat",
+"srcT": 85.98
+},
+{
+"text": "masyarakat",
+"start": 88.68,
+"end": 89.28,
+"src": "v1",
+"sec": "jerat",
+"srcT": 86.28
+},
+{
+"text": "kita",
+"start": 89.28,
+"end": 89.58,
+"src": "v1",
+"sec": "jerat",
+"srcT": 86.88
+},
+{
+"text": "yang",
+"start": 89.58,
+"end": 89.96,
+"src": "v1",
+"sec": "jerat",
+"srcT": 87.18
+},
+{
+"text": "setiap",
+"start": 89.96,
+"end": 90.4,
+"src": "v1",
+"sec": "jerat",
+"srcT": 87.56
+},
+{
+"text": "hari",
+"start": 90.4,
+"end": 90.64,
+"src": "v1",
+"sec": "jerat",
+"srcT": 88.0
+},
+{
+"text": "menggunakan",
+"start": 90.64,
+"end": 91.3,
+"src": "v1",
+"sec": "jerat",
+"srcT": 88.24
+},
+{
+"text": "aplikasi",
+"start": 91.3,
+"end": 91.94,
+"src": "v1",
+"sec": "jerat",
+"srcT": 88.9
+},
+{
+"text": "ini.",
+"start": 91.94,
+"end": 92.22,
+"src": "v1",
+"sec": "jerat",
+"srcT": 89.54
+},
+{
+"text": "Selalunya,",
+"start": 92.367,
+"end": 92.967,
+"src": "v1",
+"sec": "jerat",
+"srcT": 90.04
+},
+{
+"text": "iklan",
+"start": 93.167,
+"end": 93.367,
+"src": "v1",
+"sec": "jerat",
+"srcT": 91.0
+},
+{
+"text": "-iklan",
+"start": 93.367,
+"end": 93.707,
+"src": "v1",
+"sec": "jerat",
+"srcT": 91.2
+},
+{
+"text": "daripada",
+"start": 93.707,
+"end": 94.167,
+"src": "v1",
+"sec": "jerat",
+"srcT": 91.54
+},
+{
+"text": "penipuan",
+"start": 94.167,
+"end": 94.827,
+"src": "v1",
+"sec": "jerat",
+"srcT": 92.0
+},
+{
+"text": "ini",
+"start": 94.827,
+"end": 95.207,
+"src": "v1",
+"sec": "jerat",
+"srcT": 92.66
+},
+{
+"text": "menggunakan",
+"start": 95.207,
+"end": 95.867,
+"src": "v1",
+"sec": "jerat",
+"srcT": 93.04
+},
+{
+"text": "bank,",
+"start": 96.193,
+"end": 96.573,
+"src": "v1",
+"sec": "jerat",
+"srcT": 95.26
+},
+{
+"text": "ataupun",
+"start": 96.867,
+"end": 97.413,
+"src": "v1",
+"sec": "jerat",
+"srcT": 95.94
+},
+{
+"text": "nama",
+"start": 97.413,
+"end": 97.693,
+"src": "v1",
+"sec": "jerat",
+"srcT": 96.78
+},
+{
+"text": "syarikat",
+"start": 97.693,
+"end": 98.213,
+"src": "v1",
+"sec": "jerat",
+"srcT": 97.06
+},
+{
+"text": "yang",
+"start": 98.213,
+"end": 98.433,
+"src": "v1",
+"sec": "jerat",
+"srcT": 97.58
+},
+{
+"text": "kelihatan",
+"start": 98.433,
+"end": 99.073,
+"src": "v1",
+"sec": "jerat",
+"srcT": 97.8
+},
+{
+"text": "sah,",
+"start": 99.073,
+"end": 99.473,
+"src": "v1",
+"sec": "jerat",
+"srcT": 98.44
+},
+{
+"text": "ayat",
+"start": 99.78,
+"end": 100.14,
+"src": "v1",
+"sec": "jerat",
+"srcT": 99.68
+},
+{
+"text": "seperti,",
+"start": 100.14,
+"end": 100.68,
+"src": "v1",
+"sec": "jerat",
+"srcT": 100.04
+},
+{
+"text": "lulus",
+"start": 101.04,
+"end": 101.26,
+"src": "v1",
+"sec": "jerat",
+"srcT": 101.14
+},
+{
+"text": "24",
+"start": 101.26,
+"end": 101.74,
+"src": "v1",
+"sec": "jerat",
+"srcT": 101.36
+},
+{
+"text": "jam",
+"start": 101.74,
+"end": 102.1,
+"src": "v1",
+"sec": "jerat",
+"srcT": 101.84
+},
+{
+"text": "atau",
+"start": 102.1,
+"end": 102.56,
+"src": "v1",
+"sec": "jerat",
+"srcT": 102.2
+},
+{
+"text": "tanpa",
+"start": 102.56,
+"end": 103.08,
+"src": "v1",
+"sec": "jerat",
+"srcT": 102.66
+},
+{
+"text": "saya",
+"start": 103.08,
+"end": 103.28,
+"src": "v1",
+"sec": "jerat",
+"srcT": 103.18
+},
+{
+"text": "makan",
+"start": 103.28,
+"end": 103.54,
+"src": "v1",
+"sec": "jerat",
+"srcT": 103.38
+},
+{
+"text": "sitos.",
+"start": 103.54,
+"end": 104.16,
+"src": "v1",
+"sec": "jerat",
+"srcT": 103.64
+},
+{
+"text": "Apabila",
+"start": 104.233,
+"end": 104.78,
+"src": "v1",
+"sec": "jerat",
+"srcT": 104.78
+},
+{
+"text": "mangsa",
+"start": 104.78,
+"end": 105.14,
+"src": "v1",
+"sec": "jerat",
+"srcT": 105.58
+},
+{
+"text": "klik,",
+"start": 105.14,
+"end": 105.54,
+"src": "v1",
+"sec": "jerat",
+"srcT": 105.94
+},
+{
+"text": "dia",
+"start": 105.773,
+"end": 105.893,
+"src": "v1",
+"sec": "jerat",
+"srcT": 106.74
+},
+{
+"text": "akan",
+"start": 105.893,
+"end": 106.093,
+"src": "v1",
+"sec": "jerat",
+"srcT": 106.86
+},
+{
+"text": "dibawa",
+"start": 106.093,
+"end": 106.493,
+"src": "v1",
+"sec": "jerat",
+"srcT": 107.06
+},
+{
+"text": "terus",
+"start": 106.493,
+"end": 106.913,
+"src": "v1",
+"sec": "jerat",
+"srcT": 107.46
+},
+{
+"text": "ke",
+"start": 106.913,
+"end": 107.233,
+"src": "v1",
+"sec": "jerat",
+"srcT": 107.88
+},
+{
+"text": "WhatsApp",
+"start": 107.233,
+"end": 107.793,
+"src": "v1",
+"sec": "jerat",
+"srcT": 108.2
+},
+{
+"text": "berurusan",
+"start": 108.22,
+"end": 108.92,
+"src": "v1",
+"sec": "jerat",
+"srcT": 109.42
+},
+{
+"text": "dengan",
+"start": 108.92,
+"end": 109.16,
+"src": "v1",
+"sec": "jerat",
+"srcT": 110.12
+},
+{
+"text": "pegawai.",
+"start": 109.16,
+"end": 109.86,
+"src": "v1",
+"sec": "jerat",
+"srcT": 110.36
+},
+{
+"text": "mana",
+"start": 110.173,
+"end": 110.413,
+"src": "v1",
+"sec": "jerat",
+"srcT": 113.34
+},
+{
+"text": "pegawai",
+"start": 110.413,
+"end": 110.973,
+"src": "v1",
+"sec": "jerat",
+"srcT": 113.58
+},
+{
+"text": "yang",
+"start": 110.973,
+"end": 111.113,
+"src": "v1",
+"sec": "jerat",
+"srcT": 114.14
+},
+{
+"text": "saya",
+"start": 111.113,
+"end": 111.313,
+"src": "v1",
+"sec": "jerat",
+"srcT": 114.28
+},
+{
+"text": "katakan",
+"start": 111.313,
+"end": 111.773,
+"src": "v1",
+"sec": "jerat",
+"srcT": 114.48
+},
+{
+"text": "sini",
+"start": 111.773,
+"end": 112.013,
+"src": "v1",
+"sec": "jerat",
+"srcT": 114.94
+},
+{
+"text": "adalah",
+"start": 112.013,
+"end": 112.313,
+"src": "v1",
+"sec": "jerat",
+"srcT": 115.18
+},
+{
+"text": "pegawai",
+"start": 112.313,
+"end": 112.873,
+"src": "v1",
+"sec": "jerat",
+"srcT": 115.48
+},
+{
+"text": "yang",
+"start": 112.873,
+"end": 113.033,
+"src": "v1",
+"sec": "jerat",
+"srcT": 116.04
+},
+{
+"text": "tidak",
+"start": 113.033,
+"end": 113.273,
+"src": "v1",
+"sec": "jerat",
+"srcT": 116.2
+},
+{
+"text": "sah",
+"start": 113.273,
+"end": 113.693,
+"src": "v1",
+"sec": "jerat",
+"srcT": 116.44
+},
+{
+"text": "lah,",
+"start": 113.693,
+"end": 113.993,
+"src": "v1",
+"sec": "jerat",
+"srcT": 116.86
+},
+{
+"text": "ya",
+"start": 114.093,
+"end": 114.233,
+"src": "v1",
+"sec": "jerat",
+"srcT": 117.26
+},
+{
+"text": "adalah",
+"start": 114.233,
+"end": 114.553,
+"src": "v1",
+"sec": "jerat",
+"srcT": 117.4
+},
+{
+"text": "skem.",
+"start": 114.553,
+"end": 115.033,
+"src": "v1",
+"sec": "jerat",
+"srcT": 117.72
+},
+{
+"text": "bagaimanakah",
+"start": 115.913,
+"end": 116.453,
+"src": "v1",
+"sec": "modus",
+"srcT": 119.98
+},
+{
+"text": "mangsa",
+"start": 116.453,
+"end": 116.853,
+"src": "v1",
+"sec": "modus",
+"srcT": 120.52
+},
+{
+"text": "ini",
+"start": 116.853,
+"end": 117.093,
+"src": "v1",
+"sec": "modus",
+"srcT": 120.92
+},
+{
+"text": "ditipu?",
+"start": 117.093,
+"end": 117.653,
+"src": "v1",
+"sec": "modus",
+"srcT": 121.16
+},
+{
+"text": "Corak",
+"start": 117.7,
+"end": 118.12,
+"src": "v1",
+"sec": "modus",
+"srcT": 123.12
+},
+{
+"text": "penipuannya",
+"start": 118.12,
+"end": 118.84,
+"src": "v1",
+"sec": "modus",
+"srcT": 123.92
+},
+{
+"text": "hampir",
+"start": 119.033,
+"end": 119.547,
+"src": "v1",
+"sec": "modus",
+"srcT": 124.64
+},
+{
+"text": "sama",
+"start": 119.547,
+"end": 119.827,
+"src": "v1",
+"sec": "modus",
+"srcT": 125.48
+},
+{
+"text": "dalam",
+"start": 119.827,
+"end": 120.127,
+"src": "v1",
+"sec": "modus",
+"srcT": 125.76
+},
+{
+"text": "setiap",
+"start": 120.127,
+"end": 120.547,
+"src": "v1",
+"sec": "modus",
+"srcT": 126.06
+},
+{
+"text": "case.",
+"start": 120.547,
+"end": 120.787,
+"src": "v1",
+"sec": "modus",
+"srcT": 126.48
+},
+{
+"text": "Yang",
+"start": 120.84,
+"end": 121.1,
+"src": "v1",
+"sec": "modus",
+"srcT": 126.94
+},
+{
+"text": "pertama,",
+"start": 121.1,
+"end": 121.6,
+"src": "v1",
+"sec": "modus",
+"srcT": 127.2
+},
+{
+"text": "mangsa",
+"start": 122.0,
+"end": 122.24,
+"src": "v1",
+"sec": "modus",
+"srcT": 128.2
+},
+{
+"text": "diminta",
+"start": 122.24,
+"end": 122.7,
+"src": "v1",
+"sec": "modus",
+"srcT": 128.44
+},
+{
+"text": "untuk",
+"start": 122.7,
+"end": 122.98,
+"src": "v1",
+"sec": "modus",
+"srcT": 128.9
+},
+{
+"text": "menghantar",
+"start": 122.98,
+"end": 123.5,
+"src": "v1",
+"sec": "modus",
+"srcT": 129.18
+},
+{
+"text": "kesalinan",
+"start": 123.5,
+"end": 124.18,
+"src": "v1",
+"sec": "modus",
+"srcT": 129.7
+},
+{
+"text": "pengenalan.",
+"start": 124.18,
+"end": 124.76,
+"src": "v1",
+"sec": "modus",
+"srcT": 130.38
+},
+{
+"text": "Kedua,",
+"start": 124.967,
+"end": 125.453,
+"src": "v1",
+"sec": "modus",
+"srcT": 130.96
+},
+{
+"text": "mangsa",
+"start": 125.653,
+"end": 126.053,
+"src": "v1",
+"sec": "modus",
+"srcT": 132.22
+},
+{
+"text": "diberitahu",
+"start": 126.053,
+"end": 126.773,
+"src": "v1",
+"sec": "modus",
+"srcT": 132.62
+},
+{
+"text": "pinjamannya",
+"start": 126.773,
+"end": 127.453,
+"src": "v1",
+"sec": "modus",
+"srcT": 133.34
+},
+{
+"text": "sudah",
+"start": 127.453,
+"end": 127.733,
+"src": "v1",
+"sec": "modus",
+"srcT": 134.02
+},
+{
+"text": "lulus.",
+"start": 127.733,
+"end": 128.193,
+"src": "v1",
+"sec": "modus",
+"srcT": 134.3
+},
+{
+"text": "Kadang",
+"start": 128.2,
+"end": 128.513,
+"src": "v1",
+"sec": "modus",
+"srcT": 134.94
+},
+{
+"text": "-kadang",
+"start": 128.513,
+"end": 128.813,
+"src": "v1",
+"sec": "modus",
+"srcT": 135.48
+},
+{
+"text": "dengan",
+"start": 128.813,
+"end": 129.113,
+"src": "v1",
+"sec": "modus",
+"srcT": 135.78
+},
+{
+"text": "kelulusan",
+"start": 129.74,
+"end": 130.34,
+"src": "v1",
+"sec": "modus",
+"srcT": 136.84
+},
+{
+"text": "palsu.",
+"start": 130.34,
+"end": 131.04,
+"src": "v1",
+"sec": "modus",
+"srcT": 137.44
+},
+{
+"text": "Ketiga,",
+"start": 131.133,
+"end": 131.64,
+"src": "v1",
+"sec": "modus",
+"srcT": 138.34
+},
+{
+"text": "barulah",
+"start": 131.86,
+"end": 132.2,
+"src": "v1",
+"sec": "modus",
+"srcT": 139.36
+},
+{
+"text": "datang",
+"start": 132.2,
+"end": 132.68,
+"src": "v1",
+"sec": "modus",
+"srcT": 139.7
+},
+{
+"text": "bayaran.",
+"start": 133.54,
+"end": 134.1,
+"src": "v1",
+"sec": "modus",
+"srcT": 141.64
+},
+{
+"text": "Contohnya,",
+"start": 134.3,
+"end": 134.96,
+"src": "v1",
+"sec": "modus",
+"srcT": 142.4
+},
+{
+"text": "yuran",
+"start": 135.213,
+"end": 135.413,
+"src": "v1",
+"sec": "modus",
+"srcT": 143.38
+},
+{
+"text": "guaman,",
+"start": 135.413,
+"end": 135.993,
+"src": "v1",
+"sec": "modus",
+"srcT": 143.58
+},
+{
+"text": "insurans,",
+"start": 136.267,
+"end": 136.953,
+"src": "v1",
+"sec": "modus",
+"srcT": 144.54
+},
+{
+"text": "yuran",
+"start": 137.2,
+"end": 137.573,
+"src": "v1",
+"sec": "modus",
+"srcT": 145.6
+},
+{
+"text": "sitos,",
+"start": 137.573,
+"end": 138.153,
+"src": "v1",
+"sec": "modus",
+"srcT": 146.04
+},
+{
+"text": "dan",
+"start": 138.2,
+"end": 138.4,
+"src": "v1",
+"sec": "modus",
+"srcT": 146.78
+},
+{
+"text": "juga",
+"start": 138.4,
+"end": 138.66,
+"src": "v1",
+"sec": "modus",
+"srcT": 147.0
+},
+{
+"text": "yuran",
+"start": 138.66,
+"end": 139.04,
+"src": "v1",
+"sec": "modus",
+"srcT": 147.26
+},
+{
+"text": "pengaktifan",
+"start": 139.04,
+"end": 139.88,
+"src": "v1",
+"sec": "modus",
+"srcT": 147.64
+},
+{
+"text": "akaun.",
+"start": 139.88,
+"end": 140.36,
+"src": "v1",
+"sec": "modus",
+"srcT": 148.48
+},
+{
+"text": "Menurut",
+"start": 140.567,
+"end": 141.113,
+"src": "v1",
+"sec": "modus",
+"srcT": 154.56
+},
+{
+"text": "polis,",
+"start": 141.113,
+"end": 141.593,
+"src": "v1",
+"sec": "modus",
+"srcT": 155.48
+},
+{
+"text": "sekitar",
+"start": 141.747,
+"end": 142.327,
+"src": "v1",
+"sec": "modus",
+"srcT": 156.28
+},
+{
+"text": "Rp150",
+"start": 142.467,
+"end": 143.313,
+"src": "v1",
+"sec": "modus",
+"srcT": 156.86
+},
+{
+"text": "hingga",
+"start": 143.313,
+"end": 144.173,
+"src": "v1",
+"sec": "modus",
+"srcT": 158.48
+},
+{
+"text": "Rp200",
+"start": 144.173,
+"end": 144.693,
+"src": "v1",
+"sec": "modus",
+"srcT": 159.34
+},
+{
+"text": "tetapi",
+"start": 144.693,
+"end": 145.513,
+"src": "v1",
+"sec": "modus",
+"srcT": 159.86
+},
+{
+"text": "boleh",
+"start": 145.513,
+"end": 145.833,
+"src": "v1",
+"sec": "modus",
+"srcT": 160.68
+},
+{
+"text": "meningkat",
+"start": 145.833,
+"end": 146.373,
+"src": "v1",
+"sec": "modus",
+"srcT": 161.0
+},
+{
+"text": "kepada",
+"start": 146.373,
+"end": 146.653,
+"src": "v1",
+"sec": "modus",
+"srcT": 161.54
+},
+{
+"text": "ribuan",
+"start": 146.653,
+"end": 147.153,
+"src": "v1",
+"sec": "modus",
+"srcT": 161.82
+},
+{
+"text": "ringgit.",
+"start": 147.153,
+"end": 147.613,
+"src": "v1",
+"sec": "modus",
+"srcT": 162.32
+},
+{
+"text": "Semua",
+"start": 147.633,
+"end": 148.054,
+"src": "v1",
+"sec": "modus",
+"srcT": 162.96
+},
+{
+"text": "uang",
+"start": 148.054,
+"end": 148.233,
+"src": "v1",
+"sec": "modus",
+"srcT": 163.52
+},
+{
+"text": "itu",
+"start": 148.233,
+"end": 148.513,
+"src": "v1",
+"sec": "modus",
+"srcT": 163.7
+},
+{
+"text": "dimasukkan",
+"start": 148.513,
+"end": 149.213,
+"src": "v1",
+"sec": "modus",
+"srcT": 163.98
+},
+{
+"text": "ke",
+"start": 149.213,
+"end": 149.473,
+"src": "v1",
+"sec": "modus",
+"srcT": 164.68
+},
+{
+"text": "akaun",
+"start": 149.473,
+"end": 149.914,
+"src": "v1",
+"sec": "modus",
+"srcT": 164.94
+},
+{
+"text": "yang",
+"start": 149.914,
+"end": 150.093,
+"src": "v1",
+"sec": "modus",
+"srcT": 165.38
+},
+{
+"text": "berbeza",
+"start": 150.093,
+"end": 150.654,
+"src": "v1",
+"sec": "modus",
+"srcT": 165.56
+},
+{
+"text": "-beza,",
+"start": 150.654,
+"end": 151.093,
+"src": "v1",
+"sec": "modus",
+"srcT": 166.12
+},
+{
+"text": "yaitu",
+"start": 151.234,
+"end": 151.754,
+"src": "v1",
+"sec": "modus",
+"srcT": 166.76
+},
+{
+"text": "akaun",
+"start": 151.754,
+"end": 152.273,
+"src": "v1",
+"sec": "modus",
+"srcT": 167.42
+},
+{
+"text": "keldai.",
+"start": 152.273,
+"end": 152.773,
+"src": "v1",
+"sec": "modus",
+"srcT": 167.94
+},
+{
+"text": "Sebab",
+"start": 152.9,
+"end": 153.26,
+"src": "v1",
+"sec": "modus",
+"srcT": 168.9
+},
+{
+"text": "itu,",
+"start": 153.26,
+"end": 153.68,
+"src": "v1",
+"sec": "modus",
+"srcT": 169.26
+},
+{
+"text": "JSJK",
+"start": 153.9,
+"end": 154.827,
+"src": "v1",
+"sec": "modus",
+"srcT": 170.08
+},
+{
+"text": "menegaskan",
+"start": 154.827,
+"end": 155.907,
+"src": "v1",
+"sec": "modus",
+"srcT": 171.06
+},
+{
+"text": "bahawa",
+"start": 155.907,
+"end": 156.367,
+"src": "v1",
+"sec": "modus",
+"srcT": 172.14
+},
+{
+"text": "mana",
+"start": 156.367,
+"end": 156.667,
+"src": "v1",
+"sec": "modus",
+"srcT": 172.6
+},
+{
+"text": "-mana",
+"start": 156.667,
+"end": 156.927,
+"src": "v1",
+"sec": "modus",
+"srcT": 172.9
+},
+{
+"text": "pinjaman",
+"start": 156.927,
+"end": 157.387,
+"src": "v1",
+"sec": "modus",
+"srcT": 173.16
+},
+{
+"text": "yang",
+"start": 157.387,
+"end": 157.587,
+"src": "v1",
+"sec": "modus",
+"srcT": 173.62
+},
+{
+"text": "meminta",
+"start": 157.587,
+"end": 158.007,
+"src": "v1",
+"sec": "modus",
+"srcT": 173.82
+},
+{
+"text": "bayaran",
+"start": 158.007,
+"end": 158.427,
+"src": "v1",
+"sec": "modus",
+"srcT": 174.24
+},
+{
+"text": "pendahuluan",
+"start": 158.427,
+"end": 159.267,
+"src": "v1",
+"sec": "modus",
+"srcT": 174.66
+},
+{
+"text": "ialah",
+"start": 159.267,
+"end": 159.807,
+"src": "v1",
+"sec": "modus",
+"srcT": 175.5
+},
+{
+"text": "penipuan.",
+"start": 159.934,
+"end": 160.56,
+"src": "v1",
+"sec": "modus",
+"srcT": 176.04
+},
+{
+"text": "kita",
+"start": 160.954,
+"end": 161.293,
+"src": "v1",
+"sec": "modus",
+"srcT": 180.42
+},
+{
+"text": "sebagai",
+"start": 161.293,
+"end": 161.774,
+"src": "v1",
+"sec": "modus",
+"srcT": 180.76
+},
+{
+"text": "rakyat",
+"start": 161.774,
+"end": 162.353,
+"src": "v1",
+"sec": "modus",
+"srcT": 181.24
+},
+{
+"text": "haruslah",
+"start": 162.353,
+"end": 162.913,
+"src": "v1",
+"sec": "modus",
+"srcT": 181.82
+},
+{
+"text": "cakna",
+"start": 162.913,
+"end": 163.413,
+"src": "v1",
+"sec": "modus",
+"srcT": 182.38
+},
+{
+"text": "tentang",
+"start": 163.413,
+"end": 163.714,
+"src": "v1",
+"sec": "modus",
+"srcT": 182.88
+},
+{
+"text": "hal",
+"start": 163.714,
+"end": 164.094,
+"src": "v1",
+"sec": "modus",
+"srcT": 183.18
+},
+{
+"text": "ini.",
+"start": 164.094,
+"end": 164.373,
+"src": "v1",
+"sec": "modus",
+"srcT": 183.56
+},
+{
+"text": "Jangan",
+"start": 164.567,
+"end": 164.967,
+"src": "v1",
+"sec": "modus",
+"srcT": 184.08
+},
+{
+"text": "mudah",
+"start": 164.967,
+"end": 165.327,
+"src": "v1",
+"sec": "modus",
+"srcT": 184.6
+},
+{
+"text": "terpedaya",
+"start": 165.327,
+"end": 166.127,
+"src": "v1",
+"sec": "modus",
+"srcT": 184.96
+},
+{
+"text": "penawaran",
+"start": 166.64,
+"end": 167.6,
+"src": "v1",
+"sec": "modus",
+"srcT": 188.64
+},
+{
+"text": "tanpa",
+"start": 167.8,
+"end": 168.213,
+"src": "v1",
+"sec": "modus",
+"srcT": 189.6
+},
+{
+"text": "cek",
+"start": 168.213,
+"end": 168.473,
+"src": "v1",
+"sec": "modus",
+"srcT": 190.38
+},
+{
+"text": "sitos,",
+"start": 168.473,
+"end": 169.033,
+"src": "v1",
+"sec": "modus",
+"srcT": 190.64
+},
+{
+"text": "tanpa",
+"start": 169.133,
+"end": 169.953,
+"src": "v1",
+"sec": "modus",
+"srcT": 191.36
+},
+{
+"text": "guaman,",
+"start": 170.453,
+"end": 170.953,
+"src": "v1",
+"sec": "modus",
+"srcT": 193.12
+},
+{
+"text": "semua",
+"start": 171.133,
+"end": 171.313,
+"src": "v1",
+"sec": "modus",
+"srcT": 193.8
+},
+{
+"text": "itu.",
+"start": 171.313,
+"end": 171.573,
+"src": "v1",
+"sec": "modus",
+"srcT": 193.98
+},
+{
+"text": "pengarah",
+"start": 171.8,
+"end": 175.82,
+"src": "v3",
+"sec": "kes",
+"srcT": 6.36
+},
+{
+"text": "syarikat",
+"start": 175.82,
+"end": 176.34,
+"src": "v3",
+"sec": "kes",
+"srcT": 12.62
+},
+{
+"text": "di",
+"start": 176.34,
+"end": 176.52,
+"src": "v3",
+"sec": "kes",
+"srcT": 13.14
+},
+{
+"text": "kota",
+"start": 176.52,
+"end": 176.76,
+"src": "v3",
+"sec": "kes",
+"srcT": 13.32
+},
+{
+"text": "tinggi",
+"start": 176.76,
+"end": 177.1,
+"src": "v3",
+"sec": "kes",
+"srcT": 13.56
+},
+{
+"text": "kerugian",
+"start": 177.1,
+"end": 177.62,
+"src": "v3",
+"sec": "kes",
+"srcT": 13.9
+},
+{
+"text": "sekitar",
+"start": 177.62,
+"end": 178.04,
+"src": "v3",
+"sec": "kes",
+"srcT": 14.42
+},
+{
+"text": "Rp167",
+"start": 178.04,
+"end": 179.16,
+"src": "v3",
+"sec": "kes",
+"srcT": 14.84
+},
+{
+"text": "selepas",
+"start": 180.133,
+"end": 181.013,
+"src": "v3",
+"sec": "kes",
+"srcT": 17.4
+},
+{
+"text": "terpedaya",
+"start": 181.013,
+"end": 181.653,
+"src": "v3",
+"sec": "kes",
+"srcT": 18.28
+},
+{
+"text": "dengan",
+"start": 181.653,
+"end": 181.913,
+"src": "v3",
+"sec": "kes",
+"srcT": 18.92
+},
+{
+"text": "iklan",
+"start": 181.913,
+"end": 182.293,
+"src": "v3",
+"sec": "kes",
+"srcT": 19.18
+},
+{
+"text": "pinjaman",
+"start": 182.293,
+"end": 182.793,
+"src": "v3",
+"sec": "kes",
+"srcT": 19.56
+},
+{
+"text": "Rp500",
+"start": 182.793,
+"end": 183.413,
+"src": "v3",
+"sec": "kes",
+"srcT": 20.06
+},
+{
+"text": ".000",
+"start": 183.413,
+"end": 183.813,
+"src": "v3",
+"sec": "kes",
+"srcT": 20.68
+},
+{
+"text": "di",
+"start": 183.813,
+"end": 183.973,
+"src": "v3",
+"sec": "kes",
+"srcT": 21.08
+},
+{
+"text": "Facebook.",
+"start": 183.973,
+"end": 184.393,
+"src": "v3",
+"sec": "kes",
+"srcT": 21.24
+},
+{
+"text": "dipindahkan",
+"start": 184.98,
+"end": 185.62,
+"src": "v3",
+"sec": "kes",
+"srcT": 22.78
+},
+{
+"text": "ke",
+"start": 185.62,
+"end": 185.86,
+"src": "v3",
+"sec": "kes",
+"srcT": 23.42
+},
+{
+"text": "sembilan",
+"start": 185.86,
+"end": 187.22,
+"src": "v3",
+"sec": "kes",
+"srcT": 23.66
+},
+{
+"text": "akaun",
+"start": 187.6,
+"end": 190.247,
+"src": "v3",
+"sec": "kes",
+"srcT": 25.02
+},
+{
+"text": "berbeza",
+"start": 190.247,
+"end": 191.167,
+"src": "v3",
+"sec": "kes",
+"srcT": 29.48
+},
+{
+"text": "-beza",
+"start": 191.167,
+"end": 191.707,
+"src": "v3",
+"sec": "kes",
+"srcT": 30.4
+},
+{
+"text": "nama",
+"start": 192.333,
+"end": 192.733,
+"src": "v3",
+"sec": "kes",
+"srcT": 32.0
+},
+{
+"text": "berbeza",
+"start": 193.513,
+"end": 194.033,
+"src": "v3",
+"sec": "kes",
+"srcT": 33.28
+},
+{
+"text": "-beza",
+"start": 194.033,
+"end": 194.553,
+"src": "v3",
+"sec": "kes",
+"srcT": 33.8
+},
+{
+"text": "pada",
+"start": 195.02,
+"end": 195.34,
+"src": "v3",
+"sec": "kes",
+"srcT": 35.02
+},
+{
+"text": "September",
+"start": 195.34,
+"end": 195.78,
+"src": "v3",
+"sec": "kes",
+"srcT": 35.34
+},
+{
+"text": "2026",
+"start": 195.78,
+"end": 196.62,
+"src": "v3",
+"sec": "kes",
+"srcT": 35.78
+},
+{
+"text": "pula",
+"start": 196.62,
+"end": 197.0,
+"src": "v3",
+"sec": "kes",
+"srcT": 36.62
+},
+{
+"text": "seorang",
+"start": 197.0,
+"end": 197.78,
+"src": "v3",
+"sec": "kes",
+"srcT": 37.0
+},
+{
+"text": "pengusaha",
+"start": 197.78,
+"end": 198.3,
+"src": "v3",
+"sec": "kes",
+"srcT": 37.78
+},
+{
+"text": "bot",
+"start": 198.3,
+"end": 198.6,
+"src": "v3",
+"sec": "kes",
+"srcT": 38.3
+},
+{
+"text": "pelancong",
+"start": 198.6,
+"end": 199.16,
+"src": "v3",
+"sec": "kes",
+"srcT": 38.6
+},
+{
+"text": "dibesut",
+"start": 199.16,
+"end": 199.74,
+"src": "v3",
+"sec": "kes",
+"srcT": 39.16
+},
+{
+"text": "kerugian",
+"start": 199.74,
+"end": 200.28,
+"src": "v3",
+"sec": "kes",
+"srcT": 39.74
+},
+{
+"text": "sekitar",
+"start": 200.28,
+"end": 200.7,
+"src": "v3",
+"sec": "kes",
+"srcT": 40.28
+},
+{
+"text": "Rp135",
+"start": 200.7,
+"end": 201.84,
+"src": "v3",
+"sec": "kes",
+"srcT": 40.7
+},
+{
+"text": ".800",
+"start": 201.84,
+"end": 203.1,
+"src": "v3",
+"sec": "kes",
+"srcT": 41.84
+},
+{
+"text": "selepas",
+"start": 203.1,
+"end": 203.72,
+"src": "v3",
+"sec": "kes",
+"srcT": 43.1
+},
+{
+"text": "melihat",
+"start": 203.72,
+"end": 204.16,
+"src": "v3",
+"sec": "kes",
+"srcT": 43.72
+},
+{
+"text": "iklan",
+"start": 204.16,
+"end": 204.5,
+"src": "v3",
+"sec": "kes",
+"srcT": 44.16
+},
+{
+"text": "pinjaman",
+"start": 204.5,
+"end": 204.94,
+"src": "v3",
+"sec": "kes",
+"srcT": 44.5
+},
+{
+"text": "di",
+"start": 204.94,
+"end": 205.16,
+"src": "v3",
+"sec": "kes",
+"srcT": 44.94
+},
+{
+"text": "TikTok",
+"start": 205.16,
+"end": 205.52,
+"src": "v3",
+"sec": "kes",
+"srcT": 45.16
+},
+{
+"text": "18",
+"start": 205.96,
+"end": 206.36,
+"src": "v3",
+"sec": "kes",
+"srcT": 46.46
+},
+{
+"text": "kali",
+"start": 206.36,
+"end": 206.72,
+"src": "v3",
+"sec": "kes",
+"srcT": 46.86
+},
+{
+"text": "pembinaan",
+"start": 206.72,
+"end": 207.32,
+"src": "v3",
+"sec": "kes",
+"srcT": 47.22
+},
+{
+"text": "uang.",
+"start": 207.32,
+"end": 207.62,
+"src": "v3",
+"sec": "kes",
+"srcT": 47.82
+},
+{
+"text": "Miri,",
+"start": 208.127,
+"end": 208.587,
+"src": "v3",
+"sec": "kes",
+"srcT": 48.76
+},
+{
+"text": "polis",
+"start": 208.767,
+"end": 209.14,
+"src": "v3",
+"sec": "kes",
+"srcT": 49.42
+},
+{
+"text": "mendedahkan",
+"start": 209.14,
+"end": 209.86,
+"src": "v3",
+"sec": "kes",
+"srcT": 49.84
+},
+{
+"text": "bahwa",
+"start": 209.86,
+"end": 210.28,
+"src": "v3",
+"sec": "kes",
+"srcT": 50.56
+},
+{
+"text": "mangsa",
+"start": 210.28,
+"end": 210.7,
+"src": "v3",
+"sec": "kes",
+"srcT": 50.98
+},
+{
+"text": "pinjaman",
+"start": 210.7,
+"end": 211.1,
+"src": "v3",
+"sec": "kes",
+"srcT": 51.4
+},
+{
+"text": "palsu",
+"start": 211.1,
+"end": 211.64,
+"src": "v3",
+"sec": "kes",
+"srcT": 51.8
+},
+{
+"text": "dan",
+"start": 211.64,
+"end": 211.78,
+"src": "v3",
+"sec": "kes",
+"srcT": 52.34
+},
+{
+"text": "along",
+"start": 211.78,
+"end": 212.22,
+"src": "v3",
+"sec": "kes",
+"srcT": 52.48
+},
+{
+"text": "bukan",
+"start": 212.22,
+"end": 212.84,
+"src": "v3",
+"sec": "kes",
+"srcT": 52.92
+},
+{
+"text": "saja",
+"start": 212.84,
+"end": 213.2,
+"src": "v3",
+"sec": "kes",
+"srcT": 53.54
+},
+{
+"text": "diugut",
+"start": 213.2,
+"end": 213.62,
+"src": "v3",
+"sec": "kes",
+"srcT": 53.9
+},
+{
+"text": "melalui",
+"start": 213.62,
+"end": 214.06,
+"src": "v3",
+"sec": "kes",
+"srcT": 54.32
+},
+{
+"text": "WhatsApp,",
+"start": 214.06,
+"end": 214.42,
+"src": "v3",
+"sec": "kes",
+"srcT": 54.76
+},
+{
+"text": "malah",
+"start": 214.66,
+"end": 215.32,
+"src": "v3",
+"sec": "kes",
+"srcT": 55.36
+},
+{
+"text": "ada",
+"start": 215.32,
+"end": 215.6,
+"src": "v3",
+"sec": "kes",
+"srcT": 56.02
+},
+{
+"text": "rumah",
+"start": 215.6,
+"end": 215.84,
+"src": "v3",
+"sec": "kes",
+"srcT": 56.3
+},
+{
+"text": "mangsa",
+"start": 215.84,
+"end": 216.22,
+"src": "v3",
+"sec": "kes",
+"srcT": 56.54
+},
+{
+"text": "yang",
+"start": 216.22,
+"end": 216.46,
+"src": "v3",
+"sec": "kes",
+"srcT": 56.92
+},
+{
+"text": "dibaling",
+"start": 216.46,
+"end": 216.88,
+"src": "v3",
+"sec": "kes",
+"srcT": 57.16
+},
+{
+"text": "bom",
+"start": 216.88,
+"end": 217.12,
+"src": "v3",
+"sec": "kes",
+"srcT": 57.58
+},
+{
+"text": "petrol.",
+"start": 217.12,
+"end": 217.54,
+"src": "v3",
+"sec": "kes",
+"srcT": 57.82
+},
+{
+"text": "Apakah",
+"start": 218.86,
+"end": 219.66,
+"src": "v3",
+"sec": "kesan",
+"srcT": 71.76
+},
+{
+"text": "dampak",
+"start": 219.66,
+"end": 220.16,
+"src": "v3",
+"sec": "kesan",
+"srcT": 72.56
+},
+{
+"text": "kepada",
+"start": 220.16,
+"end": 220.44,
+"src": "v3",
+"sec": "kesan",
+"srcT": 73.06
+},
+{
+"text": "mangsa?",
+"start": 220.44,
+"end": 220.94,
+"src": "v3",
+"sec": "kesan",
+"srcT": 73.34
+},
+{
+"text": "Kesannya",
+"start": 221.133,
+"end": 221.667,
+"src": "v3",
+"sec": "kesan",
+"srcT": 74.06
+},
+{
+"text": "kepada",
+"start": 221.667,
+"end": 221.947,
+"src": "v3",
+"sec": "kesan",
+"srcT": 74.7
+},
+{
+"text": "mangsa",
+"start": 221.947,
+"end": 222.347,
+"src": "v3",
+"sec": "kesan",
+"srcT": 74.98
+},
+{
+"text": "sangat",
+"start": 222.347,
+"end": 222.647,
+"src": "v3",
+"sec": "kesan",
+"srcT": 75.38
+},
+{
+"text": "berat.",
+"start": 222.647,
+"end": 223.047,
+"src": "v3",
+"sec": "kesan",
+"srcT": 75.68
+},
+{
+"text": "Dari",
+"start": 223.167,
+"end": 223.493,
+"src": "v3",
+"sec": "kesan",
+"srcT": 76.08
+},
+{
+"text": "segi",
+"start": 223.493,
+"end": 223.813,
+"src": "v3",
+"sec": "kesan",
+"srcT": 76.66
+},
+{
+"text": "keuangan,",
+"start": 223.813,
+"end": 224.273,
+"src": "v3",
+"sec": "kesan",
+"srcT": 76.98
+},
+{
+"text": "mangsa",
+"start": 224.673,
+"end": 224.953,
+"src": "v3",
+"sec": "kesan",
+"srcT": 77.94
+},
+{
+"text": "yang",
+"start": 224.953,
+"end": 225.133,
+"src": "v3",
+"sec": "kesan",
+"srcT": 78.22
+},
+{
+"text": "asalnya",
+"start": 225.133,
+"end": 225.553,
+"src": "v3",
+"sec": "kesan",
+"srcT": 78.4
+},
+{
+"text": "mahu",
+"start": 225.553,
+"end": 225.973,
+"src": "v3",
+"sec": "kesan",
+"srcT": 78.82
+},
+{
+"text": "menyelesaikan",
+"start": 225.973,
+"end": 226.693,
+"src": "v3",
+"sec": "kesan",
+"srcT": 79.24
+},
+{
+"text": "hutang",
+"start": 226.693,
+"end": 227.113,
+"src": "v3",
+"sec": "kesan",
+"srcT": 79.96
+},
+{
+"text": "akhirnya",
+"start": 227.113,
+"end": 227.673,
+"src": "v3",
+"sec": "kesan",
+"srcT": 80.38
+},
+{
+"text": "menanggung",
+"start": 227.673,
+"end": 228.133,
+"src": "v3",
+"sec": "kesan",
+"srcT": 80.94
+},
+{
+"text": "hutang",
+"start": 228.133,
+"end": 228.493,
+"src": "v3",
+"sec": "kesan",
+"srcT": 81.4
+},
+{
+"text": "yang",
+"start": 228.493,
+"end": 228.673,
+"src": "v3",
+"sec": "kesan",
+"srcT": 81.76
+},
+{
+"text": "lebih",
+"start": 228.673,
+"end": 228.973,
+"src": "v3",
+"sec": "kesan",
+"srcT": 81.94
+},
+{
+"text": "besar.",
+"start": 228.973,
+"end": 229.413,
+"src": "v3",
+"sec": "kesan",
+"srcT": 82.24
+},
+{
+"text": "Dari",
+"start": 229.673,
+"end": 230.293,
+"src": "v3",
+"sec": "kesan",
+"srcT": 82.94
+},
+{
+"text": "segi",
+"start": 230.293,
+"end": 230.633,
+"src": "v3",
+"sec": "kesan",
+"srcT": 83.56
+},
+{
+"text": "emosi,",
+"start": 230.633,
+"end": 231.073,
+"src": "v3",
+"sec": "kesan",
+"srcT": 83.9
+},
+{
+"text": "ramai",
+"start": 231.473,
+"end": 231.753,
+"src": "v3",
+"sec": "kesan",
+"srcT": 84.84
+},
+{
+"text": "yang",
+"start": 231.753,
+"end": 231.913,
+"src": "v3",
+"sec": "kesan",
+"srcT": 85.12
+},
+{
+"text": "malu,",
+"start": 231.913,
+"end": 232.433,
+"src": "v3",
+"sec": "kesan",
+"srcT": 85.28
+},
+{
+"text": "tertekan,",
+"start": 232.567,
+"end": 233.287,
+"src": "v3",
+"sec": "kesan",
+"srcT": 86.08
+},
+{
+"text": "dan",
+"start": 233.447,
+"end": 233.787,
+"src": "v3",
+"sec": "kesan",
+"srcT": 86.98
+},
+{
+"text": "menyalahkan",
+"start": 233.787,
+"end": 234.467,
+"src": "v3",
+"sec": "kesan",
+"srcT": 87.32
+},
+{
+"text": "diri",
+"start": 234.467,
+"end": 234.747,
+"src": "v3",
+"sec": "kesan",
+"srcT": 88.0
+},
+{
+"text": "sendiri.",
+"start": 234.747,
+"end": 235.167,
+"src": "v3",
+"sec": "kesan",
+"srcT": 88.28
+},
+{
+"text": "Kesan",
+"start": 235.367,
+"end": 235.767,
+"src": "v3",
+"sec": "kesan",
+"srcT": 89.1
+},
+{
+"text": "yang",
+"start": 235.767,
+"end": 235.867,
+"src": "v3",
+"sec": "kesan",
+"srcT": 89.7
+},
+{
+"text": "paling",
+"start": 235.867,
+"end": 236.227,
+"src": "v3",
+"sec": "kesan",
+"srcT": 89.8
+},
+{
+"text": "dalam",
+"start": 236.227,
+"end": 236.547,
+"src": "v3",
+"sec": "kesan",
+"srcT": 90.16
+},
+{
+"text": "ialah",
+"start": 236.547,
+"end": 237.047,
+"src": "v3",
+"sec": "kesan",
+"srcT": 90.48
+},
+{
+"text": "hilangnya",
+"start": 237.2,
+"end": 237.86,
+"src": "v3",
+"sec": "kesan",
+"srcT": 90.98
+},
+{
+"text": "kepercayaan.",
+"start": 237.86,
+"end": 238.76,
+"src": "v3",
+"sec": "kesan",
+"srcT": 92.06
+},
+{
+"text": "Mangsa",
+"start": 238.933,
+"end": 239.467,
+"src": "v3",
+"sec": "kesan",
+"srcT": 97.26
+},
+{
+"text": "akan",
+"start": 239.467,
+"end": 239.667,
+"src": "v3",
+"sec": "kesan",
+"srcT": 98.1
+},
+{
+"text": "mula",
+"start": 239.667,
+"end": 240.047,
+"src": "v3",
+"sec": "kesan",
+"srcT": 98.3
+},
+{
+"text": "mencerugai",
+"start": 240.047,
+"end": 240.807,
+"src": "v3",
+"sec": "kesan",
+"srcT": 98.68
+},
+{
+"text": "semua",
+"start": 240.807,
+"end": 241.647,
+"src": "v3",
+"sec": "kesan",
+"srcT": 99.44
+},
+{
+"text": "orang",
+"start": 241.647,
+"end": 241.987,
+"src": "v3",
+"sec": "kesan",
+"srcT": 100.28
+},
+{
+"text": "termasuk",
+"start": 241.987,
+"end": 242.547,
+"src": "v3",
+"sec": "kesan",
+"srcT": 100.62
+},
+{
+"text": "institusi",
+"start": 242.547,
+"end": 243.307,
+"src": "v3",
+"sec": "kesan",
+"srcT": 101.18
+},
+{
+"text": "keuangan",
+"start": 243.307,
+"end": 243.767,
+"src": "v3",
+"sec": "kesan",
+"srcT": 101.94
+},
+{
+"text": "yang",
+"start": 243.767,
+"end": 243.987,
+"src": "v3",
+"sec": "kesan",
+"srcT": 102.4
+},
+{
+"text": "sah.",
+"start": 243.987,
+"end": 244.327,
+"src": "v3",
+"sec": "kesan",
+"srcT": 102.62
+},
+{
+"text": "Sekarang,",
+"start": 245.247,
+"end": 245.767,
+"src": "v3",
+"sec": "etika",
+"srcT": 122.78
+},
+{
+"text": "saya",
+"start": 245.967,
+"end": 246.047,
+"src": "v3",
+"sec": "etika",
+"srcT": 123.5
+},
+{
+"text": "mau",
+"start": 246.047,
+"end": 246.307,
+"src": "v3",
+"sec": "etika",
+"srcT": 123.58
+},
+{
+"text": "menilai",
+"start": 246.307,
+"end": 246.807,
+"src": "v3",
+"sec": "etika",
+"srcT": 123.84
+},
+{
+"text": "isu",
+"start": 246.807,
+"end": 247.167,
+"src": "v3",
+"sec": "etika",
+"srcT": 124.34
+},
+{
+"text": "ini",
+"start": 247.167,
+"end": 247.367,
+"src": "v3",
+"sec": "etika",
+"srcT": 124.7
+},
+{
+"text": "dari",
+"start": 247.367,
+"end": 247.607,
+"src": "v3",
+"sec": "etika",
+"srcT": 124.9
+},
+{
+"text": "sudut",
+"start": 247.607,
+"end": 247.987,
+"src": "v3",
+"sec": "etika",
+"srcT": 125.14
+},
+{
+"text": "etika",
+"start": 247.987,
+"end": 248.487,
+"src": "v3",
+"sec": "etika",
+"srcT": 125.52
+},
+{
+"text": "dan",
+"start": 248.487,
+"end": 248.707,
+"src": "v3",
+"sec": "etika",
+"srcT": 126.02
+},
+{
+"text": "peradaban.",
+"start": 248.707,
+"end": 249.327,
+"src": "v3",
+"sec": "etika",
+"srcT": 126.24
+},
+{
+"text": "tugasan",
+"start": 250.033,
+"end": 250.473,
+"src": "v3",
+"sec": "etika",
+"srcT": 127.8
+},
+{
+"text": "ini",
+"start": 250.473,
+"end": 250.693,
+"src": "v3",
+"sec": "etika",
+"srcT": 128.24
+},
+{
+"text": "menyebut",
+"start": 250.693,
+"end": 251.133,
+"src": "v3",
+"sec": "etika",
+"srcT": 128.46
+},
+{
+"text": "dua",
+"start": 251.267,
+"end": 251.587,
+"src": "v3",
+"sec": "etika",
+"srcT": 128.9
+},
+{
+"text": "punca",
+"start": 251.587,
+"end": 252.007,
+"src": "v3",
+"sec": "etika",
+"srcT": 129.42
+},
+{
+"text": "keruntuhan",
+"start": 252.007,
+"end": 252.587,
+"src": "v3",
+"sec": "etika",
+"srcT": 129.84
+},
+{
+"text": "etika",
+"start": 252.587,
+"end": 253.047,
+"src": "v3",
+"sec": "etika",
+"srcT": 130.42
+},
+{
+"text": "dalam",
+"start": 253.047,
+"end": 253.367,
+"src": "v3",
+"sec": "etika",
+"srcT": 130.88
+},
+{
+"text": "penggunaan",
+"start": 253.367,
+"end": 253.987,
+"src": "v3",
+"sec": "etika",
+"srcT": 131.2
+},
+{
+"text": "teknologi",
+"start": 253.987,
+"end": 254.687,
+"src": "v3",
+"sec": "etika",
+"srcT": 131.82
+},
+{
+"text": "yaitu",
+"start": 254.687,
+"end": 255.187,
+"src": "v3",
+"sec": "etika",
+"srcT": 132.52
+},
+{
+"text": "sikap",
+"start": 255.333,
+"end": 255.78,
+"src": "v3",
+"sec": "etika",
+"srcT": 133.02
+},
+{
+"text": "tamak",
+"start": 255.78,
+"end": 256.22,
+"src": "v3",
+"sec": "etika",
+"srcT": 133.78
+},
+{
+"text": "dan",
+"start": 256.22,
+"end": 256.4,
+"src": "v3",
+"sec": "etika",
+"srcT": 134.22
+},
+{
+"text": "juga",
+"start": 256.4,
+"end": 256.74,
+"src": "v3",
+"sec": "etika",
+"srcT": 134.4
+},
+{
+"text": "pengabayan",
+"start": 256.967,
+"end": 257.52,
+"src": "v3",
+"sec": "etika",
+"srcT": 134.74
+},
+{
+"text": "tanggung",
+"start": 257.52,
+"end": 257.82,
+"src": "v3",
+"sec": "etika",
+"srcT": 135.62
+},
+{
+"text": "jawab.",
+"start": 257.82,
+"end": 258.2,
+"src": "v3",
+"sec": "etika",
+"srcT": 135.92
+},
+{
+"text": "Pada",
+"start": 258.267,
+"end": 258.56,
+"src": "v3",
+"sec": "etika",
+"srcT": 136.46
+},
+{
+"text": "pendangan",
+"start": 258.56,
+"end": 258.9,
+"src": "v3",
+"sec": "etika",
+"srcT": 136.96
+},
+{
+"text": "saya,",
+"start": 258.9,
+"end": 259.32,
+"src": "v3",
+"sec": "etika",
+"srcT": 137.3
+},
+{
+"text": "kedua",
+"start": 259.633,
+"end": 260.047,
+"src": "v3",
+"sec": "etika",
+"srcT": 138.06
+},
+{
+"text": "-dua",
+"start": 260.047,
+"end": 260.267,
+"src": "v3",
+"sec": "etika",
+"srcT": 138.58
+},
+{
+"text": "jelas",
+"start": 260.267,
+"end": 260.607,
+"src": "v3",
+"sec": "etika",
+"srcT": 138.8
+},
+{
+"text": "dalam",
+"start": 260.607,
+"end": 260.927,
+"src": "v3",
+"sec": "etika",
+"srcT": 139.14
+},
+{
+"text": "launch",
+"start": 260.927,
+"end": 261.247,
+"src": "v3",
+"sec": "etika",
+"srcT": 139.46
+},
+{
+"text": "game.",
+"start": 261.247,
+"end": 261.487,
+"src": "v3",
+"sec": "etika",
+"srcT": 139.78
+},
+{
+"text": "Yang",
+"start": 261.753,
+"end": 261.973,
+"src": "v3",
+"sec": "etika",
+"srcT": 140.52
+},
+{
+"text": "pertama,",
+"start": 261.973,
+"end": 262.393,
+"src": "v3",
+"sec": "etika",
+"srcT": 140.74
+},
+{
+"text": "sikap",
+"start": 262.913,
+"end": 263.153,
+"src": "v3",
+"sec": "etika",
+"srcT": 141.68
+},
+{
+"text": "tamak",
+"start": 263.153,
+"end": 263.593,
+"src": "v3",
+"sec": "etika",
+"srcT": 141.92
+},
+{
+"text": "yang",
+"start": 263.593,
+"end": 263.773,
+"src": "v3",
+"sec": "etika",
+"srcT": 142.36
+},
+{
+"text": "ada",
+"start": 263.773,
+"end": 264.033,
+"src": "v3",
+"sec": "etika",
+"srcT": 142.54
+},
+{
+"text": "pada",
+"start": 264.033,
+"end": 264.313,
+"src": "v3",
+"sec": "etika",
+"srcT": 142.8
+},
+{
+"text": "sindiket",
+"start": 264.313,
+"end": 264.893,
+"src": "v3",
+"sec": "etika",
+"srcT": 143.08
+},
+{
+"text": "yang",
+"start": 264.893,
+"end": 265.133,
+"src": "v3",
+"sec": "etika",
+"srcT": 143.66
+},
+{
+"text": "sanggup",
+"start": 265.133,
+"end": 265.573,
+"src": "v3",
+"sec": "etika",
+"srcT": 143.9
+},
+{
+"text": "mengambil",
+"start": 265.573,
+"end": 266.013,
+"src": "v3",
+"sec": "etika",
+"srcT": 144.34
+},
+{
+"text": "uang",
+"start": 266.013,
+"end": 266.313,
+"src": "v3",
+"sec": "etika",
+"srcT": 144.78
+},
+{
+"text": "orang",
+"start": 266.313,
+"end": 266.653,
+"src": "v3",
+"sec": "etika",
+"srcT": 145.08
+},
+{
+"text": "yang",
+"start": 266.653,
+"end": 266.913,
+"src": "v3",
+"sec": "etika",
+"srcT": 145.42
+},
+{
+"text": "dalam",
+"start": 266.913,
+"end": 267.213,
+"src": "v3",
+"sec": "etika",
+"srcT": 145.68
+},
+{
+"text": "sedang",
+"start": 267.213,
+"end": 268.113,
+"src": "v3",
+"sec": "etika",
+"srcT": 145.98
+},
+{
+"text": "kesusahan.",
+"start": 268.113,
+"end": 268.833,
+"src": "v3",
+"sec": "etika",
+"srcT": 146.88
+},
+{
+"text": "Pengabayan",
+"start": 269.067,
+"end": 269.613,
+"src": "v3",
+"sec": "etika",
+"srcT": 147.6
+},
+{
+"text": "tanggung",
+"start": 269.613,
+"end": 269.973,
+"src": "v3",
+"sec": "etika",
+"srcT": 148.68
+},
+{
+"text": "jawab",
+"start": 269.973,
+"end": 270.253,
+"src": "v3",
+"sec": "etika",
+"srcT": 149.04
+},
+{
+"text": "pula",
+"start": 270.253,
+"end": 270.553,
+"src": "v3",
+"sec": "etika",
+"srcT": 149.32
+},
+{
+"text": "pada",
+"start": 271.073,
+"end": 271.453,
+"src": "v3",
+"sec": "etika",
+"srcT": 150.34
+},
+{
+"text": "pemilik",
+"start": 271.453,
+"end": 272.233,
+"src": "v3",
+"sec": "etika",
+"srcT": 150.72
+},
+{
+"text": "ekon",
+"start": 272.233,
+"end": 272.573,
+"src": "v3",
+"sec": "etika",
+"srcT": 151.5
+},
+{
+"text": "geledai",
+"start": 272.573,
+"end": 273.133,
+"src": "v3",
+"sec": "etika",
+"srcT": 151.84
+},
+{
+"text": "yang",
+"start": 273.133,
+"end": 273.613,
+"src": "v3",
+"sec": "etika",
+"srcT": 152.4
+},
+{
+"text": "sanggup",
+"start": 273.613,
+"end": 274.173,
+"src": "v3",
+"sec": "etika",
+"srcT": 152.88
+},
+{
+"text": "menyewakan",
+"start": 274.267,
+"end": 274.833,
+"src": "v3",
+"sec": "etika",
+"srcT": 153.44
+},
+{
+"text": "ekon",
+"start": 274.833,
+"end": 275.253,
+"src": "v3",
+"sec": "etika",
+"srcT": 154.2
+},
+{
+"text": "mereka",
+"start": 275.253,
+"end": 275.713,
+"src": "v3",
+"sec": "etika",
+"srcT": 154.62
+},
+{
+"text": "demi",
+"start": 275.713,
+"end": 276.433,
+"src": "v3",
+"sec": "etika",
+"srcT": 155.08
+},
+{
+"text": "mudah",
+"start": 277.167,
+"end": 277.747,
+"src": "v3",
+"sec": "etika",
+"srcT": 157.3
+},
+{
+"text": "tanpa",
+"start": 277.867,
+"end": 278.227,
+"src": "v3",
+"sec": "etika",
+"srcT": 157.88
+},
+{
+"text": "peduli",
+"start": 278.227,
+"end": 278.767,
+"src": "v3",
+"sec": "etika",
+"srcT": 158.46
+},
+{
+"text": "siapa",
+"start": 279.0,
+"end": 279.34,
+"src": "v3",
+"sec": "etika",
+"srcT": 159.0
+},
+{
+"text": "punya",
+"start": 279.34,
+"end": 279.62,
+"src": "v3",
+"sec": "etika",
+"srcT": 159.64
+},
+{
+"text": "uang",
+"start": 279.62,
+"end": 279.92,
+"src": "v3",
+"sec": "etika",
+"srcT": 159.92
+},
+{
+"text": "yang",
+"start": 279.92,
+"end": 280.06,
+"src": "v3",
+"sec": "etika",
+"srcT": 160.22
+},
+{
+"text": "akan",
+"start": 280.06,
+"end": 280.24,
+"src": "v3",
+"sec": "etika",
+"srcT": 160.36
+},
+{
+"text": "masuk",
+"start": 280.24,
+"end": 280.58,
+"src": "v3",
+"sec": "etika",
+"srcT": 160.54
+},
+{
+"text": "ke",
+"start": 280.58,
+"end": 280.78,
+"src": "v3",
+"sec": "etika",
+"srcT": 160.88
+},
+{
+"text": "dalam",
+"start": 280.78,
+"end": 280.92,
+"src": "v3",
+"sec": "etika",
+"srcT": 161.08
+},
+{
+"text": "ekon",
+"start": 280.92,
+"end": 281.46,
+"src": "v3",
+"sec": "etika",
+"srcT": 161.22
+},
+{
+"text": "dan",
+"start": 281.46,
+"end": 282.06,
+"src": "v3",
+"sec": "etika",
+"srcT": 161.76
+},
+{
+"text": "mangsa",
+"start": 282.267,
+"end": 282.707,
+"src": "v3",
+"sec": "etika",
+"srcT": 162.36
+},
+{
+"text": "siapa",
+"start": 282.707,
+"end": 283.067,
+"src": "v3",
+"sec": "etika",
+"srcT": 163.14
+},
+{
+"text": "yang",
+"start": 283.067,
+"end": 283.307,
+"src": "v3",
+"sec": "etika",
+"srcT": 163.5
+},
+{
+"text": "akan",
+"start": 283.307,
+"end": 283.707,
+"src": "v3",
+"sec": "etika",
+"srcT": 163.74
+},
+{
+"text": "terjerat",
+"start": 283.967,
+"end": 284.653,
+"src": "v3",
+"sec": "etika",
+"srcT": 164.14
+},
+{
+"text": "melalui",
+"start": 284.653,
+"end": 285.533,
+"src": "v3",
+"sec": "etika",
+"srcT": 165.42
+},
+{
+"text": "ekon",
+"start": 286.14,
+"end": 286.42,
+"src": "v3",
+"sec": "etika",
+"srcT": 167.24
+},
+{
+"text": "ini.",
+"start": 286.42,
+"end": 286.74,
+"src": "v3",
+"sec": "etika",
+"srcT": 167.52
+},
+{
+"text": "Inilah",
+"start": 286.933,
+"end": 287.453,
+"src": "v3",
+"sec": "etika",
+"srcT": 171.12
+},
+{
+"text": "yang",
+"start": 287.453,
+"end": 287.753,
+"src": "v3",
+"sec": "etika",
+"srcT": 171.92
+},
+{
+"text": "modul",
+"start": 287.753,
+"end": 288.173,
+"src": "v3",
+"sec": "etika",
+"srcT": 172.22
+},
+{
+"text": "khusus",
+"start": 288.173,
+"end": 288.813,
+"src": "v3",
+"sec": "etika",
+"srcT": 172.64
+},
+{
+"text": "sebut",
+"start": 288.813,
+"end": 289.413,
+"src": "v3",
+"sec": "etika",
+"srcT": 173.28
+},
+{
+"text": "tentang",
+"start": 289.413,
+"end": 289.753,
+"src": "v3",
+"sec": "etika",
+"srcT": 173.88
+},
+{
+"text": "ekonomi",
+"start": 289.753,
+"end": 290.413,
+"src": "v3",
+"sec": "etika",
+"srcT": 174.22
+},
+{
+"text": "gelap",
+"start": 290.413,
+"end": 290.733,
+"src": "v3",
+"sec": "etika",
+"srcT": 174.88
+},
+{
+"text": "yaitu",
+"start": 290.733,
+"end": 291.053,
+"src": "v3",
+"sec": "etika",
+"srcT": 175.2
+},
+{
+"text": "aktiviti",
+"start": 291.053,
+"end": 291.653,
+"src": "v3",
+"sec": "etika",
+"srcT": 175.52
+},
+{
+"text": "di",
+"start": 291.653,
+"end": 291.833,
+"src": "v3",
+"sec": "etika",
+"srcT": 176.12
+},
+{
+"text": "luar",
+"start": 291.833,
+"end": 292.053,
+"src": "v3",
+"sec": "etika",
+"srcT": 176.3
+},
+{
+"text": "kawalan",
+"start": 292.053,
+"end": 292.413,
+"src": "v3",
+"sec": "etika",
+"srcT": 176.52
+},
+{
+"text": "pihak",
+"start": 292.413,
+"end": 292.793,
+"src": "v3",
+"sec": "etika",
+"srcT": 176.88
+},
+{
+"text": "berkuasa",
+"start": 292.793,
+"end": 293.373,
+"src": "v3",
+"sec": "etika",
+"srcT": 177.26
+},
+{
+"text": "yang",
+"start": 293.373,
+"end": 294.013,
+"src": "v3",
+"sec": "etika",
+"srcT": 177.84
+},
+{
+"text": "sering",
+"start": 294.013,
+"end": 294.373,
+"src": "v3",
+"sec": "etika",
+"srcT": 178.48
+},
+{
+"text": "dikaitkan",
+"start": 294.373,
+"end": 294.873,
+"src": "v3",
+"sec": "etika",
+"srcT": 178.84
+},
+{
+"text": "dengan",
+"start": 294.873,
+"end": 295.093,
+"src": "v3",
+"sec": "etika",
+"srcT": 179.34
+},
+{
+"text": "sindiket",
+"start": 295.093,
+"end": 295.653,
+"src": "v3",
+"sec": "etika",
+"srcT": 179.56
+},
+{
+"text": "jenayah.",
+"start": 295.653,
+"end": 296.233,
+"src": "v3",
+"sec": "etika",
+"srcT": 180.12
+},
+{
+"text": "Dari",
+"start": 296.333,
+"end": 296.6,
+"src": "v3",
+"sec": "etika",
+"srcT": 180.7
+},
+{
+"text": "sudut",
+"start": 296.967,
+"end": 297.287,
+"src": "v3",
+"sec": "etika",
+"srcT": 182.2
+},
+{
+"text": "peradaban,",
+"start": 297.287,
+"end": 297.947,
+"src": "v3",
+"sec": "etika",
+"srcT": 182.52
+},
+{
+"text": "launch",
+"start": 298.387,
+"end": 298.587,
+"src": "v3",
+"sec": "etika",
+"srcT": 183.72
+},
+{
+"text": "game",
+"start": 298.587,
+"end": 298.907,
+"src": "v3",
+"sec": "etika",
+"srcT": 183.92
+},
+{
+"text": "menghakis",
+"start": 298.907,
+"end": 299.507,
+"src": "v3",
+"sec": "etika",
+"srcT": 184.24
+},
+{
+"text": "tiga",
+"start": 299.507,
+"end": 299.807,
+"src": "v3",
+"sec": "etika",
+"srcT": 184.84
+},
+{
+"text": "nilai",
+"start": 299.807,
+"end": 300.287,
+"src": "v3",
+"sec": "etika",
+"srcT": 185.14
+},
+{
+"text": "asas.",
+"start": 300.287,
+"end": 300.787,
+"src": "v3",
+"sec": "etika",
+"srcT": 185.62
+},
+{
+"text": "Yang",
+"start": 301.407,
+"end": 301.467,
+"src": "v3",
+"sec": "etika",
+"srcT": 186.74
+},
+{
+"text": "pertama,",
+"start": 301.467,
+"end": 301.807,
+"src": "v3",
+"sec": "etika",
+"srcT": 186.8
+},
+{
+"text": "empati",
+"start": 302.233,
+"end": 302.807,
+"src": "v3",
+"sec": "etika",
+"srcT": 187.62
+},
+{
+"text": "kerana",
+"start": 302.807,
+"end": 303.147,
+"src": "v3",
+"sec": "etika",
+"srcT": 188.24
+},
+{
+"text": "mangsa",
+"start": 303.147,
+"end": 303.547,
+"src": "v3",
+"sec": "etika",
+"srcT": 188.58
+},
+{
+"text": "dilihat",
+"start": 303.547,
+"end": 303.987,
+"src": "v3",
+"sec": "etika",
+"srcT": 188.98
+},
+{
+"text": "sebagai",
+"start": 303.987,
+"end": 304.367,
+"src": "v3",
+"sec": "etika",
+"srcT": 189.42
+},
+{
+"text": "sumber",
+"start": 304.367,
+"end": 304.747,
+"src": "v3",
+"sec": "etika",
+"srcT": 189.8
+},
+{
+"text": "uang",
+"start": 304.747,
+"end": 305.087,
+"src": "v3",
+"sec": "etika",
+"srcT": 190.18
+},
+{
+"text": "bukan",
+"start": 305.087,
+"end": 305.667,
+"src": "v3",
+"sec": "etika",
+"srcT": 190.52
+},
+{
+"text": "manusia.",
+"start": 305.667,
+"end": 306.287,
+"src": "v3",
+"sec": "etika",
+"srcT": 191.1
+},
+{
+"text": "Yang",
+"start": 306.467,
+"end": 306.733,
+"src": "v3",
+"sec": "etika",
+"srcT": 192.0
+},
+{
+"text": "kedua,",
+"start": 306.733,
+"end": 307.253,
+"src": "v3",
+"sec": "etika",
+"srcT": 192.3
+},
+{
+"text": "kesepanan",
+"start": 307.553,
+"end": 308.073,
+"src": "v3",
+"sec": "etika",
+"srcT": 193.52
+},
+{
+"text": "dan",
+"start": 308.073,
+"end": 308.433,
+"src": "v3",
+"sec": "etika",
+"srcT": 194.04
+},
+{
+"text": "kesusilaan",
+"start": 308.433,
+"end": 309.313,
+"src": "v3",
+"sec": "etika",
+"srcT": 194.4
+},
+{
+"text": "apabila",
+"start": 309.5,
+"end": 310.107,
+"src": "v3",
+"sec": "etika",
+"srcT": 195.28
+},
+{
+"text": "mangsa",
+"start": 310.107,
+"end": 310.467,
+"src": "v3",
+"sec": "etika",
+"srcT": 196.14
+},
+{
+"text": "diugut",
+"start": 310.467,
+"end": 311.047,
+"src": "v3",
+"sec": "etika",
+"srcT": 196.5
+},
+{
+"text": "dimalukan,",
+"start": 311.427,
+"end": 312.067,
+"src": "v3",
+"sec": "etika",
+"srcT": 198.26
+},
+{
+"text": "malah",
+"start": 312.367,
+"end": 312.94,
+"src": "v3",
+"sec": "etika",
+"srcT": 199.22
+},
+{
+"text": "gambar",
+"start": 313.033,
+"end": 313.507,
+"src": "v3",
+"sec": "etika",
+"srcT": 199.94
+},
+{
+"text": "ahli",
+"start": 313.507,
+"end": 313.787,
+"src": "v3",
+"sec": "etika",
+"srcT": 200.64
+},
+{
+"text": "keluarga",
+"start": 313.787,
+"end": 314.307,
+"src": "v3",
+"sec": "etika",
+"srcT": 200.92
+},
+{
+"text": "mereka",
+"start": 314.307,
+"end": 314.567,
+"src": "v3",
+"sec": "etika",
+"srcT": 201.44
+},
+{
+"text": "turut",
+"start": 314.567,
+"end": 315.147,
+"src": "v3",
+"sec": "etika",
+"srcT": 201.7
+},
+{
+"text": "digunakan",
+"start": 315.147,
+"end": 315.767,
+"src": "v3",
+"sec": "etika",
+"srcT": 202.28
+},
+{
+"text": "mengugut.",
+"start": 316.473,
+"end": 317.093,
+"src": "v3",
+"sec": "etika",
+"srcT": 203.74
+},
+{
+"text": "ketiga,",
+"start": 317.48,
+"end": 318.04,
+"src": "v3",
+"sec": "etika",
+"srcT": 204.98
+},
+{
+"text": "kepercayaan",
+"start": 318.3,
+"end": 319.313,
+"src": "v3",
+"sec": "etika",
+"srcT": 205.98
+},
+{
+"text": "yang",
+"start": 319.313,
+"end": 319.793,
+"src": "v3",
+"sec": "etika",
+"srcT": 207.28
+},
+{
+"text": "menjadi",
+"start": 319.793,
+"end": 320.213,
+"src": "v3",
+"sec": "etika",
+"srcT": 207.76
+},
+{
+"text": "perpaduan",
+"start": 321.367,
+"end": 322.087,
+"src": "v3",
+"sec": "etika",
+"srcT": 209.54
+},
+{
+"text": "masyarakat",
+"start": 322.433,
+"end": 323.533,
+"src": "v3",
+"sec": "etika",
+"srcT": 210.52
+},
+{
+"text": "majmuk.",
+"start": 327.207,
+"end": 327.767,
+"src": "v3",
+"sec": "etika",
+"srcT": 219.54
+},
+{
+"text": "Apabila",
+"start": 327.833,
+"end": 328.367,
+"src": "v3",
+"sec": "etika",
+"srcT": 220.28
+},
+{
+"text": "sindiket",
+"start": 328.367,
+"end": 328.827,
+"src": "v3",
+"sec": "etika",
+"srcT": 221.0
+},
+{
+"text": "menyamar",
+"start": 328.827,
+"end": 329.307,
+"src": "v3",
+"sec": "etika",
+"srcT": 221.46
+},
+{
+"text": "sebagai",
+"start": 329.307,
+"end": 329.667,
+"src": "v3",
+"sec": "etika",
+"srcT": 221.94
+},
+{
+"text": "pegawai",
+"start": 329.667,
+"end": 330.167,
+"src": "v3",
+"sec": "etika",
+"srcT": 222.3
+},
+{
+"text": "bank,",
+"start": 330.167,
+"end": 330.487,
+"src": "v3",
+"sec": "etika",
+"srcT": 222.8
+},
+{
+"text": "menggunakan",
+"start": 330.967,
+"end": 331.567,
+"src": "v3",
+"sec": "etika",
+"srcT": 223.6
+},
+{
+"text": "bahasa",
+"start": 331.567,
+"end": 331.967,
+"src": "v3",
+"sec": "etika",
+"srcT": 224.2
+},
+{
+"text": "dan",
+"start": 331.967,
+"end": 332.167,
+"src": "v3",
+"sec": "etika",
+"srcT": 224.6
+},
+{
+"text": "logat",
+"start": 332.167,
+"end": 332.527,
+"src": "v3",
+"sec": "etika",
+"srcT": 224.8
+},
+{
+"text": "mangsa,",
+"start": 332.527,
+"end": 332.967,
+"src": "v3",
+"sec": "etika",
+"srcT": 225.16
+},
+{
+"text": "serta",
+"start": 333.147,
+"end": 333.387,
+"src": "v3",
+"sec": "etika",
+"srcT": 225.78
+},
+{
+"text": "menggunakan",
+"start": 333.387,
+"end": 334.187,
+"src": "v3",
+"sec": "etika",
+"srcT": 226.02
+},
+{
+"text": "ekon",
+"start": 334.187,
+"end": 334.487,
+"src": "v3",
+"sec": "etika",
+"srcT": 226.82
+},
+{
+"text": "milik",
+"start": 334.487,
+"end": 334.827,
+"src": "v3",
+"sec": "etika",
+"srcT": 227.12
+},
+{
+"text": "rakyat",
+"start": 334.827,
+"end": 335.547,
+"src": "v3",
+"sec": "etika",
+"srcT": 227.46
+},
+{
+"text": "biasa",
+"start": 335.547,
+"end": 335.927,
+"src": "v3",
+"sec": "etika",
+"srcT": 228.18
+},
+{
+"text": "daripada",
+"start": 335.927,
+"end": 336.367,
+"src": "v3",
+"sec": "etika",
+"srcT": 228.56
+},
+{
+"text": "pelbagai",
+"start": 336.367,
+"end": 336.927,
+"src": "v3",
+"sec": "etika",
+"srcT": 229.0
+},
+{
+"text": "kaum,",
+"start": 336.927,
+"end": 337.267,
+"src": "v3",
+"sec": "etika",
+"srcT": 229.56
+},
+{
+"text": "rakyat",
+"start": 337.587,
+"end": 338.087,
+"src": "v3",
+"sec": "etika",
+"srcT": 230.22
+},
+{
+"text": "mula",
+"start": 338.087,
+"end": 338.387,
+"src": "v3",
+"sec": "etika",
+"srcT": 230.72
+},
+{
+"text": "curiga",
+"start": 338.387,
+"end": 338.807,
+"src": "v3",
+"sec": "etika",
+"srcT": 231.02
+},
+{
+"text": "terhadap",
+"start": 338.807,
+"end": 339.267,
+"src": "v3",
+"sec": "etika",
+"srcT": 231.44
+},
+{
+"text": "satu",
+"start": 339.267,
+"end": 339.527,
+"src": "v3",
+"sec": "etika",
+"srcT": 231.9
+},
+{
+"text": "sama",
+"start": 339.527,
+"end": 339.767,
+"src": "v3",
+"sec": "etika",
+"srcT": 232.16
+},
+{
+"text": "lain.",
+"start": 339.767,
+"end": 340.107,
+"src": "v3",
+"sec": "etika",
+"srcT": 232.4
+},
+{
+"text": "Jika",
+"start": 340.4,
+"end": 340.847,
+"src": "v3",
+"sec": "etika",
+"srcT": 237.68
+},
+{
+"text": "kepercayaan",
+"start": 340.847,
+"end": 341.647,
+"src": "v3",
+"sec": "etika",
+"srcT": 238.48
+},
+{
+"text": "ini",
+"start": 341.647,
+"end": 341.847,
+"src": "v3",
+"sec": "etika",
+"srcT": 239.28
+},
+{
+"text": "terus",
+"start": 341.847,
+"end": 342.167,
+"src": "v3",
+"sec": "etika",
+"srcT": 239.48
+},
+{
+"text": "terhakis,",
+"start": 342.167,
+"end": 342.887,
+"src": "v3",
+"sec": "etika",
+"srcT": 239.8
+},
+{
+"text": "prinsip",
+"start": 343.087,
+"end": 343.487,
+"src": "v3",
+"sec": "etika",
+"srcT": 240.82
+},
+{
+"text": "kosopan",
+"start": 343.487,
+"end": 344.007,
+"src": "v3",
+"sec": "etika",
+"srcT": 241.22
+},
+{
+"text": "dan",
+"start": 344.007,
+"end": 344.207,
+"src": "v3",
+"sec": "etika",
+"srcT": 241.74
+},
+{
+"text": "kesusilaan",
+"start": 344.207,
+"end": 345.067,
+"src": "v3",
+"sec": "etika",
+"srcT": 241.94
+},
+{
+"text": "dalam",
+"start": 345.067,
+"end": 345.267,
+"src": "v3",
+"sec": "etika",
+"srcT": 242.8
+},
+{
+"text": "rukun",
+"start": 345.267,
+"end": 345.627,
+"src": "v3",
+"sec": "etika",
+"srcT": 243.0
+},
+{
+"text": "negara",
+"start": 345.627,
+"end": 346.067,
+"src": "v3",
+"sec": "etika",
+"srcT": 243.36
+},
+{
+"text": "hanya",
+"start": 346.233,
+"end": 346.567,
+"src": "v3",
+"sec": "etika",
+"srcT": 243.8
+},
+{
+"text": "tinggal",
+"start": 346.567,
+"end": 346.927,
+"src": "v3",
+"sec": "etika",
+"srcT": 244.4
+},
+{
+"text": "slogan.",
+"start": 346.927,
+"end": 347.347,
+"src": "v3",
+"sec": "etika",
+"srcT": 244.76
+},
+{
+"text": "Jadi,",
+"start": 347.727,
+"end": 348.787,
+"src": "v2",
+"sec": "undang",
+"srcT": 0.76
+},
+{
+"text": "apakah",
+"start": 349.347,
+"end": 349.607,
+"src": "v2",
+"sec": "undang",
+"srcT": 2.38
+},
+{
+"text": "penyelesaiannya?",
+"start": 349.607,
+"end": 350.547,
+"src": "v2",
+"sec": "undang",
+"srcT": 2.64
+},
+{
+"text": "Pertama,",
+"start": 350.687,
+"end": 351.307,
+"src": "v2",
+"sec": "undang",
+"srcT": 3.72
+},
+{
+"text": "penguat",
+"start": 352.267,
+"end": 352.76,
+"src": "v2",
+"sec": "undang",
+"srcT": 5.7
+},
+{
+"text": "kuasaan",
+"start": 352.76,
+"end": 353.54,
+"src": "v2",
+"sec": "undang",
+"srcT": 6.36
+},
+{
+"text": "undang",
+"start": 353.54,
+"end": 354.08,
+"src": "v2",
+"sec": "undang",
+"srcT": 7.14
+},
+{
+"text": "-undang.",
+"start": 354.08,
+"end": 354.5,
+"src": "v2",
+"sec": "undang",
+"srcT": 7.68
+},
+{
+"text": "SKMM",
+"start": 354.78,
+"end": 355.66,
+"src": "v2",
+"sec": "undang",
+"srcT": 8.38
+},
+{
+"text": "menggunakan",
+"start": 355.66,
+"end": 356.34,
+"src": "v2",
+"sec": "undang",
+"srcT": 9.26
+},
+{
+"text": "Seksyen",
+"start": 356.34,
+"end": 356.82,
+"src": "v2",
+"sec": "undang",
+"srcT": 9.94
+},
+{
+"text": "233",
+"start": 356.82,
+"end": 357.56,
+"src": "v2",
+"sec": "undang",
+"srcT": 10.42
+},
+{
+"text": "Akta",
+"start": 357.56,
+"end": 357.86,
+"src": "v2",
+"sec": "undang",
+"srcT": 11.16
+},
+{
+"text": "Komunikasi",
+"start": 357.86,
+"end": 358.58,
+"src": "v2",
+"sec": "undang",
+"srcT": 11.46
+},
+{
+"text": "dan",
+"start": 358.58,
+"end": 358.76,
+"src": "v2",
+"sec": "undang",
+"srcT": 12.18
+},
+{
+"text": "Multimedia",
+"start": 358.76,
+"end": 359.52,
+"src": "v2",
+"sec": "undang",
+"srcT": 12.36
+},
+{
+"text": "1998",
+"start": 359.52,
+"end": 360.28,
+"src": "v2",
+"sec": "undang",
+"srcT": 13.12
+},
+{
+"text": "untuk",
+"start": 360.28,
+"end": 361.24,
+"src": "v2",
+"sec": "undang",
+"srcT": 13.88
+},
+{
+"text": "menurunkan",
+"start": 361.24,
+"end": 361.94,
+"src": "v2",
+"sec": "undang",
+"srcT": 14.84
+},
+{
+"text": "kandungan",
+"start": 361.94,
+"end": 362.68,
+"src": "v2",
+"sec": "undang",
+"srcT": 15.54
+},
+{
+"text": "dan",
+"start": 362.68,
+"end": 362.8,
+"src": "v2",
+"sec": "undang",
+"srcT": 16.28
+},
+{
+"text": "iklan",
+"start": 362.8,
+"end": 363.14,
+"src": "v2",
+"sec": "undang",
+"srcT": 16.4
+},
+{
+"text": "palsu.",
+"start": 363.14,
+"end": 363.68,
+"src": "v2",
+"sec": "undang",
+"srcT": 16.74
+},
+{
+"text": "Dari",
+"start": 363.86,
+"end": 364.3,
+"src": "v2",
+"sec": "undang",
+"srcT": 17.46
+},
+{
+"text": "segi",
+"start": 364.3,
+"end": 364.66,
+"src": "v2",
+"sec": "undang",
+"srcT": 17.9
+},
+{
+"text": "angka,",
+"start": 364.66,
+"end": 365.0,
+"src": "v2",
+"sec": "undang",
+"srcT": 18.26
+},
+{
+"text": "ia",
+"start": 365.34,
+"end": 365.42,
+"src": "v2",
+"sec": "undang",
+"srcT": 18.94
+},
+{
+"text": "nampak",
+"start": 365.42,
+"end": 365.72,
+"src": "v2",
+"sec": "undang",
+"srcT": 19.02
+},
+{
+"text": "berkesan",
+"start": 365.72,
+"end": 366.24,
+"src": "v2",
+"sec": "undang",
+"srcT": 19.32
+},
+{
+"text": "kerana",
+"start": 366.24,
+"end": 366.64,
+"src": "v2",
+"sec": "undang",
+"srcT": 19.84
+},
+{
+"text": "96",
+"start": 366.767,
+"end": 367.56,
+"src": "v2",
+"sec": "undang",
+"srcT": 20.24
+},
+{
+"text": "%",
+"start": 367.56,
+"end": 368.2,
+"src": "v2",
+"sec": "undang",
+"srcT": 21.26
+},
+{
+"text": "permohonan",
+"start": 368.2,
+"end": 369.02,
+"src": "v2",
+"sec": "undang",
+"srcT": 21.9
+},
+{
+"text": "berjaya",
+"start": 369.02,
+"end": 370.04,
+"src": "v2",
+"sec": "undang",
+"srcT": 22.72
+},
+{
+"text": "menurunkan",
+"start": 370.233,
+"end": 370.887,
+"src": "v2",
+"sec": "undang",
+"srcT": 23.74
+},
+{
+"text": "kandungan",
+"start": 370.887,
+"end": 371.367,
+"src": "v2",
+"sec": "undang",
+"srcT": 24.82
+},
+{
+"text": "penipuan",
+"start": 371.367,
+"end": 372.027,
+"src": "v2",
+"sec": "undang",
+"srcT": 25.3
+},
+{
+"text": "ini.",
+"start": 372.027,
+"end": 373.007,
+"src": "v2",
+"sec": "undang",
+"srcT": 25.96
+},
+{
+"text": "Namun,",
+"start": 373.233,
+"end": 373.847,
+"src": "v2",
+"sec": "undang",
+"srcT": 26.94
+},
+{
+"text": "saya",
+"start": 374.207,
+"end": 374.347,
+"src": "v2",
+"sec": "undang",
+"srcT": 28.24
+},
+{
+"text": "berpendapat",
+"start": 374.347,
+"end": 375.267,
+"src": "v2",
+"sec": "undang",
+"srcT": 28.38
+},
+{
+"text": "penguat",
+"start": 375.433,
+"end": 375.807,
+"src": "v2",
+"sec": "undang",
+"srcT": 29.3
+},
+{
+"text": "kuasaan",
+"start": 375.807,
+"end": 376.327,
+"src": "v2",
+"sec": "undang",
+"srcT": 30.04
+},
+{
+"text": "ini",
+"start": 376.327,
+"end": 376.547,
+"src": "v2",
+"sec": "undang",
+"srcT": 30.56
+},
+{
+"text": "ada",
+"start": 376.547,
+"end": 376.827,
+"src": "v2",
+"sec": "undang",
+"srcT": 30.78
+},
+{
+"text": "tiga",
+"start": 376.827,
+"end": 377.227,
+"src": "v2",
+"sec": "undang",
+"srcT": 31.06
+},
+{
+"text": "kelemahan.",
+"start": 377.227,
+"end": 377.827,
+"src": "v2",
+"sec": "undang",
+"srcT": 31.46
+},
+{
+"text": "Yang",
+"start": 378.107,
+"end": 378.427,
+"src": "v2",
+"sec": "undang",
+"srcT": 32.34
+},
+{
+"text": "pertama,",
+"start": 378.427,
+"end": 378.807,
+"src": "v2",
+"sec": "undang",
+"srcT": 32.66
+},
+{
+"text": "ia",
+"start": 379.267,
+"end": 379.387,
+"src": "v2",
+"sec": "undang",
+"srcT": 33.5
+},
+{
+"text": "bersifat",
+"start": 379.387,
+"end": 379.947,
+"src": "v2",
+"sec": "undang",
+"srcT": 33.62
+},
+{
+"text": "reaktif,",
+"start": 379.947,
+"end": 380.587,
+"src": "v2",
+"sec": "undang",
+"srcT": 34.18
+},
+{
+"text": "di",
+"start": 380.987,
+"end": 381.427,
+"src": "v2",
+"sec": "undang",
+"srcT": 35.32
+},
+{
+"text": "mana",
+"start": 381.427,
+"end": 381.707,
+"src": "v2",
+"sec": "undang",
+"srcT": 35.76
+},
+{
+"text": "kandungan",
+"start": 381.707,
+"end": 382.307,
+"src": "v2",
+"sec": "undang",
+"srcT": 36.04
+},
+{
+"text": "diturunkan",
+"start": 382.307,
+"end": 382.987,
+"src": "v2",
+"sec": "undang",
+"srcT": 36.64
+},
+{
+"text": "selepas",
+"start": 382.987,
+"end": 383.447,
+"src": "v2",
+"sec": "undang",
+"srcT": 37.32
+},
+{
+"text": "ia",
+"start": 383.447,
+"end": 383.727,
+"src": "v2",
+"sec": "undang",
+"srcT": 37.78
+},
+{
+"text": "tersiar",
+"start": 383.727,
+"end": 384.327,
+"src": "v2",
+"sec": "undang",
+"srcT": 38.06
+},
+{
+"text": "dan",
+"start": 384.327,
+"end": 384.887,
+"src": "v2",
+"sec": "undang",
+"srcT": 38.66
+},
+{
+"text": "ketika",
+"start": 384.887,
+"end": 385.287,
+"src": "v2",
+"sec": "undang",
+"srcT": 39.22
+},
+{
+"text": "itu",
+"start": 385.287,
+"end": 385.667,
+"src": "v2",
+"sec": "undang",
+"srcT": 39.62
+},
+{
+"text": "mungkin",
+"start": 385.667,
+"end": 386.327,
+"src": "v2",
+"sec": "undang",
+"srcT": 40.0
+},
+{
+"text": "sudah",
+"start": 386.327,
+"end": 386.587,
+"src": "v2",
+"sec": "undang",
+"srcT": 40.66
+},
+{
+"text": "ada",
+"start": 386.587,
+"end": 386.827,
+"src": "v2",
+"sec": "undang",
+"srcT": 40.92
+},
+{
+"text": "mangsa",
+"start": 386.827,
+"end": 387.247,
+"src": "v2",
+"sec": "undang",
+"srcT": 41.16
+},
+{
+"text": "yang",
+"start": 387.247,
+"end": 387.427,
+"src": "v2",
+"sec": "undang",
+"srcT": 41.58
+},
+{
+"text": "terjerat.",
+"start": 387.427,
+"end": 388.007,
+"src": "v2",
+"sec": "undang",
+"srcT": 41.76
+},
+{
+"text": "Yang",
+"start": 388.307,
+"end": 388.467,
+"src": "v2",
+"sec": "undang",
+"srcT": 42.64
+},
+{
+"text": "kedua,",
+"start": 388.467,
+"end": 388.927,
+"src": "v2",
+"sec": "undang",
+"srcT": 42.8
+},
+{
+"text": "sindiket",
+"start": 389.207,
+"end": 389.607,
+"src": "v2",
+"sec": "undang",
+"srcT": 43.54
+},
+{
+"text": "mudah",
+"start": 389.607,
+"end": 389.967,
+"src": "v2",
+"sec": "undang",
+"srcT": 43.94
+},
+{
+"text": "membuka",
+"start": 389.967,
+"end": 390.407,
+"src": "v2",
+"sec": "undang",
+"srcT": 44.3
+},
+{
+"text": "akaun",
+"start": 390.407,
+"end": 390.827,
+"src": "v2",
+"sec": "undang",
+"srcT": 44.74
+},
+{
+"text": "dan",
+"start": 390.827,
+"end": 391.047,
+"src": "v2",
+"sec": "undang",
+"srcT": 45.16
+},
+{
+"text": "iklan",
+"start": 391.047,
+"end": 391.527,
+"src": "v2",
+"sec": "undang",
+"srcT": 45.38
+},
+{
+"text": "baru",
+"start": 391.527,
+"end": 391.827,
+"src": "v2",
+"sec": "undang",
+"srcT": 45.86
+},
+{
+"text": "sebaik",
+"start": 391.827,
+"end": 392.227,
+"src": "v2",
+"sec": "undang",
+"srcT": 46.16
+},
+{
+"text": "sahaja",
+"start": 392.227,
+"end": 392.707,
+"src": "v2",
+"sec": "undang",
+"srcT": 46.56
+},
+{
+"text": "yang",
+"start": 392.707,
+"end": 393.247,
+"src": "v2",
+"sec": "undang",
+"srcT": 47.04
+},
+{
+"text": "lama",
+"start": 393.247,
+"end": 393.507,
+"src": "v2",
+"sec": "undang",
+"srcT": 47.58
+},
+{
+"text": "diturunkan.",
+"start": 393.507,
+"end": 394.327,
+"src": "v2",
+"sec": "undang",
+"srcT": 47.84
+},
+{
+"text": "Yang",
+"start": 395.027,
+"end": 395.587,
+"src": "v2",
+"sec": "undang",
+"srcT": 49.86
+},
+{
+"text": "ketiga,",
+"start": 395.587,
+"end": 396.107,
+"src": "v2",
+"sec": "undang",
+"srcT": 50.42
+},
+{
+"text": "infografik",
+"start": 396.647,
+"end": 397.487,
+"src": "v2",
+"sec": "undang",
+"srcT": 51.48
+},
+{
+"text": "yang",
+"start": 397.487,
+"end": 397.927,
+"src": "v2",
+"sec": "undang",
+"srcT": 52.32
+},
+{
+"text": "sama",
+"start": 397.927,
+"end": 398.227,
+"src": "v2",
+"sec": "undang",
+"srcT": 52.76
+},
+{
+"text": "menunjukkan",
+"start": 398.227,
+"end": 398.867,
+"src": "v2",
+"sec": "undang",
+"srcT": 53.06
+},
+{
+"text": "bahwa",
+"start": 398.867,
+"end": 399.487,
+"src": "v2",
+"sec": "undang",
+"srcT": 53.7
+},
+{
+"text": "daripada",
+"start": 399.487,
+"end": 400.507,
+"src": "v2",
+"sec": "undang",
+"srcT": 54.32
+},
+{
+"text": "462",
+"start": 400.507,
+"end": 401.927,
+"src": "v2",
+"sec": "undang",
+"srcT": 55.34
+},
+{
+"text": "kes",
+"start": 401.927,
+"end": 402.447,
+"src": "v2",
+"sec": "undang",
+"srcT": 56.76
+},
+{
+"text": "yang",
+"start": 402.447,
+"end": 402.707,
+"src": "v2",
+"sec": "undang",
+"srcT": 57.28
+},
+{
+"text": "disiasat",
+"start": 402.707,
+"end": 403.267,
+"src": "v2",
+"sec": "undang",
+"srcT": 57.54
+},
+{
+"text": "dibawa",
+"start": 403.267,
+"end": 403.647,
+"src": "v2",
+"sec": "undang",
+"srcT": 58.1
+},
+{
+"text": "Seksyen",
+"start": 403.647,
+"end": 404.147,
+"src": "v2",
+"sec": "undang",
+"srcT": 58.48
+},
+{
+"text": "233,",
+"start": 404.147,
+"end": 404.987,
+"src": "v2",
+"sec": "undang",
+"srcT": 58.98
+},
+{
+"text": "hanya",
+"start": 405.167,
+"end": 405.507,
+"src": "v2",
+"sec": "undang",
+"srcT": 60.04
+},
+{
+"text": "22",
+"start": 405.507,
+"end": 405.847,
+"src": "v2",
+"sec": "undang",
+"srcT": 60.54
+},
+{
+"text": "kes",
+"start": 405.847,
+"end": 406.367,
+"src": "v2",
+"sec": "undang",
+"srcT": 60.88
+},
+{
+"text": "yang",
+"start": 406.367,
+"end": 406.547,
+"src": "v2",
+"sec": "undang",
+"srcT": 61.4
+},
+{
+"text": "dibawa",
+"start": 406.547,
+"end": 406.967,
+"src": "v2",
+"sec": "undang",
+"srcT": 61.58
+},
+{
+"text": "ke",
+"start": 406.967,
+"end": 407.127,
+"src": "v2",
+"sec": "undang",
+"srcT": 62.0
+},
+{
+"text": "mahkamah.",
+"start": 407.127,
+"end": 407.567,
+"src": "v2",
+"sec": "undang",
+"srcT": 62.16
+},
+{
+"text": "Ini",
+"start": 407.727,
+"end": 408.207,
+"src": "v2",
+"sec": "undang",
+"srcT": 62.76
+},
+{
+"text": "bermakna",
+"start": 408.207,
+"end": 408.927,
+"src": "v2",
+"sec": "undang",
+"srcT": 63.24
+},
+{
+"text": "Seksyen",
+"start": 408.927,
+"end": 409.527,
+"src": "v2",
+"sec": "undang",
+"srcT": 63.96
+},
+{
+"text": "233",
+"start": 409.527,
+"end": 410.247,
+"src": "v2",
+"sec": "undang",
+"srcT": 64.56
+},
+{
+"text": "lebih",
+"start": 410.247,
+"end": 410.687,
+"src": "v2",
+"sec": "undang",
+"srcT": 65.28
+},
+{
+"text": "berkesan",
+"start": 410.687,
+"end": 411.307,
+"src": "v2",
+"sec": "undang",
+"srcT": 65.72
+},
+{
+"text": "untuk",
+"start": 411.307,
+"end": 411.567,
+"src": "v2",
+"sec": "undang",
+"srcT": 66.34
+},
+{
+"text": "menyekat",
+"start": 411.567,
+"end": 412.067,
+"src": "v2",
+"sec": "undang",
+"srcT": 66.6
+},
+{
+"text": "kandungan",
+"start": 412.067,
+"end": 412.727,
+"src": "v2",
+"sec": "undang",
+"srcT": 67.1
+},
+{
+"text": "berbanding",
+"start": 412.727,
+"end": 413.867,
+"src": "v2",
+"sec": "undang",
+"srcT": 67.76
+},
+{
+"text": "menghukum",
+"start": 413.867,
+"end": 414.947,
+"src": "v2",
+"sec": "undang",
+"srcT": 68.9
+},
+{
+"text": "dalangnya",
+"start": 414.947,
+"end": 415.547,
+"src": "v2",
+"sec": "undang",
+"srcT": 69.98
+},
+{
+"text": "ramai",
+"start": 415.94,
+"end": 416.36,
+"src": "v2",
+"sec": "undang",
+"srcT": 72.04
+},
+{
+"text": "berada",
+"start": 416.36,
+"end": 416.7,
+"src": "v2",
+"sec": "undang",
+"srcT": 72.46
+},
+{
+"text": "di",
+"start": 416.7,
+"end": 416.86,
+"src": "v2",
+"sec": "undang",
+"srcT": 72.8
+},
+{
+"text": "luar",
+"start": 416.86,
+"end": 417.12,
+"src": "v2",
+"sec": "undang",
+"srcT": 72.96
+},
+{
+"text": "negara.",
+"start": 417.12,
+"end": 417.6,
+"src": "v2",
+"sec": "undang",
+"srcT": 73.22
+},
+{
+"text": "Jadi,",
+"start": 417.767,
+"end": 418.18,
+"src": "v2",
+"sec": "undang",
+"srcT": 73.94
+},
+{
+"text": "kesimpulan",
+"start": 418.38,
+"end": 418.88,
+"src": "v2",
+"sec": "undang",
+"srcT": 74.78
+},
+{
+"text": "saya,",
+"start": 418.88,
+"end": 419.26,
+"src": "v2",
+"sec": "undang",
+"srcT": 75.28
+},
+{
+"text": "undang",
+"start": 419.733,
+"end": 419.993,
+"src": "v2",
+"sec": "undang",
+"srcT": 76.3
+},
+{
+"text": "-undang",
+"start": 419.993,
+"end": 420.293,
+"src": "v2",
+"sec": "undang",
+"srcT": 76.56
+},
+{
+"text": "ini",
+"start": 420.293,
+"end": 420.573,
+"src": "v2",
+"sec": "undang",
+"srcT": 76.86
+},
+{
+"text": "perlu",
+"start": 420.573,
+"end": 420.993,
+"src": "v2",
+"sec": "undang",
+"srcT": 77.14
+},
+{
+"text": "tetapi",
+"start": 420.993,
+"end": 421.533,
+"src": "v2",
+"sec": "undang",
+"srcT": 77.56
+},
+{
+"text": "tidak",
+"start": 421.533,
+"end": 421.853,
+"src": "v2",
+"sec": "undang",
+"srcT": 78.1
+},
+{
+"text": "mencukupi",
+"start": 421.853,
+"end": 422.493,
+"src": "v2",
+"sec": "undang",
+"srcT": 78.42
+},
+{
+"text": "lagi.",
+"start": 422.493,
+"end": 422.833,
+"src": "v2",
+"sec": "undang",
+"srcT": 79.06
+},
+{
+"text": "cadangan",
+"start": 423.953,
+"end": 424.953,
+"src": "v2",
+"sec": "literasi",
+"srcT": 84.42
+},
+{
+"text": "penyelesaian",
+"start": 424.953,
+"end": 425.833,
+"src": "v2",
+"sec": "literasi",
+"srcT": 85.42
+},
+{
+"text": "yang",
+"start": 425.833,
+"end": 425.973,
+"src": "v2",
+"sec": "literasi",
+"srcT": 86.3
+},
+{
+"text": "kedua",
+"start": 425.973,
+"end": 426.333,
+"src": "v2",
+"sec": "literasi",
+"srcT": 86.44
+},
+{
+"text": "ialah",
+"start": 426.333,
+"end": 426.833,
+"src": "v2",
+"sec": "literasi",
+"srcT": 86.8
+},
+{
+"text": "literasi",
+"start": 426.833,
+"end": 427.773,
+"src": "v2",
+"sec": "literasi",
+"srcT": 87.3
+},
+{
+"text": "digital.",
+"start": 427.773,
+"end": 428.453,
+"src": "v2",
+"sec": "literasi",
+"srcT": 88.24
+},
+{
+"text": "tiga",
+"start": 429.747,
+"end": 430.167,
+"src": "v2",
+"sec": "literasi",
+"srcT": 91.58
+},
+{
+"text": "perkara",
+"start": 430.167,
+"end": 430.607,
+"src": "v2",
+"sec": "literasi",
+"srcT": 92.0
+},
+{
+"text": "mudah,",
+"start": 430.607,
+"end": 431.147,
+"src": "v2",
+"sec": "literasi",
+"srcT": 92.44
+},
+{
+"text": "yaitu",
+"start": 431.387,
+"end": 431.847,
+"src": "v2",
+"sec": "literasi",
+"srcT": 93.22
+},
+{
+"text": "satu,",
+"start": 432.033,
+"end": 432.467,
+"src": "v2",
+"sec": "literasi",
+"srcT": 93.68
+},
+{
+"text": "pinjaman",
+"start": 432.707,
+"end": 433.267,
+"src": "v2",
+"sec": "literasi",
+"srcT": 94.64
+},
+{
+"text": "yang",
+"start": 433.267,
+"end": 433.747,
+"src": "v2",
+"sec": "literasi",
+"srcT": 95.2
+},
+{
+"text": "tidak",
+"start": 434.487,
+"end": 434.827,
+"src": "v2",
+"sec": "literasi",
+"srcT": 97.02
+},
+{
+"text": "akan",
+"start": 434.827,
+"end": 435.047,
+"src": "v2",
+"sec": "literasi",
+"srcT": 97.36
+},
+{
+"text": "meminta",
+"start": 435.047,
+"end": 435.447,
+"src": "v2",
+"sec": "literasi",
+"srcT": 97.58
+},
+{
+"text": "bayaran",
+"start": 435.447,
+"end": 435.907,
+"src": "v2",
+"sec": "literasi",
+"srcT": 97.98
+},
+{
+"text": "pendahuluan.",
+"start": 435.907,
+"end": 436.707,
+"src": "v2",
+"sec": "literasi",
+"srcT": 98.44
+},
+{
+"text": "Kedua,",
+"start": 436.933,
+"end": 437.433,
+"src": "v2",
+"sec": "literasi",
+"srcT": 99.54
+},
+{
+"text": "semak",
+"start": 437.767,
+"end": 438.067,
+"src": "v2",
+"sec": "literasi",
+"srcT": 100.9
+},
+{
+"text": "dulu",
+"start": 438.067,
+"end": 438.267,
+"src": "v2",
+"sec": "literasi",
+"srcT": 101.2
+},
+{
+"text": "nomor",
+"start": 438.267,
+"end": 438.567,
+"src": "v2",
+"sec": "literasi",
+"srcT": 101.4
+},
+{
+"text": "telepon",
+"start": 438.567,
+"end": 439.347,
+"src": "v2",
+"sec": "literasi",
+"srcT": 101.7
+},
+{
+"text": "dan",
+"start": 439.347,
+"end": 439.907,
+"src": "v2",
+"sec": "literasi",
+"srcT": 102.48
+},
+{
+"text": "akaun",
+"start": 439.907,
+"end": 440.287,
+"src": "v2",
+"sec": "literasi",
+"srcT": 103.04
+},
+{
+"text": "bank",
+"start": 440.287,
+"end": 440.767,
+"src": "v2",
+"sec": "literasi",
+"srcT": 103.42
+},
+{
+"text": "portal",
+"start": 441.24,
+"end": 441.86,
+"src": "v2",
+"sec": "literasi",
+"srcT": 104.94
+},
+{
+"text": "semak",
+"start": 442.1,
+"end": 442.68,
+"src": "v2",
+"sec": "literasi",
+"srcT": 105.56
+},
+{
+"text": "mulut",
+"start": 442.68,
+"end": 443.34,
+"src": "v2",
+"sec": "literasi",
+"srcT": 106.58
+},
+{
+"text": "PDRM.",
+"start": 443.34,
+"end": 443.92,
+"src": "v2",
+"sec": "literasi",
+"srcT": 107.24
+},
+{
+"text": "Tiga,",
+"start": 444.133,
+"end": 444.507,
+"src": "v2",
+"sec": "literasi",
+"srcT": 107.94
+},
+{
+"text": "jika",
+"start": 444.767,
+"end": 445.087,
+"src": "v2",
+"sec": "literasi",
+"srcT": 108.8
+},
+{
+"text": "sudah",
+"start": 445.087,
+"end": 445.347,
+"src": "v2",
+"sec": "literasi",
+"srcT": 109.12
+},
+{
+"text": "tertipu,",
+"start": 445.347,
+"end": 446.007,
+"src": "v2",
+"sec": "literasi",
+"srcT": 109.38
+},
+{
+"text": "terus",
+"start": 446.133,
+"end": 446.453,
+"src": "v2",
+"sec": "literasi",
+"srcT": 110.22
+},
+{
+"text": "hubungi",
+"start": 446.453,
+"end": 446.913,
+"src": "v2",
+"sec": "literasi",
+"srcT": 110.62
+},
+{
+"text": "talian",
+"start": 446.913,
+"end": 447.413,
+"src": "v2",
+"sec": "literasi",
+"srcT": 111.08
+},
+{
+"text": "999",
+"start": 447.413,
+"end": 448.633,
+"src": "v2",
+"sec": "literasi",
+"srcT": 111.58
+},
+{
+"text": "pusat",
+"start": 448.633,
+"end": 449.673,
+"src": "v2",
+"sec": "literasi",
+"srcT": 112.8
+},
+{
+"text": "respons",
+"start": 449.673,
+"end": 450.173,
+"src": "v2",
+"sec": "literasi",
+"srcT": 113.84
+},
+{
+"text": "kebangsaan",
+"start": 450.173,
+"end": 451.393,
+"src": "v2",
+"sec": "literasi",
+"srcT": 114.34
+},
+{
+"text": "secepat",
+"start": 451.393,
+"end": 451.873,
+"src": "v2",
+"sec": "literasi",
+"srcT": 115.56
+},
+{
+"text": "mungkin",
+"start": 451.873,
+"end": 452.193,
+"src": "v2",
+"sec": "literasi",
+"srcT": 116.04
+},
+{
+"text": "supaya",
+"start": 452.193,
+"end": 452.673,
+"src": "v2",
+"sec": "literasi",
+"srcT": 116.36
+},
+{
+"text": "uang",
+"start": 452.673,
+"end": 453.033,
+"src": "v2",
+"sec": "literasi",
+"srcT": 116.84
+},
+{
+"text": "boleh",
+"start": 453.033,
+"end": 453.313,
+"src": "v2",
+"sec": "literasi",
+"srcT": 117.2
+},
+{
+"text": "disekat.",
+"start": 453.313,
+"end": 453.873,
+"src": "v2",
+"sec": "literasi",
+"srcT": 117.48
+},
+{
+"text": "Ilmu",
+"start": 453.933,
+"end": 454.327,
+"src": "v2",
+"sec": "literasi",
+"srcT": 118.3
+},
+{
+"text": "ini",
+"start": 454.327,
+"end": 454.587,
+"src": "v2",
+"sec": "literasi",
+"srcT": 118.86
+},
+{
+"text": "perlu",
+"start": 454.587,
+"end": 454.927,
+"src": "v2",
+"sec": "literasi",
+"srcT": 119.12
+},
+{
+"text": "dikongsi,",
+"start": 454.927,
+"end": 455.627,
+"src": "v2",
+"sec": "literasi",
+"srcT": 119.46
+},
+{
+"text": "terutamanya",
+"start": 455.847,
+"end": 456.527,
+"src": "v2",
+"sec": "literasi",
+"srcT": 120.38
+},
+{
+"text": "ibu",
+"start": 457.033,
+"end": 457.373,
+"src": "v2",
+"sec": "literasi",
+"srcT": 121.7
+},
+{
+"text": "bapak",
+"start": 457.373,
+"end": 457.773,
+"src": "v2",
+"sec": "literasi",
+"srcT": 122.04
+},
+{
+"text": "warga",
+"start": 457.773,
+"end": 458.173,
+"src": "v2",
+"sec": "literasi",
+"srcT": 122.44
+},
+{
+"text": "emas",
+"start": 458.173,
+"end": 458.653,
+"src": "v2",
+"sec": "literasi",
+"srcT": 122.84
+},
+{
+"text": "di",
+"start": 458.8,
+"end": 459.027,
+"src": "v2",
+"sec": "literasi",
+"srcT": 123.32
+},
+{
+"text": "rumah",
+"start": 459.027,
+"end": 459.287,
+"src": "v2",
+"sec": "literasi",
+"srcT": 123.76
+},
+{
+"text": "kita.",
+"start": 459.287,
+"end": 459.667,
+"src": "v2",
+"sec": "literasi",
+"srcT": 124.02
+},
+{
+"text": "Sebagai",
+"start": 459.8,
+"end": 460.327,
+"src": "v2",
+"sec": "literasi",
+"srcT": 124.6
+},
+{
+"text": "anggota",
+"start": 460.327,
+"end": 460.727,
+"src": "v2",
+"sec": "literasi",
+"srcT": 125.46
+},
+{
+"text": "PDRM",
+"start": 460.727,
+"end": 461.507,
+"src": "v2",
+"sec": "literasi",
+"srcT": 125.86
+},
+{
+"text": "dan",
+"start": 461.507,
+"end": 462.007,
+"src": "v2",
+"sec": "literasi",
+"srcT": 126.64
+},
+{
+"text": "bakal",
+"start": 462.007,
+"end": 462.387,
+"src": "v2",
+"sec": "literasi",
+"srcT": 127.14
+},
+{
+"text": "guru",
+"start": 462.387,
+"end": 462.727,
+"src": "v2",
+"sec": "literasi",
+"srcT": 127.52
+},
+{
+"text": "suatu",
+"start": 462.727,
+"end": 463.047,
+"src": "v2",
+"sec": "literasi",
+"srcT": 127.86
+},
+{
+"text": "hari",
+"start": 463.047,
+"end": 463.247,
+"src": "v2",
+"sec": "literasi",
+"srcT": 128.18
+},
+{
+"text": "nanti,",
+"start": 463.247,
+"end": 463.647,
+"src": "v2",
+"sec": "literasi",
+"srcT": 128.38
+},
+{
+"text": "saya",
+"start": 464.013,
+"end": 464.153,
+"src": "v2",
+"sec": "literasi",
+"srcT": 129.38
+},
+{
+"text": "melihat",
+"start": 464.153,
+"end": 464.713,
+"src": "v2",
+"sec": "literasi",
+"srcT": 129.52
+},
+{
+"text": "literasi",
+"start": 464.713,
+"end": 465.453,
+"src": "v2",
+"sec": "literasi",
+"srcT": 130.08
+},
+{
+"text": "digital",
+"start": 465.453,
+"end": 465.913,
+"src": "v2",
+"sec": "literasi",
+"srcT": 130.82
+},
+{
+"text": "berkesan",
+"start": 466.527,
+"end": 467.087,
+"src": "v2",
+"sec": "literasi",
+"srcT": 131.96
+},
+{
+"text": "apabila",
+"start": 467.087,
+"end": 467.767,
+"src": "v2",
+"sec": "literasi",
+"srcT": 132.52
+},
+{
+"text": "bermula",
+"start": 467.8,
+"end": 468.5,
+"src": "v2",
+"sec": "literasi",
+"srcT": 133.2
+},
+{
+"text": "dari",
+"start": 468.5,
+"end": 468.78,
+"src": "v2",
+"sec": "literasi",
+"srcT": 134.1
+},
+{
+"text": "rumah",
+"start": 468.78,
+"end": 469.14,
+"src": "v2",
+"sec": "literasi",
+"srcT": 134.38
+},
+{
+"text": "dan",
+"start": 469.14,
+"end": 469.5,
+"src": "v2",
+"sec": "literasi",
+"srcT": 134.74
+},
+{
+"text": "bilik",
+"start": 469.5,
+"end": 469.86,
+"src": "v2",
+"sec": "literasi",
+"srcT": 135.1
+},
+{
+"text": "darjah",
+"start": 469.86,
+"end": 470.38,
+"src": "v2",
+"sec": "literasi",
+"srcT": 135.46
+},
+{
+"text": "sebelum",
+"start": 470.38,
+"end": 471.08,
+"src": "v2",
+"sec": "literasi",
+"srcT": 135.98
+},
+{
+"text": "seorang",
+"start": 471.08,
+"end": 471.6,
+"src": "v2",
+"sec": "literasi",
+"srcT": 136.68
+},
+{
+"text": "menjadi",
+"start": 471.6,
+"end": 472.08,
+"src": "v2",
+"sec": "literasi",
+"srcT": 137.2
+},
+{
+"text": "mangsa.",
+"start": 472.08,
+"end": 472.58,
+"src": "v2",
+"sec": "literasi",
+"srcT": 137.68
+},
+{
+"text": "Cadangan",
+"start": 473.133,
+"end": 473.613,
+"src": "v2",
+"sec": "integriti",
+"srcT": 144.06
+},
+{
+"text": "penyelesaian",
+"start": 473.613,
+"end": 474.433,
+"src": "v2",
+"sec": "integriti",
+"srcT": 144.98
+},
+{
+"text": "yang",
+"start": 474.433,
+"end": 474.593,
+"src": "v2",
+"sec": "integriti",
+"srcT": 145.8
+},
+{
+"text": "ketiga",
+"start": 474.593,
+"end": 475.073,
+"src": "v2",
+"sec": "integriti",
+"srcT": 145.96
+},
+{
+"text": "yaitu",
+"start": 475.073,
+"end": 475.653,
+"src": "v2",
+"sec": "integriti",
+"srcT": 146.44
+},
+{
+"text": "integriti",
+"start": 475.653,
+"end": 476.593,
+"src": "v2",
+"sec": "integriti",
+"srcT": 147.02
+},
+{
+"text": "diri.",
+"start": 476.593,
+"end": 477.093,
+"src": "v2",
+"sec": "integriti",
+"srcT": 147.96
+},
+{
+"text": "Dan",
+"start": 477.1,
+"end": 477.367,
+"src": "v2",
+"sec": "integriti",
+"srcT": 149.34
+},
+{
+"text": "pada",
+"start": 477.367,
+"end": 477.627,
+"src": "v2",
+"sec": "integriti",
+"srcT": 149.8
+},
+{
+"text": "saya",
+"start": 477.627,
+"end": 477.987,
+"src": "v2",
+"sec": "integriti",
+"srcT": 150.06
+},
+{
+"text": "paling",
+"start": 477.987,
+"end": 478.327,
+"src": "v2",
+"sec": "integriti",
+"srcT": 150.42
+},
+{
+"text": "penting",
+"start": 478.327,
+"end": 478.947,
+"src": "v2",
+"sec": "integriti",
+"srcT": 150.76
+},
+{
+"text": "yalah",
+"start": 478.947,
+"end": 479.327,
+"src": "v2",
+"sec": "integriti",
+"srcT": 151.38
+},
+{
+"text": "integriti",
+"start": 479.327,
+"end": 480.047,
+"src": "v2",
+"sec": "integriti",
+"srcT": 151.76
+},
+{
+"text": "diri",
+"start": 480.047,
+"end": 480.407,
+"src": "v2",
+"sec": "integriti",
+"srcT": 152.48
+},
+{
+"text": "kita",
+"start": 480.407,
+"end": 480.667,
+"src": "v2",
+"sec": "integriti",
+"srcT": 152.84
+},
+{
+"text": "sendiri.",
+"start": 480.667,
+"end": 481.127,
+"src": "v2",
+"sec": "integriti",
+"srcT": 153.1
+},
+{
+"text": "Sindiket",
+"start": 481.453,
+"end": 481.933,
+"src": "v2",
+"sec": "integriti",
+"srcT": 154.12
+},
+{
+"text": "tidak",
+"start": 481.933,
+"end": 482.153,
+"src": "v2",
+"sec": "integriti",
+"srcT": 154.6
+},
+{
+"text": "boleh",
+"start": 482.153,
+"end": 482.413,
+"src": "v2",
+"sec": "integriti",
+"srcT": 154.82
+},
+{
+"text": "bergerak",
+"start": 482.413,
+"end": 483.013,
+"src": "v2",
+"sec": "integriti",
+"srcT": 155.08
+},
+{
+"text": "tanpa",
+"start": 483.013,
+"end": 483.373,
+"src": "v2",
+"sec": "integriti",
+"srcT": 155.68
+},
+{
+"text": "akaun",
+"start": 483.373,
+"end": 483.713,
+"src": "v2",
+"sec": "integriti",
+"srcT": 156.04
+},
+{
+"text": "keldai.",
+"start": 483.713,
+"end": 484.213,
+"src": "v2",
+"sec": "integriti",
+"srcT": 156.38
+},
+{
+"text": "Jika",
+"start": 484.433,
+"end": 484.767,
+"src": "v2",
+"sec": "integriti",
+"srcT": 157.1
+},
+{
+"text": "setiap",
+"start": 484.767,
+"end": 485.207,
+"src": "v2",
+"sec": "integriti",
+"srcT": 157.6
+},
+{
+"text": "rakyat",
+"start": 485.207,
+"end": 485.727,
+"src": "v2",
+"sec": "integriti",
+"srcT": 158.04
+},
+{
+"text": "menolak",
+"start": 485.727,
+"end": 486.227,
+"src": "v2",
+"sec": "integriti",
+"srcT": 158.56
+},
+{
+"text": "tawaran,",
+"start": 486.227,
+"end": 486.887,
+"src": "v2",
+"sec": "integriti",
+"srcT": 159.06
+},
+{
+"text": "menyewakan",
+"start": 487.087,
+"end": 487.967,
+"src": "v2",
+"sec": "integriti",
+"srcT": 159.92
+},
+{
+"text": "atau",
+"start": 487.967,
+"end": 488.267,
+"src": "v2",
+"sec": "integriti",
+"srcT": 160.8
+},
+{
+"text": "menjual",
+"start": 488.267,
+"end": 488.747,
+"src": "v2",
+"sec": "integriti",
+"srcT": 161.1
+},
+{
+"text": "akaun",
+"start": 488.747,
+"end": 489.147,
+"src": "v2",
+"sec": "integriti",
+"srcT": 161.58
+},
+{
+"text": "bank,",
+"start": 489.147,
+"end": 489.467,
+"src": "v2",
+"sec": "integriti",
+"srcT": 161.98
+},
+{
+"text": "rantaian",
+"start": 489.867,
+"end": 490.267,
+"src": "v2",
+"sec": "integriti",
+"srcT": 162.7
+},
+{
+"text": "ini",
+"start": 490.267,
+"end": 490.487,
+"src": "v2",
+"sec": "integriti",
+"srcT": 163.1
+},
+{
+"text": "pasti",
+"start": 490.487,
+"end": 490.867,
+"src": "v2",
+"sec": "integriti",
+"srcT": 163.32
+},
+{
+"text": "akan",
+"start": 490.867,
+"end": 491.127,
+"src": "v2",
+"sec": "integriti",
+"srcT": 163.7
+},
+{
+"text": "terputus.",
+"start": 491.127,
+"end": 491.807,
+"src": "v2",
+"sec": "integriti",
+"srcT": 163.96
+},
+{
+"text": "kanun",
+"start": 491.933,
+"end": 492.313,
+"src": "v2",
+"sec": "integriti",
+"srcT": 164.74
+},
+{
+"text": "keseksaan",
+"start": 492.313,
+"end": 492.993,
+"src": "v2",
+"sec": "integriti",
+"srcT": 165.38
+},
+{
+"text": "ini",
+"start": 492.993,
+"end": 493.253,
+"src": "v2",
+"sec": "integriti",
+"srcT": 166.06
+},
+{
+"text": "menghukum",
+"start": 493.253,
+"end": 493.833,
+"src": "v2",
+"sec": "integriti",
+"srcT": 166.32
+},
+{
+"text": "pemilik",
+"start": 493.966,
+"end": 494.52,
+"src": "v2",
+"sec": "integriti",
+"srcT": 166.9
+},
+{
+"text": "akaun",
+"start": 494.52,
+"end": 494.96,
+"src": "v2",
+"sec": "integriti",
+"srcT": 167.82
+},
+{
+"text": "keldai",
+"start": 494.96,
+"end": 495.38,
+"src": "v2",
+"sec": "integriti",
+"srcT": 168.26
+},
+{
+"text": "sehingga",
+"start": 495.38,
+"end": 495.84,
+"src": "v2",
+"sec": "integriti",
+"srcT": 168.68
+},
+{
+"text": "10",
+"start": 495.84,
+"end": 496.44,
+"src": "v2",
+"sec": "integriti",
+"srcT": 169.14
+},
+{
+"text": "tahun",
+"start": 496.44,
+"end": 496.8,
+"src": "v2",
+"sec": "integriti",
+"srcT": 169.74
+},
+{
+"text": "Tetapi",
+"start": 497.8,
+"end": 498.347,
+"src": "v2",
+"sec": "integriti",
+"srcT": 171.66
+},
+{
+"text": "kita",
+"start": 498.347,
+"end": 498.707,
+"src": "v2",
+"sec": "integriti",
+"srcT": 172.28
+},
+{
+"text": "sepatutnya",
+"start": 498.707,
+"end": 499.467,
+"src": "v2",
+"sec": "integriti",
+"srcT": 172.64
+},
+{
+"text": "menolak",
+"start": 499.667,
+"end": 500.36,
+"src": "v2",
+"sec": "integriti",
+"srcT": 173.4
+},
+{
+"text": "bukan",
+"start": 500.36,
+"end": 500.6,
+"src": "v2",
+"sec": "integriti",
+"srcT": 174.66
+},
+{
+"text": "kerana",
+"start": 500.6,
+"end": 501.06,
+"src": "v2",
+"sec": "integriti",
+"srcT": 174.9
+},
+{
+"text": "takut",
+"start": 501.06,
+"end": 501.5,
+"src": "v2",
+"sec": "integriti",
+"srcT": 175.36
+},
+{
+"text": "dihukum.",
+"start": 501.5,
+"end": 502.04,
+"src": "v2",
+"sec": "integriti",
+"srcT": 175.8
+},
+{
+"text": "Kita",
+"start": 502.3,
+"end": 502.587,
+"src": "v2",
+"sec": "integriti",
+"srcT": 176.86
+},
+{
+"text": "harus",
+"start": 502.587,
+"end": 502.887,
+"src": "v2",
+"sec": "integriti",
+"srcT": 177.32
+},
+{
+"text": "menggunakan",
+"start": 502.887,
+"end": 503.567,
+"src": "v2",
+"sec": "integriti",
+"srcT": 177.62
+},
+{
+"text": "prinsip",
+"start": 503.567,
+"end": 504.107,
+"src": "v2",
+"sec": "integriti",
+"srcT": 178.3
+},
+{
+"text": "kepercayaan",
+"start": 504.107,
+"end": 504.847,
+"src": "v2",
+"sec": "integriti",
+"srcT": 178.84
+},
+{
+"text": "kepada",
+"start": 504.847,
+"end": 505.107,
+"src": "v2",
+"sec": "integriti",
+"srcT": 179.58
+},
+{
+"text": "Tuhan.",
+"start": 505.107,
+"end": 505.647,
+"src": "v2",
+"sec": "integriti",
+"srcT": 179.84
+},
+{
+"text": "Yaitu",
+"start": 506.087,
+"end": 506.547,
+"src": "v2",
+"sec": "integriti",
+"srcT": 181.42
+},
+{
+"text": "mengingatkan",
+"start": 506.547,
+"end": 507.127,
+"src": "v2",
+"sec": "integriti",
+"srcT": 181.88
+},
+{
+"text": "kita",
+"start": 507.127,
+"end": 507.387,
+"src": "v2",
+"sec": "integriti",
+"srcT": 182.46
+},
+{
+"text": "bahwa",
+"start": 507.387,
+"end": 507.767,
+"src": "v2",
+"sec": "integriti",
+"srcT": 182.72
+},
+{
+"text": "setiap",
+"start": 507.767,
+"end": 508.187,
+"src": "v2",
+"sec": "integriti",
+"srcT": 183.1
+},
+{
+"text": "perbuatan",
+"start": 508.187,
+"end": 508.787,
+"src": "v2",
+"sec": "integriti",
+"srcT": 183.52
+},
+{
+"text": "dipertanggungjawabkan",
+"start": 509.473,
+"end": 510.973,
+"src": "v2",
+"sec": "integriti",
+"srcT": 185.24
+},
+{
+"text": "walaupun",
+"start": 510.973,
+"end": 511.493,
+"src": "v2",
+"sec": "integriti",
+"srcT": 186.74
+},
+{
+"text": "tidak",
+"start": 511.493,
+"end": 511.773,
+"src": "v2",
+"sec": "integriti",
+"srcT": 187.26
+},
+{
+"text": "siapa",
+"start": 511.773,
+"end": 512.173,
+"src": "v2",
+"sec": "integriti",
+"srcT": 187.54
+},
+{
+"text": "yang",
+"start": 512.173,
+"end": 512.373,
+"src": "v2",
+"sec": "integriti",
+"srcT": 187.94
+},
+{
+"text": "melihat.",
+"start": 512.373,
+"end": 512.833,
+"src": "v2",
+"sec": "integriti",
+"srcT": 188.14
+},
+{
+"text": "Kita",
+"start": 513.0,
+"end": 513.28,
+"src": "v2",
+"sec": "integriti",
+"srcT": 188.84
+},
+{
+"text": "menolak",
+"start": 513.28,
+"end": 513.84,
+"src": "v2",
+"sec": "integriti",
+"srcT": 189.28
+},
+{
+"text": "kerana",
+"start": 513.84,
+"end": 514.16,
+"src": "v2",
+"sec": "integriti",
+"srcT": 189.84
+},
+{
+"text": "sedar",
+"start": 514.16,
+"end": 514.64,
+"src": "v2",
+"sec": "integriti",
+"srcT": 190.16
+},
+{
+"text": "perbuatan",
+"start": 514.64,
+"end": 515.28,
+"src": "v2",
+"sec": "integriti",
+"srcT": 190.64
+},
+{
+"text": "itu",
+"start": 515.28,
+"end": 515.66,
+"src": "v2",
+"sec": "integriti",
+"srcT": 191.28
+},
+{
+"text": "akan",
+"start": 515.66,
+"end": 516.28,
+"src": "v2",
+"sec": "integriti",
+"srcT": 191.66
+},
+{
+"text": "menyakiti",
+"start": 516.28,
+"end": 516.82,
+"src": "v2",
+"sec": "integriti",
+"srcT": 192.28
+},
+{
+"text": "orang",
+"start": 516.82,
+"end": 517.08,
+"src": "v2",
+"sec": "integriti",
+"srcT": 192.82
+},
+{
+"text": "lain",
+"start": 517.08,
+"end": 517.42,
+"src": "v2",
+"sec": "integriti",
+"srcT": 193.08
+},
+{
+"text": "dan",
+"start": 517.42,
+"end": 517.64,
+"src": "v2",
+"sec": "integriti",
+"srcT": 193.42
+},
+{
+"text": "akan",
+"start": 517.64,
+"end": 517.96,
+"src": "v2",
+"sec": "integriti",
+"srcT": 193.64
+},
+{
+"text": "merugikan",
+"start": 517.96,
+"end": 518.68,
+"src": "v2",
+"sec": "integriti",
+"srcT": 193.96
+},
+{
+"text": "orang",
+"start": 518.68,
+"end": 519.06,
+"src": "v2",
+"sec": "integriti",
+"srcT": 194.68
+},
+{
+"text": "lain.",
+"start": 519.06,
+"end": 519.48,
+"src": "v2",
+"sec": "integriti",
+"srcT": 195.06
+},
+{
+"text": "Sebagai",
+"start": 520.38,
+"end": 521.36,
+"src": "v2",
+"sec": "penutup",
+"srcT": 203.78
+},
+{
+"text": "penutup,",
+"start": 521.36,
+"end": 522.04,
+"src": "v2",
+"sec": "penutup",
+"srcT": 204.76
+},
+{
+"text": "launch",
+"start": 522.193,
+"end": 522.513,
+"src": "v2",
+"sec": "penutup",
+"srcT": 205.86
+},
+{
+"text": "game",
+"start": 522.513,
+"end": 522.893,
+"src": "v2",
+"sec": "penutup",
+"srcT": 206.18
+},
+{
+"text": "bukan",
+"start": 522.893,
+"end": 523.493,
+"src": "v2",
+"sec": "penutup",
+"srcT": 206.56
+},
+{
+"text": "sekadar",
+"start": 523.493,
+"end": 524.153,
+"src": "v2",
+"sec": "penutup",
+"srcT": 207.16
+},
+{
+"text": "jenayah",
+"start": 524.333,
+"end": 524.946,
+"src": "v2",
+"sec": "penutup",
+"srcT": 207.82
+},
+{
+"text": "keuangan.",
+"start": 524.946,
+"end": 525.426,
+"src": "v2",
+"sec": "penutup",
+"srcT": 208.88
+},
+{
+"text": "Ia",
+"start": 525.7,
+"end": 526.16,
+"src": "v2",
+"sec": "penutup",
+"srcT": 209.76
+},
+{
+"text": "adalah",
+"start": 526.333,
+"end": 526.766,
+"src": "v2",
+"sec": "penutup",
+"srcT": 210.36
+},
+{
+"text": "krisis",
+"start": 526.966,
+"end": 527.386,
+"src": "v2",
+"sec": "penutup",
+"srcT": 211.1
+},
+{
+"text": "etika",
+"start": 527.386,
+"end": 527.866,
+"src": "v2",
+"sec": "penutup",
+"srcT": 211.82
+},
+{
+"text": "yang",
+"start": 527.866,
+"end": 528.206,
+"src": "v2",
+"sec": "penutup",
+"srcT": 212.3
+},
+{
+"text": "lahir",
+"start": 528.206,
+"end": 528.586,
+"src": "v2",
+"sec": "penutup",
+"srcT": 212.64
+},
+{
+"text": "daripada",
+"start": 528.586,
+"end": 529.006,
+"src": "v2",
+"sec": "penutup",
+"srcT": 213.02
+},
+{
+"text": "sikap",
+"start": 529.006,
+"end": 529.386,
+"src": "v2",
+"sec": "penutup",
+"srcT": 213.44
+},
+{
+"text": "tamak",
+"start": 529.386,
+"end": 529.846,
+"src": "v2",
+"sec": "penutup",
+"srcT": 213.82
+},
+{
+"text": "pengabayan",
+"start": 530.146,
+"end": 530.726,
+"src": "v2",
+"sec": "penutup",
+"srcT": 214.78
+},
+{
+"text": "tanggungjawab",
+"start": 530.726,
+"end": 531.606,
+"src": "v2",
+"sec": "penutup",
+"srcT": 215.36
+},
+{
+"text": "ia",
+"start": 531.873,
+"end": 532.193,
+"src": "v2",
+"sec": "penutup",
+"srcT": 216.84
+},
+{
+"text": "menghakis",
+"start": 532.193,
+"end": 532.893,
+"src": "v2",
+"sec": "penutup",
+"srcT": 217.16
+},
+{
+"text": "kepercayaan",
+"start": 532.893,
+"end": 533.673,
+"src": "v2",
+"sec": "penutup",
+"srcT": 217.86
+},
+{
+"text": "dalam",
+"start": 533.673,
+"end": 534.033,
+"src": "v2",
+"sec": "penutup",
+"srcT": 218.64
+},
+{
+"text": "masyarakat",
+"start": 534.033,
+"end": 534.813,
+"src": "v2",
+"sec": "penutup",
+"srcT": 219.0
+},
+{
+"text": "majmuk",
+"start": 534.813,
+"end": 535.333,
+"src": "v2",
+"sec": "penutup",
+"srcT": 219.78
+},
+{
+"text": "kita.",
+"start": 535.333,
+"end": 535.633,
+"src": "v2",
+"sec": "penutup",
+"srcT": 220.3
+},
+{
+"text": "Penyelesaiannya",
+"start": 536.006,
+"end": 536.886,
+"src": "v2",
+"sec": "penutup",
+"srcT": 221.54
+},
+{
+"text": "memerlukan",
+"start": 536.886,
+"end": 537.646,
+"src": "v2",
+"sec": "penutup",
+"srcT": 222.42
+},
+{
+"text": "tiga",
+"start": 537.646,
+"end": 538.086,
+"src": "v2",
+"sec": "penutup",
+"srcT": 223.18
+},
+{
+"text": "lapisan",
+"start": 538.086,
+"end": 538.746,
+"src": "v2",
+"sec": "penutup",
+"srcT": 223.62
+},
+{
+"text": "yang",
+"start": 538.966,
+"end": 539.286,
+"src": "v2",
+"sec": "penutup",
+"srcT": 224.28
+},
+{
+"text": "bergerak",
+"start": 539.286,
+"end": 539.806,
+"src": "v2",
+"sec": "penutup",
+"srcT": 224.92
+},
+{
+"text": "sama,",
+"start": 539.806,
+"end": 540.106,
+"src": "v2",
+"sec": "penutup",
+"srcT": 225.44
+},
+{
+"text": "yaitu",
+"start": 540.333,
+"end": 540.993,
+"src": "v2",
+"sec": "penutup",
+"srcT": 226.08
+},
+{
+"text": "undang",
+"start": 541.1,
+"end": 541.46,
+"src": "v2",
+"sec": "penutup",
+"srcT": 226.96
+},
+{
+"text": "-undang",
+"start": 541.46,
+"end": 541.76,
+"src": "v2",
+"sec": "penutup",
+"srcT": 227.56
+},
+{
+"text": "yang",
+"start": 541.76,
+"end": 541.92,
+"src": "v2",
+"sec": "penutup",
+"srcT": 227.86
+},
+{
+"text": "tegas,",
+"start": 541.92,
+"end": 542.48,
+"src": "v2",
+"sec": "penutup",
+"srcT": 228.02
+},
+{
+"text": "rakyat",
+"start": 542.78,
+"end": 543.12,
+"src": "v2",
+"sec": "penutup",
+"srcT": 228.88
+},
+{
+"text": "yang",
+"start": 543.12,
+"end": 543.3,
+"src": "v2",
+"sec": "penutup",
+"srcT": 229.22
+},
+{
+"text": "celik",
+"start": 543.3,
+"end": 543.74,
+"src": "v2",
+"sec": "penutup",
+"srcT": 229.4
+},
+{
+"text": "digital,",
+"start": 543.74,
+"end": 544.28,
+"src": "v2",
+"sec": "penutup",
+"srcT": 229.84
+},
+{
+"text": "dan",
+"start": 544.6,
+"end": 544.96,
+"src": "v2",
+"sec": "penutup",
+"srcT": 230.7
+},
+{
+"text": "individu",
+"start": 544.96,
+"end": 545.58,
+"src": "v2",
+"sec": "penutup",
+"srcT": 231.06
+},
+{
+"text": "yang",
+"start": 545.58,
+"end": 545.82,
+"src": "v2",
+"sec": "penutup",
+"srcT": 231.68
+},
+{
+"text": "berintegriti.",
+"start": 545.82,
+"end": 546.76,
+"src": "v2",
+"sec": "penutup",
+"srcT": 231.92
+},
+{
+"text": "Hanya",
+"start": 546.966,
+"end": 547.293,
+"src": "v2",
+"sec": "penutup",
+"srcT": 233.08
+},
+{
+"text": "dengan",
+"start": 547.293,
+"end": 547.513,
+"src": "v2",
+"sec": "penutup",
+"srcT": 233.56
+},
+{
+"text": "cara",
+"start": 547.513,
+"end": 547.793,
+"src": "v2",
+"sec": "penutup",
+"srcT": 233.78
+},
+{
+"text": "ini,",
+"start": 547.793,
+"end": 548.153,
+"src": "v2",
+"sec": "penutup",
+"srcT": 234.06
+},
+{
+"text": "Malaysia",
+"start": 548.393,
+"end": 548.893,
+"src": "v2",
+"sec": "penutup",
+"srcT": 234.66
+},
+{
+"text": "dapat",
+"start": 548.893,
+"end": 549.353,
+"src": "v2",
+"sec": "penutup",
+"srcT": 235.16
+},
+{
+"text": "kekal",
+"start": 549.5,
+"end": 549.953,
+"src": "v2",
+"sec": "penutup",
+"srcT": 235.62
+},
+{
+"text": "sebagai",
+"start": 549.953,
+"end": 550.333,
+"src": "v2",
+"sec": "penutup",
+"srcT": 236.32
+},
+{
+"text": "negara",
+"start": 550.333,
+"end": 550.873,
+"src": "v2",
+"sec": "penutup",
+"srcT": 236.7
+},
+{
+"text": "yang",
+"start": 550.873,
+"end": 551.453,
+"src": "v2",
+"sec": "penutup",
+"srcT": 237.24
+},
+{
+"text": "lestari",
+"start": 551.453,
+"end": 551.993,
+"src": "v2",
+"sec": "penutup",
+"srcT": 237.82
+},
+{
+"text": "dan",
+"start": 551.993,
+"end": 552.233,
+"src": "v2",
+"sec": "penutup",
+"srcT": 238.36
+},
+{
+"text": "bertamadun.",
+"start": 552.233,
+"end": 552.973,
+"src": "v2",
+"sec": "penutup",
+"srcT": 238.6
+},
+{
+"text": "Sekian,",
+"start": 553.166,
+"end": 553.6,
+"src": "v2",
+"sec": "penutup",
+"srcT": 239.58
+},
+{
+"text": "terima",
+"start": 553.72,
+"end": 553.94,
+"src": "v2",
+"sec": "penutup",
+"srcT": 240.22
+},
+{
+"text": "kasih.",
+"start": 553.94,
+"end": 554.28,
+"src": "v2",
+"sec": "penutup",
+"srcT": 240.44
+},
+{
+"text": "ketika",
+"start": 554.28,
+"end": 554.4,
+"src": "v2",
+"sec": "penutup",
+"srcT": 240.78
+}
+]

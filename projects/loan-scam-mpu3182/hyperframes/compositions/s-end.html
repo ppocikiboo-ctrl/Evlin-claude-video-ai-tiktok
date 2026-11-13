@@ -1,0 +1,297 @@
+<template>
+<style>
+#s-end { position:absolute; inset:0; }
+#s-end { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
+  font-family:'Inter', sans-serif; color:var(--ink); }
+#s-end .card { position:absolute; }
+#s-end .zone-top { left:54px; top:150px; width:972px; }
+#s-end .zone-dock { left:40px; top:44px; }
+#s-end .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-end .zone-full { left:0; top:0; width:1080px; height:1920px; }
+#s-end .card-in { position:relative; }
+
+/* paper card */
+#s-end .paper { position:relative; background:var(--paper); padding:30px 40px 34px 50px; box-shadow:0 18px 50px rgba(5,10,20,.35);
+  border-radius:4px; overflow:visible; }
+#s-end .paper::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:var(--red); border-radius:4px 0 0 4px; }
+#s-end .paper::after { content:""; position:absolute; inset:0; pointer-events:none; border-radius:4px;
+  background:repeating-linear-gradient(0deg, rgba(13,23,38,.035) 0 1px, transparent 1px 44px); }
+#s-end .paper-dark { background:var(--ink); color:var(--paper); border:1px solid rgba(239,232,218,.18); }
+#s-end .paper-dark::before { background:var(--amber); }
+#s-end .paper-dark::after { background:repeating-linear-gradient(0deg, rgba(239,232,218,.04) 0 1px, transparent 1px 44px); }
+
+#s-end .kicker { display:inline-flex; align-items:center; gap:12px; font:600 26px/1.15 'IBM Plex Mono', monospace; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--red); margin-bottom:14px; }
+#s-end .kicker.k-amber { color:var(--amber); }
+#s-end .kdot { width:14px; height:14px; background:currentColor; border-radius:50%; flex:none; }
+#s-end .head { font-family:'Playfair Display', serif; font-weight:900; font-size:66px; line-height:1.04; letter-spacing:-.01em; }
+#s-end .head-light { color:var(--paper); }
+#s-end .body { font-size:34px; line-height:1.3; margin-top:12px; color:#26334a; }
+#s-end .body-light { color:#cfd6e2; }
+#s-end .hl { background:linear-gradient(transparent 58%, rgba(229,56,59,.32) 58%); }
+#s-end .hl-red { color:var(--red); }
+#s-end .hl-amber { color:var(--amber); }
+#s-end .src { font:500 28px/1.2 'IBM Plex Mono', monospace; color:var(--slate); margin-top:14px; letter-spacing:.03em; }
+#s-end .src-light { color:#9aa6ba; }
+
+/* stats */
+#s-end .hk-lbl { font:600 28px/1.2 'IBM Plex Mono', monospace; letter-spacing:.06em; color:#cfd6e2; }
+#s-end .hk-lbl.dark { color:var(--slate); }
+#s-end .stat { display:flex; align-items:baseline; gap:10px; font-family:'Oswald', sans-serif; font-weight:700; line-height:1; margin-top:6px; }
+#s-end .stat-pre { font-size:64px; color:var(--red); }
+#s-end .stat-num { font-size:150px; letter-spacing:-.01em; font-variant-numeric:tabular-nums; }
+#s-end .stat-suf { font-size:64px; color:var(--red); }
+#s-end .stat-xl .stat-num { font-size:168px; color:var(--paper); }
+#s-end .stat-xl .stat-pre { font-size:76px; color:var(--amber); }
+
+/* chapter slate + dock */
+#s-end .slate { background:var(--ink); color:var(--paper); padding:30px 44px 36px; border-left:12px solid var(--red); box-shadow:0 18px 50px rgba(5,10,20,.4); }
+#s-end .slate-num { font:600 28px/1 'IBM Plex Mono', monospace; letter-spacing:.2em; color:var(--amber); }
+#s-end .slate-rule { height:4px; background:var(--red); margin:18px 0 16px; transform-origin:0 50%; width:240px; }
+#s-end .slate-title { font-family:'Playfair Display', serif; font-style:italic; font-weight:900; font-size:96px; line-height:.98; }
+#s-end .slate-sub { font:500 26px/1.2 'IBM Plex Mono', monospace; color:#9aa6ba; margin-top:16px; letter-spacing:.05em; text-transform:uppercase; }
+#s-end .dock { display:inline-flex; align-items:center; gap:12px; background:rgba(13,23,38,.82); border:1px solid rgba(239,232,218,.3);
+  padding:9px 16px 9px 9px; font:600 28px/1 'IBM Plex Mono', monospace; color:var(--paper); letter-spacing:.06em; text-transform:uppercase; }
+#s-end .dock-num { background:var(--red); color:#fff; padding:6px 9px; }
+
+/* title card */
+#s-end .title-card { background:var(--ink); color:var(--paper); padding:34px 44px 40px; border-top:10px solid var(--red); box-shadow:0 18px 50px rgba(5,10,20,.45); }
+#s-end .tc-kick { font:600 28px/1 'IBM Plex Mono', monospace; color:var(--amber); letter-spacing:.18em; }
+#s-end .tc-main { font-family:'League Gothic', sans-serif; font-size:170px; line-height:.86; letter-spacing:.01em; margin-top:16px; color:var(--paper); }
+#s-end .tc-rule { height:6px; width:100%; background:var(--red); margin:18px 0 16px; transform-origin:0 50%; }
+#s-end .tc-sub { font-family:'Playfair Display', serif; font-style:italic; font-size:40px; line-height:1.15; }
+
+/* lower third */
+#s-end .lt { position:relative; background:rgba(13,23,38,.88); color:var(--paper); padding:24px 34px 26px 40px; display:inline-block; }
+#s-end .lt-bar { position:absolute; left:0; top:0; bottom:0; width:10px; background:var(--red); transform-origin:50% 100%; }
+#s-end .lt-name { font-family:'Playfair Display', serif; font-weight:900; font-size:58px; line-height:1; }
+#s-end .lt-role { font:500 26px/1.3 'IBM Plex Mono', monospace; color:#cfd6e2; margin-top:10px; letter-spacing:.02em; }
+#s-end .btag { display:inline-block; background:rgba(13,23,38,.88); color:var(--paper); font-size:34px; line-height:1.3; padding:18px 28px; border-left:10px solid var(--red); }
+#s-end .bt-amber { border-left-color:var(--amber); }
+
+/* steps */
+#s-end .steps { display:flex; flex-direction:column; gap:16px; margin-top:6px; }
+#s-end .step { display:flex; gap:22px; align-items:flex-start; }
+#s-end .step-n { flex:none; width:64px; height:64px; background:var(--ink); color:var(--paper); font:700 34px/64px 'Oswald', sans-serif; text-align:center; }
+#s-end .step-t { font-family:'Playfair Display', serif; font-weight:800; font-size:42px; line-height:1.08; }
+#s-end .step-s { font-size:28px; line-height:1.25; color:#3d4a60; margin-top:4px; }
+
+/* chips */
+#s-end .chips { display:flex; flex-wrap:wrap; gap:14px; margin-top:20px; }
+#s-end .chip { font:600 32px/1 'Inter', sans-serif; background:var(--ink); color:var(--paper); padding:16px 22px; border-radius:40px; }
+#s-end .chip:nth-child(2n) { background:var(--red); color:#fff; }
+#s-end .mini-row { display:flex; gap:14px; margin-top:18px; flex-wrap:wrap; }
+#s-end .mini { font:600 30px/1 'Inter', sans-serif; background:var(--ink); color:var(--paper); padding:14px 20px; }
+#s-end .mini-red { background:var(--red); color:#fff; }
+
+/* versus rows */
+#s-end .vs { display:flex; flex-direction:column; gap:12px; margin-top:20px; }
+#s-end .vs-row { display:flex; align-items:center; gap:18px; background:var(--paper2); padding:14px 18px; }
+#s-end .vs-k { font:700 28px/1 'IBM Plex Mono', monospace; letter-spacing:.08em; background:var(--ink); color:var(--paper); padding:10px 12px; flex:none; }
+#s-end .vs-v { font-size:34px; line-height:1.2; font-weight:600; }
+#s-end .vs-bad .vs-k { background:var(--red); color:#fff; }
+#s-end .vs-good .vs-k { background:#1f7a4d; }
+
+/* stamp */
+#s-end .stamp { position:absolute; right:30px; bottom:22px; font-family:'League Gothic', sans-serif; letter-spacing:.06em; line-height:.9;
+  padding:8px 22px 4px; border:8px solid currentColor; border-radius:8px; color:var(--red); background:rgba(239,232,218,.12); mix-blend-mode:multiply; }
+#s-end .paper-dark .stamp, #s-end .admock .stamp { mix-blend-mode:normal; background:rgba(13,23,38,.0); }
+#s-end .hk-c { padding-bottom:130px; }
+#s-end .hk-c .stamp { right:30px; bottom:22px; }
+
+/* evidence photo */
+#s-end .photo { position:relative; background:#fbf8f1; padding:16px 16px 0; box-shadow:0 22px 60px rgba(5,10,20,.45); margin:0 auto; }
+#s-end .tape { position:absolute; left:50%; top:-18px; width:170px; height:40px; margin-left:-85px; background:rgba(244,185,66,.78); z-index:2; }
+#s-end .photo-win { position:relative; overflow:hidden; background:#ddd; }
+#s-end .photo-img { position:absolute; left:0; top:0; width:100%; height:100%; display:block; }
+#s-end .pan-img { height:auto; }
+#s-end .photo-cap { font:500 28px/1.3 'IBM Plex Mono', monospace; color:#3d4a60; padding:14px 4px 16px; display:flex; gap:12px; align-items:flex-start; }
+#s-end .cap-tag { background:var(--red); color:#fff; padding:3px 8px; font-weight:700; flex:none; }
+
+/* ad mock */
+#s-end .admock { position:relative; width:820px; margin:0 auto; background:#fff; border-radius:18px; box-shadow:0 22px 60px rgba(5,10,20,.45); overflow:hidden; }
+#s-end .ad-top { display:flex; align-items:center; gap:16px; padding:20px 24px; border-bottom:1px solid #e3e3e3; }
+#s-end .ad-logo { width:64px; height:64px; border-radius:50%; background:#1d4ed8; color:#fff; font:800 34px/64px 'Inter'; text-align:center; }
+#s-end .ad-name { font:700 30px/1.1 'Inter'; color:#111; }
+#s-end .ad-spon { font:400 28px/1.2 'Inter'; color:#777; margin-top:4px; }
+#s-end .ad-body { background:linear-gradient(135deg,#0f3d91,#1d6fd8); color:#fff; padding:26px 30px 28px; }
+#s-end .ad-big { font:900 60px/1 'Inter'; letter-spacing:-.01em; }
+#s-end .ad-line { font:700 38px/1.25 'Inter'; margin-top:10px; color:#ffe27a; }
+#s-end .ad-btn { display:inline-block; margin-top:18px; background:#22c55e; color:#fff; font:800 28px/1 'Inter'; padding:16px 24px; border-radius:10px; }
+#s-end .ad-logo-note { font:500 28px/1.2 'IBM Plex Mono', monospace; color:#555; padding:14px 24px 18px; }
+
+/* chat */
+#s-end .chat { display:flex; flex-direction:column; gap:14px; margin-top:8px; background:#e9e2d5; padding:20px; border-radius:10px; }
+#s-end .bub { max-width:80%; font-size:32px; line-height:1.25; padding:14px 18px; border-radius:16px; box-shadow:0 2px 0 rgba(0,0,0,.08); }
+#s-end .bub-in { background:#fff; align-self:flex-start; border-top-left-radius:4px; }
+#s-end .bub-out { background:#d6f5c6; align-self:flex-end; border-top-right-radius:4px; }
+
+/* range */
+#s-end .range { display:flex; align-items:center; gap:22px; margin-top:6px; }
+#s-end .range-a { font:700 64px/1 'Oswald'; }
+#s-end .range-arrow { height:6px; flex:1; background:var(--red); transform-origin:0 50%; position:relative; }
+#s-end .range-b { font:700 64px/1 'Oswald'; color:var(--red); }
+
+/* accounts grid */
+#s-end .accts { display:grid; grid-template-columns:repeat(9, 1fr); gap:10px; margin-top:22px; }
+#s-end .acct { background:var(--ink); color:var(--paper); text-align:center; padding:14px 0 10px; }
+#s-end .acct-ic { width:34px; height:24px; margin:0 auto 8px; border:3px solid var(--amber); border-radius:4px; }
+#s-end .acct-n { font:700 30px/1.1 'IBM Plex Mono', monospace; letter-spacing:.02em; }
+
+/* threat rows */
+#s-end .threat { display:flex; flex-direction:column; gap:16px; margin-top:6px; }
+#s-end .th-row { display:flex; gap:18px; align-items:center; font-size:38px; line-height:1.2; color:var(--paper); }
+#s-end .th-ic { flex:none; width:56px; height:56px; border-radius:50%; background:var(--amber); color:var(--ink); font:800 38px/56px 'Inter'; text-align:center; }
+#s-end .th-hot .th-ic { background:var(--red); color:#fff; }
+#s-end .th-hot b { color:#ff8a8c; }
+
+/* impact rows */
+#s-end .impact-rows { display:flex; flex-direction:column; gap:14px; }
+#s-end .ir { display:flex; align-items:center; gap:18px; background:var(--paper2); padding:16px 18px; }
+#s-end .ir-k { flex:none; width:250px; font:700 26px/1 'IBM Plex Mono', monospace; letter-spacing:.06em; }
+#s-end .ir-v { font-size:34px; line-height:1.2; }
+#s-end .ir-hot { background:var(--ink); color:var(--paper); }
+#s-end .ir-hot .ir-k { color:var(--amber); }
+
+/* two columns */
+#s-end .two { display:flex; gap:18px; margin-top:10px; }
+#s-end .two-c { flex:1; background:var(--ink); color:var(--paper); padding:20px 24px 24px; }
+#s-end .two-n { font:700 34px/1 'IBM Plex Mono', monospace; color:var(--amber); }
+#s-end .two-t { font-family:'Playfair Display', serif; font-weight:900; font-size:52px; line-height:1.02; margin-top:10px; }
+
+/* quote */
+#s-end .quote .q { font-family:'Playfair Display', serif; font-style:italic; font-weight:700; font-size:58px; line-height:1.12; padding-bottom:96px; }
+#s-end .quote .q-light { color:var(--paper); padding-bottom:0; }
+#s-end .q { font-family:'Playfair Display', serif; font-style:italic; font-weight:700; font-size:58px; line-height:1.12; }
+#s-end .verdict { margin-top:18px; background:var(--red); color:#fff; font:800 40px/1.15 'Inter'; padding:16px 22px; display:inline-block; }
+
+/* law + ring + bars */
+#s-end .law { font:700 104px/1 'Oswald'; margin-top:4px; }
+#s-end .ring-row { display:flex; align-items:center; gap:34px; }
+#s-end .ring { position:relative; width:260px; height:260px; flex:none; }
+#s-end .ring svg { width:260px; height:260px; transform:rotate(-90deg); }
+#s-end .ring-bg { fill:none; stroke:var(--paper2); stroke-width:14; }
+#s-end .ring-fg { fill:none; stroke:var(--red); stroke-width:14; stroke-dasharray:314.16; stroke-dashoffset:314.16; stroke-linecap:round; }
+#s-end .ring-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font:700 84px/1 'Oswald'; }
+#s-end .ring-num .stat-num { font-size:96px; }
+#s-end .ring-txt { font-size:38px; line-height:1.25; }
+#s-end .bars { display:flex; flex-direction:column; gap:22px; margin-top:12px; }
+#s-end .bar-row { display:flex; align-items:center; gap:18px; }
+#s-end .bar-k { width:230px; flex:none; font:600 28px/1.1 'IBM Plex Mono', monospace; }
+#s-end .bar-track { flex:1; height:58px; background:var(--paper2); position:relative; }
+#s-end .bar { position:absolute; left:0; top:0; bottom:0; width:100%; transform-origin:0 50%; }
+#s-end .bar-ink { background:var(--ink); }
+#s-end .bar-red { background:var(--red); }
+#s-end .bar-v { width:130px; text-align:right; font:700 64px/1 'Oswald'; }
+#s-end .bar-v-red { color:var(--red); }
+
+/* chain */
+#s-end .chain { position:relative; display:flex; gap:0; align-items:center; justify-content:space-between; margin:8px 0 6px; }
+#s-end .link { font:700 30px/1 'IBM Plex Mono', monospace; letter-spacing:.04em; border:6px solid var(--ink); border-radius:46px; padding:22px 26px; background:var(--paper); position:relative; z-index:1; }
+#s-end .link.l1 { background:var(--red); color:#fff; border-color:var(--red); }
+#s-end .chain::before { content:""; position:absolute; left:40px; right:40px; top:50%; height:6px; background:var(--ink); margin-top:-3px; }
+#s-end .chain-cut { position:absolute; left:50%; top:-26px; width:10px; height:140px; margin-left:-5px; background:var(--red); transform-origin:50% 50%; z-index:3; }
+
+/* plates */
+#s-end .plates { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+#s-end .plate { display:flex; align-items:center; gap:18px; background:var(--ink); color:var(--paper); font-family:'Playfair Display', serif; font-weight:800; font-size:44px; line-height:1.05; padding:18px 22px; }
+#s-end .plate.p1 { margin-left:30px; } #s-end .plate.p2 { margin-left:60px; background:var(--red); }
+#s-end .plate-n { font:700 30px/1 'IBM Plex Mono', monospace; color:var(--amber); }
+#s-end .plate.p2 .plate-n { color:#fff; }
+
+/* logos */
+#s-end .logos { display:flex; gap:22px; margin-top:8px; }
+#s-end .logo-tile { flex:1; background:#fff; padding:18px 10px 14px; text-align:center; font:600 28px/1 'Inter'; box-shadow:0 4px 0 rgba(0,0,0,.08); }
+#s-end .logo-crop { width:150px; height:150px; margin:0 auto 12px; background-size:auto 366px; background-repeat:no-repeat; border-radius:50%; }
+
+/* end card */
+#s-end .endcard { position:absolute; inset:0; width:1080px; height:1920px; background:var(--ink); color:var(--paper); padding:520px 80px 0; }
+#s-end .ec-k { font:600 30px/1 'IBM Plex Mono', monospace; letter-spacing:.22em; color:var(--amber); }
+#s-end .ec-t { font-family:'League Gothic', sans-serif; font-size:250px; line-height:.86; margin-top:24px; }
+#s-end .ec-rule { height:8px; width:100%; background:var(--red); margin:26px 0 34px; transform-origin:0 50%; }
+#s-end .ec-n { font-family:'Playfair Display', serif; font-weight:900; font-size:72px; }
+#s-end .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
+#s-end .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
+
+</style>
+<div id="s-end" data-composition-id="s-end" data-width="1080" data-height="1920" data-duration="5.65" data-layout-allow-overlap>
+<div id="ed-card" class="clip card zone-full " data-start="0.0" data-duration="5.65" style=""><div class="card-in"><div class="endcard" data-fx="fade" data-in="0"><div class="ec-k" data-fx="rise" data-in="0.3">SEKIAN, TERIMA KASIH</div><div class="ec-t" data-fx="slam" data-in="0.45">LOAN SCAM</div><div class="ec-rule" data-fx="draw" data-in="0.7"></div><div class="ec-n" data-fx="rise" data-in="0.9">Evelyn Sofidu</div><div class="ec-c" data-fx="rise" data-in="1.05">MPU 3182 · Penghayatan Etika dan Peradaban 2<br>Pensyarah: Puan Rusniyati</div><div class="ec-src" data-fx="rise" data-in="1.4">RUJUKAN: Infografik BERNAMA (4 Ogos 2026) · Berita RTM · JSJK PDRM · SKMM · NSRC 997 · Majlis Keselamatan Negara</div></div></div></div>
+</div>
+<script>
+(function(){
+// Builds this scene's tweens from the data-* attributes written in the HTML.
+// Each .card is a timed clip; its .card-in child enters and exits, and every [data-fx]
+// element inside enters at card start + data-in. Nothing here depends on wall-clock time.
+const root = document.getElementById("s-end");
+const tl = gsap.timeline({ paused: true });
+const num = (v, d) => (v === undefined || v === "" ? d : parseFloat(v));
+const fmt = (v, f, dec) => {
+  const n = dec > 0 ? v.toFixed(dec) : String(Math.round(v));
+  return f === "comma" ? n.replace(/\B(?=(\d{3})+(?!\d))/g, ",") : n;
+};
+
+root.querySelectorAll(".card").forEach((card) => {
+  const s = num(card.dataset.start, 0);
+  const e = s + num(card.dataset.duration, 1);
+  const inner = card.querySelector(".card-in");
+  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
+  if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
+  tl.set(inner, { visibility: "hidden" }, e - 0.01);
+
+  card.querySelectorAll("[data-fx]").forEach((el) => {
+    const t = s + num(el.dataset.in, 0);
+    const fx = el.dataset.fx;
+    if (t >= e - 0.05) return;
+    if (fx === "rise") tl.fromTo(el, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, t);
+    else if (fx === "fade") tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, t);
+    else if (fx === "wipe") tl.fromTo(el, { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.5, ease: "power3.out" }, t);
+    else if (fx === "draw") tl.fromTo(el, { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power2.out" }, t);
+    else if (fx === "slide") tl.fromTo(el, { opacity: 0, x: -44 }, { opacity: 1, x: 0, duration: 0.42, ease: "power3.out" }, t);
+    else if (fx === "pop") tl.fromTo(el, { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: 0.38, ease: "back.out(2.2)" }, t);
+    else if (fx === "slam") tl.fromTo(el, { opacity: 0, scale: 1.55 }, { opacity: 1, scale: 1, duration: 0.26, ease: "power4.out" }, t);
+    else if (fx === "slate") tl.fromTo(el, { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.45, ease: "power3.inOut" }, t);
+    else if (fx === "dock") tl.fromTo(el, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+    else if (fx === "plate") tl.fromTo(el, { opacity: 0, y: 40, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, t);
+    else if (fx === "drop") {
+      const r = num(el.dataset.rot, 0);
+      tl.fromTo(el, { opacity: 0, y: -70, rotation: r + 5 }, { opacity: 1, y: 0, rotation: r, duration: 0.5, ease: "power3.out" }, t);
+    } else if (fx === "stamp") {
+      const r = num(el.dataset.rot, -8);
+      tl.fromTo(el, { opacity: 0, scale: 2.6, rotation: r - 6 }, { opacity: 1, scale: 1, rotation: r, duration: 0.17, ease: "power4.in" }, t - 0.17);
+      tl.fromTo(inner, { x: 0 }, { x: 7, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, t);
+    } else if (fx === "type") {
+      const cs = el.querySelectorAll(".tw");
+      tl.fromTo(cs, { opacity: 0 }, { opacity: 1, duration: 0.01, stagger: 0.045, ease: "none" }, t);
+    } else if (fx === "count") {
+      const to = num(el.dataset.to, 0), land = s + num(el.dataset.land, 1), dec = num(el.dataset.dec, 0), f = el.dataset.fmt;
+      const o = { v: 0 };
+      el.textContent = fmt(0, f, dec);
+      tl.fromTo(o, { v: 0 }, { v: to, duration: Math.max(0.3, land - t), ease: "power2.out",
+        onUpdate: () => { el.textContent = fmt(o.v, f, dec); } }, t);
+    } else if (fx === "pan") {
+      const p = (el.dataset.pan || "0,0").split(",").map(parseFloat);
+      tl.fromTo(el, { yPercent: p[0] }, { yPercent: p[1], duration: Math.max(0.5, e - t), ease: "sine.inOut" }, t);
+    } else if (fx === "ring") {
+      const fg = el.querySelector(".ring-fg");
+      tl.fromTo(fg, { strokeDashoffset: 314.16 }, { strokeDashoffset: 314.16 * (1 - num(el.dataset.to, 0) / 100), duration: 0.8, ease: "power2.out" }, t);
+    } else if (fx === "grow") {
+      tl.fromTo(el, { scaleX: 0 }, { scaleX: num(el.dataset.w, 100) / 100, duration: 0.8, ease: "power3.out" }, t);
+    } else if (fx === "cut") {
+      tl.fromTo(el, { opacity: 0, scaleY: 0, rotation: 18 }, { opacity: 1, scaleY: 1, rotation: 18, duration: 0.14, ease: "power4.out" }, t);
+      const ls = card.querySelectorAll(".link");
+      if (ls.length === 3) {
+        tl.to(ls[0], { x: -26, duration: 0.3, ease: "power3.out" }, t + 0.05);
+        tl.to(ls[2], { x: 26, duration: 0.3, ease: "power3.out" }, t + 0.05);
+        tl.to(ls[1], { opacity: 0.35, y: 18, rotation: -6, duration: 0.35, ease: "power3.out" }, t + 0.05);
+      }
+    }
+  });
+});
+
+window.__timelines = window.__timelines || {};
+window.__timelines["s-end"] = tl;
+
+})();
+</script>
+</template>
