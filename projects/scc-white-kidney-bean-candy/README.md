@@ -44,3 +44,10 @@ No "craving" wording and no buyer-review text in v2 (TikTok strike risk); only l
 - Layered/figurative lines only (e.g. "baju impian", "baju lama 'senyum' balik").
 - Structure: hook → product → CARA MAKAN checklist → routine lines → figurative benefit → CTA (what / why now / cost of waiting) + disclaimer.
 - Captions/hashtags: no craving, kurus, turun berat, weightloss or diet words.
+
+## Version 3 — motion graphics (`edit_v3.py`)
+Same script/wording as v2, plus: slow push-in per shot, shake + RGB glitch + flash on cuts,
+warm pink grade, drifting light leaks, sparkles (hook + ending), bounce-in two-line titles,
+CARA MAKAN checklist with animated green ticks and active-row highlight, pulsing CTA button
+with shine sweep, bouncing arrow, pink→yellow progress bar; audio adds whooshes on cuts and
+a ding on the CTA. Outputs `output/scc-tiktok-v3-motion.mp4` and `-nosound.mp4`.
