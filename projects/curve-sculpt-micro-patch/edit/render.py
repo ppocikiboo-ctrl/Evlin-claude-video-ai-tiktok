@@ -266,7 +266,7 @@ def caption_frame(t):
 def build_overlays():
     o = {}
     o["stop"] = pill(text_img("JANGAN SCROLL DULU! ✋", 58, fill=WHITE), (230, 30, 60))
-    l1 = text_img("PUNGGUNG NAMPAK", 92, fill=WHITE, stroke=10, path=FONT_BLACK_IT)
+    l1 = text_img("NAMPAK", 100, fill=WHITE, stroke=10, path=FONT_BLACK_IT)
     l2a = text_img("LEPER? 😩", 120, fill=YELLOW, stroke=11, path=FONT_BLACK_IT)
     o["hook"] = stack([l1, l2a], gap=0)
     o["try"] = pill(text_img("CUBA PATCH NI DULU 🍑", 56, fill=BLACK), WHITE, border=PINK)
