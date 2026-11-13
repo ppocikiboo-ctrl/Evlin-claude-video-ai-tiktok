@@ -17,3 +17,15 @@ python3 edit/render.py source.mp4 mix.wav out.mp4
 ```
 
 Edit text and timings in `edit/timeline.py`.
+
+## Version 2 — "Closet Diary"
+
+`vbgv-ootd-baju-lama-edit-v2.mp4`: fashion-magazine look with serif headlines,
+baju lama vs baju baru versus card, rubber stamp, notes-app routine card,
+caution-tape "stok laju" banners, diagonal swipe wipes with glitch, warm film
+grade and white-box subtitles. Copy and timings in `edit/timeline_v2.py`.
+
+```
+python3 edit/sfx.py voice.wav mix2.wav timeline_v2
+python3 edit/render_v2.py source.mp4 mix2.wav out-v2.mp4
+```

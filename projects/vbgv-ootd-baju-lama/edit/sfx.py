@@ -1,13 +1,12 @@
 """Synthesise the whoosh / wip / wup / pop / ding SFX and mix them under the voiceover.
 
-Usage: python3 sfx.py <voice.wav 44.1k mono> <out.wav>
+Usage: python3 sfx.py <voice.wav 44.1k mono> <out.wav> [timeline_module]
 """
+import importlib
 import sys
 import wave
 
 import numpy as np
-
-from timeline import SFX
 
 SR = 44100
 rng = np.random.default_rng(7)
@@ -76,7 +75,19 @@ def ding(dur=0.7):
     return s * np.exp(-t * 6) * np.minimum(1, t * 400) / 1.75
 
 
+def thud(dur=0.35):
+    n = int(SR * dur)
+    t = np.arange(n) / SR
+    f = 160 * np.exp(-t * 9) + 45
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    body = np.sin(ph) * np.exp(-t * 11)
+    click = rng.standard_normal(n) * np.exp(-t * 90) * 0.5
+    out = body + click
+    return out / np.abs(out).max()
+
+
 GEN = {
+    "thud": thud,
     "whoosh": lambda: whoosh(0.45, True),
     "whoosh_down": lambda: whoosh(0.4, False),
     "wip": wip,
@@ -84,10 +95,11 @@ GEN = {
     "pop": pop,
     "ding": ding,
 }
-GAIN = {"whoosh": 0.32, "whoosh_down": 0.28, "wip": 0.18, "wup": 0.2, "pop": 0.25, "ding": 0.16}
+GAIN = {"whoosh": 0.32, "whoosh_down": 0.28, "wip": 0.18, "wup": 0.2, "pop": 0.25, "ding": 0.16, "thud": 0.45}
 
 
-def main(voice_path, out_path):
+def main(voice_path, out_path, tl="timeline"):
+    SFX = importlib.import_module(tl).SFX
     with wave.open(voice_path) as w:
         assert w.getframerate() == SR and w.getnchannels() == 1
         voice = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float64) / 32768
@@ -108,4 +120,4 @@ def main(voice_path, out_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(*sys.argv[1:4])
