@@ -41,15 +41,15 @@ COFFEE = FRONT.crop((565, 905, 985, 1255))      # latte-art cup printed on the b
 T1, T2, T3 = 2.6, 5.0, 8.6
 SECTIONS = [  # (start, end, chapter tag)
     (0.0, T1, None),
-    (T1, T2, "TENGOK NI"),
-    (T2, T3, "KENAPA WAJIB CUBA"),
-    (T3, VID_END, "UNTUK AWAK"),
-    (VID_END, TOTAL, "CARA ORDER"),
+    (T1, T2, None),
+    (T2, T3, None),
+    (T3, VID_END, None),
+    (VID_END, TOTAL, None),
 ]
 CUTS = [b[0] for b in SECTIONS[1:]]
 # per-section camera: (zoom start, zoom end, vertical focus 0..1)
-CAM = {0: (1.00, 1.05, 0.45), 1: (1.18, 1.30, 0.36), 2: (1.04, 1.08, 0.45), 3: (1.08, 1.14, 0.40),
-       4: (1.14, 1.14, 0.40)}
+CAM = {0: (1.00, 1.04, 0.40), 1: (1.04, 1.09, 0.40), 2: (1.03, 1.06, 0.40), 3: (1.05, 1.08, 0.40),
+       4: (1.08, 1.08, 0.40)}
 
 # ------------------------------------------------------------------ graphics
 def marker_line(words, size, fg=BROWN, bg=CREAM, hi=None, rot=0.0):
@@ -156,32 +156,36 @@ SL = -0.028
 
 
 # ------------------------------------------------------------------ timeline
-# 0) HOOK — price hook, fully visible on frame 0
-add(None, 0, 1.0, 0, 0, "darken")
-y = kinetic(["KOPI RASA KAFE,"], 0.0, T1, 290, size=110, per=0.0, styles=[(BROWN, CREAM)])
-y = kinetic(["TAK SAMPAI RM8", "SECAWAN?!"], 0.0, T1, y, size=118, per=0.0,
-            styles=[(WHITE, ORANGE), (WHITE, ORANGE)])
-kinetic(["Harga label RM79 / 10 sachet"], 0.8, T1, y + 24, size=44, per=0.06, styles=[(WHITE, BROWN)])
-SFX.append((0.0, "boom"))
-# pointer to the sachet on the table
-_tw = int(font(FONT_BLACK, 46).getlength("DURIMEX COFFEE"))
-tag = Image.new("RGBA", (_tw + 60, 90), (0, 0, 0, 0))
-ImageDraw.Draw(tag).rounded_rectangle([0, 0, tag.width - 1, 89], radius=45, fill=CREAM)
-ImageDraw.Draw(tag).text((30, 14), "DURIMEX COFFEE", font=font(FONT_BLACK, 46), fill=BROWN)
-E.append(dict(img=shadow(tag, 10, (0, 6), 120), t0=1.1, t1=T1, x=420, y=1120, anim="pop"))
-SFX.append((1.1, "tick"))
+# LAYOUT RULE: the real coffee in the mug (y ~380-1040) is never covered.
+# Text lives in the TOP band (y 165-360) and the BOTTOM band (y >= 1080).
+TOP, BOT = 168, 1085
 
-# 1) CREAMY close-up (camera punches in on the foam)
-kinetic(["Tengok buih dia...", "CREAMY GILA!"], T1 + 0.05, T2, 300, size=96,
-        styles=[(WHITE, BROWN), (WHITE, ORANGE)])
-kinetic(["Lemak hazelnut & vanila,", "wangi macam kopi kafe."], T1 + 1.0, T2, 1290, size=60,
-        hi={"HAZELNUT", "VANILA,", "KAFE."})
+# 0) HOOK — price hook, fully visible on frame 0
+add(None, 0, 0.8, 0, 0, "darken")
+kinetic(["KOPI RASA KAFE,"], 0.0, T1, TOP, size=96, per=0.0, styles=[(BROWN, CREAM)], align="center")
+y = kinetic(["TAK SAMPAI RM8", "SECAWAN?!"], 0.0, T1, BOT, size=112, per=0.0,
+            styles=[(WHITE, ORANGE), (WHITE, ORANGE)], align="center")
+kinetic(["Harga label RM79 / 10 sachet"], 0.8, T1, y + 10, size=44, per=0.06, styles=[(WHITE, BROWN)],
+        align="center")
+SFX.append((0.0, "boom"))
+
+# 1) CREAMY close-up
+kinetic(["Tengok buih dia...", "CREAMY GILA!"], T1 + 0.05, T2, TOP, size=62,
+        styles=[(WHITE, BROWN), (WHITE, ORANGE)], align="center")
+y = kinetic(["Lemak hazelnut & vanila,", "wangi macam kopi kafe."], T1 + 0.9, T2, BOT, size=60,
+            hi={"HAZELNUT", "VANILA,", "KAFE."}, align="center")
+_tw = int(font(FONT_BLACK, 44).getlength("DURIMEX COFFEE"))
+tag = Image.new("RGBA", (_tw + 60, 86), (0, 0, 0, 0))
+ImageDraw.Draw(tag).rounded_rectangle([0, 0, tag.width - 1, 85], radius=43, fill=CREAM)
+ImageDraw.Draw(tag).text((30, 14), "DURIMEX COFFEE", font=font(FONT_BLACK, 44), fill=BROWN)
+E.append(dict(img=shadow(tag, 10, (0, 6), 120), t0=T1 + 1.6, t1=T2, x=300, y=1560, anim="pop"))
+SFX.append((T1 + 1.6, "tick"))
 SFX.append((T1, "riser"))
 
-# 2) WHY — coffee photo card + benefit chips
-kinetic(["Kenapa wajib cuba?"], T2 + 0.05, T3, 260, size=96, styles=[(WHITE, ORANGE)])
-cup = rounded(COFFEE.resize((560, 467), Image.LANCZOS), 40, 10, CREAM)
-E.append(dict(img=shadow(cup, 18, (0, 12), 160), t0=T2 + 0.2, t1=T3, x=226, y=440, anim="pop"))
+# 2) WHY — coffee photo tile + benefit chips, all below the mug
+kinetic(["Kenapa wajib cuba?"], T2 + 0.05, T3, TOP + 20, size=80, styles=[(WHITE, ORANGE)], align="center")
+cup = rounded(COFFEE.resize((300, 250), Image.LANCZOS), 28, 8, CREAM)
+E.append(dict(img=shadow(cup, 14, (0, 10), 150), t0=T2 + 0.2, t1=T3, x=700, y=BOT - 30, anim="pop"))
 SFX.append((T2 + 0.2, "ding"))
 benefits = [
     ("Durian belanda + kunyit hitam", "herba dalam kopi"),
@@ -190,44 +194,42 @@ benefits = [
     ("Halal JAKIM & MeSTI", "lulus & yakin"),
 ]
 for i, (big, small) in enumerate(benefits):
-    f1, f2 = font(FONT_BLACK, 50), font(FONT_XB, 32)
-    wdt = int(max(f1.getlength(big), f2.getlength(small))) + 140
-    im = Image.new("RGBA", (wdt, 128), (0, 0, 0, 0))
+    f1, f2 = font(FONT_BLACK, 36), font(FONT_XB, 25)
+    wdt = int(max(f1.getlength(big), f2.getlength(small))) + 110
+    im = Image.new("RGBA", (wdt, 100), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    d.rounded_rectangle([0, 0, wdt - 1, 127], radius=30, fill=CREAM + (245,))
-    d.ellipse([22, 34, 82, 94], fill=ORANGE)
-    d.line([(36, 64), (49, 77), (70, 50)], fill=WHITE, width=9, joint="curve")
-    d.text((104, 14), big, font=f1, fill=BROWN)
-    d.text((106, 74), small, font=f2, fill=(130, 95, 70))
-    a = T2 + 0.8 + i * 0.55
-    E.append(dict(img=shadow(im, 10, (0, 6), 120), t0=a, t1=T3, x=60, y=1010 + i * 145, anim="slide"))
+    d.rounded_rectangle([0, 0, wdt - 1, 99], radius=26, fill=CREAM + (245,))
+    d.ellipse([18, 26, 66, 74], fill=ORANGE)
+    d.line([(29, 50), (39, 60), (56, 39)], fill=WHITE, width=7, joint="curve")
+    d.text((82, 12), big, font=f1, fill=BROWN)
+    d.text((84, 60), small, font=f2, fill=(130, 95, 70))
+    a = T2 + 0.6 + i * 0.55
+    E.append(dict(img=shadow(im, 10, (0, 6), 120), t0=a, t1=T3, x=0, y=BOT - 20 + i * 112, anim="slide"))
     SFX.append((a, "tick"))
 
 # 3) EMOTION
-kinetic(["Awak penat jaga semua orang.", "Pagi ni, jaga diri sendiri."], T3 + 0.05, VID_END, 300, size=70, per=0.07,
-        styles=[(WHITE, BROWN), (BROWN, CREAM)], hi={"DIRI", "SENDIRI."})
-kinetic(["Secawan kopi wangi,", "5 minit tenang", "yang awak layak dapat."], T3 + 1.0, VID_END, 1240, size=66, per=0.07,
-        styles=[(WHITE, BROWN), (WHITE, ORANGE), (WHITE, BROWN)])
+kinetic(["Awak penat jaga semua orang.", "Pagi ni, jaga diri sendiri."], T3 + 0.05, VID_END, TOP, size=56,
+        per=0.07, styles=[(WHITE, BROWN), (BROWN, CREAM)], hi={"DIRI", "SENDIRI."}, align="center")
+kinetic(["Secawan kopi wangi,", "5 minit tenang", "yang awak layak dapat."], T3 + 0.9, VID_END, BOT, size=66,
+        per=0.07, styles=[(WHITE, BROWN), (WHITE, ORANGE), (WHITE, BROWN)], align="center")
 
-# 4) CTA end card (last frame held, dimmed)
+# 4) CTA end card (last frame held, lightly dimmed — coffee stays visible)
 E.append(dict(img=None, t0=VID_END, t1=TOTAL + 1, x=0, y=0, anim="dim"))
-cta = Image.new("RGBA", (940, 170), (0, 0, 0, 0))
-ImageDraw.Draw(cta).rounded_rectangle([0, 0, 939, 169], radius=85, fill=ORANGE)
-cta.alpha_composite(cart_icon(110, WHITE), (50, 30))
-_fs = 78
-while font(FONT_BLACK, _fs).getlength("TEKAN BAKUL KUNING") > 940 - 185 - 50: _fs -= 2
+cta = Image.new("RGBA", (940, 150), (0, 0, 0, 0))
+ImageDraw.Draw(cta).rounded_rectangle([0, 0, 939, 149], radius=75, fill=ORANGE)
+cta.alpha_composite(cart_icon(100, WHITE), (50, 25))
+_fs = 74
+while font(FONT_BLACK, _fs).getlength("TEKAN BAKUL KUNING") > 940 - 175 - 50: _fs -= 2
 _f = font(FONT_BLACK, _fs); _bb = _f.getbbox("TEKAN BAKUL KUNING")
-ImageDraw.Draw(cta).text((185, (170 - (_bb[3] - _bb[1])) // 2 - _bb[1]), "TEKAN BAKUL KUNING", font=_f, fill=WHITE)
-E.append(dict(img=shadow(cta, 14, (0, 10), 140), t0=VID_END, t1=TOTAL + 1, x=40, y=300, anim="pulse"))
+ImageDraw.Draw(cta).text((175, (150 - (_bb[3] - _bb[1])) // 2 - _bb[1]), "TEKAN BAKUL KUNING", font=_f, fill=WHITE)
+E.append(dict(img=shadow(cta, 14, (0, 10), 140), t0=VID_END, t1=TOTAL + 1, x=40 - 42, y=TOP - 30, anim="pulse"))
 SFX.append((VID_END, "boom"))
-small_cup = rounded(COFFEE.resize((420, 350), Image.LANCZOS), 34, 8, CREAM)
-E.append(dict(img=shadow(small_cup, 16, (0, 10), 150), t0=VID_END + 0.2, t1=TOTAL + 1, x=296, y=560, anim="pop"))
-kinetic(["Grab sekarang", "sebelum stok promo habis!"], VID_END + 0.5, TOTAL + 1, 1020, size=70, per=0.07,
-        styles=[(BROWN, CREAM), (WHITE, ORANGE)], align="center")
+y = kinetic(["Grab sekarang", "sebelum stok promo habis!"], VID_END + 0.4, TOTAL + 1, BOT, size=70, per=0.07,
+            styles=[(BROWN, CREAM), (WHITE, ORANGE)], align="center")
 arrow = Image.new("RGBA", (160, 200), (0, 0, 0, 0))
 ImageDraw.Draw(arrow).polygon([(50, 0), (110, 0), (110, 110), (155, 110), (80, 195), (5, 110), (50, 110)],
                               fill=ORANGE, outline=WHITE, width=6)
-E.append(dict(img=arrow, t0=VID_END + 0.9, t1=TOTAL + 1, x=110, y=1400, anim="bounce"))
+E.append(dict(img=arrow, t0=VID_END + 0.9, t1=TOTAL + 1, x=110, y=y + 40, anim="bounce"))
 for c in CUTS:
     SFX.append((c, "whoosh"))
 
@@ -258,7 +260,7 @@ def draw(canvas, e, t):
     out_a = min(1, left / 0.15)
     an = e["anim"]
     if an == "dim":
-        a = 0.5 * ease_out(min(1, age / 0.4))
+        a = 0.25 * ease_out(min(1, age / 0.4))
         canvas.alpha_composite(Image.new("RGBA", (W, H), (20, 10, 5, int(255 * a))))
         return
     if an == "darken":

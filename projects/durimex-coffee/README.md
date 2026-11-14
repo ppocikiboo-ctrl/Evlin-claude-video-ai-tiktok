@@ -45,13 +45,15 @@ python3 scripts/render2.py cut.mov input.mp4 final_v2.mp4
 
 Final: [`output/durimex-coffee-tiktok-edit-v3.mp4`](output/durimex-coffee-tiktok-edit-v3.mp4)
 
+**Peraturan susun atur:** kopi dalam mug (y ≈ 380–1040) tidak pernah ditutup. Semua teks di jalur atas (y 165–360) atau bawah mug (y ≥ 1080); gambar latte kecil di sebelah kanan bawah, frame akhir hanya dimalapkan sedikit.
+
 | Masa | Bahagian | Teks / visual |
 |---|---|---|
 | 0.0–2.6s | Hook harga | KOPI RASA KAFE, TAK SAMPAI RM8 SECAWAN?! · Harga label RM79 / 10 sachet · tag "DURIMEX COFFEE" pada sachet |
 | 2.6–5.0s | Tengok ni | Kamera zoom ke buih · Tengok buih dia... CREAMY GILA! · Lemak hazelnut & vanila, wangi macam kopi kafe. |
-| 5.0–8.6s | Kenapa wajib cuba | Gambar kopi latte + 4 kebaikan: durian belanda + kunyit hitam, gula nano 116 kcal, bancuh 1 minit, Halal JAKIM & MeSTI |
+| 5.0–8.6s | Kenapa wajib cuba | Gambar kopi latte (kecil, bawah kanan) + 4 kebaikan: durian belanda + kunyit hitam, gula nano 116 kcal, bancuh 1 minit, Halal JAKIM & MeSTI |
 | 8.6–11.8s | Emosi | Awak penat jaga semua orang. Pagi ni, jaga diri sendiri. · Secawan kopi wangi, 5 minit tenang yang awak layak dapat. |
-| 11.8–14.4s | CTA | Frame akhir dimalapkan · TEKAN BAKUL KUNING · gambar kopi · Grab sekarang sebelum stok promo habis! · anak panah |
+| 11.8–14.4s | CTA | Frame akhir dimalapkan sedikit · TEKAN BAKUL KUNING · Grab sekarang sebelum stok promo habis! · anak panah |
 
 ```bash
 SPEED=1.1 python3 scripts/cut.py input.mp4 cut.mov
