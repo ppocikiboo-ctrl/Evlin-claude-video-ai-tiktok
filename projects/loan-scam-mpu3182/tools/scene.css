@@ -1,9 +1,10 @@
 #ROOT { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #ROOT .card { position:absolute; }
-#ROOT .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#ROOT .zone-top { left:54px; top:1250px; width:972px; }
 #ROOT .zone-dock { left:40px; top:44px; }
-#ROOT .zone-bottom { left:54px; width:972px; top:1470px; }
+#ROOT .zone-bottom { left:54px; width:972px; top:150px; }
 #ROOT .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #ROOT .card-in { position:relative; }
 
@@ -209,3 +210,12 @@
 #ROOT .ec-n { font-family:'Playfair Display', serif; font-weight:900; font-size:72px; }
 #ROOT .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #ROOT .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
+
+/* app-permission mock (data-stealing loan app) */
+#ROOT .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#ROOT .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#ROOT .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#ROOT .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#ROOT .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#ROOT .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#ROOT .perm-no { color:#888; } #ROOT .perm-yes { color:#1d6fd8; }

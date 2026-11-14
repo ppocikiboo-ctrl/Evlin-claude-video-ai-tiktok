@@ -4,9 +4,10 @@
 #s-end { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-end .card { position:absolute; }
-#s-end .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-end .zone-top { left:54px; top:1250px; width:972px; }
 #s-end .zone-dock { left:40px; top:44px; }
-#s-end .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-end .zone-bottom { left:54px; width:972px; top:150px; }
 #s-end .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-end .card-in { position:relative; }
 
@@ -213,9 +214,18 @@
 #s-end .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-end .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-end .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-end .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-end .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-end .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-end .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-end .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-end .perm-no { color:#888; } #s-end .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-end" data-composition-id="s-end" data-width="1080" data-height="1920" data-duration="5.65" data-layout-allow-overlap>
-<div id="ed-card" class="clip card zone-full " data-start="0.0" data-duration="5.65" style=""><div class="card-in"><div class="endcard" data-fx="fade" data-in="0"><div class="ec-k" data-fx="rise" data-in="0.3">SEKIAN, TERIMA KASIH</div><div class="ec-t" data-fx="slam" data-in="0.45">LOAN SCAM</div><div class="ec-rule" data-fx="draw" data-in="0.7"></div><div class="ec-n" data-fx="rise" data-in="0.9">Evelyn Sofidu</div><div class="ec-c" data-fx="rise" data-in="1.05">MPU 3182 · Penghayatan Etika dan Peradaban 2<br>Pensyarah: Puan Rusniyati</div><div class="ec-src" data-fx="rise" data-in="1.4">RUJUKAN: Infografik BERNAMA (4 Ogos 2026) · Berita RTM · JSJK PDRM · SKMM · NSRC 997 · Majlis Keselamatan Negara</div></div></div></div>
+<div id="s-end" data-composition-id="s-end" data-width="1080" data-height="1920" data-duration="4.55" data-layout-allow-overlap>
+<div id="ed-card" class="clip card zone-full " data-start="0.0" data-duration="4.55" style=""><div class="card-in"><div class="endcard" data-fx="fade" data-in="0"><div class="ec-k" data-fx="rise" data-in="0.3">SEKIAN, TERIMA KASIH</div><div class="ec-t" data-fx="slam" data-in="0.45">LOAN SCAM</div><div class="ec-rule" data-fx="draw" data-in="0.7"></div><div class="ec-n" data-fx="rise" data-in="0.9">Evelyn Sofidu</div><div class="ec-c" data-fx="rise" data-in="1.05">MPU 3182 · Penghayatan Etika dan Peradaban 2<br>Pensyarah: Puan Rusniyati</div><div class="ec-src" data-fx="rise" data-in="1.4">RUJUKAN: Infografik BERNAMA (4 Ogos 2026) · Berita RTM · JSJK PDRM · SKMM · NSRC 997 · Akta Keselamatan Dalam Talian 2025</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -234,7 +244,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

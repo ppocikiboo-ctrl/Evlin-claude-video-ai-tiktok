@@ -1,0 +1,2354 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.86,
+  "text": " Lepas semua ini, apakah cadangan penyelesaian?",
+  "words": [
+   {
+    "s": 0.0,
+    "e": 0.48,
+    "w": " Lepas"
+   },
+   {
+    "s": 0.48,
+    "e": 0.74,
+    "w": " semua"
+   },
+   {
+    "s": 0.74,
+    "e": 1.04,
+    "w": " ini,"
+   },
+   {
+    "s": 1.3,
+    "e": 1.6,
+    "w": " apakah"
+   },
+   {
+    "s": 1.6,
+    "e": 1.98,
+    "w": " cadangan"
+   },
+   {
+    "s": 1.98,
+    "e": 2.86,
+    "w": " penyelesaian?"
+   }
+  ]
+ },
+ {
+  "start": 3.88,
+  "end": 8.8,
+  "text": " Sama sekali, melalui penguatkuasaan undang-undang.",
+  "words": [
+   {
+    "s": 3.500000000000001,
+    "e": 4.06,
+    "w": " Sama"
+   },
+   {
+    "s": 4.06,
+    "e": 4.48,
+    "w": " sekali,"
+   },
+   {
+    "s": 4.96,
+    "e": 6.1,
+    "w": " melalui"
+   },
+   {
+    "s": 6.1,
+    "e": 7.68,
+    "w": " penguatkuasaan"
+   },
+   {
+    "s": 7.68,
+    "e": 8.24,
+    "w": " undang"
+   },
+   {
+    "s": 8.24,
+    "e": 8.8,
+    "w": "-undang."
+   }
+  ]
+ },
+ {
+  "start": 9.6,
+  "end": 16.02,
+  "text": " SKMM menggunakan seksion 233 Akta Komunikasi dan Multimedia 1998",
+  "words": [
+   {
+    "s": 9.6,
+    "e": 10.72,
+    "w": " SKMM"
+   },
+   {
+    "s": 10.72,
+    "e": 11.58,
+    "w": " menggunakan"
+   },
+   {
+    "s": 11.58,
+    "e": 12.06,
+    "w": " seksion"
+   },
+   {
+    "s": 12.06,
+    "e": 12.96,
+    "w": " 233"
+   },
+   {
+    "s": 12.96,
+    "e": 13.82,
+    "w": " Akta"
+   },
+   {
+    "s": 13.82,
+    "e": 14.58,
+    "w": " Komunikasi"
+   },
+   {
+    "s": 14.58,
+    "e": 14.82,
+    "w": " dan"
+   },
+   {
+    "s": 14.82,
+    "e": 15.46,
+    "w": " Multimedia"
+   },
+   {
+    "s": 15.46,
+    "e": 16.02,
+    "w": " 1998"
+   }
+  ]
+ },
+ {
+  "start": 16.02,
+  "end": 21.32,
+  "text": " untuk menurunkan kandungan dan iklan palsu.",
+  "words": [
+   {
+    "s": 16.02,
+    "e": 17.84,
+    "w": " untuk"
+   },
+   {
+    "s": 17.84,
+    "e": 18.84,
+    "w": " menurunkan"
+   },
+   {
+    "s": 18.84,
+    "e": 19.78,
+    "w": " kandungan"
+   },
+   {
+    "s": 19.78,
+    "e": 20.26,
+    "w": " dan"
+   },
+   {
+    "s": 20.26,
+    "e": 20.76,
+    "w": " iklan"
+   },
+   {
+    "s": 20.76,
+    "e": 21.32,
+    "w": " palsu."
+   }
+  ]
+ },
+ {
+  "start": 21.56,
+  "end": 27.48,
+  "text": " Dari segi angka, ia berkesan kerana 96% permohonan penurunan",
+  "words": [
+   {
+    "s": 21.56,
+    "e": 21.96,
+    "w": " Dari"
+   },
+   {
+    "s": 21.96,
+    "e": 22.36,
+    "w": " segi"
+   },
+   {
+    "s": 22.36,
+    "e": 22.76,
+    "w": " angka,"
+   },
+   {
+    "s": 23.04,
+    "e": 23.4,
+    "w": " ia"
+   },
+   {
+    "s": 23.4,
+    "e": 24.0,
+    "w": " berkesan"
+   },
+   {
+    "s": 24.0,
+    "e": 24.44,
+    "w": " kerana"
+   },
+   {
+    "s": 24.44,
+    "e": 25.18,
+    "w": " 96"
+   },
+   {
+    "s": 25.18,
+    "e": 25.86,
+    "w": "%"
+   },
+   {
+    "s": 25.86,
+    "e": 26.66,
+    "w": " permohonan"
+   },
+   {
+    "s": 26.66,
+    "e": 27.48,
+    "w": " penurunan"
+   }
+  ]
+ },
+ {
+  "start": 27.48,
+  "end": 30.5,
+  "text": " kandungan penipuan berjaya diturunkan.",
+  "words": [
+   {
+    "s": 27.48,
+    "e": 28.36,
+    "w": " kandungan"
+   },
+   {
+    "s": 28.36,
+    "e": 28.94,
+    "w": " penipuan"
+   },
+   {
+    "s": 28.94,
+    "e": 29.72,
+    "w": " berjaya"
+   },
+   {
+    "s": 29.72,
+    "e": 30.5,
+    "w": " diturunkan."
+   }
+  ]
+ },
+ {
+  "start": 31.22,
+  "end": 36.02,
+  "text": " Bermula 1 Januari 2026, Akta Keselamatan dalam talian juga",
+  "words": [
+   {
+    "s": 31.06,
+    "e": 31.62,
+    "w": " Bermula"
+   },
+   {
+    "s": 31.62,
+    "e": 31.96,
+    "w": " 1"
+   },
+   {
+    "s": 31.96,
+    "e": 32.5,
+    "w": " Januari"
+   },
+   {
+    "s": 32.5,
+    "e": 33.58,
+    "w": " 2026,"
+   },
+   {
+    "s": 34.18,
+    "e": 34.38,
+    "w": " Akta"
+   },
+   {
+    "s": 34.38,
+    "e": 35.04,
+    "w": " Keselamatan"
+   },
+   {
+    "s": 35.04,
+    "e": 35.32,
+    "w": " dalam"
+   },
+   {
+    "s": 35.32,
+    "e": 35.7,
+    "w": " talian"
+   },
+   {
+    "s": 35.7,
+    "e": 36.02,
+    "w": " juga"
+   }
+  ]
+ },
+ {
+  "start": 36.02,
+  "end": 39.22,
+  "text": " mewajibkan platform mengambil langkah keselamatan.",
+  "words": [
+   {
+    "s": 36.02,
+    "e": 37.06,
+    "w": " mewajibkan"
+   },
+   {
+    "s": 37.06,
+    "e": 37.52,
+    "w": " platform"
+   },
+   {
+    "s": 37.52,
+    "e": 38.06,
+    "w": " mengambil"
+   },
+   {
+    "s": 38.06,
+    "e": 38.42,
+    "w": " langkah"
+   },
+   {
+    "s": 38.42,
+    "e": 39.22,
+    "w": " keselamatan."
+   }
+  ]
+ },
+ {
+  "start": 39.5,
+  "end": 45.7,
+  "text": " Namun, saya berpendapat penguatkuasaan ini masih ada kelemahannya tersendiri.",
+  "words": [
+   {
+    "s": 39.5,
+    "e": 40.26,
+    "w": " Namun,"
+   },
+   {
+    "s": 40.48,
+    "e": 40.6,
+    "w": " saya"
+   },
+   {
+    "s": 40.6,
+    "e": 41.36,
+    "w": " berpendapat"
+   },
+   {
+    "s": 41.36,
+    "e": 42.76,
+    "w": " penguatkuasaan"
+   },
+   {
+    "s": 42.76,
+    "e": 43.1,
+    "w": " ini"
+   },
+   {
+    "s": 43.1,
+    "e": 43.86,
+    "w": " masih"
+   },
+   {
+    "s": 43.86,
+    "e": 44.1,
+    "w": " ada"
+   },
+   {
+    "s": 44.1,
+    "e": 44.8,
+    "w": " kelemahannya"
+   },
+   {
+    "s": 44.8,
+    "e": 45.7,
+    "w": " tersendiri."
+   }
+  ]
+ },
+ {
+  "start": 46.0,
+  "end": 48.8,
+  "text": " Kenapa? Karena ia bersifat reaktif.",
+  "words": [
+   {
+    "s": 46.0,
+    "e": 46.46,
+    "w": " Kenapa?"
+   },
+   {
+    "s": 46.78,
+    "e": 47.2,
+    "w": " Karena"
+   },
+   {
+    "s": 47.2,
+    "e": 47.52,
+    "w": " ia"
+   },
+   {
+    "s": 47.52,
+    "e": 48.08,
+    "w": " bersifat"
+   },
+   {
+    "s": 48.08,
+    "e": 48.8,
+    "w": " reaktif."
+   }
+  ]
+ },
+ {
+  "start": 49.4,
+  "end": 57.06,
+  "text": " Kandungan diturunkan selepas ia tersiar.",
+  "words": [
+   {
+    "s": 49.4,
+    "e": 50.52,
+    "w": " Kandungan"
+   },
+   {
+    "s": 50.52,
+    "e": 51.34,
+    "w": " diturunkan"
+   },
+   {
+    "s": 51.34,
+    "e": 52.34,
+    "w": " selepas"
+   },
+   {
+    "s": 52.34,
+    "e": 56.44,
+    "w": " ia"
+   },
+   {
+    "s": 56.44,
+    "e": 57.06,
+    "w": " tersiar."
+   }
+  ]
+ },
+ {
+  "start": 57.48,
+  "end": 60.7,
+  "text": " Mungkin sudah ada mangsa yang terjerat.",
+  "words": [
+   {
+    "s": 57.48,
+    "e": 58.12,
+    "w": " Mungkin"
+   },
+   {
+    "s": 58.12,
+    "e": 58.76,
+    "w": " sudah"
+   },
+   {
+    "s": 58.76,
+    "e": 59.06,
+    "w": " ada"
+   },
+   {
+    "s": 59.06,
+    "e": 59.54,
+    "w": " mangsa"
+   },
+   {
+    "s": 59.54,
+    "e": 60.08,
+    "w": " yang"
+   },
+   {
+    "s": 60.08,
+    "e": 60.7,
+    "w": " terjerat."
+   }
+  ]
+ },
+ {
+  "start": 60.94,
+  "end": 67.44,
+  "text": " Mangsa yang sama, sindiket juga mudah membuka iklan dan profile yang baru.",
+  "words": [
+   {
+    "s": 60.94,
+    "e": 61.32,
+    "w": " Mangsa"
+   },
+   {
+    "s": 61.32,
+    "e": 61.52,
+    "w": " yang"
+   },
+   {
+    "s": 61.52,
+    "e": 61.96,
+    "w": " sama,"
+   },
+   {
+    "s": 62.54,
+    "e": 62.96,
+    "w": " sindiket"
+   },
+   {
+    "s": 62.96,
+    "e": 63.32,
+    "w": " juga"
+   },
+   {
+    "s": 63.32,
+    "e": 64.68,
+    "w": " mudah"
+   },
+   {
+    "s": 64.68,
+    "e": 65.28,
+    "w": " membuka"
+   },
+   {
+    "s": 65.28,
+    "e": 65.76,
+    "w": " iklan"
+   },
+   {
+    "s": 65.76,
+    "e": 66.42,
+    "w": " dan"
+   },
+   {
+    "s": 66.42,
+    "e": 66.82,
+    "w": " profile"
+   },
+   {
+    "s": 66.82,
+    "e": 67.08,
+    "w": " yang"
+   },
+   {
+    "s": 67.08,
+    "e": 67.44,
+    "w": " baru."
+   }
+  ]
+ },
+ {
+  "start": 67.86,
+  "end": 72.44,
+  "text": " Itu bagi saya, undang-undang sahaja tidak cukup.",
+  "words": [
+   {
+    "s": 67.86,
+    "e": 68.38,
+    "w": " Itu"
+   },
+   {
+    "s": 68.38,
+    "e": 68.88,
+    "w": " bagi"
+   },
+   {
+    "s": 68.88,
+    "e": 69.24,
+    "w": " saya,"
+   },
+   {
+    "s": 69.54,
+    "e": 69.76,
+    "w": " undang"
+   },
+   {
+    "s": 69.76,
+    "e": 70.1,
+    "w": "-undang"
+   },
+   {
+    "s": 70.1,
+    "e": 70.66,
+    "w": " sahaja"
+   },
+   {
+    "s": 70.66,
+    "e": 71.64,
+    "w": " tidak"
+   },
+   {
+    "s": 71.64,
+    "e": 72.44,
+    "w": " cukup."
+   }
+  ]
+ },
+ {
+  "start": 72.96,
+  "end": 77.26,
+  "text": " Sedangkan yang kedua pula melalui literasi digital.",
+  "words": [
+   {
+    "s": 72.96,
+    "e": 73.76,
+    "w": " Sedangkan"
+   },
+   {
+    "s": 73.76,
+    "e": 73.9,
+    "w": " yang"
+   },
+   {
+    "s": 73.9,
+    "e": 74.3,
+    "w": " kedua"
+   },
+   {
+    "s": 74.3,
+    "e": 74.68,
+    "w": " pula"
+   },
+   {
+    "s": 74.68,
+    "e": 75.6,
+    "w": " melalui"
+   },
+   {
+    "s": 75.6,
+    "e": 76.62,
+    "w": " literasi"
+   },
+   {
+    "s": 76.62,
+    "e": 77.26,
+    "w": " digital."
+   }
+  ]
+ },
+ {
+  "start": 78.04,
+  "end": 84.16,
+  "text": " Yaitu di mana kita sendiri sebagai rakyat biasa harus ingat tiga perkara ini.",
+  "words": [
+   {
+    "s": 78.04,
+    "e": 78.92,
+    "w": " Yaitu"
+   },
+   {
+    "s": 78.92,
+    "e": 79.16,
+    "w": " di"
+   },
+   {
+    "s": 79.16,
+    "e": 79.34,
+    "w": " mana"
+   },
+   {
+    "s": 79.34,
+    "e": 79.68,
+    "w": " kita"
+   },
+   {
+    "s": 79.68,
+    "e": 80.18,
+    "w": " sendiri"
+   },
+   {
+    "s": 80.18,
+    "e": 80.86,
+    "w": " sebagai"
+   },
+   {
+    "s": 80.86,
+    "e": 81.3,
+    "w": " rakyat"
+   },
+   {
+    "s": 81.3,
+    "e": 81.8,
+    "w": " biasa"
+   },
+   {
+    "s": 81.8,
+    "e": 82.62,
+    "w": " harus"
+   },
+   {
+    "s": 82.62,
+    "e": 83.02,
+    "w": " ingat"
+   },
+   {
+    "s": 83.02,
+    "e": 83.42,
+    "w": " tiga"
+   },
+   {
+    "s": 83.42,
+    "e": 83.86,
+    "w": " perkara"
+   },
+   {
+    "s": 83.86,
+    "e": 84.16,
+    "w": " ini."
+   }
+  ]
+ },
+ {
+  "start": 84.16,
+  "end": 88.98,
+  "text": " Yang pertama, jaman yang sah tidak akan meminta yuran pendahuluan.",
+  "words": [
+   {
+    "s": 84.16,
+    "e": 84.7,
+    "w": " Yang"
+   },
+   {
+    "s": 84.7,
+    "e": 85.2,
+    "w": " pertama,"
+   },
+   {
+    "s": 85.46,
+    "e": 85.78,
+    "w": " jaman"
+   },
+   {
+    "s": 85.78,
+    "e": 86.04,
+    "w": " yang"
+   },
+   {
+    "s": 86.04,
+    "e": 86.42,
+    "w": " sah"
+   },
+   {
+    "s": 86.42,
+    "e": 86.84,
+    "w": " tidak"
+   },
+   {
+    "s": 86.84,
+    "e": 87.1,
+    "w": " akan"
+   },
+   {
+    "s": 87.1,
+    "e": 87.6,
+    "w": " meminta"
+   },
+   {
+    "s": 87.6,
+    "e": 88.08,
+    "w": " yuran"
+   },
+   {
+    "s": 88.08,
+    "e": 88.98,
+    "w": " pendahuluan."
+   }
+  ]
+ },
+ {
+  "start": 90.3,
+  "end": 97.76,
+  "text": " Tidak kesahlah dari jumlah apapun ataupun sebelum atau selepas loan.",
+  "words": [
+   {
+    "s": 90.02,
+    "e": 90.52,
+    "w": " Tidak"
+   },
+   {
+    "s": 90.52,
+    "e": 91.28,
+    "w": " kesahlah"
+   },
+   {
+    "s": 91.28,
+    "e": 91.52,
+    "w": " dari"
+   },
+   {
+    "s": 91.52,
+    "e": 91.98,
+    "w": " jumlah"
+   },
+   {
+    "s": 91.98,
+    "e": 92.72,
+    "w": " apapun"
+   },
+   {
+    "s": 92.72,
+    "e": 94.0,
+    "w": " ataupun"
+   },
+   {
+    "s": 94.0,
+    "e": 96.28,
+    "w": " sebelum"
+   },
+   {
+    "s": 96.28,
+    "e": 96.86,
+    "w": " atau"
+   },
+   {
+    "s": 96.86,
+    "e": 97.48,
+    "w": " selepas"
+   },
+   {
+    "s": 97.48,
+    "e": 97.76,
+    "w": " loan."
+   }
+  ]
+ },
+ {
+  "start": 98.74,
+  "end": 102.38,
+  "text": " Tidak akan sesekali meminta yuran pembayaran.",
+  "words": [
+   {
+    "s": 98.52,
+    "e": 99.02,
+    "w": " Tidak"
+   },
+   {
+    "s": 99.02,
+    "e": 99.32,
+    "w": " akan"
+   },
+   {
+    "s": 99.32,
+    "e": 99.86,
+    "w": " sesekali"
+   },
+   {
+    "s": 99.86,
+    "e": 100.52,
+    "w": " meminta"
+   },
+   {
+    "s": 100.52,
+    "e": 101.56,
+    "w": " yuran"
+   },
+   {
+    "s": 101.56,
+    "e": 102.38,
+    "w": " pembayaran."
+   }
+  ]
+ },
+ {
+  "start": 102.38,
+  "end": 111.1,
+  "text": " Kedua, semak dahulu nombor telepon atau account bank di portal PDRM yaitu semak mil PDRM.",
+  "words": [
+   {
+    "s": 102.38,
+    "e": 103.18,
+    "w": " Kedua,"
+   },
+   {
+    "s": 103.6,
+    "e": 104.2,
+    "w": " semak"
+   },
+   {
+    "s": 104.2,
+    "e": 104.7,
+    "w": " dahulu"
+   },
+   {
+    "s": 104.7,
+    "e": 105.44,
+    "w": " nombor"
+   },
+   {
+    "s": 105.44,
+    "e": 105.98,
+    "w": " telepon"
+   },
+   {
+    "s": 105.98,
+    "e": 106.22,
+    "w": " atau"
+   },
+   {
+    "s": 106.22,
+    "e": 106.66,
+    "w": " account"
+   },
+   {
+    "s": 106.66,
+    "e": 107.0,
+    "w": " bank"
+   },
+   {
+    "s": 107.0,
+    "e": 107.52,
+    "w": " di"
+   },
+   {
+    "s": 107.52,
+    "e": 107.84,
+    "w": " portal"
+   },
+   {
+    "s": 107.84,
+    "e": 108.68,
+    "w": " PDRM"
+   },
+   {
+    "s": 108.68,
+    "e": 109.44,
+    "w": " yaitu"
+   },
+   {
+    "s": 109.44,
+    "e": 110.02,
+    "w": " semak"
+   },
+   {
+    "s": 110.02,
+    "e": 110.34,
+    "w": " mil"
+   },
+   {
+    "s": 110.34,
+    "e": 111.1,
+    "w": " PDRM."
+   }
+  ]
+ },
+ {
+  "start": 111.3,
+  "end": 121.8,
+  "text": " Tiga, jika sudah tertipu, teruslah menghumbungi di dalam talian 997 yaitu pusat respons scheme kebangsaan secepat mungkin",
+  "words": [
+   {
+    "s": 111.3,
+    "e": 112.24,
+    "w": " Tiga,"
+   },
+   {
+    "s": 112.66,
+    "e": 113.02,
+    "w": " jika"
+   },
+   {
+    "s": 113.02,
+    "e": 113.3,
+    "w": " sudah"
+   },
+   {
+    "s": 113.3,
+    "e": 114.04,
+    "w": " tertipu,"
+   },
+   {
+    "s": 114.16,
+    "e": 114.8,
+    "w": " teruslah"
+   },
+   {
+    "s": 114.8,
+    "e": 115.54,
+    "w": " menghumbungi"
+   },
+   {
+    "s": 115.54,
+    "e": 116.0,
+    "w": " di"
+   },
+   {
+    "s": 116.0,
+    "e": 116.3,
+    "w": " dalam"
+   },
+   {
+    "s": 116.3,
+    "e": 116.8,
+    "w": " talian"
+   },
+   {
+    "s": 116.8,
+    "e": 118.0,
+    "w": " 997"
+   },
+   {
+    "s": 118.0,
+    "e": 118.62,
+    "w": " yaitu"
+   },
+   {
+    "s": 118.62,
+    "e": 119.24,
+    "w": " pusat"
+   },
+   {
+    "s": 119.24,
+    "e": 119.66,
+    "w": " respons"
+   },
+   {
+    "s": 119.66,
+    "e": 120.12,
+    "w": " scheme"
+   },
+   {
+    "s": 120.12,
+    "e": 120.88,
+    "w": " kebangsaan"
+   },
+   {
+    "s": 120.88,
+    "e": 121.44,
+    "w": " secepat"
+   },
+   {
+    "s": 121.44,
+    "e": 121.8,
+    "w": " mungkin"
+   }
+  ]
+ },
+ {
+  "start": 121.8,
+  "end": 125.84,
+  "text": " supaya uang yang kita transfer tadi terus boleh disekat.",
+  "words": [
+   {
+    "s": 121.8,
+    "e": 122.38,
+    "w": " supaya"
+   },
+   {
+    "s": 122.38,
+    "e": 123.08,
+    "w": " uang"
+   },
+   {
+    "s": 123.08,
+    "e": 123.2,
+    "w": " yang"
+   },
+   {
+    "s": 123.2,
+    "e": 123.46,
+    "w": " kita"
+   },
+   {
+    "s": 123.46,
+    "e": 123.9,
+    "w": " transfer"
+   },
+   {
+    "s": 123.9,
+    "e": 124.32,
+    "w": " tadi"
+   },
+   {
+    "s": 124.32,
+    "e": 125.0,
+    "w": " terus"
+   },
+   {
+    "s": 125.0,
+    "e": 125.3,
+    "w": " boleh"
+   },
+   {
+    "s": 125.3,
+    "e": 125.84,
+    "w": " disekat."
+   }
+  ]
+ },
+ {
+  "start": 125.84,
+  "end": 135.6,
+  "text": " Ilmu ini sangatlah penting untuk kita kongsi, terutamanya kepada ibu bapak dan juga warga emas yang ada di rumah kita.",
+  "words": [
+   {
+    "s": 125.84,
+    "e": 127.16,
+    "w": " Ilmu"
+   },
+   {
+    "s": 127.16,
+    "e": 127.46,
+    "w": " ini"
+   },
+   {
+    "s": 127.46,
+    "e": 128.06,
+    "w": " sangatlah"
+   },
+   {
+    "s": 128.06,
+    "e": 128.46,
+    "w": " penting"
+   },
+   {
+    "s": 128.46,
+    "e": 128.74,
+    "w": " untuk"
+   },
+   {
+    "s": 128.74,
+    "e": 129.06,
+    "w": " kita"
+   },
+   {
+    "s": 129.06,
+    "e": 129.58,
+    "w": " kongsi,"
+   },
+   {
+    "s": 129.82,
+    "e": 130.64,
+    "w": " terutamanya"
+   },
+   {
+    "s": 130.64,
+    "e": 130.92,
+    "w": " kepada"
+   },
+   {
+    "s": 130.92,
+    "e": 131.32,
+    "w": " ibu"
+   },
+   {
+    "s": 131.32,
+    "e": 131.82,
+    "w": " bapak"
+   },
+   {
+    "s": 131.82,
+    "e": 132.4,
+    "w": " dan"
+   },
+   {
+    "s": 132.4,
+    "e": 133.34,
+    "w": " juga"
+   },
+   {
+    "s": 133.34,
+    "e": 133.82,
+    "w": " warga"
+   },
+   {
+    "s": 133.82,
+    "e": 134.24,
+    "w": " emas"
+   },
+   {
+    "s": 134.24,
+    "e": 134.44,
+    "w": " yang"
+   },
+   {
+    "s": 134.44,
+    "e": 134.72,
+    "w": " ada"
+   },
+   {
+    "s": 134.72,
+    "e": 134.9,
+    "w": " di"
+   },
+   {
+    "s": 134.9,
+    "e": 135.16,
+    "w": " rumah"
+   },
+   {
+    "s": 135.16,
+    "e": 135.6,
+    "w": " kita."
+   }
+  ]
+ },
+ {
+  "start": 136.42,
+  "end": 147.24,
+  "text": " Sebagai orang muda terutamanya, haruslah caknah dan juga duli tentang sepa-sepa yang ada di rumah kita",
+  "words": [
+   {
+    "s": 136.42,
+    "e": 137.34,
+    "w": " Sebagai"
+   },
+   {
+    "s": 137.34,
+    "e": 137.66,
+    "w": " orang"
+   },
+   {
+    "s": 137.66,
+    "e": 138.08,
+    "w": " muda"
+   },
+   {
+    "s": 138.08,
+    "e": 138.88,
+    "w": " terutamanya,"
+   },
+   {
+    "s": 139.44,
+    "e": 140.08,
+    "w": " haruslah"
+   },
+   {
+    "s": 140.08,
+    "e": 140.68,
+    "w": " caknah"
+   },
+   {
+    "s": 140.68,
+    "e": 141.36,
+    "w": " dan"
+   },
+   {
+    "s": 141.36,
+    "e": 141.76,
+    "w": " juga"
+   },
+   {
+    "s": 141.76,
+    "e": 143.5,
+    "w": " duli"
+   },
+   {
+    "s": 143.5,
+    "e": 144.34,
+    "w": " tentang"
+   },
+   {
+    "s": 144.34,
+    "e": 145.52,
+    "w": " sepa"
+   },
+   {
+    "s": 145.52,
+    "e": 145.88,
+    "w": "-sepa"
+   },
+   {
+    "s": 145.88,
+    "e": 146.1,
+    "w": " yang"
+   },
+   {
+    "s": 146.1,
+    "e": 146.32,
+    "w": " ada"
+   },
+   {
+    "s": 146.32,
+    "e": 146.5,
+    "w": " di"
+   },
+   {
+    "s": 146.5,
+    "e": 146.76,
+    "w": " rumah"
+   },
+   {
+    "s": 146.76,
+    "e": 147.24,
+    "w": " kita"
+   }
+  ]
+ },
+ {
+  "start": 147.24,
+  "end": 152.4,
+  "text": " dan tolonglah saling mengingatkan sesama kita tentang perkara ini.",
+  "words": [
+   {
+    "s": 147.24,
+    "e": 147.76,
+    "w": " dan"
+   },
+   {
+    "s": 147.76,
+    "e": 148.32,
+    "w": " tolonglah"
+   },
+   {
+    "s": 148.32,
+    "e": 148.74,
+    "w": " saling"
+   },
+   {
+    "s": 148.74,
+    "e": 149.48,
+    "w": " mengingatkan"
+   },
+   {
+    "s": 149.48,
+    "e": 149.88,
+    "w": " sesama"
+   },
+   {
+    "s": 149.88,
+    "e": 150.3,
+    "w": " kita"
+   },
+   {
+    "s": 150.3,
+    "e": 151.3,
+    "w": " tentang"
+   },
+   {
+    "s": 151.3,
+    "e": 152.06,
+    "w": " perkara"
+   },
+   {
+    "s": 152.06,
+    "e": 152.4,
+    "w": " ini."
+   }
+  ]
+ },
+ {
+  "start": 152.4,
+  "end": 158.36,
+  "text": " Sedangkan yang ketiga pula ialah melalui integriti diri kita sendiri.",
+  "words": [
+   {
+    "s": 152.4,
+    "e": 153.46,
+    "w": " Sedangkan"
+   },
+   {
+    "s": 153.46,
+    "e": 153.6,
+    "w": " yang"
+   },
+   {
+    "s": 153.6,
+    "e": 154.08,
+    "w": " ketiga"
+   },
+   {
+    "s": 154.08,
+    "e": 154.54,
+    "w": " pula"
+   },
+   {
+    "s": 154.54,
+    "e": 155.1,
+    "w": " ialah"
+   },
+   {
+    "s": 155.1,
+    "e": 155.66,
+    "w": " melalui"
+   },
+   {
+    "s": 155.66,
+    "e": 156.74,
+    "w": " integriti"
+   },
+   {
+    "s": 156.74,
+    "e": 157.24,
+    "w": " diri"
+   },
+   {
+    "s": 157.24,
+    "e": 157.6,
+    "w": " kita"
+   },
+   {
+    "s": 157.6,
+    "e": 158.36,
+    "w": " sendiri."
+   }
+  ]
+ },
+ {
+  "start": 159.04,
+  "end": 162.8,
+  "text": " Saya, yang paling penting ialah integriti diri.",
+  "words": [
+   {
+    "s": 159.04,
+    "e": 159.68,
+    "w": " Saya,"
+   },
+   {
+    "s": 160.14,
+    "e": 160.34,
+    "w": " yang"
+   },
+   {
+    "s": 160.34,
+    "e": 160.7,
+    "w": " paling"
+   },
+   {
+    "s": 160.7,
+    "e": 161.28,
+    "w": " penting"
+   },
+   {
+    "s": 161.28,
+    "e": 161.62,
+    "w": " ialah"
+   },
+   {
+    "s": 161.62,
+    "e": 162.36,
+    "w": " integriti"
+   },
+   {
+    "s": 162.36,
+    "e": 162.8,
+    "w": " diri."
+   }
+  ]
+ },
+ {
+  "start": 163.18,
+  "end": 168.0,
+  "text": " Sindiket ini tidak akan bergerak jika tidak account keldai.",
+  "words": [
+   {
+    "s": 163.18,
+    "e": 163.92,
+    "w": " Sindiket"
+   },
+   {
+    "s": 163.92,
+    "e": 164.26,
+    "w": " ini"
+   },
+   {
+    "s": 164.26,
+    "e": 164.74,
+    "w": " tidak"
+   },
+   {
+    "s": 164.74,
+    "e": 165.04,
+    "w": " akan"
+   },
+   {
+    "s": 165.04,
+    "e": 165.66,
+    "w": " bergerak"
+   },
+   {
+    "s": 165.66,
+    "e": 166.3,
+    "w": " jika"
+   },
+   {
+    "s": 166.3,
+    "e": 167.04,
+    "w": " tidak"
+   },
+   {
+    "s": 167.04,
+    "e": 167.48,
+    "w": " account"
+   },
+   {
+    "s": 167.48,
+    "e": 168.0,
+    "w": " keldai."
+   }
+  ]
+ },
+ {
+  "start": 169.6,
+  "end": 178.88,
+  "text": " Jika setiap rakyat menolak tawaran menyewakan atau menjual account bank mereka kepada skema-skema ini,",
+  "words": [
+   {
+    "s": 169.6,
+    "e": 170.56,
+    "w": " Jika"
+   },
+   {
+    "s": 170.56,
+    "e": 170.96,
+    "w": " setiap"
+   },
+   {
+    "s": 170.96,
+    "e": 171.34,
+    "w": " rakyat"
+   },
+   {
+    "s": 171.34,
+    "e": 171.86,
+    "w": " menolak"
+   },
+   {
+    "s": 171.86,
+    "e": 172.34,
+    "w": " tawaran"
+   },
+   {
+    "s": 172.34,
+    "e": 173.08,
+    "w": " menyewakan"
+   },
+   {
+    "s": 173.08,
+    "e": 173.38,
+    "w": " atau"
+   },
+   {
+    "s": 173.38,
+    "e": 174.04,
+    "w": " menjual"
+   },
+   {
+    "s": 174.04,
+    "e": 174.4,
+    "w": " account"
+   },
+   {
+    "s": 174.4,
+    "e": 174.74,
+    "w": " bank"
+   },
+   {
+    "s": 174.74,
+    "e": 175.3,
+    "w": " mereka"
+   },
+   {
+    "s": 175.3,
+    "e": 175.92,
+    "w": " kepada"
+   },
+   {
+    "s": 175.92,
+    "e": 178.14,
+    "w": " skema"
+   },
+   {
+    "s": 178.14,
+    "e": 178.52,
+    "w": "-skema"
+   },
+   {
+    "s": 178.52,
+    "e": 178.88,
+    "w": " ini,"
+   }
+  ]
+ },
+ {
+  "start": 179.36,
+  "end": 185.84,
+  "text": " perantaian ini pasti akan terputus sebab mustahil skema akan menggunakan account bank mereka sendiri.",
+  "words": [
+   {
+    "s": 179.36,
+    "e": 180.08,
+    "w": " perantaian"
+   },
+   {
+    "s": 180.08,
+    "e": 180.3,
+    "w": " ini"
+   },
+   {
+    "s": 180.3,
+    "e": 180.7,
+    "w": " pasti"
+   },
+   {
+    "s": 180.7,
+    "e": 180.96,
+    "w": " akan"
+   },
+   {
+    "s": 180.96,
+    "e": 181.56,
+    "w": " terputus"
+   },
+   {
+    "s": 181.56,
+    "e": 182.0,
+    "w": " sebab"
+   },
+   {
+    "s": 182.0,
+    "e": 183.1,
+    "w": " mustahil"
+   },
+   {
+    "s": 183.1,
+    "e": 183.76,
+    "w": " skema"
+   },
+   {
+    "s": 183.76,
+    "e": 183.96,
+    "w": " akan"
+   },
+   {
+    "s": 183.96,
+    "e": 184.52,
+    "w": " menggunakan"
+   },
+   {
+    "s": 184.52,
+    "e": 184.8,
+    "w": " account"
+   },
+   {
+    "s": 184.8,
+    "e": 185.02,
+    "w": " bank"
+   },
+   {
+    "s": 185.02,
+    "e": 185.32,
+    "w": " mereka"
+   },
+   {
+    "s": 185.32,
+    "e": 185.84,
+    "w": " sendiri."
+   }
+  ]
+ },
+ {
+  "start": 187.02,
+  "end": 195.86,
+  "text": " Setiap rakyat Malaysia haruslah tahu bahwa kanun keseksaan kini menghukum pemilik account keldai sehingga 10 tahun penjara.",
+  "words": [
+   {
+    "s": 186.70000000000002,
+    "e": 187.18,
+    "w": " Setiap"
+   },
+   {
+    "s": 187.18,
+    "e": 187.54,
+    "w": " rakyat"
+   },
+   {
+    "s": 187.54,
+    "e": 188.04,
+    "w": " Malaysia"
+   },
+   {
+    "s": 188.04,
+    "e": 189.18,
+    "w": " haruslah"
+   },
+   {
+    "s": 189.18,
+    "e": 189.54,
+    "w": " tahu"
+   },
+   {
+    "s": 189.54,
+    "e": 190.22,
+    "w": " bahwa"
+   },
+   {
+    "s": 190.22,
+    "e": 191.06,
+    "w": " kanun"
+   },
+   {
+    "s": 191.06,
+    "e": 191.66,
+    "w": " keseksaan"
+   },
+   {
+    "s": 191.66,
+    "e": 191.94,
+    "w": " kini"
+   },
+   {
+    "s": 191.94,
+    "e": 192.54,
+    "w": " menghukum"
+   },
+   {
+    "s": 192.54,
+    "e": 193.34,
+    "w": " pemilik"
+   },
+   {
+    "s": 193.34,
+    "e": 193.64,
+    "w": " account"
+   },
+   {
+    "s": 193.64,
+    "e": 194.1,
+    "w": " keldai"
+   },
+   {
+    "s": 194.1,
+    "e": 194.6,
+    "w": " sehingga"
+   },
+   {
+    "s": 194.6,
+    "e": 195.06,
+    "w": " 10"
+   },
+   {
+    "s": 195.06,
+    "e": 195.4,
+    "w": " tahun"
+   },
+   {
+    "s": 195.4,
+    "e": 195.86,
+    "w": " penjara."
+   }
+  ]
+ },
+ {
+  "start": 195.86,
+  "end": 202.28,
+  "text": " Tetapi kita haruslah menolak bukan karena takut dihukum, kita menolak karena sedar.",
+  "words": [
+   {
+    "s": 195.86,
+    "e": 197.36,
+    "w": " Tetapi"
+   },
+   {
+    "s": 197.36,
+    "e": 197.64,
+    "w": " kita"
+   },
+   {
+    "s": 197.64,
+    "e": 198.16,
+    "w": " haruslah"
+   },
+   {
+    "s": 198.16,
+    "e": 198.66,
+    "w": " menolak"
+   },
+   {
+    "s": 198.66,
+    "e": 198.9,
+    "w": " bukan"
+   },
+   {
+    "s": 198.9,
+    "e": 199.28,
+    "w": " karena"
+   },
+   {
+    "s": 199.28,
+    "e": 199.68,
+    "w": " takut"
+   },
+   {
+    "s": 199.68,
+    "e": 200.24,
+    "w": " dihukum,"
+   },
+   {
+    "s": 200.44,
+    "e": 200.74,
+    "w": " kita"
+   },
+   {
+    "s": 200.74,
+    "e": 201.32,
+    "w": " menolak"
+   },
+   {
+    "s": 201.32,
+    "e": 201.56,
+    "w": " karena"
+   },
+   {
+    "s": 201.56,
+    "e": 202.28,
+    "w": " sedar."
+   }
+  ]
+ },
+ {
+  "start": 202.42,
+  "end": 206.28,
+  "text": " Perbuatan itu akan menyakiti orang lain.",
+  "words": [
+   {
+    "s": 202.42,
+    "e": 203.24,
+    "w": " Perbuatan"
+   },
+   {
+    "s": 203.24,
+    "e": 203.66,
+    "w": " itu"
+   },
+   {
+    "s": 203.66,
+    "e": 204.36,
+    "w": " akan"
+   },
+   {
+    "s": 204.36,
+    "e": 205.04,
+    "w": " menyakiti"
+   },
+   {
+    "s": 205.04,
+    "e": 205.9,
+    "w": " orang"
+   },
+   {
+    "s": 205.9,
+    "e": 206.28,
+    "w": " lain."
+   }
+  ]
+ },
+ {
+  "start": 206.64,
+  "end": 214.4,
+  "text": " Haruslah sentiasa berpikir bahwa bagaimana pula jika keadaan tersebut menimpa ke atas diri kita sendiri.",
+  "words": [
+   {
+    "s": 206.64,
+    "e": 207.28,
+    "w": " Haruslah"
+   },
+   {
+    "s": 207.28,
+    "e": 207.82,
+    "w": " sentiasa"
+   },
+   {
+    "s": 207.82,
+    "e": 208.38,
+    "w": " berpikir"
+   },
+   {
+    "s": 208.38,
+    "e": 208.9,
+    "w": " bahwa"
+   },
+   {
+    "s": 208.9,
+    "e": 209.86,
+    "w": " bagaimana"
+   },
+   {
+    "s": 209.86,
+    "e": 210.18,
+    "w": " pula"
+   },
+   {
+    "s": 210.18,
+    "e": 210.58,
+    "w": " jika"
+   },
+   {
+    "s": 210.58,
+    "e": 211.26,
+    "w": " keadaan"
+   },
+   {
+    "s": 211.26,
+    "e": 211.98,
+    "w": " tersebut"
+   },
+   {
+    "s": 211.98,
+    "e": 213.08,
+    "w": " menimpa"
+   },
+   {
+    "s": 213.08,
+    "e": 213.26,
+    "w": " ke"
+   },
+   {
+    "s": 213.26,
+    "e": 213.48,
+    "w": " atas"
+   },
+   {
+    "s": 213.48,
+    "e": 213.74,
+    "w": " diri"
+   },
+   {
+    "s": 213.74,
+    "e": 213.96,
+    "w": " kita"
+   },
+   {
+    "s": 213.96,
+    "e": 214.4,
+    "w": " sendiri."
+   }
+  ]
+ },
+ {
+  "start": 214.68,
+  "end": 216.86,
+  "text": " Sama ada kita suka ataupun tidak.",
+  "words": [
+   {
+    "s": 214.68,
+    "e": 215.1,
+    "w": " Sama"
+   },
+   {
+    "s": 215.1,
+    "e": 215.36,
+    "w": " ada"
+   },
+   {
+    "s": 215.36,
+    "e": 215.66,
+    "w": " kita"
+   },
+   {
+    "s": 215.66,
+    "e": 216.1,
+    "w": " suka"
+   },
+   {
+    "s": 216.1,
+    "e": 216.56,
+    "w": " ataupun"
+   },
+   {
+    "s": 216.56,
+    "e": 216.86,
+    "w": " tidak."
+   }
+  ]
+ },
+ {
+  "start": 216.86,
+  "end": 221.92,
+  "text": " Sebagai penutup di akhir pembentangan saya kali ini,",
+  "words": [
+   {
+    "s": 216.86,
+    "e": 219.02,
+    "w": " Sebagai"
+   },
+   {
+    "s": 219.02,
+    "e": 219.64,
+    "w": " penutup"
+   },
+   {
+    "s": 219.64,
+    "e": 219.88,
+    "w": " di"
+   },
+   {
+    "s": 219.88,
+    "e": 220.22,
+    "w": " akhir"
+   },
+   {
+    "s": 220.22,
+    "e": 220.86,
+    "w": " pembentangan"
+   },
+   {
+    "s": 220.86,
+    "e": 221.2,
+    "w": " saya"
+   },
+   {
+    "s": 221.2,
+    "e": 221.5,
+    "w": " kali"
+   },
+   {
+    "s": 221.5,
+    "e": 221.92,
+    "w": " ini,"
+   }
+  ]
+ },
+ {
+  "start": 222.64,
+  "end": 225.78,
+  "text": " loan scheme bukan sekadar jenayah keuangan.",
+  "words": [
+   {
+    "s": 222.64,
+    "e": 223.22,
+    "w": " loan"
+   },
+   {
+    "s": 223.22,
+    "e": 223.54,
+    "w": " scheme"
+   },
+   {
+    "s": 223.54,
+    "e": 224.22,
+    "w": " bukan"
+   },
+   {
+    "s": 224.22,
+    "e": 224.78,
+    "w": " sekadar"
+   },
+   {
+    "s": 224.78,
+    "e": 225.3,
+    "w": " jenayah"
+   },
+   {
+    "s": 225.3,
+    "e": 225.78,
+    "w": " keuangan."
+   }
+  ]
+ },
+ {
+  "start": 227.24,
+  "end": 233.82,
+  "text": " Ia adalah krisis etika yang menghakis kepercayaan di dalam masyarakat kita.",
+  "words": [
+   {
+    "s": 226.9,
+    "e": 227.5,
+    "w": " Ia"
+   },
+   {
+    "s": 227.5,
+    "e": 228.0,
+    "w": " adalah"
+   },
+   {
+    "s": 228.0,
+    "e": 228.94,
+    "w": " krisis"
+   },
+   {
+    "s": 228.94,
+    "e": 229.62,
+    "w": " etika"
+   },
+   {
+    "s": 229.62,
+    "e": 230.46,
+    "w": " yang"
+   },
+   {
+    "s": 230.46,
+    "e": 231.22,
+    "w": " menghakis"
+   },
+   {
+    "s": 231.22,
+    "e": 232.24,
+    "w": " kepercayaan"
+   },
+   {
+    "s": 232.24,
+    "e": 232.48,
+    "w": " di"
+   },
+   {
+    "s": 232.48,
+    "e": 232.82,
+    "w": " dalam"
+   },
+   {
+    "s": 232.82,
+    "e": 233.46,
+    "w": " masyarakat"
+   },
+   {
+    "s": 233.46,
+    "e": 233.82,
+    "w": " kita."
+   }
+  ]
+ },
+ {
+  "start": 235.18000000000004,
+  "end": 240.94,
+  "text": " Penyelesaiannya memperlukan tiga lapisan yang bergerak bersama,",
+  "words": [
+   {
+    "s": 235.18000000000004,
+    "e": 236.38000000000002,
+    "w": " Penyelesaiannya"
+   },
+   {
+    "s": 236.38000000000002,
+    "e": 237.58,
+    "w": " memperlukan"
+   },
+   {
+    "s": 237.58,
+    "e": 238.54,
+    "w": " tiga"
+   },
+   {
+    "s": 238.54,
+    "e": 239.1,
+    "w": " lapisan"
+   },
+   {
+    "s": 239.1,
+    "e": 239.82,
+    "w": " yang"
+   },
+   {
+    "s": 239.82,
+    "e": 240.36,
+    "w": " bergerak"
+   },
+   {
+    "s": 240.36,
+    "e": 240.94,
+    "w": " bersama,"
+   }
+  ]
+ },
+ {
+  "start": 240.94,
+  "end": 245.04,
+  "text": " yaitu undang-undang yang tegas,",
+  "words": [
+   {
+    "s": 240.94,
+    "e": 242.22,
+    "w": " yaitu"
+   },
+   {
+    "s": 242.22,
+    "e": 242.86,
+    "w": " undang"
+   },
+   {
+    "s": 242.86,
+    "e": 243.34,
+    "w": "-undang"
+   },
+   {
+    "s": 243.34,
+    "e": 244.36,
+    "w": " yang"
+   },
+   {
+    "s": 244.36,
+    "e": 245.04,
+    "w": " tegas,"
+   }
+  ]
+ },
+ {
+  "start": 246.48,
+  "end": 248.58,
+  "text": " rakyat yang celik digital,",
+  "words": [
+   {
+    "s": 246.48,
+    "e": 246.92,
+    "w": " rakyat"
+   },
+   {
+    "s": 246.92,
+    "e": 247.18,
+    "w": " yang"
+   },
+   {
+    "s": 247.18,
+    "e": 247.96,
+    "w": " celik"
+   },
+   {
+    "s": 247.96,
+    "e": 248.58,
+    "w": " digital,"
+   }
+  ]
+ },
+ {
+  "start": 249.72,
+  "end": 252.76,
+  "text": " dan individu yang berintegriti.",
+  "words": [
+   {
+    "s": 249.72,
+    "e": 250.46,
+    "w": " dan"
+   },
+   {
+    "s": 250.46,
+    "e": 251.22,
+    "w": " individu"
+   },
+   {
+    "s": 251.22,
+    "e": 251.78,
+    "w": " yang"
+   },
+   {
+    "s": 251.78,
+    "e": 252.76,
+    "w": " berintegriti."
+   }
+  ]
+ },
+ {
+  "start": 254.48,
+  "end": 256.6,
+  "text": " Hanya dengan tiga cara ini,",
+  "words": [
+   {
+    "s": 254.16000000000003,
+    "e": 254.74,
+    "w": " Hanya"
+   },
+   {
+    "s": 254.74,
+    "e": 255.08,
+    "w": " dengan"
+   },
+   {
+    "s": 255.08,
+    "e": 255.94,
+    "w": " tiga"
+   },
+   {
+    "s": 255.94,
+    "e": 256.22,
+    "w": " cara"
+   },
+   {
+    "s": 256.22,
+    "e": 256.6,
+    "w": " ini,"
+   }
+  ]
+ },
+ {
+  "start": 257.52,
+  "end": 259.2,
+  "text": " Malaysia dapat kekal sebagai",
+  "words": [
+   {
+    "s": 257.28000000000003,
+    "e": 257.86,
+    "w": " Malaysia"
+   },
+   {
+    "s": 257.86,
+    "e": 258.24,
+    "w": " dapat"
+   },
+   {
+    "s": 258.24,
+    "e": 258.64,
+    "w": " kekal"
+   },
+   {
+    "s": 258.64,
+    "e": 259.2,
+    "w": " sebagai"
+   }
+  ]
+ },
+ {
+  "start": 259.2,
+  "end": 263.62,
+  "text": " negara yang lestari dan bertamadun.",
+  "words": [
+   {
+    "s": 259.2,
+    "e": 260.58,
+    "w": " negara"
+   },
+   {
+    "s": 260.58,
+    "e": 261.22,
+    "w": " yang"
+   },
+   {
+    "s": 261.22,
+    "e": 261.8,
+    "w": " lestari"
+   },
+   {
+    "s": 261.8,
+    "e": 262.52,
+    "w": " dan"
+   },
+   {
+    "s": 262.52,
+    "e": 263.62,
+    "w": " bertamadun."
+   }
+  ]
+ },
+ {
+  "start": 263.98,
+  "end": 265.74,
+  "text": " Sekian, terima kasih.",
+  "words": [
+   {
+    "s": 263.98,
+    "e": 264.96,
+    "w": " Sekian,"
+   },
+   {
+    "s": 265.16,
+    "e": 265.42,
+    "w": " terima"
+   },
+   {
+    "s": 265.42,
+    "e": 265.74,
+    "w": " kasih."
+   }
+  ]
+ }
+]

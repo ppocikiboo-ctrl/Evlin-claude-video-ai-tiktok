@@ -4,9 +4,10 @@
 #s-data { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-data .card { position:absolute; }
-#s-data .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-data .zone-top { left:54px; top:1250px; width:972px; }
 #s-data .zone-dock { left:40px; top:44px; }
-#s-data .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-data .zone-bottom { left:54px; width:972px; top:150px; }
 #s-data .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-data .card-in { position:relative; }
 
@@ -213,14 +214,23 @@
 #s-data .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-data .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-data .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-data .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-data .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-data .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-data .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-data .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-data .perm-no { color:#888; } #s-data .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-data" data-composition-id="s-data" data-width="1080" data-height="1920" data-duration="42.4" data-layout-allow-overlap>
-<div id="da-ch" class="clip card zone-top " data-start="0.0" data-duration="2.9" style=""><div class="card-in"><div class="slate" data-fx="slate" data-in="0"><div class="slate-num" data-fx="rise" data-in="0.05">BAB 01 / 08</div><div class="slate-rule" data-fx="draw" data-in="0.15"></div><div class="slate-title" data-fx="rise" data-in="0.25">Data &amp; Fakta</div><div class="slate-sub" data-fx="rise" data-in="0.45">Data &amp; Fakta</div></div></div></div>
-<div id="da-ch-dock" class="clip card zone-dock " data-start="2.7" data-duration="39.7" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">01</span><span class="dock-t">Data &amp; Fakta</span></div></div></div>
-<div id="da-src" class="clip card zone-top " data-start="2.9" data-duration="10.5" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>SUMBER DATA</div><div class="head" data-fx="rise" data-in="0.12">Infografik <span class="hl">BERNAMA</span></div><div class="body" data-fx="rise" data-in="0.3">Diterbitkan pada <b>4 Ogos 2026</b>. Data rasmi penipuan dalam talian di Malaysia.</div></div></div></div>
-<div id="da-280" class="clip card zone-top " data-start="13.5" data-duration="6.7" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>SKMM · SEJAK 2022</div><div class="stat"><span class="stat-pre">≈</span><span class="stat-num" data-fx="count" data-in="0.15" data-to="280000" data-land="4.0" data-fmt="comma" data-dec="0">0</span><span class="stat-suf"></span></div><div class="body" data-fx="rise" data-in="0.35">kandungan penipuan &amp; iklan palsu <b>diturunkan</b></div></div></div></div>
-<div id="da-3b" class="clip card zone-top " data-start="20.3" data-duration="9.6" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>KERUGIAN · TAHUN 2025</div><div class="stat"><span class="stat-pre">RM</span><span class="stat-num" data-fx="count" data-in="0.15" data-to="3" data-land="5.55" data-fmt="plain" data-dec="0">0</span><span class="stat-suf"> bilion+</span></div><div class="body" data-fx="rise" data-in="0.35">kerugian akibat penipuan dalam talian</div></div></div></div>
-<div id="da-sasar" class="clip card zone-top " data-start="30.0" data-duration="12.3" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>SASARAN SINDIKET</div><div class="head" data-fx="rise" data-in="0.1" style="font-size:56px">Orang yang sedang <span class="hl">susah</span> &amp; perlukan wang</div><div class="vs"><div class="vs-row" data-fx="slide" data-in="4.9"><span class="vs-k">DIJANJI</span><span class="vs-v">Pinjaman mudah &amp; cepat lulus</span></div><div class="vs-row vs-bad" data-fx="slide" data-in="9.0"><span class="vs-k">AKHIRNYA</span><span class="vs-v">Mangsa sendiri hilang wang</span></div></div></div></div></div>
+<div id="s-data" data-composition-id="s-data" data-width="1080" data-height="1920" data-duration="39.367" data-layout-allow-overlap>
+<div id="da-ch" class="clip card zone-top " data-start="0.05" data-duration="2.9" style=""><div class="card-in"><div class="slate" data-fx="slate" data-in="0"><div class="slate-num" data-fx="rise" data-in="0.05">BAB 01 / 07</div><div class="slate-rule" data-fx="draw" data-in="0.15"></div><div class="slate-title" data-fx="rise" data-in="0.25">Data &amp; Fakta</div><div class="slate-sub" data-fx="rise" data-in="0.45">Data &amp; Fakta</div></div></div></div>
+<div id="da-ch-dock" class="clip card zone-dock " data-start="2.75" data-duration="36.617" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">01</span><span class="dock-t">Data &amp; Fakta</span></div></div></div>
+<div id="da-src" class="clip card zone-top " data-start="6.7" data-duration="10.1" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>SUMBER DATA</div><div class="head" data-fx="rise" data-in="0.12">Infografik <span class="hl">BERNAMA</span></div><div class="body" data-fx="rise" data-in="0.3">Diterbitkan pada <b>4 Ogos 2026</b>.</div></div></div></div>
+<div id="da-280" class="clip card zone-top " data-start="16.9" data-duration="7.4" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>SKMM · SEJAK 2022</div><div class="stat"><span class="stat-pre">≈</span><span class="stat-num" data-fx="count" data-in="0.15" data-to="280000" data-land="3.75" data-fmt="comma" data-dec="0">0</span><span class="stat-suf"></span></div><div class="body" data-fx="rise" data-in="0.35">kandungan penipuan &amp; iklan palsu <b>diturunkan</b></div></div></div></div>
+<div id="da-3b" class="clip card zone-top " data-start="24.4" data-duration="8.1" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>TAHUN 2025</div><div class="stat"><span class="stat-pre">RM</span><span class="stat-num" data-fx="count" data-in="0.15" data-to="3" data-land="7.05" data-fmt="plain" data-dec="0">0</span><span class="stat-suf"> bilion+</span></div><div class="body" data-fx="rise" data-in="0.35">kerugian akibat penipuan dalam talian</div></div></div></div>
+<div id="da-aktif" class="clip card zone-top " data-start="32.6" data-duration="6.7" style=""><div class="card-in"><div class="photo" data-fx="drop" data-in="0" data-rot="-1.2" style="width:860px"><div class="tape"></div><div class="photo-win" style="height:330px"><img class="photo-img pan-img" src="assets/img/poster-tipu-pinjaman.jpg" data-pan="-2,-40" data-fx="pan" data-in="0"/></div><div class="photo-cap"><span class="cap-tag">BUKTI</span>Antara penipuan paling aktif · JSJK PDRM</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -239,7 +249,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

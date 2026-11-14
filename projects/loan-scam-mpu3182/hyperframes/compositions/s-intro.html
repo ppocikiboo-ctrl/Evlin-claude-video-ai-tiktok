@@ -4,9 +4,10 @@
 #s-intro { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-intro .card { position:absolute; }
-#s-intro .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-intro .zone-top { left:54px; top:1250px; width:972px; }
 #s-intro .zone-dock { left:40px; top:44px; }
-#s-intro .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-intro .zone-bottom { left:54px; width:972px; top:150px; }
 #s-intro .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-intro .card-in { position:relative; }
 
@@ -213,11 +214,20 @@
 #s-intro .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-intro .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-intro .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-intro .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-intro .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-intro .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-intro .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-intro .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-intro .perm-no { color:#888; } #s-intro .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-intro" data-composition-id="s-intro" data-width="1080" data-height="1920" data-duration="21.933" data-layout-allow-overlap>
-<div id="in-title" class="clip card zone-top " data-start="0.003" data-duration="5.93" style=""><div class="card-in"><div class="title-card"><div class="tc-kick" data-fx="rise" data-in="0.05">TUGASAN VIDEO · MPU 3182</div><div class="tc-main" data-fx="slam" data-in="0.1">LOAN<br>SCAM</div><div class="tc-rule" data-fx="draw" data-in="0.35"></div><div class="tc-sub" data-fx="rise" data-in="0.5">Penipuan pinjaman yang tidak wujud: krisis etika di era digital</div></div></div></div>
-<div id="in-lt" class="clip card zone-bottom " data-start="6.033" data-duration="7.0" style=""><div class="card-in"><div class="lt"><div class="lt-bar" data-fx="draw" data-in="0"></div><div class="lt-name" data-fx="rise" data-in="0.12">Evelyn Sofidu</div><div class="lt-role" data-fx="rise" data-in="0.25">Pelajar · MPU 3182 Penghayatan Etika dan Peradaban 2</div></div></div></div>
-<div id="in-isu" class="clip card zone-top " data-start="13.133" data-duration="8.75" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>ISU YANG DIBINCANGKAN</div><div class="head" data-fx="rise" data-in="0.12">Penipuan <span class="hl">pinjaman tidak wujud</span></div><div class="body" data-fx="rise" data-in="0.3"><i>Loan scam</i>: tawaran pinjaman palsu yang menyasarkan orang yang terdesak.</div></div></div></div>
+<div id="s-intro" data-composition-id="s-intro" data-width="1080" data-height="1920" data-duration="24.167" data-layout-allow-overlap>
+<div id="in-title" class="clip card zone-top " data-start="0.067" data-duration="4.3" style=""><div class="card-in"><div class="title-card"><div class="tc-kick" data-fx="rise" data-in="0.05">TUGASAN VIDEO · MPU 3182</div><div class="tc-main" data-fx="slam" data-in="0.1">LOAN SCAM</div><div class="tc-rule" data-fx="draw" data-in="0.35"></div><div class="tc-sub" data-fx="rise" data-in="0.5">Penipuan pinjaman tidak wujud: krisis etika di era digital</div></div></div></div>
+<div id="in-lt" class="clip card zone-bottom " data-start="4.467" data-duration="8.8" style=""><div class="card-in"><div class="lt"><div class="lt-bar" data-fx="draw" data-in="0"></div><div class="lt-name" data-fx="rise" data-in="0.12">Evelyn Sofidu</div><div class="lt-role" data-fx="rise" data-in="0.25">MPU 3182 · Penghayatan Etika dan Peradaban 2</div></div></div></div>
+<div id="in-isu" class="clip card zone-top " data-start="13.567" data-duration="10.5" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>ISU YANG DIBINCANGKAN</div><div class="head" data-fx="rise" data-in="0.12">Penipuan <span class="hl">pinjaman tidak wujud</span></div><div class="body" data-fx="rise" data-in="0.3"><i>Loan scam</i>: tawaran pinjaman palsu dalam talian yang menyasarkan orang yang terdesak.</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -236,7 +246,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

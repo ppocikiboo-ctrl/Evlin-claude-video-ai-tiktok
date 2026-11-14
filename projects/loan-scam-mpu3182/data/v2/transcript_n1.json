@@ -1,0 +1,527 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.64,
+  "text": " Salam sejahtera Puan Rosniyati dan semua kawan-kawan yang menonton.",
+  "words": [
+   {
+    "s": 0.0,
+    "e": 0.92,
+    "w": " Salam"
+   },
+   {
+    "s": 0.92,
+    "e": 1.48,
+    "w": " sejahtera"
+   },
+   {
+    "s": 1.48,
+    "e": 1.8,
+    "w": " Puan"
+   },
+   {
+    "s": 1.8,
+    "e": 2.56,
+    "w": " Rosniyati"
+   },
+   {
+    "s": 2.56,
+    "e": 2.88,
+    "w": " dan"
+   },
+   {
+    "s": 2.88,
+    "e": 3.3,
+    "w": " semua"
+   },
+   {
+    "s": 3.3,
+    "e": 3.68,
+    "w": " kawan"
+   },
+   {
+    "s": 3.68,
+    "e": 3.92,
+    "w": "-kawan"
+   },
+   {
+    "s": 3.92,
+    "e": 4.1,
+    "w": " yang"
+   },
+   {
+    "s": 4.1,
+    "e": 4.64,
+    "w": " menonton."
+   }
+  ]
+ },
+ {
+  "start": 5.76,
+  "end": 9.5,
+  "text": " Saya Evelyn Sofidu, pelajar MPU 3182.",
+  "words": [
+   {
+    "s": 5.62,
+    "e": 6.08,
+    "w": " Saya"
+   },
+   {
+    "s": 6.08,
+    "e": 6.56,
+    "w": " Evelyn"
+   },
+   {
+    "s": 6.56,
+    "e": 7.14,
+    "w": " Sofidu,"
+   },
+   {
+    "s": 7.28,
+    "e": 7.7,
+    "w": " pelajar"
+   },
+   {
+    "s": 7.7,
+    "e": 8.3,
+    "w": " MPU"
+   },
+   {
+    "s": 8.3,
+    "e": 9.5,
+    "w": " 3182."
+   }
+  ]
+ },
+ {
+  "start": 9.68,
+  "end": 14.68,
+  "text": " Nama saya Evelyn Sofidu merupakan seorang pelajar MPU 3182",
+  "words": [
+   {
+    "s": 9.68,
+    "e": 9.9,
+    "w": " Nama"
+   },
+   {
+    "s": 9.9,
+    "e": 10.22,
+    "w": " saya"
+   },
+   {
+    "s": 10.22,
+    "e": 10.6,
+    "w": " Evelyn"
+   },
+   {
+    "s": 10.6,
+    "e": 11.18,
+    "w": " Sofidu"
+   },
+   {
+    "s": 11.18,
+    "e": 11.86,
+    "w": " merupakan"
+   },
+   {
+    "s": 11.86,
+    "e": 12.26,
+    "w": " seorang"
+   },
+   {
+    "s": 12.26,
+    "e": 12.86,
+    "w": " pelajar"
+   },
+   {
+    "s": 12.86,
+    "e": 13.36,
+    "w": " MPU"
+   },
+   {
+    "s": 13.36,
+    "e": 14.68,
+    "w": " 3182"
+   }
+  ]
+ },
+ {
+  "start": 14.68,
+  "end": 18.54,
+  "text": " dalam subjek penghayatan etika dan peradaban dua.",
+  "words": [
+   {
+    "s": 14.68,
+    "e": 15.62,
+    "w": " dalam"
+   },
+   {
+    "s": 15.62,
+    "e": 16.36,
+    "w": " subjek"
+   },
+   {
+    "s": 16.36,
+    "e": 17.0,
+    "w": " penghayatan"
+   },
+   {
+    "s": 17.0,
+    "e": 17.54,
+    "w": " etika"
+   },
+   {
+    "s": 17.54,
+    "e": 17.76,
+    "w": " dan"
+   },
+   {
+    "s": 17.76,
+    "e": 18.28,
+    "w": " peradaban"
+   },
+   {
+    "s": 18.28,
+    "e": 18.54,
+    "w": " dua."
+   }
+  ]
+ },
+ {
+  "start": 19.36,
+  "end": 25.36,
+  "text": " Dalam video ini saya akan membincangkan satu isu yang dekat dengan kita semua",
+  "words": [
+   {
+    "s": 19.36,
+    "e": 20.1,
+    "w": " Dalam"
+   },
+   {
+    "s": 20.1,
+    "e": 20.44,
+    "w": " video"
+   },
+   {
+    "s": 20.44,
+    "e": 20.84,
+    "w": " ini"
+   },
+   {
+    "s": 20.84,
+    "e": 21.26,
+    "w": " saya"
+   },
+   {
+    "s": 21.26,
+    "e": 21.66,
+    "w": " akan"
+   },
+   {
+    "s": 21.66,
+    "e": 22.8,
+    "w": " membincangkan"
+   },
+   {
+    "s": 22.8,
+    "e": 23.12,
+    "w": " satu"
+   },
+   {
+    "s": 23.12,
+    "e": 23.68,
+    "w": " isu"
+   },
+   {
+    "s": 23.68,
+    "e": 24.0,
+    "w": " yang"
+   },
+   {
+    "s": 24.0,
+    "e": 24.36,
+    "w": " dekat"
+   },
+   {
+    "s": 24.36,
+    "e": 24.6,
+    "w": " dengan"
+   },
+   {
+    "s": 24.6,
+    "e": 24.9,
+    "w": " kita"
+   },
+   {
+    "s": 24.9,
+    "e": 25.36,
+    "w": " semua"
+   }
+  ]
+ },
+ {
+  "start": 25.36,
+  "end": 30.38,
+  "text": " yaitu penipuan pinjaman yang tidak wujud yaitu loan scam.",
+  "words": [
+   {
+    "s": 25.36,
+    "e": 26.76,
+    "w": " yaitu"
+   },
+   {
+    "s": 26.76,
+    "e": 27.58,
+    "w": " penipuan"
+   },
+   {
+    "s": 27.58,
+    "e": 28.24,
+    "w": " pinjaman"
+   },
+   {
+    "s": 28.24,
+    "e": 28.5,
+    "w": " yang"
+   },
+   {
+    "s": 28.5,
+    "e": 28.78,
+    "w": " tidak"
+   },
+   {
+    "s": 28.78,
+    "e": 29.4,
+    "w": " wujud"
+   },
+   {
+    "s": 29.4,
+    "e": 29.82,
+    "w": " yaitu"
+   },
+   {
+    "s": 29.82,
+    "e": 30.02,
+    "w": " loan"
+   },
+   {
+    "s": 30.02,
+    "e": 30.38,
+    "w": " scam."
+   }
+  ]
+ },
+ {
+  "start": 31.24,
+  "end": 37.72,
+  "text": " Sebelum saya mula mengupas isu ini mari kita mulakan dengan sebuah data.",
+  "words": [
+   {
+    "s": 31.24,
+    "e": 32.12,
+    "w": " Sebelum"
+   },
+   {
+    "s": 32.12,
+    "e": 32.44,
+    "w": " saya"
+   },
+   {
+    "s": 32.44,
+    "e": 32.78,
+    "w": " mula"
+   },
+   {
+    "s": 32.78,
+    "e": 33.3,
+    "w": " mengupas"
+   },
+   {
+    "s": 33.3,
+    "e": 33.74,
+    "w": " isu"
+   },
+   {
+    "s": 33.74,
+    "e": 33.96,
+    "w": " ini"
+   },
+   {
+    "s": 33.96,
+    "e": 34.68,
+    "w": " mari"
+   },
+   {
+    "s": 34.68,
+    "e": 35.06,
+    "w": " kita"
+   },
+   {
+    "s": 35.06,
+    "e": 36.46,
+    "w": " mulakan"
+   },
+   {
+    "s": 36.46,
+    "e": 36.74,
+    "w": " dengan"
+   },
+   {
+    "s": 36.74,
+    "e": 37.38,
+    "w": " sebuah"
+   },
+   {
+    "s": 37.38,
+    "e": 37.72,
+    "w": " data."
+   }
+  ]
+ },
+ {
+  "start": 38.94,
+  "end": 44.18,
+  "text": " Sebuah infografik bernama yang diterbitkan pada 4 Ogos.",
+  "words": [
+   {
+    "s": 38.94,
+    "e": 39.82,
+    "w": " Sebuah"
+   },
+   {
+    "s": 39.82,
+    "e": 40.7,
+    "w": " infografik"
+   },
+   {
+    "s": 40.7,
+    "e": 41.58,
+    "w": " bernama"
+   },
+   {
+    "s": 41.58,
+    "e": 42.04,
+    "w": " yang"
+   },
+   {
+    "s": 42.04,
+    "e": 42.78,
+    "w": " diterbitkan"
+   },
+   {
+    "s": 42.78,
+    "e": 43.18,
+    "w": " pada"
+   },
+   {
+    "s": 43.18,
+    "e": 43.74,
+    "w": " 4"
+   },
+   {
+    "s": 43.74,
+    "e": 44.18,
+    "w": " Ogos."
+   }
+  ]
+ },
+ {
+  "start": 44.18,
+  "end": 49.66,
+  "text": " 2026 menunjukkan bahwa sejak tahun 2022",
+  "words": [
+   {
+    "s": 44.18,
+    "e": 45.42,
+    "w": " 2026"
+   },
+   {
+    "s": 45.42,
+    "e": 46.4,
+    "w": " menunjukkan"
+   },
+   {
+    "s": 46.4,
+    "e": 47.16,
+    "w": " bahwa"
+   },
+   {
+    "s": 47.16,
+    "e": 48.06,
+    "w": " sejak"
+   },
+   {
+    "s": 48.06,
+    "e": 48.48,
+    "w": " tahun"
+   },
+   {
+    "s": 48.48,
+    "e": 49.66,
+    "w": " 2022"
+   }
+  ]
+ },
+ {
+  "start": 49.66,
+  "end": 56.76,
+  "text": " SKMM telah menurunkan hampir 280 ribu pandungan penipuan dan ikan palsu.",
+  "words": [
+   {
+    "s": 49.66,
+    "e": 50.86,
+    "w": " SKMM"
+   },
+   {
+    "s": 50.86,
+    "e": 51.36,
+    "w": " telah"
+   },
+   {
+    "s": 51.36,
+    "e": 52.02,
+    "w": " menurunkan"
+   },
+   {
+    "s": 52.02,
+    "e": 52.52,
+    "w": " hampir"
+   },
+   {
+    "s": 52.52,
+    "e": 53.48,
+    "w": " 280"
+   },
+   {
+    "s": 53.48,
+    "e": 54.46,
+    "w": " ribu"
+   },
+   {
+    "s": 54.46,
+    "e": 55.0,
+    "w": " pandungan"
+   },
+   {
+    "s": 55.0,
+    "e": 55.58,
+    "w": " penipuan"
+   },
+   {
+    "s": 55.58,
+    "e": 55.78,
+    "w": " dan"
+   },
+   {
+    "s": 55.78,
+    "e": 56.14,
+    "w": " ikan"
+   },
+   {
+    "s": 56.14,
+    "e": 56.76,
+    "w": " palsu."
+   }
+  ]
+ }
+]

@@ -3,9 +3,21 @@
 Video akademik 9:16 (1080×1920) untuk MPU 3182 Penghayatan Etika dan Peradaban 2,
 pensyarah Puan Rusniyati. Topik: penipuan pinjaman tidak wujud (*loan scam*).
 
-**Status (13 Nov 2026):** edit versi 1 siap sampai preview. Pelajar akan **retake**
-rakaman (mata nampak membaca, banyak bahagian awkward) dan hantar esok. Semua rekaan,
-animasi, SFX dan muzik di sini diguna semula untuk rakaman baru.
+**Status (14 Nov 2026):** versi 2 (rakaman retake n1–n4, Drive folder yang sama: v1.mp4–v4.mp4)
+sudah dipotong dan dijana; preview penuh dihantar, menunggu kelulusan sebelum render akhir.
+Versi 1 (rakaman 13 Nov) disimpan dalam `tools/v1/` dan `data/v1/`.
+
+### Versi 2 — apa yang berubah
+- Rakaman baru: kepala lebih tinggi dalam frame (muka y ~380–1200), jadi **kad utama di zon dada
+  (top 1250 px)**, tag kecil di atas kepala (top 150 px). `scene.css` / `engine.js` versi 2.
+- Tiada bahagian "kes sebenar" dalam retake → hook baharu: dakwaan iklan ("tanpa cek CTOS, blacklist pun
+  boleh, < 24 jam, tanpa slip gaji") + "mana-mana pinjaman yang meminta bayaran pendahuluan adalah PENIPUAN".
+- 7 bab: Data & Fakta · Umpan & Jerat · Modus operandi · Kesan · Etika & Peradaban · Penyelesaian
+  (undang-undang, literasi digital, integriti diri) · Penutup.
+- Potongan lebih ketat (`tools/edit2.py`): senyap ≥ 0.25 s, bunyi tanpa perkataan (erm/tersekat) dibuang,
+  ulangan dibuang (lihat komen `SECTIONS`). 13:58 → 10:04. QA: `data/v2/transcript_talk2.json`.
+- Paip v2: `edit2.py` → `render_cut2.py` (fade 8 ms tiap potongan) → `build_bed.sh <proj> 608.533 328.53 404.23`
+  → `build2.py` (menggabungkan `beats2.py`).
 
 ## Sumber
 

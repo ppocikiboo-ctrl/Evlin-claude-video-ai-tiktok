@@ -1,0 +1,1483 @@
+[
+ {
+  "start": 1.659999999999998,
+  "end": 4.2,
+  "text": " Apakah dampaknya kepada mangsa?",
+  "words": [
+   {
+    "s": 1.659999999999998,
+    "e": 2.56,
+    "w": " Apakah"
+   },
+   {
+    "s": 2.56,
+    "e": 3.32,
+    "w": " dampaknya"
+   },
+   {
+    "s": 3.32,
+    "e": 3.66,
+    "w": " kepada"
+   },
+   {
+    "s": 3.66,
+    "e": 4.2,
+    "w": " mangsa?"
+   }
+  ]
+ },
+ {
+  "start": 4.96,
+  "end": 8.68,
+  "text": " Kesannya kepada mangsa pasti akan sangat berat",
+  "words": [
+   {
+    "s": 4.96,
+    "e": 5.86,
+    "w": " Kesannya"
+   },
+   {
+    "s": 5.86,
+    "e": 6.12,
+    "w": " kepada"
+   },
+   {
+    "s": 6.12,
+    "e": 6.74,
+    "w": " mangsa"
+   },
+   {
+    "s": 6.74,
+    "e": 7.56,
+    "w": " pasti"
+   },
+   {
+    "s": 7.56,
+    "e": 7.84,
+    "w": " akan"
+   },
+   {
+    "s": 7.84,
+    "e": 8.18,
+    "w": " sangat"
+   },
+   {
+    "s": 8.18,
+    "e": 8.68,
+    "w": " berat"
+   }
+  ]
+ },
+ {
+  "start": 8.68,
+  "end": 14.18,
+  "text": " Keuangan, mangsa yang pada mulanya menyelesaikan hutang",
+  "words": [
+   {
+    "s": 8.68,
+    "e": 10.18,
+    "w": " Keuangan,"
+   },
+   {
+    "s": 10.54,
+    "e": 11.44,
+    "w": " mangsa"
+   },
+   {
+    "s": 11.44,
+    "e": 11.74,
+    "w": " yang"
+   },
+   {
+    "s": 11.74,
+    "e": 12.0,
+    "w": " pada"
+   },
+   {
+    "s": 12.0,
+    "e": 12.64,
+    "w": " mulanya"
+   },
+   {
+    "s": 12.64,
+    "e": 13.66,
+    "w": " menyelesaikan"
+   },
+   {
+    "s": 13.66,
+    "e": 14.18,
+    "w": " hutang"
+   }
+  ]
+ },
+ {
+  "start": 14.18,
+  "end": 16.7,
+  "text": " Akhirnya terjerat dengan hutang bank",
+  "words": [
+   {
+    "s": 14.18,
+    "e": 15.24,
+    "w": " Akhirnya"
+   },
+   {
+    "s": 15.24,
+    "e": 15.9,
+    "w": " terjerat"
+   },
+   {
+    "s": 15.9,
+    "e": 16.14,
+    "w": " dengan"
+   },
+   {
+    "s": 16.14,
+    "e": 16.5,
+    "w": " hutang"
+   },
+   {
+    "s": 16.5,
+    "e": 16.7,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 16.7,
+  "end": 20.56,
+  "text": " Malah hutang yang lebih besar daripada hutang yang sebelumnya",
+  "words": [
+   {
+    "s": 16.7,
+    "e": 17.24,
+    "w": " Malah"
+   },
+   {
+    "s": 17.24,
+    "e": 17.76,
+    "w": " hutang"
+   },
+   {
+    "s": 17.76,
+    "e": 17.92,
+    "w": " yang"
+   },
+   {
+    "s": 17.92,
+    "e": 18.24,
+    "w": " lebih"
+   },
+   {
+    "s": 18.24,
+    "e": 18.76,
+    "w": " besar"
+   },
+   {
+    "s": 18.76,
+    "e": 19.26,
+    "w": " daripada"
+   },
+   {
+    "s": 19.26,
+    "e": 19.68,
+    "w": " hutang"
+   },
+   {
+    "s": 19.68,
+    "e": 19.88,
+    "w": " yang"
+   },
+   {
+    "s": 19.88,
+    "e": 20.56,
+    "w": " sebelumnya"
+   }
+  ]
+ },
+ {
+  "start": 20.56,
+  "end": 28.64,
+  "text": " Dari segi emosi pula, Rama yang merasa malu, merasa tertekan dan menyalahkan diri sendiri",
+  "words": [
+   {
+    "s": 20.56,
+    "e": 21.08,
+    "w": " Dari"
+   },
+   {
+    "s": 21.08,
+    "e": 21.48,
+    "w": " segi"
+   },
+   {
+    "s": 21.48,
+    "e": 21.86,
+    "w": " emosi"
+   },
+   {
+    "s": 21.86,
+    "e": 22.28,
+    "w": " pula,"
+   },
+   {
+    "s": 22.6,
+    "e": 22.78,
+    "w": " Rama"
+   },
+   {
+    "s": 22.78,
+    "e": 23.04,
+    "w": " yang"
+   },
+   {
+    "s": 23.04,
+    "e": 23.5,
+    "w": " merasa"
+   },
+   {
+    "s": 23.5,
+    "e": 24.0,
+    "w": " malu,"
+   },
+   {
+    "s": 24.3,
+    "e": 24.62,
+    "w": " merasa"
+   },
+   {
+    "s": 24.62,
+    "e": 25.48,
+    "w": " tertekan"
+   },
+   {
+    "s": 25.48,
+    "e": 27.22,
+    "w": " dan"
+   },
+   {
+    "s": 27.22,
+    "e": 27.92,
+    "w": " menyalahkan"
+   },
+   {
+    "s": 27.92,
+    "e": 28.2,
+    "w": " diri"
+   },
+   {
+    "s": 28.2,
+    "e": 28.64,
+    "w": " sendiri"
+   }
+  ]
+ },
+ {
+  "start": 28.64,
+  "end": 38.3,
+  "text": " Keluarga mangsa pula akan terjejas apabila gambar mereka dan juga nombor telepon mereka disebarkan dan diugut",
+  "words": [
+   {
+    "s": 28.64,
+    "e": 29.14,
+    "w": " Keluarga"
+   },
+   {
+    "s": 29.14,
+    "e": 29.54,
+    "w": " mangsa"
+   },
+   {
+    "s": 29.54,
+    "e": 29.82,
+    "w": " pula"
+   },
+   {
+    "s": 29.82,
+    "e": 30.12,
+    "w": " akan"
+   },
+   {
+    "s": 30.12,
+    "e": 31.0,
+    "w": " terjejas"
+   },
+   {
+    "s": 31.0,
+    "e": 32.04,
+    "w": " apabila"
+   },
+   {
+    "s": 32.04,
+    "e": 32.7,
+    "w": " gambar"
+   },
+   {
+    "s": 32.7,
+    "e": 33.22,
+    "w": " mereka"
+   },
+   {
+    "s": 33.22,
+    "e": 34.04,
+    "w": " dan"
+   },
+   {
+    "s": 34.04,
+    "e": 34.32,
+    "w": " juga"
+   },
+   {
+    "s": 34.32,
+    "e": 34.76,
+    "w": " nombor"
+   },
+   {
+    "s": 34.76,
+    "e": 35.32,
+    "w": " telepon"
+   },
+   {
+    "s": 35.32,
+    "e": 35.88,
+    "w": " mereka"
+   },
+   {
+    "s": 35.88,
+    "e": 37.22,
+    "w": " disebarkan"
+   },
+   {
+    "s": 37.22,
+    "e": 37.62,
+    "w": " dan"
+   },
+   {
+    "s": 37.62,
+    "e": 38.3,
+    "w": " diugut"
+   }
+  ]
+ },
+ {
+  "start": 38.3,
+  "end": 49.76,
+  "text": " Dan dimalukan dengan berita-berita yang tidak baik, yang palsu daripada skema ini",
+  "words": [
+   {
+    "s": 38.3,
+    "e": 40.08,
+    "w": " Dan"
+   },
+   {
+    "s": 40.08,
+    "e": 40.84,
+    "w": " dimalukan"
+   },
+   {
+    "s": 40.84,
+    "e": 41.78,
+    "w": " dengan"
+   },
+   {
+    "s": 41.78,
+    "e": 42.62,
+    "w": " berita"
+   },
+   {
+    "s": 42.62,
+    "e": 43.16,
+    "w": "-berita"
+   },
+   {
+    "s": 43.16,
+    "e": 43.78,
+    "w": " yang"
+   },
+   {
+    "s": 43.78,
+    "e": 44.02,
+    "w": " tidak"
+   },
+   {
+    "s": 44.02,
+    "e": 44.46,
+    "w": " baik,"
+   },
+   {
+    "s": 44.68,
+    "e": 44.8,
+    "w": " yang"
+   },
+   {
+    "s": 44.8,
+    "e": 45.48,
+    "w": " palsu"
+   },
+   {
+    "s": 45.48,
+    "e": 46.56,
+    "w": " daripada"
+   },
+   {
+    "s": 46.56,
+    "e": 49.36,
+    "w": " skema"
+   },
+   {
+    "s": 49.36,
+    "e": 49.76,
+    "w": " ini"
+   }
+  ]
+ },
+ {
+  "start": 49.76,
+  "end": 54.76,
+  "text": " Ini juga akan terus mengugut dan mengugut keluarga mangsa",
+  "words": [
+   {
+    "s": 49.76,
+    "e": 50.84,
+    "w": " Ini"
+   },
+   {
+    "s": 50.84,
+    "e": 51.18,
+    "w": " juga"
+   },
+   {
+    "s": 51.18,
+    "e": 51.5,
+    "w": " akan"
+   },
+   {
+    "s": 51.5,
+    "e": 51.94,
+    "w": " terus"
+   },
+   {
+    "s": 51.94,
+    "e": 52.76,
+    "w": " mengugut"
+   },
+   {
+    "s": 52.76,
+    "e": 53.08,
+    "w": " dan"
+   },
+   {
+    "s": 53.08,
+    "e": 53.7,
+    "w": " mengugut"
+   },
+   {
+    "s": 53.7,
+    "e": 54.26,
+    "w": " keluarga"
+   },
+   {
+    "s": 54.26,
+    "e": 54.76,
+    "w": " mangsa"
+   }
+  ]
+ },
+ {
+  "start": 54.76,
+  "end": 59.68,
+  "text": " Sehingga keluarga mangsa merasa sangat-sangat tertekan",
+  "words": [
+   {
+    "s": 54.76,
+    "e": 55.72,
+    "w": " Sehingga"
+   },
+   {
+    "s": 55.72,
+    "e": 56.26,
+    "w": " keluarga"
+   },
+   {
+    "s": 56.26,
+    "e": 56.74,
+    "w": " mangsa"
+   },
+   {
+    "s": 56.74,
+    "e": 58.04,
+    "w": " merasa"
+   },
+   {
+    "s": 58.04,
+    "e": 58.76,
+    "w": " sangat"
+   },
+   {
+    "s": 58.76,
+    "e": 59.06,
+    "w": "-sangat"
+   },
+   {
+    "s": 59.06,
+    "e": 59.68,
+    "w": " tertekan"
+   }
+  ]
+ },
+ {
+  "start": 59.68,
+  "end": 63.62,
+  "text": " Yang paling dalam ialah hilangnya kepercayaan",
+  "words": [
+   {
+    "s": 59.68,
+    "e": 60.32,
+    "w": " Yang"
+   },
+   {
+    "s": 60.32,
+    "e": 60.76,
+    "w": " paling"
+   },
+   {
+    "s": 60.76,
+    "e": 61.2,
+    "w": " dalam"
+   },
+   {
+    "s": 61.2,
+    "e": 62.08,
+    "w": " ialah"
+   },
+   {
+    "s": 62.08,
+    "e": 62.62,
+    "w": " hilangnya"
+   },
+   {
+    "s": 62.62,
+    "e": 63.62,
+    "w": " kepercayaan"
+   }
+  ]
+ },
+ {
+  "start": 64.42,
+  "end": 71.54,
+  "text": " Mangsa mula mencurigai semua orang termasuk institusi keuangan yang sah",
+  "words": [
+   {
+    "s": 64.42,
+    "e": 65.14,
+    "w": " Mangsa"
+   },
+   {
+    "s": 65.14,
+    "e": 65.52,
+    "w": " mula"
+   },
+   {
+    "s": 65.52,
+    "e": 66.4,
+    "w": " mencurigai"
+   },
+   {
+    "s": 66.4,
+    "e": 66.86,
+    "w": " semua"
+   },
+   {
+    "s": 66.86,
+    "e": 67.34,
+    "w": " orang"
+   },
+   {
+    "s": 67.34,
+    "e": 68.7,
+    "w": " termasuk"
+   },
+   {
+    "s": 68.7,
+    "e": 70.02,
+    "w": " institusi"
+   },
+   {
+    "s": 70.02,
+    "e": 70.86,
+    "w": " keuangan"
+   },
+   {
+    "s": 70.86,
+    "e": 71.14,
+    "w": " yang"
+   },
+   {
+    "s": 71.14,
+    "e": 71.54,
+    "w": " sah"
+   }
+  ]
+ },
+ {
+  "start": 71.54,
+  "end": 77.9,
+  "text": " Sekarang saya mahu menilai isu ini dari sudut etika dan peradaban",
+  "words": [
+   {
+    "s": 71.54,
+    "e": 73.42,
+    "w": " Sekarang"
+   },
+   {
+    "s": 73.42,
+    "e": 73.7,
+    "w": " saya"
+   },
+   {
+    "s": 73.7,
+    "e": 74.1,
+    "w": " mahu"
+   },
+   {
+    "s": 74.1,
+    "e": 74.64,
+    "w": " menilai"
+   },
+   {
+    "s": 74.64,
+    "e": 74.94,
+    "w": " isu"
+   },
+   {
+    "s": 74.94,
+    "e": 75.24,
+    "w": " ini"
+   },
+   {
+    "s": 75.24,
+    "e": 75.9,
+    "w": " dari"
+   },
+   {
+    "s": 75.9,
+    "e": 76.3,
+    "w": " sudut"
+   },
+   {
+    "s": 76.3,
+    "e": 76.86,
+    "w": " etika"
+   },
+   {
+    "s": 76.86,
+    "e": 77.2,
+    "w": " dan"
+   },
+   {
+    "s": 77.2,
+    "e": 77.9,
+    "w": " peradaban"
+   }
+  ]
+ },
+ {
+  "start": 77.9,
+  "end": 86.72,
+  "text": " Pada pandangan saya, launch game sangat jelas membuktikan keruntuhan etika",
+  "words": [
+   {
+    "s": 77.9,
+    "e": 79.0,
+    "w": " Pada"
+   },
+   {
+    "s": 79.0,
+    "e": 79.42,
+    "w": " pandangan"
+   },
+   {
+    "s": 79.42,
+    "e": 79.92,
+    "w": " saya,"
+   },
+   {
+    "s": 80.66,
+    "e": 80.9,
+    "w": " launch"
+   },
+   {
+    "s": 80.9,
+    "e": 81.36,
+    "w": " game"
+   },
+   {
+    "s": 81.36,
+    "e": 82.18,
+    "w": " sangat"
+   },
+   {
+    "s": 82.18,
+    "e": 82.9,
+    "w": " jelas"
+   },
+   {
+    "s": 82.9,
+    "e": 85.08,
+    "w": " membuktikan"
+   },
+   {
+    "s": 85.08,
+    "e": 86.14,
+    "w": " keruntuhan"
+   },
+   {
+    "s": 86.14,
+    "e": 86.72,
+    "w": " etika"
+   }
+  ]
+ },
+ {
+  "start": 86.72,
+  "end": 93.26,
+  "text": " Penipu hilang rasa empati, sanggup mengambil uang orang yang sedang susah",
+  "words": [
+   {
+    "s": 86.72,
+    "e": 88.24,
+    "w": " Penipu"
+   },
+   {
+    "s": 88.24,
+    "e": 88.7,
+    "w": " hilang"
+   },
+   {
+    "s": 88.7,
+    "e": 89.02,
+    "w": " rasa"
+   },
+   {
+    "s": 89.02,
+    "e": 89.68,
+    "w": " empati,"
+   },
+   {
+    "s": 89.98,
+    "e": 91.0,
+    "w": " sanggup"
+   },
+   {
+    "s": 91.0,
+    "e": 91.56,
+    "w": " mengambil"
+   },
+   {
+    "s": 91.56,
+    "e": 91.86,
+    "w": " uang"
+   },
+   {
+    "s": 91.86,
+    "e": 92.16,
+    "w": " orang"
+   },
+   {
+    "s": 92.16,
+    "e": 92.36,
+    "w": " yang"
+   },
+   {
+    "s": 92.36,
+    "e": 92.7,
+    "w": " sedang"
+   },
+   {
+    "s": 92.7,
+    "e": 93.26,
+    "w": " susah"
+   }
+  ]
+ },
+ {
+  "start": 93.26,
+  "end": 100.48,
+  "text": " Mereka hilang rasa hormat kepada manusia lain yang melihat mangsa dari sudut uang",
+  "words": [
+   {
+    "s": 93.26,
+    "e": 94.86,
+    "w": " Mereka"
+   },
+   {
+    "s": 94.86,
+    "e": 95.26,
+    "w": " hilang"
+   },
+   {
+    "s": 95.26,
+    "e": 95.58,
+    "w": " rasa"
+   },
+   {
+    "s": 95.58,
+    "e": 96.18,
+    "w": " hormat"
+   },
+   {
+    "s": 96.18,
+    "e": 96.52,
+    "w": " kepada"
+   },
+   {
+    "s": 96.52,
+    "e": 97.14,
+    "w": " manusia"
+   },
+   {
+    "s": 97.14,
+    "e": 97.58,
+    "w": " lain"
+   },
+   {
+    "s": 97.58,
+    "e": 98.4,
+    "w": " yang"
+   },
+   {
+    "s": 98.4,
+    "e": 98.92,
+    "w": " melihat"
+   },
+   {
+    "s": 98.92,
+    "e": 99.4,
+    "w": " mangsa"
+   },
+   {
+    "s": 99.4,
+    "e": 99.72,
+    "w": " dari"
+   },
+   {
+    "s": 99.72,
+    "e": 100.1,
+    "w": " sudut"
+   },
+   {
+    "s": 100.1,
+    "e": 100.48,
+    "w": " uang"
+   }
+  ]
+ },
+ {
+  "start": 100.48,
+  "end": 110.84,
+  "text": " Kata susila dan keselpanan juga hilang apabila mangsa diugut dan dimalukan dihadapan keluarga",
+  "words": [
+   {
+    "s": 100.48,
+    "e": 102.22,
+    "w": " Kata"
+   },
+   {
+    "s": 102.22,
+    "e": 102.82,
+    "w": " susila"
+   },
+   {
+    "s": 102.82,
+    "e": 103.22,
+    "w": " dan"
+   },
+   {
+    "s": 103.22,
+    "e": 103.92,
+    "w": " keselpanan"
+   },
+   {
+    "s": 103.92,
+    "e": 104.2,
+    "w": " juga"
+   },
+   {
+    "s": 104.2,
+    "e": 104.74,
+    "w": " hilang"
+   },
+   {
+    "s": 104.74,
+    "e": 106.26,
+    "w": " apabila"
+   },
+   {
+    "s": 106.26,
+    "e": 106.82,
+    "w": " mangsa"
+   },
+   {
+    "s": 106.82,
+    "e": 107.54,
+    "w": " diugut"
+   },
+   {
+    "s": 107.54,
+    "e": 108.4,
+    "w": " dan"
+   },
+   {
+    "s": 108.4,
+    "e": 109.06,
+    "w": " dimalukan"
+   },
+   {
+    "s": 109.06,
+    "e": 110.06,
+    "w": " dihadapan"
+   },
+   {
+    "s": 110.06,
+    "e": 110.84,
+    "w": " keluarga"
+   }
+  ]
+ },
+ {
+  "start": 110.84,
+  "end": 117.48,
+  "text": " Dalam masyarakat majmuk seperti Malaysia ini kesennya lebih besar daripada kehilangan uang",
+  "words": [
+   {
+    "s": 110.84,
+    "e": 112.16,
+    "w": " Dalam"
+   },
+   {
+    "s": 112.16,
+    "e": 112.72,
+    "w": " masyarakat"
+   },
+   {
+    "s": 112.72,
+    "e": 113.28,
+    "w": " majmuk"
+   },
+   {
+    "s": 113.28,
+    "e": 113.66,
+    "w": " seperti"
+   },
+   {
+    "s": 113.66,
+    "e": 114.12,
+    "w": " Malaysia"
+   },
+   {
+    "s": 114.12,
+    "e": 114.62,
+    "w": " ini"
+   },
+   {
+    "s": 114.62,
+    "e": 115.38,
+    "w": " kesennya"
+   },
+   {
+    "s": 115.38,
+    "e": 115.64,
+    "w": " lebih"
+   },
+   {
+    "s": 115.64,
+    "e": 116.1,
+    "w": " besar"
+   },
+   {
+    "s": 116.1,
+    "e": 116.6,
+    "w": " daripada"
+   },
+   {
+    "s": 116.6,
+    "e": 117.12,
+    "w": " kehilangan"
+   },
+   {
+    "s": 117.12,
+    "e": 117.48,
+    "w": " uang"
+   }
+  ]
+ },
+ {
+  "start": 117.48,
+  "end": 124.48,
+  "text": " Kerana perpaduan kita dibina atas dasar saling percaya diantara satu sama lain",
+  "words": [
+   {
+    "s": 117.48,
+    "e": 118.46,
+    "w": " Kerana"
+   },
+   {
+    "s": 118.46,
+    "e": 119.4,
+    "w": " perpaduan"
+   },
+   {
+    "s": 119.4,
+    "e": 119.74,
+    "w": " kita"
+   },
+   {
+    "s": 119.74,
+    "e": 120.36,
+    "w": " dibina"
+   },
+   {
+    "s": 120.36,
+    "e": 121.56,
+    "w": " atas"
+   },
+   {
+    "s": 121.56,
+    "e": 122.06,
+    "w": " dasar"
+   },
+   {
+    "s": 122.06,
+    "e": 122.52,
+    "w": " saling"
+   },
+   {
+    "s": 122.52,
+    "e": 123.12,
+    "w": " percaya"
+   },
+   {
+    "s": 123.12,
+    "e": 123.6,
+    "w": " diantara"
+   },
+   {
+    "s": 123.6,
+    "e": 123.84,
+    "w": " satu"
+   },
+   {
+    "s": 123.84,
+    "e": 124.1,
+    "w": " sama"
+   },
+   {
+    "s": 124.1,
+    "e": 124.48,
+    "w": " lain"
+   }
+  ]
+ },
+ {
+  "start": 124.48,
+  "end": 128.1,
+  "text": " Dan apabila sindiket menyamar sebagai pegawai bank",
+  "words": [
+   {
+    "s": 124.48,
+    "e": 125.08,
+    "w": " Dan"
+   },
+   {
+    "s": 125.08,
+    "e": 125.66,
+    "w": " apabila"
+   },
+   {
+    "s": 125.66,
+    "e": 126.16,
+    "w": " sindiket"
+   },
+   {
+    "s": 126.16,
+    "e": 126.76,
+    "w": " menyamar"
+   },
+   {
+    "s": 126.76,
+    "e": 127.2,
+    "w": " sebagai"
+   },
+   {
+    "s": 127.2,
+    "e": 127.76,
+    "w": " pegawai"
+   },
+   {
+    "s": 127.76,
+    "e": 128.1,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 128.1,
+  "end": 131.22,
+  "text": " Menggunakan bahasa dan logat mangsa",
+  "words": [
+   {
+    "s": 128.1,
+    "e": 129.46,
+    "w": " Menggunakan"
+   },
+   {
+    "s": 129.46,
+    "e": 130.04,
+    "w": " bahasa"
+   },
+   {
+    "s": 130.04,
+    "e": 130.34,
+    "w": " dan"
+   },
+   {
+    "s": 130.34,
+    "e": 130.7,
+    "w": " logat"
+   },
+   {
+    "s": 130.7,
+    "e": 131.22,
+    "w": " mangsa"
+   }
+  ]
+ },
+ {
+  "start": 131.22,
+  "end": 136.76,
+  "text": " Dan menggunakan akaun keldai milik rakyat biasa daripada pelbagai kaum",
+  "words": [
+   {
+    "s": 131.22,
+    "e": 131.88,
+    "w": " Dan"
+   },
+   {
+    "s": 131.88,
+    "e": 132.86,
+    "w": " menggunakan"
+   },
+   {
+    "s": 132.86,
+    "e": 133.3,
+    "w": " akaun"
+   },
+   {
+    "s": 133.3,
+    "e": 133.76,
+    "w": " keldai"
+   },
+   {
+    "s": 133.76,
+    "e": 134.4,
+    "w": " milik"
+   },
+   {
+    "s": 134.4,
+    "e": 134.8,
+    "w": " rakyat"
+   },
+   {
+    "s": 134.8,
+    "e": 135.2,
+    "w": " biasa"
+   },
+   {
+    "s": 135.2,
+    "e": 135.76,
+    "w": " daripada"
+   },
+   {
+    "s": 135.76,
+    "e": 136.34,
+    "w": " pelbagai"
+   },
+   {
+    "s": 136.34,
+    "e": 136.76,
+    "w": " kaum"
+   }
+  ]
+ },
+ {
+  "start": 136.76,
+  "end": 140.0,
+  "text": " Rakyat mula curiga terhadap satu sama lain",
+  "words": [
+   {
+    "s": 136.76,
+    "e": 137.74,
+    "w": " Rakyat"
+   },
+   {
+    "s": 137.74,
+    "e": 138.0,
+    "w": " mula"
+   },
+   {
+    "s": 138.0,
+    "e": 138.44,
+    "w": " curiga"
+   },
+   {
+    "s": 138.44,
+    "e": 139.02,
+    "w": " terhadap"
+   },
+   {
+    "s": 139.02,
+    "e": 139.34,
+    "w": " satu"
+   },
+   {
+    "s": 139.34,
+    "e": 139.6,
+    "w": " sama"
+   },
+   {
+    "s": 139.6,
+    "e": 140.0,
+    "w": " lain"
+   }
+  ]
+ },
+ {
+  "start": 140.0,
+  "end": 150.16,
+  "text": " Modul kursus ini menegaskan bahwa piawai kelakuan dalam talian sepatutnya sama dengan kehidupan sebenar",
+  "words": [
+   {
+    "s": 140.0,
+    "e": 141.48,
+    "w": " Modul"
+   },
+   {
+    "s": 141.48,
+    "e": 141.92,
+    "w": " kursus"
+   },
+   {
+    "s": 141.92,
+    "e": 142.3,
+    "w": " ini"
+   },
+   {
+    "s": 142.3,
+    "e": 143.68,
+    "w": " menegaskan"
+   },
+   {
+    "s": 143.68,
+    "e": 144.52,
+    "w": " bahwa"
+   },
+   {
+    "s": 144.52,
+    "e": 145.26,
+    "w": " piawai"
+   },
+   {
+    "s": 145.26,
+    "e": 145.94,
+    "w": " kelakuan"
+   },
+   {
+    "s": 145.94,
+    "e": 146.7,
+    "w": " dalam"
+   },
+   {
+    "s": 146.7,
+    "e": 147.16,
+    "w": " talian"
+   },
+   {
+    "s": 147.16,
+    "e": 147.84,
+    "w": " sepatutnya"
+   },
+   {
+    "s": 147.84,
+    "e": 148.64,
+    "w": " sama"
+   },
+   {
+    "s": 148.64,
+    "e": 148.94,
+    "w": " dengan"
+   },
+   {
+    "s": 148.94,
+    "e": 149.56,
+    "w": " kehidupan"
+   },
+   {
+    "s": 149.56,
+    "e": 150.16,
+    "w": " sebenar"
+   }
+  ]
+ },
+ {
+  "start": 150.16,
+  "end": 153.84,
+  "text": " Jika kepercayaan ini terus terhakis",
+  "words": [
+   {
+    "s": 150.16,
+    "e": 151.54,
+    "w": " Jika"
+   },
+   {
+    "s": 151.54,
+    "e": 152.38,
+    "w": " kepercayaan"
+   },
+   {
+    "s": 152.38,
+    "e": 152.62,
+    "w": " ini"
+   },
+   {
+    "s": 152.62,
+    "e": 152.98,
+    "w": " terus"
+   },
+   {
+    "s": 152.98,
+    "e": 153.84,
+    "w": " terhakis"
+   }
+  ]
+ },
+ {
+  "start": 153.84,
+  "end": 159.34,
+  "text": " Nilai kesepanan dan kesesilaan dalam rukun negara hanya tinggal slogan",
+  "words": [
+   {
+    "s": 153.84,
+    "e": 154.84,
+    "w": " Nilai"
+   },
+   {
+    "s": 154.84,
+    "e": 155.4,
+    "w": " kesepanan"
+   },
+   {
+    "s": 155.4,
+    "e": 155.84,
+    "w": " dan"
+   },
+   {
+    "s": 155.84,
+    "e": 156.84,
+    "w": " kesesilaan"
+   },
+   {
+    "s": 156.84,
+    "e": 157.4,
+    "w": " dalam"
+   },
+   {
+    "s": 157.4,
+    "e": 157.72,
+    "w": " rukun"
+   },
+   {
+    "s": 157.72,
+    "e": 158.1,
+    "w": " negara"
+   },
+   {
+    "s": 158.1,
+    "e": 158.44,
+    "w": " hanya"
+   },
+   {
+    "s": 158.44,
+    "e": 158.84,
+    "w": " tinggal"
+   },
+   {
+    "s": 158.84,
+    "e": 159.34,
+    "w": " slogan"
+   }
+  ]
+ },
+ {
+  "start": 159.34,
+  "end": 163.88,
+  "text": " Dan kehormanian masyarakat majmuk akan tergugat",
+  "words": [
+   {
+    "s": 159.34,
+    "e": 160.88,
+    "w": " Dan"
+   },
+   {
+    "s": 160.88,
+    "e": 161.62,
+    "w": " kehormanian"
+   },
+   {
+    "s": 161.62,
+    "e": 162.24,
+    "w": " masyarakat"
+   },
+   {
+    "s": 162.24,
+    "e": 162.78,
+    "w": " majmuk"
+   },
+   {
+    "s": 162.78,
+    "e": 163.26,
+    "w": " akan"
+   },
+   {
+    "s": 163.26,
+    "e": 163.88,
+    "w": " tergugat"
+   }
+  ]
+ },
+ {
+  "start": 163.88,
+  "end": 164.54,
+  "text": " Terima kasih kerana menonton!",
+  "words": [
+   {
+    "s": 163.88,
+    "e": 163.88,
+    "w": " Terima"
+   },
+   {
+    "s": 163.88,
+    "e": 164.48,
+    "w": " kasih"
+   },
+   {
+    "s": 164.48,
+    "e": 164.5,
+    "w": " kerana"
+   },
+   {
+    "s": 164.5,
+    "e": 164.54,
+    "w": " menonton!"
+   }
+  ]
+ }
+]

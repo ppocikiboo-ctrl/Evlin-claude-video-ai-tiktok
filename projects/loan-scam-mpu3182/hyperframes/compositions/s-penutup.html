@@ -4,9 +4,10 @@
 #s-penutup { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-penutup .card { position:absolute; }
-#s-penutup .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-penutup .zone-top { left:54px; top:1250px; width:972px; }
 #s-penutup .zone-dock { left:40px; top:44px; }
-#s-penutup .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-penutup .zone-bottom { left:54px; width:972px; top:150px; }
 #s-penutup .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-penutup .card-in { position:relative; }
 
@@ -213,13 +214,22 @@
 #s-penutup .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-penutup .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-penutup .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-penutup .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-penutup .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-penutup .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-penutup .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-penutup .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-penutup .perm-no { color:#888; } #s-penutup .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-penutup" data-composition-id="s-penutup" data-width="1080" data-height="1920" data-duration="33.25" data-layout-allow-overlap>
-<div id="pe-ch" class="clip card zone-top " data-start="0.1" data-duration="2.9" style=""><div class="card-in"><div class="slate" data-fx="slate" data-in="0"><div class="slate-num" data-fx="rise" data-in="0.05">BAB 08 / 08</div><div class="slate-rule" data-fx="draw" data-in="0.15"></div><div class="slate-title" data-fx="rise" data-in="0.25">Penutup</div><div class="slate-sub" data-fx="rise" data-in="0.45">Penutup</div></div></div></div>
-<div id="pe-ch-dock" class="clip card zone-dock " data-start="2.8" data-duration="30.45" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">08</span><span class="dock-t">Penutup</span></div></div></div>
-<div id="pe-krisis" class="clip card zone-top " data-start="3.0" data-duration="13.0" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>LOAN SCAM BUKAN SEKADAR JENAYAH KEWANGAN</div><div class="head" data-fx="rise" data-in="2.8">Ia adalah <span class="hl">krisis etika</span></div><div class="mini-row"><span class="mini" data-fx="pop" data-in="6.4">sikap tamak</span><span class="mini" data-fx="pop" data-in="7.2">abai tanggungjawab</span></div><div class="body" data-fx="rise" data-in="9.3">yang menghakis kepercayaan masyarakat majmuk kita.</div></div></div></div>
-<div id="pe-3" class="clip card zone-top " data-start="16.1" data-duration="10.9" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>3 LAPISAN YANG BERGERAK BERSAMA</div><div class="plates"><div class="plate p0" data-fx="plate" data-in="5.1"><span class="plate-n">1</span>Undang-undang yang tegas</div><div class="plate p1" data-fx="plate" data-in="6.8"><span class="plate-n">2</span>Rakyat yang celik digital</div><div class="plate p2" data-fx="plate" data-in="9.0"><span class="plate-n">3</span>Individu yang berintegriti</div></div></div></div></div>
-<div id="pe-msia" class="clip card zone-top " data-start="27.1" data-duration="6.1" style=""><div class="card-in"><div class="paper paper-dark"><div class="kicker k-amber" data-fx="wipe" data-in="0"><span class="kdot"></span>HANYA DENGAN CARA INI</div><div class="head head-light" data-fx="rise" data-in="1.2">Malaysia kekal <span class="hl-amber">lestari</span><br>&amp; <span class="hl-amber">bertamadun</span>.</div></div></div></div>
+<div id="s-penutup" data-composition-id="s-penutup" data-width="1080" data-height="1920" data-duration="34.35" data-layout-allow-overlap>
+<div id="pe-ch" class="clip card zone-top " data-start="0.067" data-duration="2.9" style=""><div class="card-in"><div class="slate" data-fx="slate" data-in="0"><div class="slate-num" data-fx="rise" data-in="0.05">BAB 07 / 07</div><div class="slate-rule" data-fx="draw" data-in="0.15"></div><div class="slate-title" data-fx="rise" data-in="0.25">Penutup</div><div class="slate-sub" data-fx="rise" data-in="0.45">Penutup</div></div></div></div>
+<div id="pe-ch-dock" class="clip card zone-dock " data-start="2.767" data-duration="31.583" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">07</span><span class="dock-t">Penutup</span></div></div></div>
+<div id="pe-krisis" class="clip card zone-top " data-start="3.267" data-duration="9.5" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>LOAN SCAM BUKAN SEKADAR JENAYAH KEWANGAN</div><div class="head" data-fx="rise" data-in="3.4">Ia adalah <span class="hl">krisis etika</span></div><div class="body" data-fx="rise" data-in="6.1">yang menghakis kepercayaan dalam masyarakat kita.</div></div></div></div>
+<div id="pe-3" class="clip card zone-top " data-start="12.867" data-duration="12.3" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>3 LAPISAN YANG BERGERAK BERSAMA</div><div class="plates"><div class="plate p0" data-fx="plate" data-in="5.5"><span class="plate-n">1</span>Undang-undang yang tegas</div><div class="plate p1" data-fx="plate" data-in="7.7"><span class="plate-n">2</span>Rakyat yang celik digital</div><div class="plate p2" data-fx="plate" data-in="10.1"><span class="plate-n">3</span>Individu yang berintegriti</div></div></div></div></div>
+<div id="pe-msia" class="clip card zone-top " data-start="25.267" data-duration="9.0" style=""><div class="card-in"><div class="paper paper-dark"><div class="kicker k-amber" data-fx="wipe" data-in="0"><span class="kdot"></span>HANYA DENGAN CARA INI</div><div class="head head-light" data-fx="rise" data-in="2.3">Malaysia kekal <span class="hl-amber">lestari</span><br>&amp; <span class="hl-amber">bertamadun</span>.</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -238,7 +248,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

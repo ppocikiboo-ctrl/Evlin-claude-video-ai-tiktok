@@ -13,7 +13,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

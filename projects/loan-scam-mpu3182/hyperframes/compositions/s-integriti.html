@@ -4,9 +4,10 @@
 #s-integriti { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-integriti .card { position:absolute; }
-#s-integriti .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-integriti .zone-top { left:54px; top:1250px; width:972px; }
 #s-integriti .zone-dock { left:40px; top:44px; }
-#s-integriti .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-integriti .zone-bottom { left:54px; width:972px; top:150px; }
 #s-integriti .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-integriti .card-in { position:relative; }
 
@@ -213,15 +214,24 @@
 #s-integriti .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-integriti .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-integriti .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-integriti .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-integriti .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-integriti .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-integriti .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-integriti .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-integriti .perm-no { color:#888; } #s-integriti .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-integriti" data-composition-id="s-integriti" data-width="1080" data-height="1920" data-duration="46.9" data-layout-allow-overlap>
-<div id="ig-1" class="clip card zone-top " data-start="0.1" data-duration="8.2" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>CADANGAN 03 · PALING PENTING</div><div class="head" data-fx="rise" data-in="0.12">Integriti <span class="hl">diri</span></div></div></div></div>
-<div id="ig-dock" class="clip card zone-dock " data-start="0.1" data-duration="46.8" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">07</span><span class="dock-t">Integriti diri</span></div></div></div>
-<div id="ig-chain" class="clip card zone-top " data-start="8.4" data-duration="10.45" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>SINDIKET TAK BOLEH BERGERAK TANPA AKAUN KELDAI</div><div class="chain" data-fx="none" data-in="0"><div class="link l0" data-fx="pop" data-in="0.4">SINDIKET</div><div class="link l1" data-fx="pop" data-in="0.65">AKAUN KELDAI</div><div class="link l2" data-fx="pop" data-in="0.9">MANGSA</div><div class="chain-cut" data-fx="cut" data-in="9.7"></div></div><div class="body" data-fx="rise" data-in="3.0">Jika rakyat <b>menolak</b> tawaran sewa / jual akaun bank…</div><div class="verdict" data-fx="slam" data-in="9.7">rantaian ini pasti terputus</div></div></div></div>
-<div id="ig-hukum" class="clip card zone-top " data-start="18.9" data-duration="5.8" style=""><div class="card-in"><div class="photo" data-fx="drop" data-in="0" data-rot="-1.2" style="width:860px"><div class="tape"></div><div class="photo-win" style="height:340px"><img class="photo-img" src="assets/img/keldai-didakwa.png" style="object-fit:cover;object-position:50% 40%"/></div><div class="photo-cap"><span class="cap-tag">BUKTI</span>Pemilik akaun keldai boleh didakwa</div></div></div></div>
-<div id="ig-10" class="clip card zone-bottom " data-start="20.0" data-duration="4.7" style=""><div class="card-in"><div class="btag bt-red" data-fx="rise" data-in="0">Hukuman sehingga <b class="hl-red">10 tahun penjara</b></div></div></div>
-<div id="ig-tuhan" class="clip card zone-top " data-start="24.8" data-duration="15.1" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>TOLAK BUKAN KERANA TAKUT DIHUKUM</div><div class="q" data-fx="rise" data-in="4.6" style="font-size:58px">Prinsip <span class="hl">Kepercayaan kepada Tuhan</span></div><div class="body" data-fx="rise" data-in="8.5">Setiap perbuatan tetap dipertanggungjawabkan, <b>walaupun tiada siapa yang melihat.</b></div></div></div></div>
-<div id="ig-orang" class="clip card zone-top " data-start="40.0" data-duration="6.8" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>KITA MENOLAK KERANA SEDAR…</div><div class="head" data-fx="rise" data-in="0.12">Perbuatan itu <span class="hl">menyakiti</span> &amp; <span class="hl">merugikan</span> orang lain</div></div></div></div>
+<div id="s-integriti" data-composition-id="s-integriti" data-width="1080" data-height="1920" data-duration="50.6" data-layout-allow-overlap>
+<div id="ig-1" class="clip card zone-top " data-start="0.067" data-duration="8.3" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>CADANGAN 03 · PALING PENTING</div><div class="head" data-fx="rise" data-in="0.12">Integriti <span class="hl">diri</span></div></div></div></div>
+<div id="ig-dock" class="clip card zone-dock " data-start="0.067" data-duration="50.53" style=""><div class="card-in"><div class="dock" data-fx="dock" data-in="0"><span class="dock-num">06</span><span class="dock-t">Integriti diri</span></div></div></div>
+<div id="ig-chain" class="clip card zone-top " data-start="8.467" data-duration="17.9" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0"><span class="kdot"></span>SINDIKET TAK BOLEH BERGERAK TANPA AKAUN KELDAI</div><div class="chain" data-fx="none" data-in="0"><div class="link l0" data-fx="pop" data-in="0.4">SINDIKET</div><div class="link l1" data-fx="pop" data-in="0.65">AKAUN KELDAI</div><div class="link l2" data-fx="pop" data-in="0.9">MANGSA</div><div class="chain-cut" data-fx="cut" data-in="13.4"></div></div><div class="body" data-fx="rise" data-in="4.9">Jika rakyat <b>menolak</b> tawaran sewa / jual akaun bank…</div><div class="verdict" data-fx="slam" data-in="13.5">rantaian ini pasti terputus</div></div></div></div>
+<div id="ig-hukum" class="clip card zone-top " data-start="26.467" data-duration="7.9" style=""><div class="card-in"><div class="photo" data-fx="drop" data-in="0" data-rot="-1.2" style="width:860px"><div class="tape"></div><div class="photo-win" style="height:330px"><img class="photo-img" src="assets/img/keldai-didakwa.png" style="object-fit:cover;object-position:50% 40%"/></div><div class="photo-cap"><span class="cap-tag">BUKTI</span>Pemilik akaun keldai boleh didakwa</div></div></div></div>
+<div id="ig-10" class="clip card zone-bottom " data-start="29.367" data-duration="5.0" style=""><div class="card-in"><div class="btag bt-red" data-fx="rise" data-in="0">Kanun Keseksaan: sehingga <b class="hl-red">10 tahun penjara</b></div></div></div>
+<div id="ig-sedar" class="clip card zone-top " data-start="34.467" data-duration="9.0" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>TOLAK BUKAN KERANA TAKUT DIHUKUM</div><div class="head" data-fx="rise" data-in="0.12">Tolak kerana sedar ia <span class="hl">menyakiti orang lain</span></div></div></div></div>
+<div id="ig-diri" class="clip card zone-top " data-start="43.567" data-duration="6.9" style=""><div class="card-in"><div class="paper"><div class="kicker k-red" data-fx="wipe" data-in="0.0"><span class="kdot"></span>FIKIRKAN</div><div class="head" data-fx="rise" data-in="0.12">Bagaimana jika ia menimpa <span class="hl">diri kita sendiri</span>?</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -240,7 +250,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

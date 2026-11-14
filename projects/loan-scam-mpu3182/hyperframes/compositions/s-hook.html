@@ -4,9 +4,10 @@
 #s-hook { --ink:#0D1726; --paper:#EFE8DA; --paper2:#E4DBC8; --red:#E5383B; --amber:#F4B942; --slate:#5E6B80;
   font-family:'Inter', sans-serif; color:var(--ink); }
 #s-hook .card { position:absolute; }
-#s-hook .zone-top { left:54px; top:150px; width:972px; }
+/* v2 footage: the face sits higher (y 380-1200), so the main cards live over the chest */
+#s-hook .zone-top { left:54px; top:1250px; width:972px; }
 #s-hook .zone-dock { left:40px; top:44px; }
-#s-hook .zone-bottom { left:54px; width:972px; top:1470px; }
+#s-hook .zone-bottom { left:54px; width:972px; top:150px; }
 #s-hook .zone-full { left:0; top:0; width:1080px; height:1920px; }
 #s-hook .card-in { position:relative; }
 
@@ -213,11 +214,19 @@
 #s-hook .ec-c { font-size:34px; line-height:1.4; color:#cfd6e2; margin-top:12px; }
 #s-hook .ec-src { font:500 28px/1.45 'IBM Plex Mono', monospace; color:#8d99ad; margin-top:70px; letter-spacing:.02em; }
 
+/* app-permission mock (data-stealing loan app) */
+#s-hook .perm { width:860px; margin:0 auto; background:#fff; border-radius:22px; padding:26px 30px 24px; box-shadow:0 22px 60px rgba(5,10,20,.45); }
+#s-hook .perm-k { font:700 26px/1.2 'IBM Plex Mono', monospace; color:var(--red); letter-spacing:.04em; }
+#s-hook .perm-t { font:500 36px/1.25 'Inter'; color:#111; margin:12px 0 10px; }
+#s-hook .perm-row { display:flex; align-items:center; gap:16px; font:600 34px/1.2 'Inter'; color:#111; padding:12px 0; border-top:1px solid #eee; }
+#s-hook .perm-ic { width:52px; height:52px; border-radius:12px; background:var(--red); color:#fff; font:700 30px/52px 'Inter'; text-align:center; flex:none; }
+#s-hook .perm-btns { display:flex; justify-content:flex-end; gap:30px; margin-top:12px; font:700 30px/1 'Inter'; }
+#s-hook .perm-no { color:#888; } #s-hook .perm-yes { color:#1d6fd8; }
+
 </style>
-<div id="s-hook" data-composition-id="s-hook" data-width="1080" data-height="1920" data-duration="11.067" data-layout-allow-overlap>
-<div id="hk-a" class="clip card zone-top " data-start="0.0" data-duration="6.4" style=""><div class="card-in"><div class="paper paper-dark"><div class="kicker k-amber" data-fx="wipe" data-in="0.0"><span class="kdot"></span>KES #1 · KOTA TINGGI, JOHOR · MEI 2026</div><div class="hk-lbl" data-fx="rise" data-in="0.2">KERUGIAN SEORANG PENGARAH SYARIKAT</div><div class="stat stat-xl"><span class="stat-pre">RM</span><span class="stat-num" data-fx="count" data-in="0.3" data-to="167050" data-land="4.6" data-fmt="comma" data-dec="0">0</span></div><div class="src src-light" data-fx="rise" data-in="0.8">Sumber: Berita RTM, 24/05/2026</div></div></div></div>
-<div id="hk-b" class="clip card zone-top " data-start="6.4" data-duration="2.43" style=""><div class="card-in"><div class="paper paper-dark"><div class="kicker k-amber" data-fx="wipe" data-in="0.0"><span class="kdot"></span>KES #3 · MIRI, SARAWAK</div><div class="head head-light" data-fx="rise" data-in="0.1">Rumah mangsa dibaling<br><span class="hl-red">bom petrol.</span></div></div></div></div>
-<div id="hk-c" class="clip card zone-top " data-start="8.83" data-duration="2.237" style=""><div class="card-in"><div class="paper paper-dark hk-c"><div class="head head-light" data-fx="rise" data-in="0.05" style="font-size:78px">Ini bukan<br>cerita rekaan.</div><div class="stamp st-red" data-fx="stamp" data-in="1.25" data-rot="-8" style="font-size:80px;margin-left:0px;margin-top:0px">KES SEBENAR</div></div></div></div>
+<div id="s-hook" data-composition-id="s-hook" data-width="1080" data-height="1920" data-duration="15.933" data-layout-allow-overlap>
+<div id="hk-ad" class="clip card zone-top " data-start="0.0" data-duration="11.42" style=""><div class="card-in"><div class="admock" data-fx="drop" data-in="0"><div class="ad-top"><div class="ad-logo">B</div><div><div class="ad-name">Pinjaman Peribadi Rasmi</div><div class="ad-spon">Ditaja · Iklan</div></div></div><div class="ad-body"><div class="ad-big" data-fx="rise" data-in="0.2">PINJAMAN SEGERA</div><div class="ad-line" data-fx="type" data-in="1.45"><span class="tw">✓</span><span class="tw">&nbsp;</span><span class="tw">T</span><span class="tw">a</span><span class="tw">n</span><span class="tw">p</span><span class="tw">a</span><span class="tw">&nbsp;</span><span class="tw">s</span><span class="tw">e</span><span class="tw">m</span><span class="tw">a</span><span class="tw">k</span><span class="tw">a</span><span class="tw">n</span><span class="tw">&nbsp;</span><span class="tw">C</span><span class="tw">T</span><span class="tw">O</span><span class="tw">S</span></div><div class="ad-line" data-fx="type" data-in="2.55"><span class="tw">✓</span><span class="tw">&nbsp;</span><span class="tw">B</span><span class="tw">l</span><span class="tw">a</span><span class="tw">c</span><span class="tw">k</span><span class="tw">l</span><span class="tw">i</span><span class="tw">s</span><span class="tw">t</span><span class="tw">&nbsp;</span><span class="tw">p</span><span class="tw">u</span><span class="tw">n</span><span class="tw">&nbsp;</span><span class="tw">b</span><span class="tw">o</span><span class="tw">l</span><span class="tw">e</span><span class="tw">h</span></div><div class="ad-line" data-fx="type" data-in="4.6"><span class="tw">✓</span><span class="tw">&nbsp;</span><span class="tw">L</span><span class="tw">u</span><span class="tw">l</span><span class="tw">u</span><span class="tw">s</span><span class="tw">&nbsp;</span><span class="tw">k</span><span class="tw">u</span><span class="tw">r</span><span class="tw">a</span><span class="tw">n</span><span class="tw">g</span><span class="tw">&nbsp;</span><span class="tw">2</span><span class="tw">4</span><span class="tw">&nbsp;</span><span class="tw">j</span><span class="tw">a</span><span class="tw">m</span></div><div class="ad-line" data-fx="type" data-in="6.85"><span class="tw">✓</span><span class="tw">&nbsp;</span><span class="tw">T</span><span class="tw">a</span><span class="tw">n</span><span class="tw">p</span><span class="tw">a</span><span class="tw">&nbsp;</span><span class="tw">s</span><span class="tw">l</span><span class="tw">i</span><span class="tw">p</span><span class="tw">&nbsp;</span><span class="tw">g</span><span class="tw">a</span><span class="tw">j</span><span class="tw">i</span></div><div class="ad-line" data-fx="type" data-in="9.4"><span class="tw">✓</span><span class="tw">&nbsp;</span><span class="tw">J</span><span class="tw">u</span><span class="tw">m</span><span class="tw">l</span><span class="tw">a</span><span class="tw">h</span><span class="tw">&nbsp;</span><span class="tw">s</span><span class="tw">a</span><span class="tw">n</span><span class="tw">g</span><span class="tw">a</span><span class="tw">t</span><span class="tw">&nbsp;</span><span class="tw">b</span><span class="tw">e</span><span class="tw">s</span><span class="tw">a</span><span class="tw">r</span></div></div></div></div></div>
+<div id="hk-truth" class="clip card zone-top " data-start="11.45" data-duration="4.48" style=""><div class="card-in"><div class="paper paper-dark quote hk-c"><div class="kicker k-amber" data-fx="wipe" data-in="0"><span class="kdot"></span>JABATAN SIASATAN JENAYAH KOMERSIAL · PDRM</div><div class="q q-light" data-fx="rise" data-in="0.1" style="font-size:54px">Mana-mana pinjaman yang meminta <span class="hl-amber">bayaran pendahuluan</span> adalah…</div><div class="stamp st-red" data-fx="stamp" data-in="3.67" data-rot="-8" style="font-size:96px;margin-left:0px;margin-top:0px">PENIPUAN</div></div></div></div>
 </div>
 <script>
 (function(){
@@ -236,7 +245,7 @@ root.querySelectorAll(".card").forEach((card) => {
   const s = num(card.dataset.start, 0);
   const e = s + num(card.dataset.duration, 1);
   const inner = card.querySelector(".card-in");
-  const fromY = card.classList.contains("zone-bottom") ? 26 : card.classList.contains("zone-full") ? 0 : -26;
+  const fromY = card.classList.contains("zone-bottom") ? -26 : card.classList.contains("zone-full") ? 0 : 30;
   tl.fromTo(inner, { opacity: 0, y: fromY }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, s);
   if (e - s > 0.9) tl.to(inner, { opacity: 0, y: fromY * 0.6, duration: 0.3, ease: "power2.in" }, e - 0.32);
   tl.set(inner, { visibility: "hidden" }, e - 0.01);

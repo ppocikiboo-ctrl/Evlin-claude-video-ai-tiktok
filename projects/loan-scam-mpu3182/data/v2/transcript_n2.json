@@ -1,0 +1,3159 @@
+[
+ {
+  "start": 0.0,
+  "end": 8.74,
+  "text": " Dan pada tahun 2025 pula, penipuan akibat dalam talian melebihi aras 3 bilion ke atas.",
+  "words": [
+   {
+    "s": 0.0,
+    "e": 0.54,
+    "w": " Dan"
+   },
+   {
+    "s": 0.54,
+    "e": 0.84,
+    "w": " pada"
+   },
+   {
+    "s": 0.84,
+    "e": 1.24,
+    "w": " tahun"
+   },
+   {
+    "s": 1.24,
+    "e": 1.98,
+    "w": " 2025"
+   },
+   {
+    "s": 1.98,
+    "e": 2.7,
+    "w": " pula,"
+   },
+   {
+    "s": 3.16,
+    "e": 3.68,
+    "w": " penipuan"
+   },
+   {
+    "s": 3.68,
+    "e": 4.22,
+    "w": " akibat"
+   },
+   {
+    "s": 4.22,
+    "e": 4.56,
+    "w": " dalam"
+   },
+   {
+    "s": 4.56,
+    "e": 5.18,
+    "w": " talian"
+   },
+   {
+    "s": 5.18,
+    "e": 6.24,
+    "w": " melebihi"
+   },
+   {
+    "s": 6.24,
+    "e": 7.12,
+    "w": " aras"
+   },
+   {
+    "s": 7.12,
+    "e": 7.62,
+    "w": " 3"
+   },
+   {
+    "s": 7.62,
+    "e": 8.1,
+    "w": " bilion"
+   },
+   {
+    "s": 8.1,
+    "e": 8.3,
+    "w": " ke"
+   },
+   {
+    "s": 8.3,
+    "e": 8.74,
+    "w": " atas."
+   }
+  ]
+ },
+ {
+  "start": 9.1,
+  "end": 16.88,
+  "text": " Salah satu jenis penipuan yang masih aktif ialah penipuan pinjaman yang tidak wujud dalam talian.",
+  "words": [
+   {
+    "s": 9.1,
+    "e": 9.74,
+    "w": " Salah"
+   },
+   {
+    "s": 9.74,
+    "e": 10.0,
+    "w": " satu"
+   },
+   {
+    "s": 10.0,
+    "e": 10.34,
+    "w": " jenis"
+   },
+   {
+    "s": 10.34,
+    "e": 10.96,
+    "w": " penipuan"
+   },
+   {
+    "s": 10.96,
+    "e": 11.14,
+    "w": " yang"
+   },
+   {
+    "s": 11.14,
+    "e": 11.5,
+    "w": " masih"
+   },
+   {
+    "s": 11.5,
+    "e": 11.98,
+    "w": " aktif"
+   },
+   {
+    "s": 11.98,
+    "e": 12.34,
+    "w": " ialah"
+   },
+   {
+    "s": 12.34,
+    "e": 13.58,
+    "w": " penipuan"
+   },
+   {
+    "s": 13.58,
+    "e": 14.96,
+    "w": " pinjaman"
+   },
+   {
+    "s": 14.96,
+    "e": 15.26,
+    "w": " yang"
+   },
+   {
+    "s": 15.26,
+    "e": 15.56,
+    "w": " tidak"
+   },
+   {
+    "s": 15.56,
+    "e": 16.02,
+    "w": " wujud"
+   },
+   {
+    "s": 16.02,
+    "e": 16.38,
+    "w": " dalam"
+   },
+   {
+    "s": 16.38,
+    "e": 16.88,
+    "w": " talian."
+   }
+  ]
+ },
+ {
+  "start": 17.16,
+  "end": 24.26,
+  "text": " Dalam kes ini, mangsa dijerat dengan iklan pinjaman mudah lulus dan cepat.",
+  "words": [
+   {
+    "s": 17.16,
+    "e": 17.84,
+    "w": " Dalam"
+   },
+   {
+    "s": 17.84,
+    "e": 18.04,
+    "w": " kes"
+   },
+   {
+    "s": 18.04,
+    "e": 18.54,
+    "w": " ini,"
+   },
+   {
+    "s": 19.14,
+    "e": 19.64,
+    "w": " mangsa"
+   },
+   {
+    "s": 19.64,
+    "e": 20.66,
+    "w": " dijerat"
+   },
+   {
+    "s": 20.66,
+    "e": 21.16,
+    "w": " dengan"
+   },
+   {
+    "s": 21.16,
+    "e": 21.9,
+    "w": " iklan"
+   },
+   {
+    "s": 21.9,
+    "e": 22.72,
+    "w": " pinjaman"
+   },
+   {
+    "s": 22.72,
+    "e": 23.08,
+    "w": " mudah"
+   },
+   {
+    "s": 23.08,
+    "e": 23.46,
+    "w": " lulus"
+   },
+   {
+    "s": 23.46,
+    "e": 23.72,
+    "w": " dan"
+   },
+   {
+    "s": 23.72,
+    "e": 24.26,
+    "w": " cepat."
+   }
+  ]
+ },
+ {
+  "start": 24.26,
+  "end": 32.98,
+  "text": " tanpa cek sitos, blacklist pun boleh, proses tidak sampai 24 jam,",
+  "words": [
+   {
+    "s": 24.26,
+    "e": 25.7,
+    "w": " tanpa"
+   },
+   {
+    "s": 25.7,
+    "e": 26.02,
+    "w": " cek"
+   },
+   {
+    "s": 26.02,
+    "e": 26.7,
+    "w": " sitos,"
+   },
+   {
+    "s": 28.2,
+    "e": 28.98,
+    "w": " blacklist"
+   },
+   {
+    "s": 28.98,
+    "e": 29.2,
+    "w": " pun"
+   },
+   {
+    "s": 29.2,
+    "e": 29.64,
+    "w": " boleh,"
+   },
+   {
+    "s": 30.12,
+    "e": 31.12,
+    "w": " proses"
+   },
+   {
+    "s": 31.12,
+    "e": 31.4,
+    "w": " tidak"
+   },
+   {
+    "s": 31.4,
+    "e": 31.86,
+    "w": " sampai"
+   },
+   {
+    "s": 31.86,
+    "e": 32.44,
+    "w": " 24"
+   },
+   {
+    "s": 32.44,
+    "e": 32.98,
+    "w": " jam,"
+   }
+  ]
+ },
+ {
+  "start": 34.74,
+  "end": 39.82,
+  "text": " tanpa slip gaji pun boleh loan dengan jumlah yang sangat besar,",
+  "words": [
+   {
+    "s": 34.629999999999995,
+    "e": 35.12,
+    "w": " tanpa"
+   },
+   {
+    "s": 35.12,
+    "e": 35.4,
+    "w": " slip"
+   },
+   {
+    "s": 35.4,
+    "e": 35.82,
+    "w": " gaji"
+   },
+   {
+    "s": 35.82,
+    "e": 36.04,
+    "w": " pun"
+   },
+   {
+    "s": 36.04,
+    "e": 36.38,
+    "w": " boleh"
+   },
+   {
+    "s": 36.38,
+    "e": 36.74,
+    "w": " loan"
+   },
+   {
+    "s": 36.74,
+    "e": 37.56,
+    "w": " dengan"
+   },
+   {
+    "s": 37.56,
+    "e": 38.14,
+    "w": " jumlah"
+   },
+   {
+    "s": 38.14,
+    "e": 38.4,
+    "w": " yang"
+   },
+   {
+    "s": 38.4,
+    "e": 38.84,
+    "w": " sangat"
+   },
+   {
+    "s": 38.84,
+    "e": 39.82,
+    "w": " besar,"
+   }
+  ]
+ },
+ {
+  "start": 40.06,
+  "end": 47.92,
+  "text": " dan akhirnya mereka akan terjerat sehingga memakan diri mereka jatuh ke dalam skem loan ini.",
+  "words": [
+   {
+    "s": 40.06,
+    "e": 40.8,
+    "w": " dan"
+   },
+   {
+    "s": 40.8,
+    "e": 41.42,
+    "w": " akhirnya"
+   },
+   {
+    "s": 41.42,
+    "e": 42.06,
+    "w": " mereka"
+   },
+   {
+    "s": 42.06,
+    "e": 42.42,
+    "w": " akan"
+   },
+   {
+    "s": 42.42,
+    "e": 43.1,
+    "w": " terjerat"
+   },
+   {
+    "s": 43.1,
+    "e": 43.82,
+    "w": " sehingga"
+   },
+   {
+    "s": 43.82,
+    "e": 44.2,
+    "w": " memakan"
+   },
+   {
+    "s": 44.2,
+    "e": 44.54,
+    "w": " diri"
+   },
+   {
+    "s": 44.54,
+    "e": 45.06,
+    "w": " mereka"
+   },
+   {
+    "s": 45.06,
+    "e": 45.94,
+    "w": " jatuh"
+   },
+   {
+    "s": 45.94,
+    "e": 46.12,
+    "w": " ke"
+   },
+   {
+    "s": 46.12,
+    "e": 46.54,
+    "w": " dalam"
+   },
+   {
+    "s": 46.54,
+    "e": 47.38,
+    "w": " skem"
+   },
+   {
+    "s": 47.38,
+    "e": 47.56,
+    "w": " loan"
+   },
+   {
+    "s": 47.56,
+    "e": 47.92,
+    "w": " ini."
+   }
+  ]
+ },
+ {
+  "start": 47.92,
+  "end": 54.34,
+  "text": " Maksah meminjam memerlukan uang, tetapi kemudian mangsa yang akan kehilangan uang mereka.",
+  "words": [
+   {
+    "s": 47.92,
+    "e": 48.92,
+    "w": " Maksah"
+   },
+   {
+    "s": 48.92,
+    "e": 49.66,
+    "w": " meminjam"
+   },
+   {
+    "s": 49.66,
+    "e": 50.28,
+    "w": " memerlukan"
+   },
+   {
+    "s": 50.28,
+    "e": 50.72,
+    "w": " uang,"
+   },
+   {
+    "s": 50.9,
+    "e": 51.2,
+    "w": " tetapi"
+   },
+   {
+    "s": 51.2,
+    "e": 51.78,
+    "w": " kemudian"
+   },
+   {
+    "s": 51.78,
+    "e": 52.6,
+    "w": " mangsa"
+   },
+   {
+    "s": 52.6,
+    "e": 52.84,
+    "w": " yang"
+   },
+   {
+    "s": 52.84,
+    "e": 53.08,
+    "w": " akan"
+   },
+   {
+    "s": 53.08,
+    "e": 53.62,
+    "w": " kehilangan"
+   },
+   {
+    "s": 53.62,
+    "e": 53.88,
+    "w": " uang"
+   },
+   {
+    "s": 53.88,
+    "e": 54.34,
+    "w": " mereka."
+   }
+  ]
+ },
+ {
+  "start": 55.300000000000004,
+  "end": 59.08,
+  "text": " Oke, dimanakah sindiket ini memasang jerat?",
+  "words": [
+   {
+    "s": 55.02,
+    "e": 55.52,
+    "w": " Oke,"
+   },
+   {
+    "s": 56.22,
+    "e": 56.9,
+    "w": " dimanakah"
+   },
+   {
+    "s": 56.9,
+    "e": 57.52,
+    "w": " sindiket"
+   },
+   {
+    "s": 57.52,
+    "e": 57.9,
+    "w": " ini"
+   },
+   {
+    "s": 57.9,
+    "e": 58.64,
+    "w": " memasang"
+   },
+   {
+    "s": 58.64,
+    "e": 59.08,
+    "w": " jerat?"
+   }
+  ]
+ },
+ {
+  "start": 59.5,
+  "end": 66.34,
+  "text": " Banyakannya bermula dengan iklan berbayar di Facebook, Instagram, ataupun TikTok.",
+  "words": [
+   {
+    "s": 59.5,
+    "e": 60.22,
+    "w": " Banyakannya"
+   },
+   {
+    "s": 60.22,
+    "e": 61.48,
+    "w": " bermula"
+   },
+   {
+    "s": 61.48,
+    "e": 61.9,
+    "w": " dengan"
+   },
+   {
+    "s": 61.9,
+    "e": 62.52,
+    "w": " iklan"
+   },
+   {
+    "s": 62.52,
+    "e": 63.16,
+    "w": " berbayar"
+   },
+   {
+    "s": 63.16,
+    "e": 63.34,
+    "w": " di"
+   },
+   {
+    "s": 63.34,
+    "e": 63.86,
+    "w": " Facebook,"
+   },
+   {
+    "s": 64.26,
+    "e": 64.96,
+    "w": " Instagram,"
+   },
+   {
+    "s": 65.28,
+    "e": 65.92,
+    "w": " ataupun"
+   },
+   {
+    "s": 65.92,
+    "e": 66.34,
+    "w": " TikTok."
+   }
+  ]
+ },
+ {
+  "start": 66.72,
+  "end": 73.38,
+  "text": " Aplikasi ini biasanya adalah aplikasi-aplikasi yang biasa kita gunakan dalam kehidupan seharian kita.",
+  "words": [
+   {
+    "s": 66.72,
+    "e": 67.46,
+    "w": " Aplikasi"
+   },
+   {
+    "s": 67.46,
+    "e": 67.7,
+    "w": " ini"
+   },
+   {
+    "s": 67.7,
+    "e": 68.28,
+    "w": " biasanya"
+   },
+   {
+    "s": 68.28,
+    "e": 68.62,
+    "w": " adalah"
+   },
+   {
+    "s": 68.62,
+    "e": 69.38,
+    "w": " aplikasi"
+   },
+   {
+    "s": 69.38,
+    "e": 70.04,
+    "w": "-aplikasi"
+   },
+   {
+    "s": 70.04,
+    "e": 70.24,
+    "w": " yang"
+   },
+   {
+    "s": 70.24,
+    "e": 70.64,
+    "w": " biasa"
+   },
+   {
+    "s": 70.64,
+    "e": 70.92,
+    "w": " kita"
+   },
+   {
+    "s": 70.92,
+    "e": 71.4,
+    "w": " gunakan"
+   },
+   {
+    "s": 71.4,
+    "e": 71.74,
+    "w": " dalam"
+   },
+   {
+    "s": 71.74,
+    "e": 72.5,
+    "w": " kehidupan"
+   },
+   {
+    "s": 72.5,
+    "e": 73.02,
+    "w": " seharian"
+   },
+   {
+    "s": 73.02,
+    "e": 73.38,
+    "w": " kita."
+   }
+  ]
+ },
+ {
+  "start": 74.42,
+  "end": 82.48,
+  "text": " Iklan-iklan skema seperti itu, biasanya kita akan nampak mereka akan menggunakan logo seperti bank",
+  "words": [
+   {
+    "s": 74.42,
+    "e": 75.28,
+    "w": " Iklan"
+   },
+   {
+    "s": 75.28,
+    "e": 75.66,
+    "w": "-iklan"
+   },
+   {
+    "s": 75.66,
+    "e": 76.08,
+    "w": " skema"
+   },
+   {
+    "s": 76.08,
+    "e": 76.52,
+    "w": " seperti"
+   },
+   {
+    "s": 76.52,
+    "e": 76.9,
+    "w": " itu,"
+   },
+   {
+    "s": 77.16,
+    "e": 77.56,
+    "w": " biasanya"
+   },
+   {
+    "s": 77.56,
+    "e": 77.8,
+    "w": " kita"
+   },
+   {
+    "s": 77.8,
+    "e": 78.04,
+    "w": " akan"
+   },
+   {
+    "s": 78.04,
+    "e": 78.48,
+    "w": " nampak"
+   },
+   {
+    "s": 78.48,
+    "e": 78.88,
+    "w": " mereka"
+   },
+   {
+    "s": 78.88,
+    "e": 79.2,
+    "w": " akan"
+   },
+   {
+    "s": 79.2,
+    "e": 80.1,
+    "w": " menggunakan"
+   },
+   {
+    "s": 80.1,
+    "e": 80.54,
+    "w": " logo"
+   },
+   {
+    "s": 80.54,
+    "e": 81.24,
+    "w": " seperti"
+   },
+   {
+    "s": 81.24,
+    "e": 82.48,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 82.48,
+  "end": 89.22,
+  "text": " atau nama syarikat yang kelihatan sah seperti syarikat di bawah KPKT,",
+  "words": [
+   {
+    "s": 82.48,
+    "e": 83.88,
+    "w": " atau"
+   },
+   {
+    "s": 83.88,
+    "e": 84.28,
+    "w": " nama"
+   },
+   {
+    "s": 84.28,
+    "e": 84.8,
+    "w": " syarikat"
+   },
+   {
+    "s": 84.8,
+    "e": 85.04,
+    "w": " yang"
+   },
+   {
+    "s": 85.04,
+    "e": 85.74,
+    "w": " kelihatan"
+   },
+   {
+    "s": 85.74,
+    "e": 86.02,
+    "w": " sah"
+   },
+   {
+    "s": 86.02,
+    "e": 86.58,
+    "w": " seperti"
+   },
+   {
+    "s": 86.58,
+    "e": 87.36,
+    "w": " syarikat"
+   },
+   {
+    "s": 87.36,
+    "e": 87.96,
+    "w": " di"
+   },
+   {
+    "s": 87.96,
+    "e": 88.3,
+    "w": " bawah"
+   },
+   {
+    "s": 88.3,
+    "e": 89.22,
+    "w": " KPKT,"
+   }
+  ]
+ },
+ {
+  "start": 89.22,
+  "end": 104.0,
+  "text": " yaitu pinjaman kredit komuniti, ion kredit, ataupun mana-mana lagi agensi di bawah KPKT lah selain daripada bank",
+  "words": [
+   {
+    "s": 89.22,
+    "e": 90.62,
+    "w": " yaitu"
+   },
+   {
+    "s": 90.62,
+    "e": 91.62,
+    "w": " pinjaman"
+   },
+   {
+    "s": 91.62,
+    "e": 93.7,
+    "w": " kredit"
+   },
+   {
+    "s": 93.7,
+    "e": 94.5,
+    "w": " komuniti,"
+   },
+   {
+    "s": 95.84,
+    "e": 96.7,
+    "w": " ion"
+   },
+   {
+    "s": 96.7,
+    "e": 97.22,
+    "w": " kredit,"
+   },
+   {
+    "s": 97.6,
+    "e": 98.48,
+    "w": " ataupun"
+   },
+   {
+    "s": 98.48,
+    "e": 98.72,
+    "w": " mana"
+   },
+   {
+    "s": 98.72,
+    "e": 98.96,
+    "w": "-mana"
+   },
+   {
+    "s": 98.96,
+    "e": 99.3,
+    "w": " lagi"
+   },
+   {
+    "s": 99.3,
+    "e": 99.94,
+    "w": " agensi"
+   },
+   {
+    "s": 99.94,
+    "e": 100.14,
+    "w": " di"
+   },
+   {
+    "s": 100.14,
+    "e": 101.72,
+    "w": " bawah"
+   },
+   {
+    "s": 101.72,
+    "e": 102.62,
+    "w": " KPKT"
+   },
+   {
+    "s": 102.62,
+    "e": 102.78,
+    "w": " lah"
+   },
+   {
+    "s": 102.78,
+    "e": 103.2,
+    "w": " selain"
+   },
+   {
+    "s": 103.2,
+    "e": 103.66,
+    "w": " daripada"
+   },
+   {
+    "s": 103.66,
+    "e": 104.0,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 104.0,
+  "end": 111.96,
+  "text": " ataupun koperasi-koperasi yang kelihatan seperti sah dan murah dipercaya.",
+  "words": [
+   {
+    "s": 104.0,
+    "e": 105.76,
+    "w": " ataupun"
+   },
+   {
+    "s": 105.76,
+    "e": 106.44,
+    "w": " koperasi"
+   },
+   {
+    "s": 106.44,
+    "e": 107.24,
+    "w": "-koperasi"
+   },
+   {
+    "s": 107.24,
+    "e": 107.84,
+    "w": " yang"
+   },
+   {
+    "s": 107.84,
+    "e": 108.54,
+    "w": " kelihatan"
+   },
+   {
+    "s": 108.54,
+    "e": 109.0,
+    "w": " seperti"
+   },
+   {
+    "s": 109.0,
+    "e": 110.0,
+    "w": " sah"
+   },
+   {
+    "s": 110.0,
+    "e": 110.38,
+    "w": " dan"
+   },
+   {
+    "s": 110.38,
+    "e": 111.24,
+    "w": " murah"
+   },
+   {
+    "s": 111.24,
+    "e": 111.96,
+    "w": " dipercaya."
+   }
+  ]
+ },
+ {
+  "start": 111.96,
+  "end": 122.42,
+  "text": " Dan biasanya mereka mesti akan menggunakan iklan dalam tajuk lulus dalam tempoh yang cepat kurang daripada 24 jam",
+  "words": [
+   {
+    "s": 111.96,
+    "e": 112.82,
+    "w": " Dan"
+   },
+   {
+    "s": 112.82,
+    "e": 113.26,
+    "w": " biasanya"
+   },
+   {
+    "s": 113.26,
+    "e": 113.58,
+    "w": " mereka"
+   },
+   {
+    "s": 113.58,
+    "e": 113.98,
+    "w": " mesti"
+   },
+   {
+    "s": 113.98,
+    "e": 114.26,
+    "w": " akan"
+   },
+   {
+    "s": 114.26,
+    "e": 115.12,
+    "w": " menggunakan"
+   },
+   {
+    "s": 115.12,
+    "e": 116.56,
+    "w": " iklan"
+   },
+   {
+    "s": 116.56,
+    "e": 116.86,
+    "w": " dalam"
+   },
+   {
+    "s": 116.86,
+    "e": 117.46,
+    "w": " tajuk"
+   },
+   {
+    "s": 117.46,
+    "e": 118.46,
+    "w": " lulus"
+   },
+   {
+    "s": 118.46,
+    "e": 118.9,
+    "w": " dalam"
+   },
+   {
+    "s": 118.9,
+    "e": 119.4,
+    "w": " tempoh"
+   },
+   {
+    "s": 119.4,
+    "e": 119.6,
+    "w": " yang"
+   },
+   {
+    "s": 119.6,
+    "e": 120.08,
+    "w": " cepat"
+   },
+   {
+    "s": 120.08,
+    "e": 120.5,
+    "w": " kurang"
+   },
+   {
+    "s": 120.5,
+    "e": 120.96,
+    "w": " daripada"
+   },
+   {
+    "s": 120.96,
+    "e": 121.78,
+    "w": " 24"
+   },
+   {
+    "s": 121.78,
+    "e": 122.42,
+    "w": " jam"
+   }
+  ]
+ },
+ {
+  "start": 122.42,
+  "end": 128.76,
+  "text": " ataupun tanpa semakan sitos, ataupun yang ada blacklist pun boleh lulus.",
+  "words": [
+   {
+    "s": 122.42,
+    "e": 123.38,
+    "w": " ataupun"
+   },
+   {
+    "s": 123.38,
+    "e": 124.04,
+    "w": " tanpa"
+   },
+   {
+    "s": 124.04,
+    "e": 124.5,
+    "w": " semakan"
+   },
+   {
+    "s": 124.5,
+    "e": 125.3,
+    "w": " sitos,"
+   },
+   {
+    "s": 125.54,
+    "e": 126.38,
+    "w": " ataupun"
+   },
+   {
+    "s": 126.38,
+    "e": 126.84,
+    "w": " yang"
+   },
+   {
+    "s": 126.84,
+    "e": 127.08,
+    "w": " ada"
+   },
+   {
+    "s": 127.08,
+    "e": 127.7,
+    "w": " blacklist"
+   },
+   {
+    "s": 127.7,
+    "e": 127.96,
+    "w": " pun"
+   },
+   {
+    "s": 127.96,
+    "e": 128.26,
+    "w": " boleh"
+   },
+   {
+    "s": 128.26,
+    "e": 128.76,
+    "w": " lulus."
+   }
+  ]
+ },
+ {
+  "start": 128.96,
+  "end": 135.42,
+  "text": " Dan apabila mangsa klik link tersebut, mereka akan terus dibawa ke dalam aplikasi WhatsApp",
+  "words": [
+   {
+    "s": 128.96,
+    "e": 129.56,
+    "w": " Dan"
+   },
+   {
+    "s": 129.56,
+    "e": 130.12,
+    "w": " apabila"
+   },
+   {
+    "s": 130.12,
+    "e": 130.54,
+    "w": " mangsa"
+   },
+   {
+    "s": 130.54,
+    "e": 130.98,
+    "w": " klik"
+   },
+   {
+    "s": 130.98,
+    "e": 131.2,
+    "w": " link"
+   },
+   {
+    "s": 131.2,
+    "e": 131.9,
+    "w": " tersebut,"
+   },
+   {
+    "s": 132.14,
+    "e": 132.54,
+    "w": " mereka"
+   },
+   {
+    "s": 132.54,
+    "e": 132.84,
+    "w": " akan"
+   },
+   {
+    "s": 132.84,
+    "e": 133.24,
+    "w": " terus"
+   },
+   {
+    "s": 133.24,
+    "e": 133.82,
+    "w": " dibawa"
+   },
+   {
+    "s": 133.82,
+    "e": 133.98,
+    "w": " ke"
+   },
+   {
+    "s": 133.98,
+    "e": 134.26,
+    "w": " dalam"
+   },
+   {
+    "s": 134.26,
+    "e": 135.0,
+    "w": " aplikasi"
+   },
+   {
+    "s": 135.0,
+    "e": 135.42,
+    "w": " WhatsApp"
+   }
+  ]
+ },
+ {
+  "start": 135.42,
+  "end": 138.64,
+  "text": " untuk berurusan dengan pegawai tersebut.",
+  "words": [
+   {
+    "s": 135.42,
+    "e": 136.26,
+    "w": " untuk"
+   },
+   {
+    "s": 136.26,
+    "e": 137.04,
+    "w": " berurusan"
+   },
+   {
+    "s": 137.04,
+    "e": 137.32,
+    "w": " dengan"
+   },
+   {
+    "s": 137.32,
+    "e": 138.08,
+    "w": " pegawai"
+   },
+   {
+    "s": 138.08,
+    "e": 138.64,
+    "w": " tersebut."
+   }
+  ]
+ },
+ {
+  "start": 138.64,
+  "end": 146.74,
+  "text": " Dalam sesetengah case lagi, mangsa biasanya diminta untuk memuat turun satu pautan atau aplikasi",
+  "words": [
+   {
+    "s": 138.64,
+    "e": 139.76,
+    "w": " Dalam"
+   },
+   {
+    "s": 139.76,
+    "e": 140.32,
+    "w": " sesetengah"
+   },
+   {
+    "s": 140.32,
+    "e": 140.58,
+    "w": " case"
+   },
+   {
+    "s": 140.58,
+    "e": 141.04,
+    "w": " lagi,"
+   },
+   {
+    "s": 141.62,
+    "e": 141.96,
+    "w": " mangsa"
+   },
+   {
+    "s": 141.96,
+    "e": 142.72,
+    "w": " biasanya"
+   },
+   {
+    "s": 142.72,
+    "e": 143.68,
+    "w": " diminta"
+   },
+   {
+    "s": 143.68,
+    "e": 143.96,
+    "w": " untuk"
+   },
+   {
+    "s": 143.96,
+    "e": 144.42,
+    "w": " memuat"
+   },
+   {
+    "s": 144.42,
+    "e": 144.7,
+    "w": " turun"
+   },
+   {
+    "s": 144.7,
+    "e": 145.06,
+    "w": " satu"
+   },
+   {
+    "s": 145.06,
+    "e": 145.62,
+    "w": " pautan"
+   },
+   {
+    "s": 145.62,
+    "e": 145.86,
+    "w": " atau"
+   },
+   {
+    "s": 145.86,
+    "e": 146.74,
+    "w": " aplikasi"
+   }
+  ]
+ },
+ {
+  "start": 146.74,
+  "end": 156.04,
+  "text": " yang dapat memberi akses kepada data telepon mereka, termasuk gambar mereka dan juga kenalan-kenalan yang ada di dalam telepon.",
+  "words": [
+   {
+    "s": 146.74,
+    "e": 147.38,
+    "w": " yang"
+   },
+   {
+    "s": 147.38,
+    "e": 147.7,
+    "w": " dapat"
+   },
+   {
+    "s": 147.7,
+    "e": 148.24,
+    "w": " memberi"
+   },
+   {
+    "s": 148.24,
+    "e": 148.74,
+    "w": " akses"
+   },
+   {
+    "s": 148.74,
+    "e": 149.08,
+    "w": " kepada"
+   },
+   {
+    "s": 149.08,
+    "e": 149.4,
+    "w": " data"
+   },
+   {
+    "s": 149.4,
+    "e": 149.9,
+    "w": " telepon"
+   },
+   {
+    "s": 149.9,
+    "e": 150.32,
+    "w": " mereka,"
+   },
+   {
+    "s": 150.56,
+    "e": 151.56,
+    "w": " termasuk"
+   },
+   {
+    "s": 151.56,
+    "e": 152.32,
+    "w": " gambar"
+   },
+   {
+    "s": 152.32,
+    "e": 152.82,
+    "w": " mereka"
+   },
+   {
+    "s": 152.82,
+    "e": 153.12,
+    "w": " dan"
+   },
+   {
+    "s": 153.12,
+    "e": 153.42,
+    "w": " juga"
+   },
+   {
+    "s": 153.42,
+    "e": 153.92,
+    "w": " kenalan"
+   },
+   {
+    "s": 153.92,
+    "e": 154.44,
+    "w": "-kenalan"
+   },
+   {
+    "s": 154.44,
+    "e": 154.68,
+    "w": " yang"
+   },
+   {
+    "s": 154.68,
+    "e": 154.9,
+    "w": " ada"
+   },
+   {
+    "s": 154.9,
+    "e": 155.04,
+    "w": " di"
+   },
+   {
+    "s": 155.04,
+    "e": 155.32,
+    "w": " dalam"
+   },
+   {
+    "s": 155.32,
+    "e": 156.04,
+    "w": " telepon."
+   }
+  ]
+ },
+ {
+  "start": 156.24,
+  "end": 159.38,
+  "text": " Nah, semua itu, bagaimanakah mangsa ditipu?",
+  "words": [
+   {
+    "s": 156.24,
+    "e": 156.52,
+    "w": " Nah,"
+   },
+   {
+    "s": 156.8,
+    "e": 156.8,
+    "w": " semua"
+   },
+   {
+    "s": 156.8,
+    "e": 157.2,
+    "w": " itu,"
+   },
+   {
+    "s": 157.56,
+    "e": 158.44,
+    "w": " bagaimanakah"
+   },
+   {
+    "s": 158.44,
+    "e": 158.82,
+    "w": " mangsa"
+   },
+   {
+    "s": 158.82,
+    "e": 159.38,
+    "w": " ditipu?"
+   }
+  ]
+ },
+ {
+  "start": 160.44,
+  "end": 164.12,
+  "text": " Corak penipuannya hampir sama dalam setiap case.",
+  "words": [
+   {
+    "s": 160.44,
+    "e": 161.34,
+    "w": " Corak"
+   },
+   {
+    "s": 161.34,
+    "e": 162.04,
+    "w": " penipuannya"
+   },
+   {
+    "s": 162.04,
+    "e": 162.52,
+    "w": " hampir"
+   },
+   {
+    "s": 162.52,
+    "e": 162.9,
+    "w": " sama"
+   },
+   {
+    "s": 162.9,
+    "e": 163.22,
+    "w": " dalam"
+   },
+   {
+    "s": 163.22,
+    "e": 163.74,
+    "w": " setiap"
+   },
+   {
+    "s": 163.74,
+    "e": 164.12,
+    "w": " case."
+   }
+  ]
+ },
+ {
+  "start": 164.12,
+  "end": 170.16,
+  "text": " Pertama sekali, mangsa diminta untuk menghantar salinan kad pengenalan mereka",
+  "words": [
+   {
+    "s": 164.12,
+    "e": 165.36,
+    "w": " Pertama"
+   },
+   {
+    "s": 165.36,
+    "e": 165.82,
+    "w": " sekali,"
+   },
+   {
+    "s": 166.14,
+    "e": 166.64,
+    "w": " mangsa"
+   },
+   {
+    "s": 166.64,
+    "e": 167.14,
+    "w": " diminta"
+   },
+   {
+    "s": 167.14,
+    "e": 167.48,
+    "w": " untuk"
+   },
+   {
+    "s": 167.48,
+    "e": 168.26,
+    "w": " menghantar"
+   },
+   {
+    "s": 168.26,
+    "e": 168.86,
+    "w": " salinan"
+   },
+   {
+    "s": 168.86,
+    "e": 169.0,
+    "w": " kad"
+   },
+   {
+    "s": 169.0,
+    "e": 169.62,
+    "w": " pengenalan"
+   },
+   {
+    "s": 169.62,
+    "e": 170.16,
+    "w": " mereka"
+   }
+  ]
+ },
+ {
+  "start": 170.16,
+  "end": 173.64,
+  "text": " dan berserta dengan maklumat diri mereka.",
+  "words": [
+   {
+    "s": 170.16,
+    "e": 171.14,
+    "w": " dan"
+   },
+   {
+    "s": 171.14,
+    "e": 171.82,
+    "w": " berserta"
+   },
+   {
+    "s": 171.82,
+    "e": 172.1,
+    "w": " dengan"
+   },
+   {
+    "s": 172.1,
+    "e": 172.82,
+    "w": " maklumat"
+   },
+   {
+    "s": 172.82,
+    "e": 173.2,
+    "w": " diri"
+   },
+   {
+    "s": 173.2,
+    "e": 173.64,
+    "w": " mereka."
+   }
+  ]
+ },
+ {
+  "start": 173.92,
+  "end": 177.12,
+  "text": " Yang kedua, dengan kadar yang sangat cepat,",
+  "words": [
+   {
+    "s": 173.92,
+    "e": 174.5,
+    "w": " Yang"
+   },
+   {
+    "s": 174.5,
+    "e": 175.06,
+    "w": " kedua,"
+   },
+   {
+    "s": 175.44,
+    "e": 175.72,
+    "w": " dengan"
+   },
+   {
+    "s": 175.72,
+    "e": 176.02,
+    "w": " kadar"
+   },
+   {
+    "s": 176.02,
+    "e": 176.24,
+    "w": " yang"
+   },
+   {
+    "s": 176.24,
+    "e": 176.54,
+    "w": " sangat"
+   },
+   {
+    "s": 176.54,
+    "e": 177.12,
+    "w": " cepat,"
+   }
+  ]
+ },
+ {
+  "start": 177.54,
+  "end": 180.98,
+  "text": " mangsa akan diberitahu bahwa pinjaman mereka sudah lulus.",
+  "words": [
+   {
+    "s": 177.54,
+    "e": 177.82,
+    "w": " mangsa"
+   },
+   {
+    "s": 177.82,
+    "e": 178.02,
+    "w": " akan"
+   },
+   {
+    "s": 178.02,
+    "e": 178.74,
+    "w": " diberitahu"
+   },
+   {
+    "s": 178.74,
+    "e": 179.18,
+    "w": " bahwa"
+   },
+   {
+    "s": 179.18,
+    "e": 179.68,
+    "w": " pinjaman"
+   },
+   {
+    "s": 179.68,
+    "e": 180.12,
+    "w": " mereka"
+   },
+   {
+    "s": 180.12,
+    "e": 180.46,
+    "w": " sudah"
+   },
+   {
+    "s": 180.46,
+    "e": 180.98,
+    "w": " lulus."
+   }
+  ]
+ },
+ {
+  "start": 181.46,
+  "end": 186.6,
+  "text": " Kadang-kadang, dalam setengah case untuk lebih meyakinkan mangsa,",
+  "words": [
+   {
+    "s": 181.46,
+    "e": 181.92,
+    "w": " Kadang"
+   },
+   {
+    "s": 181.92,
+    "e": 182.5,
+    "w": "-kadang,"
+   },
+   {
+    "s": 182.72,
+    "e": 183.26,
+    "w": " dalam"
+   },
+   {
+    "s": 183.26,
+    "e": 183.8,
+    "w": " setengah"
+   },
+   {
+    "s": 183.8,
+    "e": 184.38,
+    "w": " case"
+   },
+   {
+    "s": 184.38,
+    "e": 184.74,
+    "w": " untuk"
+   },
+   {
+    "s": 184.74,
+    "e": 185.4,
+    "w": " lebih"
+   },
+   {
+    "s": 185.4,
+    "e": 186.12,
+    "w": " meyakinkan"
+   },
+   {
+    "s": 186.12,
+    "e": 186.6,
+    "w": " mangsa,"
+   }
+  ]
+ },
+ {
+  "start": 187.22,
+  "end": 190.86,
+  "text": " mereka akan menghantar berserta dengan surat palsu.",
+  "words": [
+   {
+    "s": 187.22,
+    "e": 187.38,
+    "w": " mereka"
+   },
+   {
+    "s": 187.38,
+    "e": 187.84,
+    "w": " akan"
+   },
+   {
+    "s": 187.84,
+    "e": 188.86,
+    "w": " menghantar"
+   },
+   {
+    "s": 188.86,
+    "e": 189.48,
+    "w": " berserta"
+   },
+   {
+    "s": 189.48,
+    "e": 189.78,
+    "w": " dengan"
+   },
+   {
+    "s": 189.78,
+    "e": 190.32,
+    "w": " surat"
+   },
+   {
+    "s": 190.32,
+    "e": 190.86,
+    "w": " palsu."
+   }
+  ]
+ },
+ {
+  "start": 190.86,
+  "end": 196.14,
+  "text": " Dan yang ketiga, nilai yang selalunya terus menjurus kepada jerat,",
+  "words": [
+   {
+    "s": 190.86,
+    "e": 191.96,
+    "w": " Dan"
+   },
+   {
+    "s": 191.96,
+    "e": 192.18,
+    "w": " yang"
+   },
+   {
+    "s": 192.18,
+    "e": 192.62,
+    "w": " ketiga,"
+   },
+   {
+    "s": 192.82,
+    "e": 193.0,
+    "w": " nilai"
+   },
+   {
+    "s": 193.0,
+    "e": 193.18,
+    "w": " yang"
+   },
+   {
+    "s": 193.18,
+    "e": 193.7,
+    "w": " selalunya"
+   },
+   {
+    "s": 193.7,
+    "e": 194.04,
+    "w": " terus"
+   },
+   {
+    "s": 194.04,
+    "e": 195.18,
+    "w": " menjurus"
+   },
+   {
+    "s": 195.18,
+    "e": 195.62,
+    "w": " kepada"
+   },
+   {
+    "s": 195.62,
+    "e": 196.14,
+    "w": " jerat,"
+   }
+  ]
+ },
+ {
+  "start": 196.38,
+  "end": 198.32,
+  "text": " di mana penipuan terjadi.",
+  "words": [
+   {
+    "s": 196.38,
+    "e": 196.96,
+    "w": " di"
+   },
+   {
+    "s": 196.96,
+    "e": 197.14,
+    "w": " mana"
+   },
+   {
+    "s": 197.14,
+    "e": 197.74,
+    "w": " penipuan"
+   },
+   {
+    "s": 197.74,
+    "e": 198.32,
+    "w": " terjadi."
+   }
+  ]
+ },
+ {
+  "start": 198.7,
+  "end": 207.14,
+  "text": " Mangsa akan diminta untuk membuat pembaharan pendahuluan",
+  "words": [
+   {
+    "s": 198.7,
+    "e": 199.36,
+    "w": " Mangsa"
+   },
+   {
+    "s": 199.36,
+    "e": 199.66,
+    "w": " akan"
+   },
+   {
+    "s": 199.66,
+    "e": 200.18,
+    "w": " diminta"
+   },
+   {
+    "s": 200.18,
+    "e": 200.46,
+    "w": " untuk"
+   },
+   {
+    "s": 200.46,
+    "e": 200.96,
+    "w": " membuat"
+   },
+   {
+    "s": 200.96,
+    "e": 206.24,
+    "w": " pembaharan"
+   },
+   {
+    "s": 206.24,
+    "e": 207.14,
+    "w": " pendahuluan"
+   }
+  ]
+ },
+ {
+  "start": 207.14,
+  "end": 213.54,
+  "text": " seperti yuran guaman, yuran perjanjian, yuran sitos,",
+  "words": [
+   {
+    "s": 207.14,
+    "e": 208.08,
+    "w": " seperti"
+   },
+   {
+    "s": 208.08,
+    "e": 209.12,
+    "w": " yuran"
+   },
+   {
+    "s": 209.12,
+    "e": 209.66,
+    "w": " guaman,"
+   },
+   {
+    "s": 210.34,
+    "e": 210.6,
+    "w": " yuran"
+   },
+   {
+    "s": 210.6,
+    "e": 211.5,
+    "w": " perjanjian,"
+   },
+   {
+    "s": 212.08,
+    "e": 212.74,
+    "w": " yuran"
+   },
+   {
+    "s": 212.74,
+    "e": 213.54,
+    "w": " sitos,"
+   }
+  ]
+ },
+ {
+  "start": 215.06,
+  "end": 219.1,
+  "text": " insuran, dan juga yuran pengaktifan akaun.",
+  "words": [
+   {
+    "s": 215.06,
+    "e": 215.92,
+    "w": " insuran,"
+   },
+   {
+    "s": 216.26,
+    "e": 216.66,
+    "w": " dan"
+   },
+   {
+    "s": 216.66,
+    "e": 216.96,
+    "w": " juga"
+   },
+   {
+    "s": 216.96,
+    "e": 217.84,
+    "w": " yuran"
+   },
+   {
+    "s": 217.84,
+    "e": 218.6,
+    "w": " pengaktifan"
+   },
+   {
+    "s": 218.6,
+    "e": 219.1,
+    "w": " akaun."
+   }
+  ]
+ },
+ {
+  "start": 219.1,
+  "end": 224.04,
+  "text": " Menurut data polis, biasanya bayaran pendahuluan yang dikenakan",
+  "words": [
+   {
+    "s": 219.1,
+    "e": 220.32,
+    "w": " Menurut"
+   },
+   {
+    "s": 220.32,
+    "e": 220.58,
+    "w": " data"
+   },
+   {
+    "s": 220.58,
+    "e": 221.16,
+    "w": " polis,"
+   },
+   {
+    "s": 221.32,
+    "e": 222.08,
+    "w": " biasanya"
+   },
+   {
+    "s": 222.08,
+    "e": 222.5,
+    "w": " bayaran"
+   },
+   {
+    "s": 222.5,
+    "e": 223.2,
+    "w": " pendahuluan"
+   },
+   {
+    "s": 223.2,
+    "e": 223.36,
+    "w": " yang"
+   },
+   {
+    "s": 223.36,
+    "e": 224.04,
+    "w": " dikenakan"
+   }
+  ]
+ },
+ {
+  "start": 224.04,
+  "end": 226.88,
+  "text": " dari 150 hingga ke 200.",
+  "words": [
+   {
+    "s": 224.04,
+    "e": 224.78,
+    "w": " dari"
+   },
+   {
+    "s": 224.78,
+    "e": 225.44,
+    "w": " 150"
+   },
+   {
+    "s": 225.44,
+    "e": 226.24,
+    "w": " hingga"
+   },
+   {
+    "s": 226.24,
+    "e": 226.44,
+    "w": " ke"
+   },
+   {
+    "s": 226.44,
+    "e": 226.88,
+    "w": " 200."
+   }
+  ]
+ },
+ {
+  "start": 227.3,
+  "end": 232.44,
+  "text": " Jadi, boleh menjurus kepada peningkatan hingga ribuan ringgit",
+  "words": [
+   {
+    "s": 227.3,
+    "e": 227.86,
+    "w": " Jadi,"
+   },
+   {
+    "s": 228.36,
+    "e": 228.92,
+    "w": " boleh"
+   },
+   {
+    "s": 228.92,
+    "e": 229.5,
+    "w": " menjurus"
+   },
+   {
+    "s": 229.5,
+    "e": 229.94,
+    "w": " kepada"
+   },
+   {
+    "s": 229.94,
+    "e": 230.86,
+    "w": " peningkatan"
+   },
+   {
+    "s": 230.86,
+    "e": 231.38,
+    "w": " hingga"
+   },
+   {
+    "s": 231.38,
+    "e": 231.82,
+    "w": " ribuan"
+   },
+   {
+    "s": 231.82,
+    "e": 232.44,
+    "w": " ringgit"
+   }
+  ]
+ },
+ {
+  "start": 232.44,
+  "end": 237.12,
+  "text": " melalui pelbagai lagi yuran tambahan yang skema kenakan.",
+  "words": [
+   {
+    "s": 232.44,
+    "e": 233.44,
+    "w": " melalui"
+   },
+   {
+    "s": 233.44,
+    "e": 234.2,
+    "w": " pelbagai"
+   },
+   {
+    "s": 234.2,
+    "e": 234.6,
+    "w": " lagi"
+   },
+   {
+    "s": 234.6,
+    "e": 234.88,
+    "w": " yuran"
+   },
+   {
+    "s": 234.88,
+    "e": 235.56,
+    "w": " tambahan"
+   },
+   {
+    "s": 235.56,
+    "e": 236.12,
+    "w": " yang"
+   },
+   {
+    "s": 236.12,
+    "e": 236.5,
+    "w": " skema"
+   },
+   {
+    "s": 236.5,
+    "e": 237.12,
+    "w": " kenakan."
+   }
+  ]
+ },
+ {
+  "start": 237.44,
+  "end": 242.44,
+  "text": " Dan akhirnya, ada mangsa yang diminta membayar yuran pembatalan pula",
+  "words": [
+   {
+    "s": 237.44,
+    "e": 237.86,
+    "w": " Dan"
+   },
+   {
+    "s": 237.86,
+    "e": 238.54,
+    "w": " akhirnya,"
+   },
+   {
+    "s": 238.78,
+    "e": 239.26,
+    "w": " ada"
+   },
+   {
+    "s": 239.26,
+    "e": 239.64,
+    "w": " mangsa"
+   },
+   {
+    "s": 239.64,
+    "e": 239.82,
+    "w": " yang"
+   },
+   {
+    "s": 239.82,
+    "e": 240.26,
+    "w": " diminta"
+   },
+   {
+    "s": 240.26,
+    "e": 240.94,
+    "w": " membayar"
+   },
+   {
+    "s": 240.94,
+    "e": 241.3,
+    "w": " yuran"
+   },
+   {
+    "s": 241.3,
+    "e": 242.04,
+    "w": " pembatalan"
+   },
+   {
+    "s": 242.04,
+    "e": 242.44,
+    "w": " pula"
+   }
+  ]
+ },
+ {
+  "start": 242.44,
+  "end": 244.24,
+  "text": " jika mahu menarik diri.",
+  "words": [
+   {
+    "s": 242.44,
+    "e": 242.88,
+    "w": " jika"
+   },
+   {
+    "s": 242.88,
+    "e": 243.22,
+    "w": " mahu"
+   },
+   {
+    "s": 243.22,
+    "e": 243.7,
+    "w": " menarik"
+   },
+   {
+    "s": 243.7,
+    "e": 244.24,
+    "w": " diri."
+   }
+  ]
+ },
+ {
+  "start": 244.34,
+  "end": 251.48,
+  "text": " Di case ini, mangsa akan terjerat dalam psikologi mereka.",
+  "words": [
+   {
+    "s": 244.34,
+    "e": 244.6,
+    "w": " Di"
+   },
+   {
+    "s": 244.6,
+    "e": 244.84,
+    "w": " case"
+   },
+   {
+    "s": 244.84,
+    "e": 245.26,
+    "w": " ini,"
+   },
+   {
+    "s": 245.74,
+    "e": 247.96,
+    "w": " mangsa"
+   },
+   {
+    "s": 247.96,
+    "e": 248.28,
+    "w": " akan"
+   },
+   {
+    "s": 248.28,
+    "e": 249.0,
+    "w": " terjerat"
+   },
+   {
+    "s": 249.0,
+    "e": 250.36,
+    "w": " dalam"
+   },
+   {
+    "s": 250.36,
+    "e": 251.04,
+    "w": " psikologi"
+   },
+   {
+    "s": 251.04,
+    "e": 251.48,
+    "w": " mereka."
+   }
+  ]
+ },
+ {
+  "start": 252.52,
+  "end": 257.14,
+  "text": " Mereka sudah mengeluarkan kos untuk membayar terlebih dahulu.",
+  "words": [
+   {
+    "s": 252.52,
+    "e": 253.38,
+    "w": " Mereka"
+   },
+   {
+    "s": 253.38,
+    "e": 253.64,
+    "w": " sudah"
+   },
+   {
+    "s": 253.64,
+    "e": 254.44,
+    "w": " mengeluarkan"
+   },
+   {
+    "s": 254.44,
+    "e": 254.86,
+    "w": " kos"
+   },
+   {
+    "s": 254.86,
+    "e": 255.22,
+    "w": " untuk"
+   },
+   {
+    "s": 255.22,
+    "e": 255.98,
+    "w": " membayar"
+   },
+   {
+    "s": 255.98,
+    "e": 256.68,
+    "w": " terlebih"
+   },
+   {
+    "s": 256.68,
+    "e": 257.14,
+    "w": " dahulu."
+   }
+  ]
+ },
+ {
+  "start": 258.88,
+  "end": 263.8,
+  "text": " Jika mereka tarik diri, mereka akan kehilangan uang yang mereka sudah bayar tadi.",
+  "words": [
+   {
+    "s": 258.65,
+    "e": 259.08,
+    "w": " Jika"
+   },
+   {
+    "s": 259.08,
+    "e": 259.38,
+    "w": " mereka"
+   },
+   {
+    "s": 259.38,
+    "e": 259.76,
+    "w": " tarik"
+   },
+   {
+    "s": 259.76,
+    "e": 260.22,
+    "w": " diri,"
+   },
+   {
+    "s": 260.46,
+    "e": 261.2,
+    "w": " mereka"
+   },
+   {
+    "s": 261.2,
+    "e": 261.5,
+    "w": " akan"
+   },
+   {
+    "s": 261.5,
+    "e": 262.06,
+    "w": " kehilangan"
+   },
+   {
+    "s": 262.06,
+    "e": 262.34,
+    "w": " uang"
+   },
+   {
+    "s": 262.34,
+    "e": 262.5,
+    "w": " yang"
+   },
+   {
+    "s": 262.5,
+    "e": 262.82,
+    "w": " mereka"
+   },
+   {
+    "s": 262.82,
+    "e": 263.1,
+    "w": " sudah"
+   },
+   {
+    "s": 263.1,
+    "e": 263.46,
+    "w": " bayar"
+   },
+   {
+    "s": 263.46,
+    "e": 263.8,
+    "w": " tadi."
+   }
+  ]
+ },
+ {
+  "start": 264.7,
+  "end": 267.08,
+  "text": " Jadi, di sini mangsa akan terjerat.",
+  "words": [
+   {
+    "s": 264.7,
+    "e": 265.3,
+    "w": " Jadi,"
+   },
+   {
+    "s": 265.48,
+    "e": 265.48,
+    "w": " di"
+   },
+   {
+    "s": 265.48,
+    "e": 265.74,
+    "w": " sini"
+   },
+   {
+    "s": 265.74,
+    "e": 266.12,
+    "w": " mangsa"
+   },
+   {
+    "s": 266.12,
+    "e": 266.36,
+    "w": " akan"
+   },
+   {
+    "s": 266.36,
+    "e": 267.08,
+    "w": " terjerat."
+   }
+  ]
+ },
+ {
+  "start": 268.02,
+  "end": 271.6,
+  "text": " Jika mereka tidak bayar, mereka akan kehilangan uang.",
+  "words": [
+   {
+    "s": 268.02,
+    "e": 268.62,
+    "w": " Jika"
+   },
+   {
+    "s": 268.62,
+    "e": 268.9,
+    "w": " mereka"
+   },
+   {
+    "s": 268.9,
+    "e": 269.16,
+    "w": " tidak"
+   },
+   {
+    "s": 269.16,
+    "e": 269.72,
+    "w": " bayar,"
+   },
+   {
+    "s": 270.26,
+    "e": 270.44,
+    "w": " mereka"
+   },
+   {
+    "s": 270.44,
+    "e": 270.7,
+    "w": " akan"
+   },
+   {
+    "s": 270.7,
+    "e": 271.22,
+    "w": " kehilangan"
+   },
+   {
+    "s": 271.22,
+    "e": 271.6,
+    "w": " uang."
+   }
+  ]
+ },
+ {
+  "start": 271.96,
+  "end": 276.28,
+  "text": " Ataupun mungkin mereka bayar, mereka akan dapat semula uang mereka",
+  "words": [
+   {
+    "s": 271.96,
+    "e": 272.56,
+    "w": " Ataupun"
+   },
+   {
+    "s": 272.56,
+    "e": 272.9,
+    "w": " mungkin"
+   },
+   {
+    "s": 272.9,
+    "e": 273.28,
+    "w": " mereka"
+   },
+   {
+    "s": 273.28,
+    "e": 273.88,
+    "w": " bayar,"
+   },
+   {
+    "s": 274.14,
+    "e": 274.64,
+    "w": " mereka"
+   },
+   {
+    "s": 274.64,
+    "e": 274.92,
+    "w": " akan"
+   },
+   {
+    "s": 274.92,
+    "e": 275.16,
+    "w": " dapat"
+   },
+   {
+    "s": 275.16,
+    "e": 275.62,
+    "w": " semula"
+   },
+   {
+    "s": 275.62,
+    "e": 275.82,
+    "w": " uang"
+   },
+   {
+    "s": 275.82,
+    "e": 276.28,
+    "w": " mereka"
+   }
+  ]
+ },
+ {
+  "start": 276.28,
+  "end": 277.98,
+  "text": " dan loan pun mereka akan dapat.",
+  "words": [
+   {
+    "s": 276.28,
+    "e": 276.58,
+    "w": " dan"
+   },
+   {
+    "s": 276.58,
+    "e": 276.86,
+    "w": " loan"
+   },
+   {
+    "s": 276.86,
+    "e": 277.1,
+    "w": " pun"
+   },
+   {
+    "s": 277.1,
+    "e": 277.4,
+    "w": " mereka"
+   },
+   {
+    "s": 277.4,
+    "e": 277.66,
+    "w": " akan"
+   },
+   {
+    "s": 277.66,
+    "e": 277.98,
+    "w": " dapat."
+   }
+  ]
+ },
+ {
+  "start": 278.78,
+  "end": 281.82,
+  "text": " Jadi, di sinilah yang akan membuatkan mangsa",
+  "words": [
+   {
+    "s": 278.78,
+    "e": 279.38,
+    "w": " Jadi,"
+   },
+   {
+    "s": 279.48,
+    "e": 279.62,
+    "w": " di"
+   },
+   {
+    "s": 279.62,
+    "e": 280.02,
+    "w": " sinilah"
+   },
+   {
+    "s": 280.02,
+    "e": 280.3,
+    "w": " yang"
+   },
+   {
+    "s": 280.3,
+    "e": 280.6,
+    "w": " akan"
+   },
+   {
+    "s": 280.6,
+    "e": 281.26,
+    "w": " membuatkan"
+   },
+   {
+    "s": 281.26,
+    "e": 281.82,
+    "w": " mangsa"
+   }
+  ]
+ },
+ {
+  "start": 281.82,
+  "end": 290.36,
+  "text": " sehingga sanggup untuk transfer duit sebanyak beribu-ribu kepada skema ini.",
+  "words": [
+   {
+    "s": 281.82,
+    "e": 282.64,
+    "w": " sehingga"
+   },
+   {
+    "s": 282.64,
+    "e": 283.24,
+    "w": " sanggup"
+   },
+   {
+    "s": 283.24,
+    "e": 283.88,
+    "w": " untuk"
+   },
+   {
+    "s": 283.88,
+    "e": 284.66,
+    "w": " transfer"
+   },
+   {
+    "s": 284.66,
+    "e": 285.2,
+    "w": " duit"
+   },
+   {
+    "s": 285.2,
+    "e": 285.82,
+    "w": " sebanyak"
+   },
+   {
+    "s": 285.82,
+    "e": 287.3,
+    "w": " beribu"
+   },
+   {
+    "s": 287.3,
+    "e": 287.72,
+    "w": "-ribu"
+   },
+   {
+    "s": 287.72,
+    "e": 288.9,
+    "w": " kepada"
+   },
+   {
+    "s": 288.9,
+    "e": 290.02,
+    "w": " skema"
+   },
+   {
+    "s": 290.02,
+    "e": 290.36,
+    "w": " ini."
+   }
+  ]
+ },
+ {
+  "start": 291.54,
+  "end": 293.54,
+  "text": " Gimana keuang ini akan dimasukkan?",
+  "words": [
+   {
+    "s": 291.28,
+    "e": 291.84,
+    "w": " Gimana"
+   },
+   {
+    "s": 291.84,
+    "e": 292.28,
+    "w": " keuang"
+   },
+   {
+    "s": 292.28,
+    "e": 292.56,
+    "w": " ini"
+   },
+   {
+    "s": 292.56,
+    "e": 292.78,
+    "w": " akan"
+   },
+   {
+    "s": 292.78,
+    "e": 293.54,
+    "w": " dimasukkan?"
+   }
+  ]
+ },
+ {
+  "start": 293.76,
+  "end": 298.18,
+  "text": " Biasanya, uang ini akan dimasukkan ke dalam akaun keldai",
+  "words": [
+   {
+    "s": 293.76,
+    "e": 294.58,
+    "w": " Biasanya,"
+   },
+   {
+    "s": 295.26,
+    "e": 295.34,
+    "w": " uang"
+   },
+   {
+    "s": 295.34,
+    "e": 295.6,
+    "w": " ini"
+   },
+   {
+    "s": 295.6,
+    "e": 295.84,
+    "w": " akan"
+   },
+   {
+    "s": 295.84,
+    "e": 296.56,
+    "w": " dimasukkan"
+   },
+   {
+    "s": 296.56,
+    "e": 296.8,
+    "w": " ke"
+   },
+   {
+    "s": 296.8,
+    "e": 297.1,
+    "w": " dalam"
+   },
+   {
+    "s": 297.1,
+    "e": 297.62,
+    "w": " akaun"
+   },
+   {
+    "s": 297.62,
+    "e": 298.18,
+    "w": " keldai"
+   }
+  ]
+ },
+ {
+  "start": 298.18,
+  "end": 302.94,
+  "text": " yang biasanya susah untuk kita jejak siapakah skema ini.",
+  "words": [
+   {
+    "s": 298.18,
+    "e": 298.82,
+    "w": " yang"
+   },
+   {
+    "s": 298.82,
+    "e": 299.32,
+    "w": " biasanya"
+   },
+   {
+    "s": 299.32,
+    "e": 299.82,
+    "w": " susah"
+   },
+   {
+    "s": 299.82,
+    "e": 300.08,
+    "w": " untuk"
+   },
+   {
+    "s": 300.08,
+    "e": 300.46,
+    "w": " kita"
+   },
+   {
+    "s": 300.46,
+    "e": 301.02,
+    "w": " jejak"
+   },
+   {
+    "s": 301.02,
+    "e": 302.08,
+    "w": " siapakah"
+   },
+   {
+    "s": 302.08,
+    "e": 302.58,
+    "w": " skema"
+   },
+   {
+    "s": 302.58,
+    "e": 302.94,
+    "w": " ini."
+   }
+  ]
+ },
+ {
+  "start": 304.04,
+  "end": 310.4,
+  "text": " Sebab itu, JSJK, yaitu Jabatan Jenayah Siasatan Komersial",
+  "words": [
+   {
+    "s": 304.04,
+    "e": 304.92,
+    "w": " Sebab"
+   },
+   {
+    "s": 304.92,
+    "e": 305.36,
+    "w": " itu,"
+   },
+   {
+    "s": 305.7,
+    "e": 306.6,
+    "w": " JSJK,"
+   },
+   {
+    "s": 306.9,
+    "e": 307.52,
+    "w": " yaitu"
+   },
+   {
+    "s": 307.52,
+    "e": 308.22,
+    "w": " Jabatan"
+   },
+   {
+    "s": 308.22,
+    "e": 308.8,
+    "w": " Jenayah"
+   },
+   {
+    "s": 308.8,
+    "e": 309.52,
+    "w": " Siasatan"
+   },
+   {
+    "s": 309.52,
+    "e": 310.4,
+    "w": " Komersial"
+   }
+  ]
+ },
+ {
+  "start": 310.4,
+  "end": 315.26,
+  "text": " menegaskan bahwa mana-mana pinjaman yang meminta bayaran pendahuluan",
+  "words": [
+   {
+    "s": 310.4,
+    "e": 311.44,
+    "w": " menegaskan"
+   },
+   {
+    "s": 311.44,
+    "e": 311.98,
+    "w": " bahwa"
+   },
+   {
+    "s": 311.98,
+    "e": 312.58,
+    "w": " mana"
+   },
+   {
+    "s": 312.58,
+    "e": 312.82,
+    "w": "-mana"
+   },
+   {
+    "s": 312.82,
+    "e": 313.32,
+    "w": " pinjaman"
+   },
+   {
+    "s": 313.32,
+    "e": 313.54,
+    "w": " yang"
+   },
+   {
+    "s": 313.54,
+    "e": 313.96,
+    "w": " meminta"
+   },
+   {
+    "s": 313.96,
+    "e": 314.4,
+    "w": " bayaran"
+   },
+   {
+    "s": 314.4,
+    "e": 315.26,
+    "w": " pendahuluan"
+   }
+  ]
+ },
+ {
+  "start": 315.26,
+  "end": 316.8,
+  "text": " adalah penipuan.",
+  "words": [
+   {
+    "s": 315.26,
+    "e": 316.02,
+    "w": " adalah"
+   },
+   {
+    "s": 316.02,
+    "e": 316.8,
+    "w": " penipuan."
+   }
+  ]
+ },
+ {
+  "start": 317.88000000000005,
+  "end": 323.22,
+  "text": " Sebab mana-mana agensi ataupun bank",
+  "words": [
+   {
+    "s": 317.84000000000003,
+    "e": 318.42,
+    "w": " Sebab"
+   },
+   {
+    "s": 318.42,
+    "e": 318.98,
+    "w": " mana"
+   },
+   {
+    "s": 318.98,
+    "e": 319.3,
+    "w": "-mana"
+   },
+   {
+    "s": 319.3,
+    "e": 320.1,
+    "w": " agensi"
+   },
+   {
+    "s": 320.1,
+    "e": 320.92,
+    "w": " ataupun"
+   },
+   {
+    "s": 320.92,
+    "e": 323.22,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 325.9,
+  "end": 330.82,
+  "text": " yang sah tidak akan meminta bayaran pendahuluan",
+  "words": [
+   {
+    "s": 325.9,
+    "e": 327.06,
+    "w": " yang"
+   },
+   {
+    "s": 327.06,
+    "e": 327.6,
+    "w": " sah"
+   },
+   {
+    "s": 327.6,
+    "e": 328.66,
+    "w": " tidak"
+   },
+   {
+    "s": 328.66,
+    "e": 329.0,
+    "w": " akan"
+   },
+   {
+    "s": 329.0,
+    "e": 329.46,
+    "w": " meminta"
+   },
+   {
+    "s": 329.46,
+    "e": 329.94,
+    "w": " bayaran"
+   },
+   {
+    "s": 329.94,
+    "e": 330.82,
+    "w": " pendahuluan"
+   }
+  ]
+ },
+ {
+  "start": 330.82,
+  "end": 333.44,
+  "text": " jika customer ingin",
+  "words": [
+   {
+    "s": 330.82,
+    "e": 331.7,
+    "w": " jika"
+   },
+   {
+    "s": 331.7,
+    "e": 332.18,
+    "w": " customer"
+   },
+   {
+    "s": 332.18,
+    "e": 333.44,
+    "w": " ingin"
+   }
+  ]
+ },
+ {
+  "start": 337.78,
+  "end": 340.2,
+  "text": " memohon pinjaman pribadi.",
+  "words": [
+   {
+    "s": 337.78,
+    "e": 338.94,
+    "w": " memohon"
+   },
+   {
+    "s": 338.94,
+    "e": 339.48,
+    "w": " pinjaman"
+   },
+   {
+    "s": 339.48,
+    "e": 340.2,
+    "w": " pribadi."
+   }
+  ]
+ },
+ {
+  "start": 340.4,
+  "end": 343.26,
+  "text": " sesiapa agensi ataupun bank",
+  "words": [
+   {
+    "s": 340.4,
+    "e": 341.54,
+    "w": " sesiapa"
+   },
+   {
+    "s": 341.54,
+    "e": 342.3,
+    "w": " agensi"
+   },
+   {
+    "s": 342.3,
+    "e": 342.9,
+    "w": " ataupun"
+   },
+   {
+    "s": 342.9,
+    "e": 343.26,
+    "w": " bank"
+   }
+  ]
+ },
+ {
+  "start": 343.26,
+  "end": 345.56,
+  "text": " yang meminta bayaran pendahuluan",
+  "words": [
+   {
+    "s": 343.26,
+    "e": 343.76,
+    "w": " yang"
+   },
+   {
+    "s": 343.76,
+    "e": 344.22,
+    "w": " meminta"
+   },
+   {
+    "s": 344.22,
+    "e": 344.68,
+    "w": " bayaran"
+   },
+   {
+    "s": 344.68,
+    "e": 345.56,
+    "w": " pendahuluan"
+   }
+  ]
+ },
+ {
+  "start": 345.56,
+  "end": 348.38,
+  "text": " itu adalah sah memang penipuan.",
+  "words": [
+   {
+    "s": 345.56,
+    "e": 346.36,
+    "w": " itu"
+   },
+   {
+    "s": 346.36,
+    "e": 346.88,
+    "w": " adalah"
+   },
+   {
+    "s": 346.88,
+    "e": 347.42,
+    "w": " sah"
+   },
+   {
+    "s": 347.42,
+    "e": 347.74,
+    "w": " memang"
+   },
+   {
+    "s": 347.74,
+    "e": 348.38,
+    "w": " penipuan."
+   }
+  ]
+ }
+]
