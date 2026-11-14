@@ -46,7 +46,7 @@ intro.append(card("in-title", 16.0, 20.3,
     '<div class="tc-sub" data-fx="rise" data-in="0.5">Penipuan pinjaman tidak wujud: krisis etika di era digital</div>'
     '</div>'))
 sfx(16.02, "impact-boom", 0.5)
-intro.append(lower("in-lt", 20.4, 29.2, "Evelyn Sofidu", "MPU 3182 · Penghayatan Etika dan Peradaban 2"))
+intro.append(lower("in-lt", 20.4, 29.2, "Evlin Sopidu", "MPU 3182 · Penghayatan Etika dan Peradaban 2"))
 sfx(20.42, "paper", 0.5)
 intro.append(note("in-isu", 29.5, 40.0, "ISU YANG DIBINCANGKAN",
     'Penipuan <span class="hl">pinjaman tidak wujud</span>',
@@ -329,7 +329,7 @@ endc = [card("ed-card", END_START, TOTAL,
     '<div class="ec-k" data-fx="rise" data-in="0.3">SEKIAN, TERIMA KASIH</div>'
     '<div class="ec-t" data-fx="slam" data-in="0.45">LOAN SCAM</div>'
     '<div class="ec-rule" data-fx="draw" data-in="0.7"></div>'
-    '<div class="ec-n" data-fx="rise" data-in="0.9">Evelyn Sofidu</div>'
+    '<div class="ec-n" data-fx="rise" data-in="0.9">Evlin Sopidu</div>'
     '<div class="ec-c" data-fx="rise" data-in="1.05">MPU 3182 · Penghayatan Etika dan Peradaban 2<br>Pensyarah: Puan Rusniyati</div>'
     '<div class="ec-src" data-fx="rise" data-in="1.4">RUJUKAN: Infografik BERNAMA (4 Ogos 2026) · Berita RTM · JSJK PDRM · SKMM · NSRC 997 · Akta Keselamatan Dalam Talian 2025</div>'
     '</div>', zone="full")]

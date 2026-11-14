@@ -4,7 +4,7 @@ Video akademik 9:16 (1080×1920) untuk MPU 3182 Penghayatan Etika dan Peradaban 
 pensyarah Puan Rusniyati. Topik: penipuan pinjaman tidak wujud (*loan scam*).
 
 **Status (14 Nov 2026):** versi 2 (rakaman retake n1–n4, Drive folder yang sama: v1.mp4–v4.mp4)
-sudah dipotong dan dijana; preview penuh dihantar, menunggu kelulusan sebelum render akhir.
+sudah dipotong dan dijana; preview diluluskan; render akhir `-q high` dibuat 14 Nov.
 Versi 1 (rakaman 13 Nov) disimpan dalam `tools/v1/` dan `data/v1/`.
 
 ### Versi 2 — apa yang berubah
@@ -34,7 +34,7 @@ Versi 1 (rakaman 13 Nov) disimpan dalam `tools/v1/` dan `data/v1/`.
 - Susunan: **Video 1 → Video 3 → Video 2** (V3 = kes sebenar/kesan/etika, V2 = penyelesaian + penutup).
 - Hook (±11 s): "Pada Mei 2026, seorang pengarah syarikat di Kota Tinggi kerugian RM167,050"
   → "rumah mangsa dibaling bom petrol" → "Ini bukan cerita rekaan." + cop KES SEBENAR.
-- Nama di skrin: **Evelyn Sofidu**; pensyarah **Puan Rusniyati**.
+- Nama di skrin: **Evlin Sopidu** (ejaan disahkan 14 Nov; v1 tersilap "Evelyn Sofidu"); pensyarah **Puan Rusniyati**.
 - NSRC = **997** (rakaman v1 kedengaran "999" — retake perlu sebut 997).
 - Gambar `5-cara-lapor` (Indonesia/Okezone) **tidak digunakan**.
 - Muka mesti bersih: grafik hanya zon atas (y 150–600) dan bawah (y ≥ 1470). Muka ±y 640–1400.
