@@ -1,6 +1,7 @@
 import subprocess,re,json,sys
 src,out=sys.argv[1],sys.argv[2]
-SPEED=1.2; PAD=0.07
+import os
+SPEED=float(os.environ.get("SPEED", "1.2")); PAD=0.07
 dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
 log=subprocess.run(['ffmpeg','-i',src,'-af','silencedetect=noise=-32dB:d=0.2','-f','null','-'],capture_output=True,text=True).stderr
 st=[float(x) for x in re.findall(r'silence_start: ([\d.]+)',log)]
