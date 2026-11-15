@@ -160,12 +160,12 @@ SL = -0.028
 # Text lives in the TOP band (y 165-360) and the BOTTOM band (y >= 1080).
 TOP, BOT = 168, 1085
 
-# 0) HOOK — price hook, fully visible on frame 0
+# 0) HOOK — no-white-sugar hook, fully visible on frame 0
 add(None, 0, 0.8, 0, 0, "darken")
-kinetic(["KOPI RASA KAFE,"], 0.0, T1, TOP, size=96, per=0.0, styles=[(BROWN, CREAM)], align="center")
-y = kinetic(["TAK SAMPAI RM8", "SECAWAN?!"], 0.0, T1, BOT, size=112, per=0.0,
+kinetic(["KOPI SEDAP, TAPI..."], 0.0, T1, TOP, size=96, per=0.0, styles=[(BROWN, CREAM)], align="center")
+y = kinetic(["TANPA", "GULA PUTIH?!"], 0.0, T1, BOT, size=112, per=0.0,
             styles=[(WHITE, ORANGE), (WHITE, ORANGE)], align="center")
-kinetic(["Harga label RM79 / 10 sachet"], 0.8, T1, y + 10, size=44, per=0.06, styles=[(WHITE, BROWN)],
+kinetic(["Guna gula nano + kunyit hitam"], 0.8, T1, y + 10, size=44, per=0.06, styles=[(WHITE, BROWN)],
         align="center")
 SFX.append((0.0, "boom"))
 
@@ -188,9 +188,9 @@ cup = rounded(COFFEE.resize((300, 250), Image.LANCZOS), 28, 8, CREAM)
 E.append(dict(img=shadow(cup, 14, (0, 10), 150), t0=T2 + 0.2, t1=T3, x=700, y=BOT - 30, anim="pop"))
 SFX.append((T2 + 0.2, "ding"))
 benefits = [
-    ("Durian belanda + kunyit hitam", "herba dalam kopi"),
-    ("Gula nano, 116 kcal", "nikmat tanpa rasa bersalah"),
-    ("Bancuh 1 minit", "1 sachet + 120ml air panas"),
+    ("Tanpa gula putih", "guna gula nano, 5.2g gula sesachet"),
+    ("Ada kunyit hitam & kunyit", "herba tradisional pilihan orang kita"),
+    ("Durian belanda + sacha inchi", "semua dalam secawan kopi"),
     ("Halal JAKIM & MeSTI", "lulus & yakin"),
 ]
 for i, (big, small) in enumerate(benefits):
@@ -208,9 +208,9 @@ for i, (big, small) in enumerate(benefits):
     SFX.append((a, "tick"))
 
 # 3) EMOTION
-kinetic(["Awak penat jaga semua orang.", "Pagi ni, jaga diri sendiri."], T3 + 0.05, VID_END, TOP, size=56,
+kinetic(["Penat seharian?", "Rehat sekejap, jaga diri sendiri."], T3 + 0.05, VID_END, TOP, size=56,
         per=0.07, styles=[(WHITE, BROWN), (BROWN, CREAM)], hi={"DIRI", "SENDIRI."}, align="center")
-kinetic(["Secawan kopi wangi,", "5 minit tenang", "yang awak layak dapat."], T3 + 0.9, VID_END, BOT, size=66,
+kinetic(["Secawan kopi herba,", "manis tanpa gula putih,", "untuk awak & keluarga."], T3 + 0.9, VID_END, BOT, size=66,
         per=0.07, styles=[(WHITE, BROWN), (WHITE, ORANGE), (WHITE, BROWN)], align="center")
 
 # 4) CTA end card (last frame held, lightly dimmed — coffee stays visible)

@@ -49,11 +49,13 @@ Final: [`output/durimex-coffee-tiktok-edit-v3.mp4`](output/durimex-coffee-tiktok
 
 | Masa | Bahagian | Teks / visual |
 |---|---|---|
-| 0.0–2.6s | Hook harga | KOPI RASA KAFE, TAK SAMPAI RM8 SECAWAN?! · Harga label RM79 / 10 sachet · tag "DURIMEX COFFEE" pada sachet |
-| 2.6–5.0s | Tengok ni | Kamera zoom ke buih · Tengok buih dia... CREAMY GILA! · Lemak hazelnut & vanila, wangi macam kopi kafe. |
-| 5.0–8.6s | Kenapa wajib cuba | Gambar kopi latte (kecil, bawah kanan) + 4 kebaikan: durian belanda + kunyit hitam, gula nano 116 kcal, bancuh 1 minit, Halal JAKIM & MeSTI |
-| 8.6–11.8s | Emosi | Awak penat jaga semua orang. Pagi ni, jaga diri sendiri. · Secawan kopi wangi, 5 minit tenang yang awak layak dapat. |
-| 11.8–14.4s | CTA | Frame akhir dimalapkan sedikit · TEKAN BAKUL KUNING · Grab sekarang sebelum stok promo habis! · anak panah |
+| 0.0–2.6s | Hook | KOPI SEDAP, TAPI... TANPA GULA PUTIH?! · Guna gula nano + kunyit hitam |
+| 2.6–5.0s | Tengok ni | Tengok buih dia... CREAMY GILA! · Lemak hazelnut & vanila, wangi macam kopi kafe. · tag "DURIMEX COFFEE" pada sachet |
+| 5.0–8.6s | Kenapa wajib cuba | Gambar latte kecil + 4 kebaikan: tanpa gula putih (gula nano, 5.2g gula sesachet), kunyit hitam & kunyit, durian belanda + sacha inchi, Halal JAKIM & MeSTI |
+| 8.6–11.8s | Emosi | Penat seharian? Rehat sekejap, jaga diri sendiri. · Secawan kopi herba, manis tanpa gula putih, untuk awak & keluarga. |
+| 11.8–14.4s | CTA | TEKAN BAKUL KUNING · Grab sekarang sebelum stok promo habis! · anak panah |
+
+Tiada harga dalam video. Tiada dakwaan perubatan (kencing manis / kebas / lenguh) — lihat nota pematuhan TikTok Shop.
 
 ```bash
 SPEED=1.1 python3 scripts/cut.py input.mp4 cut.mov
