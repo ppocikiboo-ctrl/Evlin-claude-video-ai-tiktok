@@ -1,8 +1,8 @@
 # NYO3 Super Astaxanthin — Iklan TikTok
 
 **Output**
-- `output/nyo3_astaxanthin_iklan.mp4` — video iklan 9:16, ~13 saat (hook → produk → ilustrasi kulit → cara makan → bahan → CTA)
-- `output/gambar_kulit_ilustrasi.png` — gambar "Sebelum vs Selepas" (ILUSTRASI, bukan gambar sebenar)
+- `output/nyo3_astaxanthin_iklan.mp4` — video iklan 9:16, ~14 saat (hook → produk → gambar kulit → cara makan → bahan → CTA)
+- `reference/kulit_konsep.jpg` — gambar kulit (dibekalkan pengguna), dipakai sebagai **gambar hiasan** dengan kamera pan dari kulit tua → muda
 - `build/` — skrip untuk render semula (`python3 build/make_assets.py <dir>` kemudian `build/render.sh <video> <dir> <out.mp4>`)
 
 ## Fakta produk (dari label dalam video)
@@ -37,7 +37,7 @@
 "Kulit kusam dan kering? Tengok ni dulu. Ni Super Astaxanthin 12 miligram — antioksidan semula jadi dari alga merah. Ada Vitamin C dan E sekali. Makan dua biji sehari lepas makan, sebotol tahan sebulan. Glow dari dalam, bermula hari ni — tekan beg kuning sekarang!"
 
 ## Penting (elak iklan kena reject / aduan)
-- Gambar kulit dalam video ialah **ilustrasi** & dilabel begitu. Jangan guna gambar "before/after" AI atau orang lain sebagai hasil sebenar — itu mengelirukan dan melanggar polisi iklan TikTok untuk suplemen.
+- Gambar kulit dalam video ialah **gambar hiasan** (konsep penuaan kulit, kemungkinan gambar stok — pastikan ada lesen) & dilabel begitu, tanpa label "sebelum/selepas makan". Jangan guna gambar "before/after" AI atau orang lain sebagai hasil sebenar — itu mengelirukan dan melanggar polisi iklan TikTok untuk suplemen.
 - Gambar sebenar terbaik: gambar kulit **anda sendiri** (cahaya & sudut sama, tanpa filter) selepas 4–8 minggu.
 - Elak perkataan: "putihkan", "rawat", "sembuh", "jamin", "dalam 7 hari".
 - Muzik dalam video ialah beat ringkas sintetik; boleh tukar ke trending sound di TikTok/CapCut.

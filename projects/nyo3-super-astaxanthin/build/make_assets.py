@@ -138,3 +138,14 @@ out = (out / np.abs(out).max() * 0.6 * 32767).astype(np.int16)
 with wave.open(f"{OUT}/beat.wav", "wb") as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(out.tobytes())
 print("ok")
+
+# 8) Background card for the user-supplied skin-ageing photo (photo is panned in render.sh)
+bg = Image.new("RGBA", (W, H)); bd = ImageDraw.Draw(bg)
+for yy in range(H):
+    t = yy / H; bd.line([(0, yy), (W, yy)], fill=(int(255 - 120 * t), int(90 - 50 * t), int(190 + 30 * t)))
+stroke_text(bd, W // 2, 200, "KULIT CEPAT", f(XB, 100))
+stroke_text(bd, W // 2, 320, "NAMPAK PENAT?", f(XB, 100), fg=YEL)
+y = pill_text(bd, W // 2, 1480, "JAGA KULIT DARI DALAM", f(XB, 62), WHITE, PURPLE) + 20
+pill_text(bd, W // 2, y, "antioksidan bantu kelembapan & keanjalan", f(SB, 42), WHITE, PINK, pad=(26, 12), r=20)
+bd.text((W // 2, 1790), "Gambar hiasan. Hasil berbeza mengikut individu.", font=f(SB, 34), fill=WHITE, anchor="mm")
+bg.convert("RGB").save(f"{OUT}/aging_bg.png")
