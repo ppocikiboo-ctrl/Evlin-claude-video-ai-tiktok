@@ -6,3 +6,4 @@ video generators.
 ## Projects
 
 - [RCH black baggy pants — mirror selfie OOTD](projects/rch-black-baggy-pants/PROMPT_PACK.md)
+- [NYO3 Super Astaxanthin — iklan TikTok](projects/nyo3-super-astaxanthin/README.md)
