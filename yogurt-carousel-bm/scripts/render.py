@@ -29,7 +29,7 @@ SLIDES = [
     (15, "Itulah *bundle pricing.*", 2.6, 'close', 76),
     (16, "Dan yang terakhir?", 2.2, 'close', 76),
     (17, "Butang tulis *'beli sekarang'.* Anda terus beli?", 3.8, 'full', 62),
-    (18, "Tak. Nanti-nanti la beli.", 2.6, 'close', 72),
+    (18, "Tak naklah. Nanti-nanti la beli.", 2.6, 'close', 72),
     (19, "Sekarang tulis *'tinggal 3 lagi'.*", 3.4, 'full', 66),
     (20, "…saya beli *sekarang juga.*", 2.6, 'close', 72),
     (21, "Kenapa?", 2.0, 'close', 104),
@@ -38,6 +38,10 @@ SLIDES = [
     (24, "Jadi produk tak pernah berubah. Cuma *cara saya sampaikan.*", 3.8, 'close', 64),
     (25, "Follow untuk lagi tips *marketing!*", 3.2, 'full', 68),
 ]
+import json
+DURS = {int(k): v for k, v in json.load(open(f'{S}/tts/durs.json')).items()}
+VOFF = 0.3
+SLIDES = [(a, b, round(max(1.7, VOFF + DURS[k + 1] + 0.8), 2), c, d) for k, (a, b, _, c, d) in enumerate(SLIDES)]
 starts = np.cumsum([0] + [s[2] for s in SLIDES])
 T = float(starts[-1])
 NF = int(round(T * FPS))
@@ -280,7 +284,16 @@ def audio(path):
         out[idx] += np.exp(-tt * 4) * np.sin(2 * np.pi * 1318.5 * tt) * 0.08 + np.exp(-tt * 3) * np.sin(2 * np.pi * 1975.5 * tt) * 0.04
     fade = np.minimum(1, np.minimum(t / 0.5, (T - t) / 1.2))
     out *= fade; out /= max(1e-9, np.abs(out).max()) / 0.7
-    st = np.stack([out, np.roll(out, 300)], 1)
+    out *= 0.22
+    voice = np.zeros(n)
+    for k in range(len(SLIDES)):
+        with wave.open(f'{S}/tts/voice_{k + 1}.wav') as vf:
+            v = np.frombuffer(vf.readframes(vf.getnframes()), np.int16).astype(float) / 32767
+        a0 = int((starts[k] + VOFF) * sr); a1 = min(n, a0 + len(v))
+        voice[a0:a1] += v[:a1 - a0]
+    voice *= 0.92 / max(1e-9, np.abs(voice).max())
+    mix = voice[:, None] + np.stack([out, np.roll(out, 300)], 1)
+    st = np.clip(mix, -0.99, 0.99)
     with wave.open(path, 'wb') as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr)
         w.writeframes((st * 32767).astype(np.int16).tobytes())
