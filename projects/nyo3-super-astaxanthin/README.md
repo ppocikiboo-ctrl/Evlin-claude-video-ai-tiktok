@@ -41,3 +41,19 @@
 - Gambar sebenar terbaik: gambar kulit **anda sendiri** (cahaya & sudut sama, tanpa filter) selepas 4–8 minggu.
 - Elak perkataan: "putihkan", "rawat", "sembuh", "jamin", "dalam 7 hari".
 - Muzik dalam video ialah beat ringkas sintetik; boleh tukar ke trending sound di TikTok/CapCut.
+
+## Posting pack (versi akhir)
+**Hook:** "Kulit cepat nampak penat? Ni rahsia glow dari dalam ✨"
+
+**Description:**
+Kulit cepat nampak penat, kering & kusam? 😩 Ni rutin glow dari dalam aku — NYO3 Super Astaxanthin 12mg ✨
+✅ Astaxanthin 12mg dari alga merah (antioksidan semula jadi)
+✅ + Vitamin C 120mg & Vitamin E 60mg
+✅ Bantu kelembapan & keanjalan kulit
+✅ 2 softgel sehari lepas makan, 1 botol = 30 hari
+Tekan beg kuning 🛒 sebelum stok habis!
+*Suplemen makanan. Hasil berbeza mengikut individu.
+
+**SEO keywords:** astaxanthin, astaxanthin 12mg, suplemen kulit, suplemen kulit glowing, kulit kusam, kulit kering, antioksidan kulit, NYO3 astaxanthin, vitamin kulit, glowing skin malaysia
+
+**Hashtag:** #astaxanthin #suplemenkulit #kulitglowing #nyo3 #tiktokshopmy
