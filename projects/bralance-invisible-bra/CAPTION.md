@@ -1,4 +1,4 @@
-# Bralance Invisible Bra — TikTok ad (22.9s, 1080x1920)
+# Bralance Invisible Bra — TikTok ad (27.9s, 1080x1920)
 
 Video: `output/bralance_tiktok_ad.mp4` · Rebuild: `projects/bralance-invisible-bra/render.sh <source.mp4> <work_dir> <out.mp4>`
 
@@ -13,10 +13,10 @@ Video: `output/bralance_tiktok_ad.mp4` · Rebuild: `projects/bralance-invisible-
 | 5.6–7.6 | Kad: Tepi cuma 0.1cm |
 | 7.6–10.0 | Kekal melekat walaupun berpeluh |
 | 10.0–12.2 | Kad: Cara pakai 6 langkah |
-| 12.2–14.6 | Bentuk mango cup |
-| 14.6–17.0 | Nipis sampai nampak tangan (slow push-in) |
-| 17.0–19.4 | Review 5 bintang |
-| 19.4–22.9 | CTA: set lengkap, RM25, free shipping, tekan beg kuning |
+| 12.2–15.3 | Bentuk mango cup |
+| 15.6–22.9 | **Demo melekat pada tangan — tiada kad/scrim, hanya caption kecil di jalur atas** ("Tengok ni… terus melekat kat tangan!", "Lekat kuat, tapi lembut kat kulit") |
+| 22.9–25.0 | Slaid penutup: review 5 bintang (atas frame terakhir yang dibekukan) |
+| 25.0–27.9 | Slaid penutup CTA: set lengkap, RM25, free shipping, tekan beg kuning |
 
 ## Description (copy-paste)
 Baju backless, off-shoulder, kebaya ketat… tapi tali bra asyik nampak? 😩

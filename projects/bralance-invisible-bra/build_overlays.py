@@ -136,6 +136,9 @@ caption([[("Kekal ", WHITE), ("melekat", PINK)], [("walaupun ", WHITE), ("berpel
 caption([[("Bentuk ", WHITE), ("mango cup", PINK)], [("angkat & bentuk", WHITE)], [("lebih cantik", WHITE)]], "t_mango.png")
 caption([[("Nipis sampai", WHITE)], [("nampak tangan!", GOLD)]], "t_thin.png", size=96)
 caption([[("Boleh basuh &", WHITE)], [("pakai ", WHITE), ("berulang kali", PINK)]], "t_reuse.png")
+# demo zone (bra stuck on hand): compact captions kept in the top strip so the demo stays visible
+caption([[("Tengok ni... ", WHITE), ("terus melekat", GOLD)], [("kat tangan!", GOLD)]], "t_stick.png", size=70, y=190)
+caption([[("Lekat ", WHITE), ("kuat", PINK), (", tapi ", WHITE), ("lembut", PINK)], [("kat kulit", WHITE)]], "t_stick2.png", size=70, y=190)
 
 # ---------- product cards ----------
 card("p2-thin-edge.jpg", "RAHSIA DIA", ["Tepi cuma 0.1cm"], ["Tak timbul langsung bawah baju ketat"], "c_thin.png")
@@ -173,7 +176,11 @@ fs2 = font(SEMI, 36)
 line = "dari pembeli sebenar di TikTok Shop"
 tw = d.textlength(line, font=fs2)
 d.text(((W - tw) / 2, 750), line, font=fs2, fill=(140, 110, 115))
-img.save(OUT / "t_review.png")
+# end slate: centre the review box on a dark scrim (shown after the demo, not over it)
+slate = Image.new("RGBA", (W, H), (30, 14, 20, 175))
+slate.alpha_composite(img, (0, 380))
+draw_runs(slate, 1330, [[("Review ", WHITE), ("sebenar", GOLD), (" pembeli", WHITE)]], BLACK, 66, stroke=7)
+slate.save(OUT / "t_review.png")
 
 # ---------- CTA end (dark scrim + kit + price) ----------
 img = Image.new("RGBA", (W, H), (30, 14, 20, 170))
