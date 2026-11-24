@@ -1,0 +1,51 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Big,Lilita One,138,&H008A3EFF,&H00FFFFFF,&H00FFFFFF,&H502E1B2B,0,0,0,0,100,100,2,0,1,9,7,5,0,0,0,1
+Style: Sub,Lilita One,62,&H002E1B2B,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100,100,1,0,1,5,0,5,0,0,0,1
+Style: Tab,Lilita One,58,&H00FFFFFF,&H00FFFFFF,&H002E1B2B,&H00000000,0,0,0,0,100,100,1,0,3,18,0,5,0,0,0,1
+Style: Recap,Lilita One,60,&H002E1B2B,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100,100,1,0,1,5,0,4,0,0,0,1
+Style: Btn,Lilita One,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,0,0,0,1
+Style: Draw,Lilita One,10,&H008A3EFF,&H00FFFFFF,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:00.50,0:00:02.95,Big,,0,0,0,,{\pos(540,220)\fscx260\fscy260\alpha&H80&\t(0,120,\fscx92\fscy92\alpha&H00&)\t(120,220,\fscx100\fscy100)\frz-3}3 SEBAB
+Dialogue: 3,0:00:00.75,0:00:02.95,Sub,,0,0,0,,{\pos(540,318)\fad(120,0)}BARANG NI VIRAL!
+Dialogue: 3,0:00:03.07,0:00:10.87,Tab,,0,0,0,,{\pos(540,282)}{\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)}{\1c&H008A3EFF&}#1{\1c&H00FFFFFF&}  3 DALAM 1 + 7 KEPING
+Dialogue: 3,0:00:10.99,0:00:18.36,Tab,,0,0,0,,{\pos(540,282)}{\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)}{\1c&H008A3EFF&}#2{\1c&H00FFFFFF&}  BAHAN LEMBUT & HORMONE-FREE
+Dialogue: 3,0:00:18.48,0:00:24.13,Tab,,0,0,0,,{\pos(540,282)}{\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)}{\1c&H008A3EFF&}#3{\1c&H00FFFFFF&}  PAKAI, ORANG TAK NAMPAK
+Dialogue: 3,0:00:24.25,0:00:27.59,Tab,,0,0,0,,{\pos(540,282)}{\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)}JOM CUBA!
+Dialogue: 3,0:00:27.79,0:00:30.99,Big,,0,0,0,,{\pos(540,330)\frz-3}{\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)}RECAP!
+Dialogue: 2,0:00:28.04,0:00:30.99,Draw,,0,0,0,,{\pos(170,560)\1c&H008A3EFF&\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)\p1}m 0 -42 b 23.184 -42 42 -23.184 42 0 b 42 23.184 23.184 42 0 42 b -23.184 42 -42 23.184 -42 0 b -42 -23.184 -23.184 -42 0 -42{\p0}
+Dialogue: 3,0:00:28.12,0:00:30.99,Draw,,0,0,0,,{\pos(170,560)\1c&HFFFFFF&\fscx0\fscy0\t(0,120,\fscx100\fscy100)\p1}m -20 2 l -7 15 l 20 -13 l 25 -8 l -7 24 l -25 7{\p0}
+Dialogue: 3,0:00:28.04,0:00:30.99,Recap,,0,0,0,,{\pos(240,560)\fad(100,0)\move(280,560,240,560,0,150)}3 DALAM 1, 7 KEPING
+Dialogue: 2,0:00:28.42,0:00:30.99,Draw,,0,0,0,,{\pos(170,710)\1c&H008A3EFF&\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)\p1}m 0 -42 b 23.184 -42 42 -23.184 42 0 b 42 23.184 23.184 42 0 42 b -23.184 42 -42 23.184 -42 0 b -42 -23.184 -23.184 -42 0 -42{\p0}
+Dialogue: 3,0:00:28.50,0:00:30.99,Draw,,0,0,0,,{\pos(170,710)\1c&HFFFFFF&\fscx0\fscy0\t(0,120,\fscx100\fscy100)\p1}m -20 2 l -7 15 l 20 -13 l 25 -8 l -7 24 l -25 7{\p0}
+Dialogue: 3,0:00:28.42,0:00:30.99,Recap,,0,0,0,,{\pos(240,710)\fad(100,0)\move(280,710,240,710,0,150)}HORMONE-FREE, BAHAN LEMBUT
+Dialogue: 2,0:00:28.80,0:00:30.99,Draw,,0,0,0,,{\pos(170,860)\1c&H008A3EFF&\fscx70\fscy130\t(0,110,\fscx112\fscy90)\t(110,220,\fscx100\fscy100)\p1}m 0 -42 b 23.184 -42 42 -23.184 42 0 b 42 23.184 23.184 42 0 42 b -23.184 42 -42 23.184 -42 0 b -42 -23.184 -23.184 -42 0 -42{\p0}
+Dialogue: 3,0:00:28.88,0:00:30.99,Draw,,0,0,0,,{\pos(170,860)\1c&HFFFFFF&\fscx0\fscy0\t(0,120,\fscx100\fscy100)\p1}m -20 2 l -7 15 l 20 -13 l 25 -8 l -7 24 l -25 7{\p0}
+Dialogue: 3,0:00:28.80,0:00:30.99,Recap,,0,0,0,,{\pos(240,860)\fad(100,0)\move(280,860,240,860,0,150)}PAKAI, ORANG TAK NAMPAK
+Dialogue: 2,0:00:29.14,0:00:30.99,Draw,,0,0,0,,{\pos(130,1094)\1c&H2E1B2B&\alpha&H70&\fad(150,0)\p1}m 70 0 l 750 0 b 788.5 0 820 31.5 820 70 l 820 110 b 820 148.5 788.5 180 750 180 l 70 180 b 31.5 180 0 148.5 0 110 l 0 70 b 0 31.5 31.5 0 70 0{\p0}
+Dialogue: 3,0:00:29.14,0:00:29.64,Draw,,0,0,0,,{\an7\pos(130,1080)\org(540,1170)\1c&H008A3EFF&\fscx40\fscy40\t(0,160,\fscx108\fscy108)\t(160,280,\fscx100\fscy100)\p1}m 70 0 l 750 0 b 788.5 0 820 31.5 820 70 l 820 110 b 820 148.5 788.5 180 750 180 l 70 180 b 31.5 180 0 148.5 0 110 l 0 70 b 0 31.5 31.5 0 70 0{\p0}
+Dialogue: 4,0:00:29.14,0:00:29.64,Btn,,0,0,0,,{\pos(540,1170)\org(540,1170)\fscx40\fscy40\t(0,160,\fscx108\fscy108)\t(160,280,\fscx100\fscy100)}TEKAN BEG KUNING
+Dialogue: 5,0:00:29.24,0:00:29.64,Draw,,0,0,0,,{\pos(840,1200)\1c&HFFFFFF&\alpha&H40&\fscx20\fscy20\t(0,400,\fscx160\fscy160\alpha&HFF&)\p1}m 0 -40 b 22.080000000000002 -40 40 -22.080000000000002 40 0 b 40 22.080000000000002 22.080000000000002 40 0 40 b -22.080000000000002 40 -40 22.080000000000002 -40 0 b -40 -22.080000000000002 -22.080000000000002 -40 0 -40{\\p0}
+Dialogue: 3,0:00:29.64,0:00:30.14,Draw,,0,0,0,,{\an7\pos(130,1080)\org(540,1170)\1c&H008A3EFF&\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)\p1}m 70 0 l 750 0 b 788.5 0 820 31.5 820 70 l 820 110 b 820 148.5 788.5 180 750 180 l 70 180 b 31.5 180 0 148.5 0 110 l 0 70 b 0 31.5 31.5 0 70 0{\p0}
+Dialogue: 4,0:00:29.64,0:00:30.14,Btn,,0,0,0,,{\pos(540,1170)\org(540,1170)\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)}TEKAN BEG KUNING
+Dialogue: 5,0:00:29.74,0:00:30.14,Draw,,0,0,0,,{\pos(840,1200)\1c&HFFFFFF&\alpha&H40&\fscx20\fscy20\t(0,400,\fscx160\fscy160\alpha&HFF&)\p1}m 0 -40 b 22.080000000000002 -40 40 -22.080000000000002 40 0 b 40 22.080000000000002 22.080000000000002 40 0 40 b -22.080000000000002 40 -40 22.080000000000002 -40 0 b -40 -22.080000000000002 -22.080000000000002 -40 0 -40{\\p0}
+Dialogue: 3,0:00:30.14,0:00:30.64,Draw,,0,0,0,,{\an7\pos(130,1080)\org(540,1170)\1c&H008A3EFF&\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)\p1}m 70 0 l 750 0 b 788.5 0 820 31.5 820 70 l 820 110 b 820 148.5 788.5 180 750 180 l 70 180 b 31.5 180 0 148.5 0 110 l 0 70 b 0 31.5 31.5 0 70 0{\p0}
+Dialogue: 4,0:00:30.14,0:00:30.64,Btn,,0,0,0,,{\pos(540,1170)\org(540,1170)\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)}TEKAN BEG KUNING
+Dialogue: 5,0:00:30.24,0:00:30.64,Draw,,0,0,0,,{\pos(840,1200)\1c&HFFFFFF&\alpha&H40&\fscx20\fscy20\t(0,400,\fscx160\fscy160\alpha&HFF&)\p1}m 0 -40 b 22.080000000000002 -40 40 -22.080000000000002 40 0 b 40 22.080000000000002 22.080000000000002 40 0 40 b -22.080000000000002 40 -40 22.080000000000002 -40 0 b -40 -22.080000000000002 -22.080000000000002 -40 0 -40{\\p0}
+Dialogue: 3,0:00:30.64,0:00:30.99,Draw,,0,0,0,,{\an7\pos(130,1080)\org(540,1170)\1c&H008A3EFF&\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)\p1}m 70 0 l 750 0 b 788.5 0 820 31.5 820 70 l 820 110 b 820 148.5 788.5 180 750 180 l 70 180 b 31.5 180 0 148.5 0 110 l 0 70 b 0 31.5 31.5 0 70 0{\p0}
+Dialogue: 4,0:00:30.64,0:00:30.99,Btn,,0,0,0,,{\pos(540,1170)\org(540,1170)\t(0,90,\fscx96\fscy96)\t(90,260,\fscx100\fscy100)}TEKAN BEG KUNING
+Dialogue: 5,0:00:30.74,0:00:30.99,Draw,,0,0,0,,{\pos(840,1200)\1c&HFFFFFF&\alpha&H40&\fscx20\fscy20\t(0,400,\fscx160\fscy160\alpha&HFF&)\p1}m 0 -40 b 22.080000000000002 -40 40 -22.080000000000002 40 0 b 40 22.080000000000002 22.080000000000002 40 0 40 b -22.080000000000002 40 -40 22.080000000000002 -40 0 b -40 -22.080000000000002 -22.080000000000002 -40 0 -40{\\p0}
+Dialogue: 3,0:00:29.49,0:00:30.99,Sub,,0,0,0,,{\pos(540,1350)\fad(150,0)}SELLER TENGAH BUAT HARGA PROMO!
+Dialogue: 4,0:00:29.64,0:00:30.14,Draw,,0,0,0,,{\move(230,1420,200,1490,0,250)\frz-22\1c&H00D7FF&\3c&H2E1B2B&\bord5\p1}m -26 0 l 26 0 l 26 80 l 62 80 l 0 150 l -62 80 l -26 80{\p0}
+Dialogue: 4,0:00:30.14,0:00:30.64,Draw,,0,0,0,,{\move(230,1420,200,1490,0,250)\frz-22\1c&H00D7FF&\3c&H2E1B2B&\bord5\p1}m -26 0 l 26 0 l 26 80 l 62 80 l 0 150 l -62 80 l -26 80{\p0}
+Dialogue: 4,0:00:30.64,0:00:30.99,Draw,,0,0,0,,{\move(230,1420,200,1490,0,250)\frz-22\1c&H00D7FF&\3c&H2E1B2B&\bord5\p1}m -26 0 l 26 0 l 26 80 l 62 80 l 0 150 l -62 80 l -26 80{\p0}
