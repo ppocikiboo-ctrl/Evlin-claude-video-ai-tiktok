@@ -29,3 +29,15 @@ grade and white-box subtitles. Copy and timings in `edit/timeline_v2.py`.
 python3 edit/sfx.py voice.wav mix2.wav timeline_v2
 python3 edit/render_v2.py source.mp4 mix2.wav out-v2.mp4
 ```
+
+## Version 3 — "Chat Bestie"
+
+`vbgv-ootd-baju-lama-edit-v3.mp4`: group-chat story ("Geng OOTD") about baju
+lama vs baju baru, frosted phone-notification routine steps, draining stock
+alert, pulsing CTA button, floating reactions, whip-pan transitions and
+type-on subtitles. Copy and timings in `edit/timeline_v3.py`.
+
+```
+python3 edit/sfx.py voice.wav mix3.wav timeline_v3
+python3 edit/render_v3.py source.mp4 mix3.wav out-v3.mp4
+```
