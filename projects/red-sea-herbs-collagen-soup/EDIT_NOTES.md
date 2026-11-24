@@ -54,3 +54,20 @@ The video is 32 s long. It is made from the same full-quality source by `python3
 Visual style: a yellow progress bar along the top, whip-blur transitions at every cut, a stacked F/A/B card with coloured badges, captions with the current word on a yellow block, and a price-per-bowl counter.
 
 Check before posting: the flash sale price, and that it really ends. "Harga naik semula" is only true while a flash sale price is active.
+
+---
+
+# Video 3 — "3 SEBAB" listicle (`collagen_soup_tiktok_v3_3SEBAB.mp4`)
+
+The video is 33.5 s long. It is made from the same full-quality source by `python3 edit_v3.py SOURCE.mp4 OUT.mp4`. Its colours follow the pack (deep green and cream).
+
+| Time | Block | Content |
+|---|---|---|
+| 0–3s | Hook (split screen) | The top half shows the raw ingredients ("DARI INI…") and the bottom half the jelly soup ("…JADI INI! 🤤"). An "RM9.76 JE!" stamp lands in the middle |
+| 3–8s | Title | "3 SEBAB KAMU WAJIB CUBA SUP COLLAGEN NI 👇" over the product, with her intro line |
+| 8–16s | #1 Semua bahan dah ada | A spinning #1 badge. The ingredients photo pops out, then a chip for each ingredient appears as she names it |
+| 16–22s | #2 Senang gila nak masak | A live checklist that ticks off: Rendam 24 jam ✓, Didih 1.5L air ✓, Rebus 45 minit ✓, Siap dihidang ✓ |
+| 22–27s | #3 Jimat & cukup sekeluarga | The bowl photo pops out, then "≈ RM2.44 SEMANGKUK!" |
+| 27–33.5s | CTA end card | Cream background with scrolling FLASH SALE tickers and the full promo image. **Sebab** (reason): harga flash sale + free shipping · **Untung** (benefit): dessert collagen cukup sekeluarga · **Action:** pulsing "TEKAN BEG KUNING" button · **If not:** "Flash sale tamat = harga naik semula" |
+
+Captions sit in a cream box, with the current word on a green block. Every cut has a green and yellow diagonal wipe.
