@@ -51,3 +51,10 @@ warm pink grade, drifting light leaks, sparkles (hook + ending), bounce-in two-l
 CARA MAKAN checklist with animated green ticks and active-row highlight, pulsing CTA button
 with shine sweep, bouncing arrow, pink→yellow progress bar; audio adds whooshes on cuts and
 a ding on the CTA. Outputs `output/scc-tiktok-v3-motion.mp4` and `-nosound.mp4`.
+
+## Version 4 — "almari" concept (`edit_v4.py`)
+Same agreed wording, different look: pastel wardrobe doors closed on the hook, swing open to
+reveal the video and close again on the CTA (seamless loop); word-by-word kinetic captions;
+product freeze-frame as a tilted polaroid with tape; CARA MAKAN as a 2x2 drawn-icon grid
+(water drop fills up); varied xfade transitions; dreamy glow + lilac grade; bouncing yellow
+"BELI" bag. Outputs `output/scc-tiktok-v4-almari.mp4` and `-nosound.mp4` (29.5 s).
