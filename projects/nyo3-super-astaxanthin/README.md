@@ -57,3 +57,27 @@ Tekan beg kuning 🛒 sebelum stok habis!
 **SEO keywords:** astaxanthin, astaxanthin 12mg, suplemen kulit, suplemen kulit glowing, kulit kusam, kulit kering, antioksidan kulit, NYO3 astaxanthin, vitamin kulit, glowing skin malaysia
 
 **Hashtag:** #astaxanthin #suplemenkulit #kulitglowing #nyo3 #tiktokshopmy
+
+## Versi 2 — "Jangan Scroll / 3 Sebab"
+`output/nyo3_astaxanthin_iklan_v2.mp4` (~12.6 s). Render: `python3 build/make_assets_v2.py <dir>` → `build/render_v2.sh <video> <dir> <out.mp4>`.
+Gaya: tema gelap merah-ruby & emas, potongan laju dengan flash putih, beat 124 bpm.
+
+| Masa | Babak | Teks |
+|---|---|---|
+| 0–2 s | Hook | **JANGAN SCROLL** kalau kulit kau tak pernah kering & kusam |
+| 2–3 s | Set-up | **3 SEBAB** aku makan ni tiap hari |
+| 3–5.5 s | Gambar kulit (pan tua → muda) | Matahari. Stres. Umur. Kulit pun penat… / Lawan dengan antioksidan |
+| 5.5–7 s | Sebab 1 | 12mg Astaxanthin — antioksidan dari alga merah |
+| 7–8.5 s | Sebab 2 | + Vitamin C & E — bantu kelembapan & keanjalan |
+| 8.5–10 s | Sebab 3 | Senang gila — 2 biji sehari, 1 botol 30 hari |
+| 10–12.6 s | CTA | **CUBA 30 HARI**, rasa sendiri bezanya → Tekan beg kuning ⬇ |
+
+**Description v2:**
+Jangan scroll kalau kulit kau tak pernah kering & kusam 😅 Ni 3 sebab aku makan NYO3 Super Astaxanthin tiap hari 👇
+1️⃣ 12mg Astaxanthin dari alga merah — antioksidan semula jadi
+2️⃣ + Vitamin C & E — bantu kelembapan & keanjalan kulit
+3️⃣ Senang: 2 biji sehari lepas makan, 1 botol = 30 hari
+Cuba 30 hari & rasa sendiri bezanya ✨ Tekan beg kuning 🛒
+*Suplemen makanan. Hasil berbeza mengikut individu.
+
+**Hashtag v2:** #astaxanthin #skincaredaridalam #kulitsihat #suplemenviral #tiktokshopmy
