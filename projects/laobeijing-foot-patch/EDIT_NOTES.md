@@ -66,3 +66,33 @@ The video opens on the **result**: both feet with the patches on, in slow motion
 
 - The RM0.20 per piece is RM9.99 ÷ 50. **If RM9.99 is not the 50-piece box, change `PRICE` in `edit.py`** and render again; the per-piece price updates by itself.
 - The sound effects are generated in the script, so there are no copyright problems. Still add a trending sound from the Commercial Music Library at about 10% volume for the last ~7 s.
+
+---
+
+# Version 3 — "3 SEBAB" listicle in a card frame
+
+Output: [`laobeijing_foot_patch_tiktok_v3.mp4`](laobeijing_foot_patch_tiktok_v3.mp4). It is 27.5 s long, 1080x1920, 30 fps, -14 LUFS.
+To render it again, run `python3 edit_v3.py SOURCE.mp4 OUT.mp4`. It reuses `edit.py` (narration, price) and `edit_v2.py` (sound effects).
+
+## Hook (0–5.8 s)
+
+A yellow-topped note card types itself out, with keyboard clicks: **"barang bawah RM10 paling berbaloi aku beli 😭"**. Then a tag pops in: **"🔥 cuma RM9.99 • 50 keping"**. The voice "siapa-siapa yang rasa lenguh-lenguh kaki…" plays underneath.
+
+## Structure
+
+| Time | Header | What happens |
+|---|---|---|
+| 0–5.8s | Hook | Typing note card + price tag |
+| 5.8–8.0s | SEBAB #1 · 50 keping sekotak 📦 | Camera "snap": the frame freezes into a photo that flies to the corner |
+| 8.0–10.5s | SEBAB #2 · Harga memang tak mahal 💸 | A till receipt prints line by line: RM36.00, diskaun -72%, penghantaran PERCUMA, **JUMLAH RM9.99**, = RM0.20 sekeping. Then a "BERBALOI!" stamp |
+| 10.5–13.0s | SEBAB #3 · Selesa + review padu ⭐ | Two buyer reviews swipe in as cards, plus ⭐4.7 • 6.7K review • 44.3K terjual |
+| 13.0–22.7s | CARA PAKAI · Senang je, 4 langkah 👣 | A checklist that ticks and crosses out each step as you do it, and the "Cara Guna" card swipes in over the empty-floor shot |
+| 22.7–27.5s | CTA | A product card (photo, rating, RM9.99, -72%, free shipping). A finger taps "Beli sekarang" (ripple + cha-ching), then "⚡ Hantar dalam 24 jam" |
+
+The video sits in a rounded white-bordered card on a soft cream background. Captions use TikTok's white-box text style.
+
+## Before posting
+
+- "Bawah RM10", RM9.99 and RM0.20 sekeping all assume RM9.99 is the 50-piece box. If not, change `PRICE` in `edit.py`, and change `TYPE_TEXT` in `edit_v3.py` if the price is RM10 or more.
+- "Hantar dalam 24 jam" comes from the listing banner. Check it is still true.
+- The last ~5 s have only sound effects. Add a trending sound from the Commercial Music Library at about 10% volume.
