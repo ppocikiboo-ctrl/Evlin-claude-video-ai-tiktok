@@ -26,6 +26,7 @@ Pick a template from the selector in the top bar. Each template keeps its own sa
 |---|---|---|
 | **Luxe Ivory: My Self-Care Era** (video 1) | soft ivory & champagne, Playfair serif, frosted cards, dreamy ~100 BPM piano | mood-led story |
 | **Bold FAB + CTA: 2 biji sehari** (video 2) | ruby red, black & white editorial, bold Poppins, kinetic type, checklist cards, chapter bar, cut-zooms & flashes, ~118 BPM pop groove | Hook → Advantages → Emotion → Why → Features → Benefits → CTA |
+| **Soft Diary POV: diari self-care** (video 3) | pastel pink & lavender, Caveat handwriting + typewriter, notebook & sticky-note cards, highlighter marker, tilted stickers on the softgels, light leaks, matte pastel grade, ~84 BPM lo-fi | POV Hook → routine (Advantages) → diary (Emotion/Why) → Features → Why/Benefits → CTA |
 
 ## Template 1: what's in the edit
 
@@ -102,6 +103,34 @@ the footage that fits it.
   a *Solid card* backdrop with an accent bar; line options *Section chip*, *Checkmark ✓*,
   *Bounce* and *Solid box* highlight; *Solid colour* label cards; a project-level chapter bar,
   cut-zooms and flashes (`fx` in the project JSON); the *Pulse* music style.
+
+## Template 3: Soft Diary POV
+
+A first-person "diary" edit of the same footage: TikTok-native, cosy and personal.
+
+| Time | Beat | On screen | Footage |
+|---|---|---|---|
+| 0.3–30.1 s | tag | 🎀 *diari self-care · hari 01* corner chip | — |
+| 0–2.8 s | **HOOK** (POV) | typed: "POV: nak masuk 30-an & baru sedar… skincare luar je TAK **CUKUP** 😭" (marker) | holding the blister |
+| 1.0–2.7 s | stickers | **☀️ 07:00 · PAGI** → red softgel, **🌙 22:00 · MALAM** → black softgel (tilted pills, dashed lines, tracked) | blister |
+| 2.85–7.95 s | **ADVANTAGES** | ruled notebook card "📝 rutin harian aku": ☑ 1 softgel merah lepas sarapan · ☑ 1 softgel hitam lepas makan malam · ☑ dah, itu je. senang! | taking a softgel |
+| 8.0–14.1 s | **EMOTION / WHY** | handwriting: "dear diary, dulu aku selalu rasa kulit nampak penat & kusam…" → "sekarang aku jaga dari **DALAM** juga, sebab aku layak rasa yakin 🫶" | drinking, smiling |
+| 14.1–17.0 s | **FEATURES** | paper note "❓ jadi… apa sebenarnya dalam ni?" · Ageless by NYO3 · Ergothioneine & PQQ | box front |
+| 17.0–24.4 s | **FEATURES** | pink sticky (☀️ Astaxanthin 5mg · PQQ 15mg · SOD 20mg · Vitamin C 20mg) and lavender sticky (🌙 L-Ergothioneine 30mg · Krill Oil 50mg · Sage Extract 50mg · Zinc · B2 & B3) | box back |
+| 24.4–27.0 s | **WHY / BENEFITS** | "kenapa aku pilih ni? 💭" ☑ formula PAGI & MALAM berasingan · ☑ antioksidan untuk rutin dalaman · ☑ bantu sokong kulit nampak sihat & berseri | box side |
+| 27.0–30.1 s | **CTA** | "nak mula rutin ni sekali? 👇" · "TEKAN BEG **KUNING** 🛒" · "mulakan malam ni, 1 kotak untuk 30 hari 🌙" | holding the product |
+
+- **Sound:** a lo-fi score (warm wobbly Rhodes, swung boom-bap, vinyl hiss & crackle). Keyboard
+  typing plays under every typed line and pen-on-paper under every handwritten line; both are
+  timed from the same typing schedule as the text. There is also a pen tick for every ☑, page
+  swooshes for the notes and bubble pops for the stickers.
+- **Look:** "Soft Pastel Matte" grade (lifted blacks, rolled highlights, still skin- and
+  product-protected) and pastel light leaks on scene changes.
+- **New editor features:** *Typewriter + cursor* animation (`cps`, `linePause`), *Caveat*
+  handwriting font, *Highlighter marker*, *Paper / sticky note* backdrop (tilt, tape, ruled lines,
+  pop-in), checkbox-style ticks, *Sticker* label cards with dashed connectors, light leaks
+  (`fx.leaks`), corner tags (`anchor: 'left'`), the *Lo-fi* music style, and the
+  typing / writing / scribble / bubble sound effects (typing and writing have a *Length* control).
 
 ## Colour grade: "Warm Ivory & Champagne Luxury" (template 1)
 
@@ -182,5 +211,5 @@ editor/
   js/exporter.js      WebCodecs → MP4 export, real-time fallback
   js/app.js           app state, playback, panels
   vendor/mp4-muxer.js MP4 muxer (MIT)
-  fonts/              Playfair Display + Poppins 300–800 woff2 (SIL OFL)
+  fonts/              Playfair Display, Poppins 300–800, Caveat woff2 (SIL OFL)
 ```

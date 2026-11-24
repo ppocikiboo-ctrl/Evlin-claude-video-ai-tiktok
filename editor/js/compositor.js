@@ -16,7 +16,8 @@ window.NYO = window.NYO || {};
 
   const FONT_FAMILY = {
     serif: "'Playfair Display', 'Times New Roman', serif",
-    sans: "'Poppins', 'Helvetica Neue', Arial, sans-serif"
+    sans: "'Poppins', 'Helvetica Neue', Arial, sans-serif",
+    hand: "'Caveat', 'Segoe Print', 'Bradley Hand', cursive"
   };
   NYO.fontString = function (ln, size) {
     return `${ln.italic ? 'italic ' : ''}${ln.weight || 400} ${size}px ${FONT_FAMILY[ln.font] || FONT_FAMILY.serif}`;
@@ -63,6 +64,22 @@ window.NYO = window.NYO || {};
       const fx = project.fx;
       if (!fx) return;
       const ctx = this.ctx, S = this.S, W = this.canvas.width, H = this.canvas.height;
+      (fx.leaks || []).forEach((f) => {
+        // Soft pastel light leak sweeping across the frame (screen blend).
+        const k = (t - f.t) / (f.dur || 0.9);
+        if (k < 0 || k >= 1) return;
+        const x = (-0.3 + 1.6 * ease.inOutSine(k)) * W, y = (f.y == null ? 0.35 : f.y) * H;
+        const g = ctx.createRadialGradient(x, y, 0, x, y, W * 0.75);
+        g.addColorStop(0, hexA(f.color || '#FFC7D9', 0.75));
+        g.addColorStop(0.45, hexA(f.color2 || '#FFE1B8', 0.35));
+        g.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.save();
+        ctx.globalCompositeOperation = 'screen';
+        ctx.globalAlpha = Math.sin(Math.PI * k) * (f.alpha || 0.6);
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, W, H);
+        ctx.restore();
+      });
       (fx.flashes || []).forEach((f) => {
         const k = (t - f.t) / (f.dur || 0.18);
         if (k >= 0 && k < 1) {
@@ -223,17 +240,30 @@ window.NYO = window.NYO || {};
       const ctx = this.ctx, S = this.S, W = this.canvas.width;
       const rows = this.layoutLines(c);
       if (!rows.length) return;
-      const lh = (r) => r.size * (r.line.lineHeight || (r.line.font === 'sans' ? 1.45 : 1.25)) * (r.line.chip && r.first ? 1.3 : 1);
+      const lh = (r) => r.size * (r.line.lineHeight || (r.line.font === 'sans' ? 1.45 : r.line.font === 'hand' ? 1.1 : 1.25)) * (r.line.chip && r.first ? 1.3 : 1);
       const totalH = rows.reduce((a, r) => a + lh(r), 0);
-      const cx = c.x * NYO.OUT_W, cy = c.y * NYO.OUT_H;
       rows.forEach((r) => { r.full = r.w + (r.ind || 0) + (r.line.chip ? r.size * 1.1 : 0); });
       const blockW = Math.max.apply(null, rows.map((r) => r.full));
+      // anchor 'left': x is the block's left edge (e.g. a corner tag).
+      const cx = c.anchor === 'left' ? c.x * NYO.OUT_W + blockW / 2 : c.x * NYO.OUT_W, cy = c.y * NYO.OUT_H;
       const life = t - c.start, left = c.end - t;
       const outP = clamp(left / (c.outDur || 0.5), 0, 1);
       const inP0 = clamp(life / (c.inDur || 0.8), 0, 1);
 
       // Hit box for direct manipulation in the preview.
       this.hit.captions.push({ id: c.id, x: (cx - blockW / 2 - 20) * S, y: (cy - totalH / 2 - 20) * S, w: (blockW + 40) * S, h: (totalH + 40) * S });
+
+      // Whole-caption tilt (sticky notes) and pop-in entrance.
+      const tilted = !!(c.rotate || c.popIn);
+      if (tilted) {
+        const pin = c.popIn ? ease.outBack(clamp(life / 0.45, 0, 1)) : 1;
+        const sc = c.popIn ? 0.78 + 0.22 * pin : 1;
+        ctx.save();
+        ctx.translate(cx * S, cy * S);
+        ctx.rotate((c.rotate || 0) * Math.PI / 180 * (c.popIn ? 0.3 + 0.7 * pin : 1) + (c.popIn ? (1 - pin) * -0.06 : 0));
+        ctx.scale(sc, sc);
+        ctx.translate(-cx * S, -cy * S);
+      }
 
       // Backdrop: feathered warm scrim for legibility over bright footage.
       if (c.backdrop === 'scrim') {
@@ -296,13 +326,93 @@ window.NYO = window.NYO || {};
         }
       }
 
+      if (c.backdrop === 'note') {
+        // Paper note / sticky note with a strip of tape.
+        const a = ease.inOutSine(outP) * clamp(life / 0.2, 0, 1);
+        if (a > 0.003) {
+          const padX = c.boxPadX || 44, padY = c.boxPadY || 36;
+          const pw = blockW + padX * 2, ph = totalH + padY * 2, px = cx - pw / 2, py = cy - ph / 2;
+          ctx.save();
+          ctx.globalAlpha = a * (c.backdropOpacity == null ? 0.97 : c.backdropOpacity);
+          ctx.shadowColor = 'rgba(60,30,40,0.28)'; ctx.shadowBlur = 26 * S; ctx.shadowOffsetY = 10 * S;
+          ctx.fillStyle = c.backdropColor || '#FFFDF7';
+          ctx.beginPath(); ctx.roundRect(px * S, py * S, pw * S, ph * S, (c.boxRadius || 14) * S); ctx.fill();
+          ctx.shadowColor = 'transparent';
+          if (c.lined) {
+            // Faint ruled lines, like a notebook page.
+            ctx.strokeStyle = 'rgba(120,140,190,0.18)'; ctx.lineWidth = 1.5 * S;
+            for (let ly = py + padY + 46; ly < py + ph - 10; ly += 46) {
+              ctx.beginPath(); ctx.moveTo((px + 18) * S, ly * S); ctx.lineTo((px + pw - 18) * S, ly * S); ctx.stroke();
+            }
+          }
+          if (c.tape !== false) {
+            ctx.translate((cx) * S, (py + 2) * S);
+            ctx.rotate(-0.05);
+            ctx.fillStyle = 'rgba(255,255,255,0.55)';
+            ctx.fillRect(-75 * S, -18 * S, 150 * S, 36 * S);
+            ctx.fillStyle = 'rgba(214,183,122,0.18)';
+            ctx.fillRect(-75 * S, -18 * S, 150 * S, 36 * S);
+          }
+          ctx.restore();
+        }
+      }
+
       let y = cy - totalH / 2;
       let segIndex = 0;
       let wordIndex = 0;
       const rowX = (r) => (c.align === 'left' ? cx - blockW / 2 : cx - r.full / 2) + (r.ind || 0) + (r.line.chip ? r.size * 0.55 : 0);
+      // Typewriter: each line types after the previous one, char by char.
+      let typeSched = null;
+      const typedBefore = {};
+      if (c.anim === 'typewriter') {
+        const cps = c.cps || 28;
+        let tc = 0;
+        typeSched = c.lines.map((ln) => {
+          const n = Array.from(ln.text).length;
+          const st = tc + (ln.delay || 0);
+          tc = st + n / cps + (c.linePause == null ? 0.18 : c.linePause);
+          return { start: st, n, end: st + n / cps };
+        });
+      }
       rows.forEach((r, ri) => {
         const h = lh(r);
         const baseY = y + h / 2;
+        if (typeSched) {
+          y += h;
+          const ln = r.line, sc = typeSched[r.li], cps = c.cps || 28;
+          const typed = Math.floor(Math.max(0, life - sc.start) * cps);
+          const off = typedBefore[r.li] || 0;
+          const rowChars = r.tokens.reduce((a, tk) => a + Array.from(tk.text).length, 0);
+          typedBefore[r.li] = off + rowChars + 1;
+          let remain = typed - off;
+          if (life < sc.start || remain <= 0) {
+            if (ln.check && r.first && life >= sc.start) this.drawCheck(rowX(r) - r.ind + r.size * 0.5, baseY, r.size, -1, ease.inOutSine(outP), ln.checkColor || '#E58FA8', ln.checkStyle);
+            return;
+          }
+          const vis = [];
+          for (const tk of r.tokens) {
+            if (remain <= 0) break;
+            const ch = Array.from(tk.text);
+            if (ch.length <= remain) { vis.push(tk); remain -= ch.length; } else { vis.push({ text: ch.slice(0, remain).join(''), hl: tk.hl, space: tk.space, w: 0 }); remain = 0; }
+          }
+          const st = { alpha: ease.inOutSine(outP), dx: 0, dy: -(1 - ease.inOutSine(outP)) * 10, scale: 1, blur: 0, clip: 1, spacing: 0, noRecenter: true };
+          const x0 = rowX(r);
+          if (ln.check && r.first) this.drawCheck(x0 - r.ind + r.size * 0.5, baseY + st.dy, r.size, life - sc.end, st.alpha, ln.checkColor || '#E58FA8', ln.checkStyle);
+          const endX = this.drawTokens(vis, ln, x0, baseY + st.dy, st, x0, baseY, life - sc.start, c);
+          // Blinking cursor while typing, and on the last line once done.
+          const typing = life < sc.end + 0.02 && typed - off < rowChars + 1;
+          const lastLine = r.li === c.lines.length - 1 && life >= sc.end;
+          const rowDone = typed - off >= rowChars;
+          const isLastRowOfLine = !rows[ri + 1] || rows[ri + 1].li !== r.li;
+          if (c.cursor !== false && ((typing && !(rowDone && !isLastRowOfLine)) || (lastLine && isLastRowOfLine)) && (typing || Math.floor(life * 2.4) % 2 === 0)) {
+            ctx.save();
+            ctx.globalAlpha = st.alpha * 0.9;
+            ctx.fillStyle = ln.cursorColor || ln.color;
+            ctx.fillRect((endX + 4) * S, (baseY + st.dy - ln.size * 0.45) * S, Math.max(2, ln.size * 0.06) * S, ln.size * 0.9 * S);
+            ctx.restore();
+          }
+          return;
+        }
         y += h;
         const ln = r.line;
         const anim = c.anim;
@@ -348,9 +458,10 @@ window.NYO = window.NYO || {};
         if (ln.bounce) st.dy += Math.sin(Math.max(0, life) * 7) * 7;
         if (st.alpha <= 0.002) return;
         const x0 = rowX(r) + (st.dx || 0);
-        if (ln.check && r.first) this.drawCheck(x0 - r.ind + r.size * 0.5, baseY + st.dy, r.size, life - d, st.alpha, ln.checkColor || '#B3122E');
+        if (ln.check && r.first) this.drawCheck(x0 - r.ind + r.size * 0.5, baseY + st.dy, r.size, life - d, st.alpha, ln.checkColor || '#B3122E', ln.checkStyle);
         this.drawTokens(r.tokens, ln, x0, baseY + st.dy, st, anim === 'punch' ? cx : x0 + r.w / 2, baseY, life - d, c);
       });
+      if (tilted) ctx.restore();
     }
 
     animState(anim, life, inDur, outP, sinceStart) {
@@ -434,7 +545,7 @@ window.NYO = window.NYO || {};
       let total = 0;
       tokens.forEach((tk) => { total += ctx.measureText(tk.text).width; });
       const orig = tokens.reduce((a, tk) => a + tk.w, 0);
-      let x = x0 - (total - orig) / 2;
+      let x = st.noRecenter ? x0 : x0 - (total - orig) / 2;
       if (ln.chip) {
         // Pill-shaped section tag behind the line.
         const pad = ln.size * 0.55;
@@ -447,7 +558,20 @@ window.NYO = window.NYO || {};
       tokens.forEach((tk) => {
         const w = ctx.measureText(tk.text).width;
         if (!tk.space) {
-          if (tk.hl && ln.hlStyle === 'box') {
+          if (tk.hl && ln.hlStyle === 'marker') {
+            // Highlighter pen stroke across the lower part of the word.
+            const p = life == null ? 1 : ease.outCubic(clamp((life - 0.05) / 0.3, 0, 1));
+            ctx.save();
+            ctx.shadowColor = 'transparent';
+            ctx.fillStyle = hexA(ln.highlightColor || '#FFE066', 0.85);
+            const mx = x - ln.size * 0.06, mw = (w + ln.size * 0.12) * p, my = y - ln.size * 0.12, mh = ln.size * 0.55;
+            ctx.beginPath();
+            ctx.moveTo(mx, my + mh * 0.12); ctx.lineTo(mx + mw, my); ctx.lineTo(mx + mw, my + mh * 0.92); ctx.lineTo(mx, my + mh);
+            ctx.closePath(); ctx.fill();
+            ctx.restore();
+            ctx.fillStyle = ln.hlTextColor || ln.color;
+            ctx.fillText(tk.text, x, y);
+          } else if (tk.hl && ln.hlStyle === 'box') {
             // Keyword marker: solid box wipes in behind the word.
             const p = life == null ? 1 : ease.outCubic(clamp((life - 0.12) / 0.28, 0, 1));
             ctx.save();
@@ -483,11 +607,36 @@ window.NYO = window.NYO || {};
         x += w;
       });
       ctx.restore();
+      return x;
     }
 
-    drawCheck(x, y, size, life, alpha, color) {
-      // Round badge that pops, then a tick that draws itself.
+    drawCheck(x, y, size, life, alpha, color, style) {
       const ctx = this.ctx, S = this.S;
+      if (style === 'box') {
+        // Hand-drawn style checkbox: empty square, then a ticked one.
+        const tick = ease.outCubic(clamp(life / 0.28, 0, 1));
+        const b = size * 0.62;
+        ctx.save();
+        ctx.globalAlpha = clamp(alpha, 0, 1);
+        ctx.scale(S, S);
+        ctx.strokeStyle = color; ctx.lineWidth = size * 0.07; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.roundRect(x - b / 2, y - b / 2, b, b, b * 0.2); ctx.stroke();
+        if (tick > 0) {
+          ctx.lineWidth = size * 0.1;
+          const p1 = [x - b * 0.32, y - b * 0.02], p2 = [x - b * 0.06, y + b * 0.3], p3 = [x + b * 0.55, y - b * 0.55];
+          const l1 = Math.hypot(p2[0] - p1[0], p2[1] - p1[1]), l2 = Math.hypot(p3[0] - p2[0], p3[1] - p2[1]);
+          let len = (l1 + l2) * tick;
+          ctx.beginPath(); ctx.moveTo(p1[0], p1[1]);
+          const k1 = Math.min(1, len / l1);
+          ctx.lineTo(p1[0] + (p2[0] - p1[0]) * k1, p1[1] + (p2[1] - p1[1]) * k1);
+          len -= l1;
+          if (len > 0) { const k2 = Math.min(1, len / l2); ctx.lineTo(p2[0] + (p3[0] - p2[0]) * k2, p2[1] + (p3[1] - p2[1]) * k2); }
+          ctx.stroke();
+        }
+        ctx.restore();
+        return;
+      }
+      // Round badge that pops, then a tick that draws itself.
       const pop = ease.outBack(clamp(life / 0.3, 0, 1));
       const tick = ease.outCubic(clamp((life - 0.12) / 0.3, 0, 1));
       const r = size * 0.48 * pop;
@@ -575,7 +724,8 @@ window.NYO = window.NYO || {};
       const padX = 22, padY = 14;
       const tl = { font: l.titleFont || 'serif', weight: l.titleWeight || 500, size: l.titleSize, italic: false, tracking: 0.5 };
       const sl = { font: 'sans', weight: l.subWeight || 300, size: l.subSize, italic: false, tracking: 2.2 };
-      const solid = l.cardStyle === 'solid';
+      const sticker = l.cardStyle === 'sticker';
+      const solid = l.cardStyle === 'solid' || sticker;
       ctx.save();
       ctx.font = NYO.fontString(tl, tl.size);
       if ('letterSpacing' in ctx) ctx.letterSpacing = '0.5px';
@@ -584,7 +734,7 @@ window.NYO = window.NYO || {};
       if ('letterSpacing' in ctx) ctx.letterSpacing = '2.2px';
       const sw = l.subtitle ? ctx.measureText(l.subtitle).width : 0;
       ctx.restore();
-      const cw = Math.max(tw, sw) + padX * 2 + (l.connector === 'tracked' ? 0 : 26);
+      const cw = Math.max(tw, sw) + padX * 2 + (l.connector === 'tracked' ? 0 : 26) + (l.cardStyle === 'sticker' ? (tl.size * 1.2 + (l.subtitle ? sl.size * 1.5 : 0) + 28) * 0.36 : 0);
       const ch = tl.size * 1.2 + (l.subtitle ? sl.size * 1.5 : 0) + padY * 2;
 
       let cx0, cy0; // top-left
@@ -623,8 +773,9 @@ window.NYO = window.NYO || {};
         const seg2 = Math.abs(pts[2][0] - pts[1][0]);
         let len = (seg1 + seg2) * ease.outCubic(lineP);
         ctx.strokeStyle = accent;
-        ctx.lineWidth = 1.6;
+        ctx.lineWidth = l.dash ? 2.4 : 1.6;
         ctx.lineCap = 'round';
+        if (l.dash) ctx.setLineDash([7, 7]);
         ctx.shadowColor = hexA(accent, 0.55); ctx.shadowBlur = 6;
         ctx.beginPath();
         ctx.moveTo(pts[0][0], pts[0][1]);
@@ -635,6 +786,7 @@ window.NYO = window.NYO || {};
           if (len > 0) ctx.lineTo(pts[1][0] + (pts[2][0] - pts[1][0]) * Math.min(1, len / Math.max(1, seg2)), edgeY);
         }
         ctx.stroke();
+        ctx.setLineDash([]);
         // Tracking dot: small, softly glowing, never larger than the capsule.
         const pulse = 0.5 + 0.5 * Math.sin(life * 4.2);
         const pr = ease.outBack(dotP);
@@ -654,11 +806,25 @@ window.NYO = window.NYO || {};
         const slide = (1 - ca) * 14;
         const x = cx0, y = cy0 + slide, rad = 16;
         ctx.globalAlpha = alpha * ca;
+        const srad = sticker ? ch / 2 : 12;
+        if (sticker) {
+          // Sticker: pill shape with a white die-cut border, slightly tilted, pops in.
+          const pin = ease.outBack(clamp((life - 0.3) / 0.35, 0, 1));
+          ctx.translate(x + cw / 2, y + ch / 2);
+          ctx.rotate((l.rotate || 0) * Math.PI / 180);
+          ctx.scale(0.7 + 0.3 * pin, 0.7 + 0.3 * pin);
+          ctx.translate(-(x + cw / 2), -(y + ch / 2));
+        }
         if (solid) {
           ctx.save();
           ctx.shadowColor = 'rgba(0,0,0,0.3)'; ctx.shadowBlur = 16; ctx.shadowOffsetY = 4;
+          if (sticker) {
+            ctx.fillStyle = '#FFFFFF';
+            ctx.beginPath(); ctx.roundRect(x - 6, y - 6, cw + 12, ch + 12, srad + 6); ctx.fill();
+            ctx.shadowColor = 'transparent';
+          }
           ctx.fillStyle = l.cardColor || '#B3122E';
-          ctx.beginPath(); ctx.roundRect(x, y, cw, ch, 12); ctx.fill();
+          ctx.beginPath(); ctx.roundRect(x, y, cw, ch, srad); ctx.fill();
           ctx.restore();
         } else {
           ctx.save();
@@ -671,11 +837,11 @@ window.NYO = window.NYO || {};
           ctx.beginPath(); ctx.roundRect(x, y, cw, ch, rad); ctx.fill();
         }
         ctx.strokeStyle = hexA(solid ? '#FFFFFF' : accent, solid ? 0.35 : 0.65); ctx.lineWidth = 1.2;
-        ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, cw - 1, ch - 1, solid ? 12 : rad); ctx.stroke();
+        if (!sticker) { ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, cw - 1, ch - 1, solid ? 12 : rad); ctx.stroke(); }
 
         ctx.textBaseline = 'alphabetic';
         ctx.shadowColor = solid ? 'transparent' : 'rgba(20,12,6,0.35)'; ctx.shadowBlur = 6;
-        const tx = x + padX + (l.connector === 'tracked' ? 0 : 26);
+        const tx = x + padX + (sticker ? ch * 0.18 : 0) + (l.connector === 'tracked' ? 0 : 26);
         if (l.connector !== 'tracked') {
           // Small gold marker + hairline for untracked cards.
           ctx.fillStyle = accent;

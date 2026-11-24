@@ -6,6 +6,7 @@
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: block; src: url(../fonts/Poppins-SemiBold.woff2) format('woff2'); }
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: block; src: url(../fonts/Poppins-Bold.woff2) format('woff2'); }
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 800; font-display: block; src: url(../fonts/Poppins-ExtraBold.woff2) format('woff2'); }
+@font-face { font-family: 'Caveat'; font-style: normal; font-weight: 400 700; font-display: block; src: url(../fonts/Caveat-Variable.woff2) format('woff2'); }
 
 :root {
   --bg: #17130f;

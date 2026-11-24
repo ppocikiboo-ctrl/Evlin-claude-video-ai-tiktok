@@ -49,7 +49,7 @@ window.NYO = window.NYO || {};
       this.bindUI();
       this.renderPanel();
       this.timeline.render();
-      const fonts = ['500 40px "Playfair Display"', 'italic 400 40px "Playfair Display"', 'italic 500 40px "Playfair Display"', '300 30px Poppins', '400 30px Poppins', '500 30px Poppins', '600 30px Poppins', '700 30px Poppins', '800 30px Poppins'];
+      const fonts = ['500 40px "Playfair Display"', 'italic 400 40px "Playfair Display"', 'italic 500 40px "Playfair Display"', '300 30px Poppins', '400 30px Poppins', '500 30px Poppins', '600 30px Poppins', '700 30px Poppins', '800 30px Poppins', '600 30px Caveat', '700 30px Caveat'];
       Promise.all(fonts.map((f) => document.fonts.load(f))).then(() => this.requestDraw());
       this.requestDraw();
       this.loop();
@@ -583,12 +583,12 @@ window.NYO = window.NYO || {};
         h('div', { class: 'row3' }, [
           this.field('Start (s)', this.num(c, 'start', Object.assign({ min: 0 }, tl))),
           this.field('End (s)', this.num(c, 'end', Object.assign({ min: 0 }, tl))),
-          this.field('Animation', this.sel(c, 'anim', [['fadeUpZoom', 'Fade · rise · zoom'], ['slideUp', 'Slide up'], ['reveal', 'Cinematic reveal'], ['stagger', 'Staggered'], ['cinematic', 'Slow cinematic'], ['punch', 'Punch zoom (hook)'], ['wordPop', 'Word-by-word pop'], ['checklist', 'Checklist slide-in']], { kind: 'caption' }))
+          this.field('Animation', this.sel(c, 'anim', [['fadeUpZoom', 'Fade · rise · zoom'], ['slideUp', 'Slide up'], ['reveal', 'Cinematic reveal'], ['stagger', 'Staggered'], ['cinematic', 'Slow cinematic'], ['punch', 'Punch zoom (hook)'], ['wordPop', 'Word-by-word pop'], ['checklist', 'Checklist slide-in'], ['typewriter', 'Typewriter + cursor']], { kind: 'caption' }))
         ]),
         h('div', { class: 'row3' }, [
           this.field('In (s)', this.num(c, 'inDur', { min: 0.05, step: 0.05 })),
           this.field('Out (s)', this.num(c, 'outDur', { min: 0.05, step: 0.05 })),
-          this.field('Backdrop', this.sel(c, 'backdrop', [['scrim', 'Soft scrim'], ['glass', 'Frosted glass panel'], ['box', 'Solid card'], ['none', 'None']], { panel: true }))
+          this.field('Backdrop', this.sel(c, 'backdrop', [['scrim', 'Soft scrim'], ['glass', 'Frosted glass panel'], ['box', 'Solid card'], ['note', 'Paper / sticky note'], ['none', 'None']], { panel: true }))
         ]),
         h('div', { class: 'row3' }, [
           this.field('Align', this.sel(c, 'align', [['center', 'Centre'], ['left', 'Left']])),
@@ -607,7 +607,7 @@ window.NYO = window.NYO || {};
           h('div', { class: 'hdr' }, [h('span', { text: `Line ${i + 1}` }), h('button', { class: 'btn btn-sm btn-ghost btn-danger', text: 'Remove', onclick: () => { c.lines.splice(i, 1); this.changed('caption'); } })]),
           this.txt(ln, 'text', { area: true }),
           h('div', { class: 'row3' }, [
-            this.field('Font', this.sel(ln, 'font', [['serif', 'Playfair Display'], ['sans', 'Poppins']])),
+            this.field('Font', this.sel(ln, 'font', [['serif', 'Playfair Display'], ['sans', 'Poppins'], ['hand', 'Caveat (handwriting)']])),
             this.field('Weight', this.sel(ln, 'weight', [[300, 'Light 300'], [400, 'Regular 400'], [500, 'Medium 500'], [600, 'Semibold 600'], [700, 'Bold 700'], [800, 'Extra bold 800']], { number: true })),
             this.field('Size (px @1080)', this.num(ln, 'size', { min: 12, max: 160, step: 1 }))
           ]),
@@ -619,7 +619,7 @@ window.NYO = window.NYO || {};
           h('div', { class: 'row3' }, [
             this.field('Highlight word', this.txt(ln, 'highlight')),
             this.field('Highlight colour', this.color(ln, 'highlightColor')),
-            this.field('Highlight style', this.sel(ln, 'hlStyle', [['', 'Coloured text'], ['box', 'Solid box']]))
+            this.field('Highlight style', this.sel(ln, 'hlStyle', [['', 'Coloured text'], ['box', 'Solid box'], ['marker', 'Highlighter marker']]))
           ]),
           h('div', { class: 'btn-row' }, [
             this.check(ln, 'italic', 'Italic'), this.check(ln, 'chip', 'Section chip'), this.check(ln, 'check', 'Checkmark ✓'), this.check(ln, 'bounce', 'Bounce')
@@ -664,7 +664,7 @@ window.NYO = window.NYO || {};
         h('div', { class: 'row3' }, [
           this.field('Target', this.sel(l, 'target', [['red', 'Red softgel (DAY)'], ['black', 'Black softgel (NIGHT)'], ['other', 'Other']])),
           this.field('Card side', this.sel(l, 'side', [['left', 'Left'], ['right', 'Right']])),
-          this.field('Card style', this.sel(l, 'cardStyle', [['glass', 'Frosted glass'], ['solid', 'Solid colour']])),
+          this.field('Card style', this.sel(l, 'cardStyle', [['glass', 'Frosted glass'], ['solid', 'Solid colour'], ['sticker', 'Sticker (pill)']])),
           this.field('Card colour', this.color(l, 'cardColor')),
           this.field('Title size', this.num(l, 'titleSize', { min: 16, max: 90, step: 1 }))
         ]),
@@ -803,8 +803,8 @@ window.NYO = window.NYO || {};
         this.row('Source', this.sel(a, 'music', [['generated', 'Original score (built-in)'], ['file', 'My licensed track'], ['none', 'None']], { kind: 'audio', panel: true, timeline: true })),
         a.music === 'file' ? h('div', { class: 'btn-row' }, [h('label', { class: 'btn btn-sm' }, ['Upload music…', musicFile]), h('span', { class: 'note', text: this.musicName || 'No file loaded' })]) : null,
         a.music === 'file' ? this.slider('Start offset', a, 'musicOffset', 0, 120, 0.1, { unit: ' s', kind: 'audio' }) : null,
-        a.music === 'generated' ? this.row('Style', this.sel(a, 'style', [['luxe', 'Luxe: dreamy piano, ~100 BPM'], ['pulse', 'Pulse: modern pop groove, ~118 BPM']], { kind: 'audio', panel: true, timeline: true, after: () => { a.bpm = a.style === 'pulse' ? 118 : 100; } })) : null,
-        a.music === 'generated' ? (a.style === 'pulse' ? this.slider('Tempo (BPM)', a, 'bpm', 110, 124, 1, { kind: 'audio', timeline: true }) : this.slider('Tempo (BPM)', a, 'bpm', 95, 105, 1, { kind: 'audio', timeline: true })) : null,
+        a.music === 'generated' ? this.row('Style', this.sel(a, 'style', [['luxe', 'Luxe: dreamy piano, ~100 BPM'], ['pulse', 'Pulse: modern pop groove, ~118 BPM'], ['lofi', 'Lo-fi: cosy diary beat, ~84 BPM']], { kind: 'audio', panel: true, timeline: true, after: () => { a.bpm = a.style === 'pulse' ? 118 : a.style === 'lofi' ? 84 : 100; } })) : null,
+        a.music === 'generated' ? (a.style === 'pulse' ? this.slider('Tempo (BPM)', a, 'bpm', 110, 124, 1, { kind: 'audio', timeline: true }) : a.style === 'lofi' ? this.slider('Tempo (BPM)', a, 'bpm', 76, 92, 1, { kind: 'audio', timeline: true }) : this.slider('Tempo (BPM)', a, 'bpm', 95, 105, 1, { kind: 'audio', timeline: true })) : null,
         this.slider('Fade in', a, 'fadeIn', 0, 4, 0.1, { unit: ' s', kind: 'audio', timeline: true }),
         this.slider('Fade out', a, 'fadeOut', 0, 6, 0.1, { unit: ' s', kind: 'audio', timeline: true })
       ], 'The built-in score is composed and synthesised in code for this project: dreamy electric piano, ambient pads, a soft beat and bell arpeggios, no vocals. It contains no third-party samples, so there is nothing to license. To use a track from TikTok\'s Commercial Music Library or another licence you hold, choose “My licensed track”.'));
@@ -843,7 +843,8 @@ window.NYO = window.NYO || {};
             } })),
             cue.link ? this.field('Offset (s)', this.num(cue, 'offset', { step: 0.01, kind: 'sfx', timeline: true })) : this.field('Time (s)', this.num(cue, 't', { min: 0, step: 0.01, kind: 'sfx', timeline: true }))
           ]),
-          this.slider('Level', cue, 'gain', 0, 1.2, 0.01, { kind: 'sfx' })
+          this.slider('Level', cue, 'gain', 0, 1.2, 0.01, { kind: 'sfx' }),
+          (cue.type === 'typing' || cue.type === 'writing') ? this.slider('Length', cue, 'len', 0.2, 6, 0.05, { unit: ' s', kind: 'sfx' }) : null
         ]));
       });
       body.appendChild(this.section('Sound effects', [

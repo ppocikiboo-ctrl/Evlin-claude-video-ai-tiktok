@@ -404,7 +404,205 @@ NYO.fabProject = function () {
   };
 };
 
+/* ===================== Template 3: Soft Diary POV =====================
+ * Same footage, a third look: a personal "diary" told in first person.
+ * Typewriter + handwriting, notebook & sticky-note cards, highlighter
+ * marker, tilted stickers on the softgels, pastel light leaks, a matte
+ * pastel grade and a lo-fi score with typing / pen sounds. */
+NYO.GRADE_PRESETS['soft-pastel'] = {
+  name: 'Soft Pastel Matte',
+  values: {
+    exposure: 0.22, brightness: 6, contrast: 2, highlights: -20, shadows: 14,
+    whites: 3, blacks: 4, saturation: -4, vibrance: 6, temperature: 4, tint: 3,
+    castCorrection: 30, skinProtect: 80, productProtect: 85, sharpen: 8,
+    denoise: 30, vignette: 4, rolloff: 55, midWarmth: 8
+  }
+};
+
+/* Typing schedule identical to the compositor's typewriter, used to put
+ * keyboard / pen sounds exactly under each line as it types. */
+NYO.typeSchedule = function (c) {
+  const cps = c.cps || 28;
+  let tc = 0;
+  return c.lines.map((ln) => {
+    const n = Array.from(ln.text).length;
+    const st = tc + (ln.delay || 0);
+    tc = st + n / cps + (c.linePause == null ? 0.18 : c.linePause);
+    return { start: st, len: n / cps, end: st + n / cps, font: ln.font };
+  });
+};
+
+NYO.diaryProject = function () {
+  const INK = '#3A2A30', ROSE = '#C2456B', PINK = '#FFC7D6', HOT = '#E05A86', PLUM = '#5B2A3C';
+  const LAV_INK = '#5D4E96', CREAM = '#FFFDF7', WHITE = '#FFFFFF', YELLOW = '#FFC400';
+  const L = NYO.line;
+  const bt = NYO.BUNDLED_TRACK;
+  const copyKeys = (arr) => arr.map((k) => k.slice());
+  const hand = (text, o) => L(text, Object.assign({ font: 'hand', weight: 700, size: 56, color: WHITE }, o || {}));
+  const sans = (text, o) => L(text, Object.assign({ font: 'sans', weight: 600, color: WHITE }, o || {}));
+  const box = (text, o) => sans(text, Object.assign({ weight: 500, size: 36, color: INK, check: true, checkStyle: 'box', checkColor: HOT, shadow: false }, o || {}));
+  const note = (o) => Object.assign({
+    x: 0.5, y: 0.19, align: 'left', backdrop: 'note', backdropColor: CREAM, popIn: true, tape: true,
+    inDur: 0.4, outDur: 0.3, maxWidth: 0.78
+  }, o);
+
+  const captions = [
+    {
+      id: 'tag', name: 'Tag · diari self-care', start: 0.3, end: 30.1, x: 0.055, y: 0.093, anchor: 'left',
+      anim: 'fadeUpZoom', inDur: 0.5, outDur: 0.5, backdrop: 'none', maxWidth: 0.8,
+      lines: [sans('🎀 diari self-care · hari 01', { size: 24, color: PLUM, chip: true, chipColor: '#FFD6E0', tracking: 1, shadow: false })]
+    },
+    {
+      id: 'hook', name: 'HOOK · POV 30-an', start: 0.0, end: 2.8, x: 0.5, y: 0.18,
+      anim: 'typewriter', cps: 38, linePause: 0.06, inDur: 0.2, outDur: 0.25, backdrop: 'scrim', backdropOpacity: 0.42, maxWidth: 0.9,
+      lines: [
+        hand('POV:', { size: 74, color: PINK }),
+        sans('nak masuk 30-an & baru sedar…', { size: 44 }),
+        sans('skincare luar je TAK CUKUP 😭', { weight: 800, size: 52, highlight: 'CUKUP', hlStyle: 'marker', highlightColor: HOT })
+      ]
+    },
+    note({
+      id: 'rutin', name: 'KELEBIHAN · rutin harian (nota)', start: 2.85, end: 7.95, rotate: -1.5, lined: true,
+      anim: 'typewriter', cps: 34,
+      lines: [
+        hand('📝 rutin harian aku', { color: ROSE }),
+        box('1 softgel merah lepas sarapan ☀️'),
+        box('1 softgel hitam lepas makan malam 🌙'),
+        box('dah, itu je. senang! 💅')
+      ]
+    }),
+    {
+      id: 'diary1', name: 'EMOSI · dear diary', start: 8.0, end: 11.0, x: 0.5, y: 0.17,
+      anim: 'typewriter', cps: 30, inDur: 0.2, outDur: 0.3, backdrop: 'scrim', backdropOpacity: 0.4, maxWidth: 0.86,
+      lines: [
+        hand('dear diary,', { size: 62, color: PINK }),
+        hand('dulu aku selalu rasa kulit nampak penat & kusam…', { size: 54, weight: 600 })
+      ]
+    },
+    {
+      id: 'diary2', name: 'EMOSI/WHY · jaga dari dalam', start: 11.0, end: 14.1, x: 0.5, y: 0.17,
+      anim: 'typewriter', cps: 30, inDur: 0.2, outDur: 0.3, backdrop: 'scrim', backdropOpacity: 0.4, maxWidth: 0.86,
+      lines: [
+        hand('sekarang aku jaga dari DALAM juga,', { size: 56, weight: 600, highlight: 'DALAM', hlStyle: 'marker', highlightColor: HOT }),
+        hand('sebab aku layak rasa yakin 🫶', { size: 62, color: PINK })
+      ]
+    },
+    note({
+      id: 'q', name: 'CIRI · apa dalam ni?', start: 14.1, end: 17.0, y: 0.165, rotate: 1.5, align: 'center',
+      anim: 'typewriter', cps: 36, maxWidth: 0.84,
+      lines: [
+        hand('❓ jadi… apa sebenarnya dalam ni?', { size: 54, color: PLUM }),
+        sans('Ageless by NYO3 · Ergothioneine & PQQ', { weight: 500, size: 28, color: '#9A4A63', shadow: false })
+      ]
+    }),
+    note({
+      id: 'am', name: 'CIRI · softgel merah (sticky)', start: 17.0, end: 20.8, y: 0.197, rotate: -2.5, backdropColor: '#FFE3EA',
+      anim: 'checklist', stagger: 0.45,
+      lines: [
+        hand('☀️ PAGI · softgel merah', { color: ROSE, size: 54 }),
+        box('Astaxanthin 5mg', { weight: 600, size: 38 }),
+        box('PQQ 15mg · SOD 20mg', { weight: 600, size: 38 }),
+        box('Vitamin C 20mg', { weight: 600, size: 38 })
+      ]
+    }),
+    note({
+      id: 'pm', name: 'CIRI · softgel hitam (sticky)', start: 20.8, end: 24.4, y: 0.197, rotate: 2.5, backdropColor: '#ECE5FF',
+      anim: 'checklist', stagger: 0.45,
+      lines: [
+        hand('🌙 MALAM · softgel hitam', { color: LAV_INK, size: 54 }),
+        box('L-Ergothioneine 30mg', { weight: 600, size: 38, checkColor: '#7A63C9' }),
+        box('Krill Oil 50mg · Sage Extract 50mg', { weight: 600, size: 38, checkColor: '#7A63C9' }),
+        box('Zinc · Vitamin B2 & B3', { weight: 600, size: 38, checkColor: '#7A63C9' })
+      ]
+    }),
+    note({
+      id: 'why', name: 'WHY/MANFAAT · kenapa pilih', start: 24.4, end: 27.0, y: 0.2, rotate: -1, lined: true,
+      anim: 'checklist', stagger: 0.42, maxWidth: 0.82,
+      lines: [
+        hand('kenapa aku pilih ni? 💭', { color: ROSE, size: 54 }),
+        box('formula PAGI & MALAM berasingan'),
+        box('antioksidan untuk rutin dalaman'),
+        box('bantu sokong kulit nampak sihat & berseri')
+      ]
+    }),
+    {
+      id: 'cta', name: 'CTA · beg kuning', start: 27.0, end: 30.1, x: 0.5, y: 0.18,
+      anim: 'typewriter', cps: 40, linePause: 0.12, inDur: 0.2, outDur: 0.4, backdrop: 'scrim', backdropOpacity: 0.5, maxWidth: 0.92,
+      lines: [
+        hand('nak mula rutin ni sekali? 👇', { size: 64, color: PINK }),
+        sans('TEKAN BEG KUNING 🛒', { weight: 800, size: 62, highlight: 'KUNING', hlStyle: 'box', highlightColor: YELLOW, hlTextColor: INK }),
+        sans('mulakan malam ni, 1 kotak untuk 30 hari 🌙', { weight: 500, size: 34 })
+      ]
+    }
+  ];
+
+  const stick = {
+    cardStyle: 'sticker', titleFont: 'sans', titleWeight: 700, subWeight: 500, titleSize: 34, subSize: 21,
+    accent: WHITE, dash: true, inDur: 0.45, outDur: 0.3, maxGap: 0.6, enabled: true, connector: 'tracked'
+  };
+  const labels = [
+    Object.assign({}, stick, {
+      id: 'd_day', name: '07:00 PAGI → red softgel (sticker)', title: '☀️ 07:00 · PAGI', subtitle: 'softgel merah',
+      start: 1.0, end: 2.7, target: 'red', side: 'left', cardColor: '#FFD6E0', titleColor: PLUM, subColor: '#9A4A63', rotate: -4,
+      freeX: 0.25, freeY: 0.5, cardDx: -70, cardDy: -150, dotDx: -36, dotDy: 0, keyframes: copyKeys(bt.red)
+    }),
+    Object.assign({}, stick, {
+      id: 'd_night', name: '22:00 MALAM → black softgel (sticker)', title: '🌙 22:00 · MALAM', subtitle: 'softgel hitam',
+      start: 1.2, end: 2.7, target: 'black', side: 'right', cardColor: '#DCD0FA', titleColor: '#2E2552', subColor: LAV_INK, rotate: 3,
+      freeX: 0.75, freeY: 0.5, cardDx: 18, cardDy: 50, dotDx: 36, dotDy: 0, keyframes: copyKeys(bt.black)
+    })
+  ];
+
+  // Sound: keyboard under typed lines, pen under handwritten ones, a pen
+  // tick for every checkbox, page swooshes for notes, bubble pops for stickers.
+  const sfx = [];
+  let n = 0;
+  const add = (type, link, offset, gain, extra) => sfx.push(Object.assign({ id: 'z' + (++n), type, link, offset: Math.round(offset * 1000) / 1000, t: 0, gain }, extra || {}));
+  captions.forEach((c) => {
+    if (c.anim === 'typewriter') {
+      NYO.typeSchedule(c).forEach((sc, i) => {
+        add(sc.font === 'hand' ? 'writing' : 'typing', c.id, sc.start, sc.font === 'hand' ? 0.55 : 0.5, { len: Math.round(sc.len * 100) / 100 });
+        if (c.lines[i].check) add('scribble', c.id, sc.end, 0.55);
+      });
+    } else if (c.anim === 'checklist') {
+      c.lines.forEach((ln, i) => { if (ln.check) add('scribble', c.id, i * (c.stagger || 0.38), 0.55); });
+    }
+    if (c.backdrop === 'note') add('swoosh', c.id, 0, 0.38);
+  });
+  add('bubble', 'd_day', 0.32, 0.55);
+  add('bubble', 'd_night', 0.32, 0.55);
+  add('sparkle', 'diary2', 1.4, 0.4);
+  add('sparkle', 'cta', 1.0, 0.45);
+  add('chime', 'cta', 0.05, 0.3);
+
+  return {
+    version: 1,
+    template: 'diary',
+    duration: 30.1,
+    layout: { fit: 'fit', background: 'blur', ivory: '#F6E7EC', zoom: 1, offsetY: 0 },
+    view: { safeZones: false },
+    grade: Object.assign({ enabled: true, preset: 'soft-pastel' }, NYO.GRADE_PRESETS['soft-pastel'].values),
+    fx: {
+      leaks: [
+        { t: 0, dur: 1.1, alpha: 0.55 },
+        { t: 7.6, dur: 1.0, color: '#D9C8FF', color2: '#FFD6E0' },
+        { t: 13.7, dur: 1.0 },
+        { t: 26.6, dur: 1.1, color: '#FFE1B8', color2: '#FFC7D6' }
+      ],
+      punches: [{ t: 14.1, amount: 0.03 }, { t: 27.0, amount: 0.04 }]
+    },
+    captions: captions,
+    labels: labels,
+    sfx: sfx,
+    audio: {
+      music: 'generated', style: 'lofi', bpm: 84, musicVolume: 0.72, sfxVolume: 0.9, originalVolume: 0,
+      master: 1.2, fadeIn: 0.4, fadeOut: 1.6, musicOffset: 0, breaks: [[26.3, 27.0]]
+    }
+  };
+};
+
 NYO.TEMPLATES = {
   luxe: { name: 'Luxe Ivory: My Self-Care Era (video 1)', build: NYO.defaultProject },
-  fab: { name: 'Bold FAB + CTA: 2 biji sehari (video 2)', build: NYO.fabProject }
+  fab: { name: 'Bold FAB + CTA: 2 biji sehari (video 2)', build: NYO.fabProject },
+  diary: { name: 'Soft Diary POV: diari self-care (video 3)', build: NYO.diaryProject }
 };

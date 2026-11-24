@@ -20,7 +20,11 @@ NYO.SFX_TYPES = {
   piano: 'Piano resolution',
   impact: 'Soft cinematic impact',
   riser: 'Tension riser',
-  snap: 'Crisp snap / tick'
+  snap: 'Crisp snap / tick',
+  typing: 'Soft keyboard typing (uses length)',
+  writing: 'Pen writing on paper (uses length)',
+  scribble: 'Pen tick / scribble',
+  bubble: 'Bubble pop (sticker)'
 };
 
 NYO.AudioEngine = (function () {
@@ -349,6 +353,75 @@ NYO.AudioEngine = (function () {
     }
   }
 
+  /* "Lofi": cosy diary mood. Descending Fmaj7 – Em7 – Dm7 – Cmaj7 on a
+   * warm, slightly wobbly Rhodes, swung boom-bap at ~84 BPM, soft sub,
+   * vinyl hiss & crackle. Drums sit out inside project.audio.breaks. */
+  const LOFI = [
+    { root: 41, voicing: [57, 60, 64, 69] },
+    { root: 40, voicing: [55, 59, 62, 67] },
+    { root: 38, voicing: [53, 57, 60, 65] },
+    { root: 36, voicing: [55, 59, 62, 64] }
+  ];
+
+  function lofiKeys(G, out, w, midi, vel, len) {
+    const ctx = G.ctx, f = mtof(midi);
+    const o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.value = f;
+    const o2 = ctx.createOscillator(); o2.type = 'sine'; o2.frequency.value = f * 2;
+    const wow = ctx.createOscillator(); wow.frequency.value = 0.6;
+    const wowG = ctx.createGain(); wowG.gain.value = 7; // tape wobble, cents
+    wow.connect(wowG); wowG.connect(o.detune); wowG.connect(o2.detune);
+    const g = ctx.createGain();
+    env(g, w, 0.11 * vel, 0.01, 1.4, 0.4, 0.8, len);
+    const g2 = ctx.createGain(); g2.gain.setValueAtTime(0.25, w); g2.gain.exponentialRampToValueAtTime(0.02, w + 0.6);
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 1800; lp.Q.value = 0.3;
+    o.connect(g); o2.connect(g2); g2.connect(g); g.connect(lp); lp.connect(out);
+    const end = w + len + 1.0;
+    [o, o2, wow].forEach((x) => { x.start(w); x.stop(end); });
+  }
+
+  function scheduleMusicLofi(G, project, from, when, dur) {
+    const bpm = Math.max(70, Math.min(95, project.audio.bpm || 84));
+    const beat = 60 / bpm, bar = beat * 4, swing = beat * 0.58;
+    const out = G.musicIn;
+    const at = (T) => when + (T - from);
+    const breaks = project.audio.breaks || [];
+    const inBreak = (T) => breaks.some((b) => T >= b[0] && T < b[1]);
+    const r = prng(23);
+    const nBars = Math.ceil(dur / bar) + 1;
+    for (let b = 0; b < nBars; b++) {
+      const T0 = b * bar;
+      if (T0 > dur) break;
+      const ch = LOFI[b % 4];
+      // Keys: chord on 1, lazy re-strum before beat 3.
+      [[0, 1, bar * 0.55], [beat * 1.75, 0.7, bar * 0.5]].forEach(([o, v, len]) => {
+        const T = T0 + o;
+        if (T >= from - 0.01 && T < dur - 0.4) ch.voicing.forEach((m, i) => lofiKeys(G, out, at(T + i * 0.025), m, v * (0.85 + r() * 0.15), len));
+      });
+      for (let k = 0; k < 4; k++) {
+        for (let h = 0; h < 2; h++) {
+          const T = T0 + k * beat + (h ? swing : 0);
+          if (T < from - 0.01 || T > dur - 0.8) continue;
+          if (inBreak(T) || b === 0) continue;
+          if (h === 0 && (k === 0 || k === 2)) { kick(G, out, at(T), 0.75); bass(G, out, at(T), ch.root + (k === 2 ? 7 : 0), beat * 1.4); }
+          if (h === 1 && k === 1 && b % 2) kick(G, out, at(T), 0.45);
+          if (h === 0 && (k === 1 || k === 3)) noiseHit(G, out, at(T), 'bandpass', 1400, 0.7, 0.08, 0.18, 0.3);
+          hat(G, out, at(T), h ? 0.4 : 0.7);
+        }
+      }
+    }
+    // Vinyl: low hiss bed + sparse crackle.
+    if (from < dur) {
+      const s = G.ctx.createBufferSource(); s.buffer = G.noise; s.loop = true;
+      const lp = G.ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 3500;
+      const g = G.ctx.createGain(); g.gain.value = 0.006;
+      s.connect(lp); lp.connect(g); g.connect(out);
+      s.start(when); s.stop(when + (dur - from) + 0.2);
+      for (let T = Math.ceil(from * 7) / 7; T < dur; T += 1 / 7) {
+        if (r() < 0.45) noiseHit(G, out, at(T + r() * 0.1), 'highpass', 2500, 0.5, 0.02 + r() * 0.03, 0.012, r());
+      }
+    }
+  }
+
   /* ---------- sound effects ---------- */
 
   const SFX = {
@@ -418,6 +491,37 @@ NYO.AudioEngine = (function () {
       g.gain.linearRampToValueAtTime(0.0001, w + 1.2);
       o.connect(g); g.connect(G.sfxIn); o.start(w); o.stop(w + 1.25);
     },
+    typing(G, w, gain, cue) {
+      // Soft mechanical key clicks, ~15 per second, for cue.len seconds.
+      const len = (cue && cue.len) || 1.2;
+      const r = prng(Math.floor(w * 977) + 5);
+      for (let T = 0; T < len; T += 0.045 + r() * 0.05) {
+        noiseHit(G, G.sfxIn, w + T, 'bandpass', 2200 + r() * 1400, 1.6, (0.06 + r() * 0.05) * gain, 0.03, r() * 1.5);
+        if (r() < 0.3) noiseHit(G, G.sfxIn, w + T + 0.012, 'lowpass', 700, 0.7, 0.04 * gain, 0.04, r());
+      }
+    },
+    writing(G, w, gain, cue) {
+      // Pen on paper: filtered noise with irregular stroke envelopes.
+      const len = (cue && cue.len) || 1.2;
+      const r = prng(Math.floor(w * 733) + 9);
+      for (let T = 0; T < len; T += 0.09 + r() * 0.12) {
+        const d = 0.06 + r() * 0.1;
+        swellShort(G, w + T, d, 0.05 * gain * (0.6 + r() * 0.6), 2600 + r() * 1800);
+      }
+    },
+    scribble(G, w, gain) {
+      swellShort(G, w, 0.07, 0.09 * gain, 3000);
+      swellShort(G, w + 0.08, 0.12, 0.11 * gain, 3800);
+    },
+    bubble(G, w, gain) {
+      const ctx = G.ctx;
+      const o = ctx.createOscillator(); o.type = 'sine';
+      o.frequency.setValueAtTime(380, w); o.frequency.exponentialRampToValueAtTime(1150, w + 0.09);
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(0.28 * gain, w + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, w + 0.16);
+      o.connect(g); g.connect(G.sfxIn); o.start(w); o.stop(w + 0.2);
+    },
     snap(G, w, gain) {
       noiseHit(G, G.sfxIn, w, 'bandpass', 3200, 2.2, 0.22 * gain, 0.06, 1.1);
       const ctx = G.ctx;
@@ -449,6 +553,17 @@ NYO.AudioEngine = (function () {
       o.connect(og); og.connect(lp); o.start(w); o.stop(w + 3.5);
     });
     lp.connect(g); g.connect(G.sfxIn);
+  }
+
+  function swellShort(G, w, len, peak, freq) {
+    const ctx = G.ctx;
+    const s = ctx.createBufferSource(); s.buffer = G.noise;
+    const f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = freq; f.Q.value = 1.4;
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0.0001, w); g.gain.linearRampToValueAtTime(peak, w + len * 0.3);
+    g.gain.linearRampToValueAtTime(0.0001, w + len);
+    s.connect(f); f.connect(g); g.connect(G.sfxIn);
+    s.start(w, (w * 0.37) % 1.5); s.stop(w + len + 0.02);
   }
 
   function swell(G, w, gain, len, f0, f1, type, pan) {
@@ -504,6 +619,7 @@ NYO.AudioEngine = (function () {
       if (off < buffers.music.duration) { s.start(when, off); s.stop(atT(dur) + 0.05); sources.push(s); }
     } else if (a.music === 'generated') {
       if (a.style === 'pulse') scheduleMusicPulse(G, project, from, when, dur);
+      else if (a.style === 'lofi') scheduleMusicLofi(G, project, from, when, dur);
       else scheduleMusic(G, project, from, when, dur);
     }
 
@@ -518,7 +634,7 @@ NYO.AudioEngine = (function () {
       const T = NYO.sfxTime(project, cue);
       if (T === null || T < from - 0.02 || T > dur) return;
       const fn = SFX[cue.type];
-      if (fn) fn(G, atT(Math.max(T, from)), cue.gain == null ? 0.5 : cue.gain);
+      if (fn) fn(G, atT(Math.max(T, from)), cue.gain == null ? 0.5 : cue.gain, cue);
     });
 
     return {
