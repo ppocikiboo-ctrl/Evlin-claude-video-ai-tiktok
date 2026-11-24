@@ -12,3 +12,4 @@ video generators.
 - [Double cleansing routine — skincare-diary explainer (O'CHEAL as step 1)](projects/double-cleansing-routine/README.md)
 - [O'CHEAL micellar water v5 — talking-head ad with the creator's voice cleaned up](projects/ocheal-micellar-water-v5/README.md)
 - [O'CHEAL micellar water v6 — luxury-editorial second edit with FAB cards and a full CTA formula](projects/ocheal-micellar-water-v6/README.md)
+- [O'CHEAL micellar water v7 — aqua "3 SEBAB" countdown edit](projects/ocheal-micellar-water-v7/README.md)
