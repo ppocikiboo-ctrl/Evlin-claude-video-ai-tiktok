@@ -61,3 +61,23 @@ Tiada harga dalam video. Tiada dakwaan perubatan (kencing manis / kebas / lenguh
 SPEED=1.1 python3 scripts/cut.py input.mp4 cut.mov
 python3 scripts/render3.py cut.mov video_kotak_asal.mp4 final_v3.mp4   # video kotak = sumber gambar kopi
 ```
+
+## Versi 4 — "3 SEBAB" listicle (klip kacau kopi, 14.4s)
+
+Final: [`output/durimex-coffee-tiktok-edit-v4.mp4`](output/durimex-coffee-tiktok-edit-v4.mp4)
+
+| Masa | Bahagian | Teks / visual |
+|---|---|---|
+| 0.0–2.3s | Hook | 3 SEBAB AKU TUKAR KE KOPI NI! · tag kuning "DURIMEX COFFEE" + anak panah ke sachet · "Tonton sampai habis" |
+| 2.3–4.9s | #1 | TANPA GULA PUTIH · ikon gula kiub dipangkah · Guna gula nano, 5.2g gula sesachet |
+| 4.9–7.5s | #2 | ADA KUNYIT HITAM · sticker kunyit hitam + kunyit · Herba tradisional pilihan orang kita |
+| 7.5–10.1s | #3 | CREAMY MACAM KAFE · sticker latte + durian belanda · Lemak hazelnut & vanila + durian belanda |
+| 10.1–11.8s | Bonus | HALAL & LULUS MeSTI · Halal JAKIM / MeSTI / Bancuh 1 minit |
+| 11.8–14.4s | CTA | NAK CUBA? · butang kuning TEKAN BAKUL KUNING · ringkasan 3 sebab · Cuba sendiri hari ni! |
+
+Gaya: palet hijau jenama + kuning, nombor besar #1/#2/#3, sticker bahan, peralihan glitch RGB,
+muzik ceria 104 BPM (C–G–Am–F, arpeggio + tepukan). Kopi dalam mug tidak ditutup. Tiada harga, tiada dakwaan perubatan.
+
+```bash
+python3 scripts/render4.py cut.mov video_kotak_asal.mp4 final_v4.mp4   # cut.mov sama seperti versi 3
+```
