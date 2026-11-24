@@ -18,3 +18,12 @@ Suara asal ditukar menjadi suara perempuan yang lembut dengan Praat "Change gend
 |---|---|
 | `sarikata.srt` | Teks biasa dengan masa. Import ke CapCut atau TikTok. |
 | `sarikata.ass` | Gaya TikTok: Inter Black, putih dengan outline hitam, kata kunci kuning, animasi pop. |
+
+## Versi 2 (karaoke)
+
+| Fail | Guna |
+|---|---|
+| `sarikata-v2.ass` | Setiap perkataan menyala hijau (#3DFF7A, ikut warna botol) dan membesar sedikit ketika diucap. Ditambah label hijau di atas: "RAMBUT NIPIS & GUGUR?" (0–4 s), "PROMO SEKARANG!" (22.7–25 s), "PILIH BEG KUNING" (31.4 s hingga tamat). |
+| `sarikata-v2.srt` | Teks versi 2 dengan masa. |
+
+Suara sama seperti versi 1.

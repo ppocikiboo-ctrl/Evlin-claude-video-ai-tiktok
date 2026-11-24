@@ -1,0 +1,82 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 2276
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kar,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00101010,&H90000000,-1,0,0,0,100,100,1,0,1,9,6,2,70,70,700,1
+Style: Top,Inter Black,78,&H00FFFFFF,&H00FFFFFF,&H004E9A1F,&H00000000,-1,0,0,0,100,100,2,0,3,22,0,8,80,80,330,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.46,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}RISAU{\c&HFFFFFF&\fscx100\fscy100} ADA MASALAH
+Dialogue: 0,0:00:00.46,0:00:00.66,Kar,,0,0,0,,RISAU {\c&H7AFF3D&\fscx115\fscy115}ADA{\c&HFFFFFF&\fscx100\fscy100} MASALAH
+Dialogue: 0,0:00:00.66,0:00:01.22,Kar,,0,0,0,,RISAU ADA {\c&H7AFF3D&\fscx115\fscy115}MASALAH{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:01.22,0:00:02.58,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}RAMBUT{\c&HFFFFFF&\fscx100\fscy100} SEMAKIN MENIPIS?
+Dialogue: 0,0:00:02.58,0:00:03.04,Kar,,0,0,0,,RAMBUT {\c&H7AFF3D&\fscx115\fscy115}SEMAKIN{\c&HFFFFFF&\fscx100\fscy100} MENIPIS?
+Dialogue: 0,0:00:03.04,0:00:04.20,Kar,,0,0,0,,RAMBUT SEMAKIN {\c&H7AFF3D&\fscx115\fscy115}MENIPIS?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:04.34,0:00:04.88,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}BANYAK{\c&HFFFFFF&\fscx100\fscy100} YANG GUGUR?
+Dialogue: 0,0:00:04.88,0:00:05.10,Kar,,0,0,0,,BANYAK {\c&H7AFF3D&\fscx115\fscy115}YANG{\c&HFFFFFF&\fscx100\fscy100} GUGUR?
+Dialogue: 0,0:00:05.10,0:00:06.50,Kar,,0,0,0,,BANYAK YANG {\c&H7AFF3D&\fscx115\fscy115}GUGUR?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:06.62,0:00:07.12,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}NI{\c&HFFFFFF&\fscx100\fscy100} DAH RIBUAN
+Dialogue: 0,0:00:07.12,0:00:07.48,Kar,,0,0,0,,NI {\c&H7AFF3D&\fscx115\fscy115}DAH{\c&HFFFFFF&\fscx100\fscy100} RIBUAN
+Dialogue: 0,0:00:07.48,0:00:07.92,Kar,,0,0,0,,NI DAH {\c&H7AFF3D&\fscx115\fscy115}RIBUAN{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:07.92,0:00:08.60,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}TESTIMONI{\c&HFFFFFF&\fscx100\fscy100} TAU!
+Dialogue: 0,0:00:08.60,0:00:10.20,Kar,,0,0,0,,TESTIMONI {\c&H7AFF3D&\fscx115\fscy115}TAU!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:10.34,0:00:10.66,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}CARA{\c&HFFFFFF&\fscx100\fscy100} PAKAI SENANG JE!
+Dialogue: 0,0:00:10.66,0:00:10.96,Kar,,0,0,0,,CARA {\c&H7AFF3D&\fscx115\fscy115}PAKAI{\c&HFFFFFF&\fscx100\fscy100} SENANG JE!
+Dialogue: 0,0:00:10.96,0:00:11.38,Kar,,0,0,0,,CARA PAKAI {\c&H7AFF3D&\fscx115\fscy115}SENANG{\c&HFFFFFF&\fscx100\fscy100} JE!
+Dialogue: 0,0:00:11.38,0:00:12.50,Kar,,0,0,0,,CARA PAKAI SENANG {\c&H7AFF3D&\fscx115\fscy115}JE!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:12.60,0:00:12.92,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}SPRAY{\c&HFFFFFF&\fscx100\fscy100} MACAM NI...
+Dialogue: 0,0:00:12.92,0:00:13.16,Kar,,0,0,0,,SPRAY {\c&H7AFF3D&\fscx115\fscy115}MACAM{\c&HFFFFFF&\fscx100\fscy100} NI...
+Dialogue: 0,0:00:13.16,0:00:14.40,Kar,,0,0,0,,SPRAY MACAM {\c&H7AFF3D&\fscx115\fscy115}NI...{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.50,0:00:14.96,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}DAN{\c&HFFFFFF&\fscx100\fscy100} URUTLAH KEPALA ANDA
+Dialogue: 0,0:00:14.96,0:00:15.74,Kar,,0,0,0,,DAN {\c&H7AFF3D&\fscx115\fscy115}URUTLAH{\c&HFFFFFF&\fscx100\fscy100} KEPALA ANDA
+Dialogue: 0,0:00:15.74,0:00:16.02,Kar,,0,0,0,,DAN URUTLAH {\c&H7AFF3D&\fscx115\fscy115}KEPALA{\c&HFFFFFF&\fscx100\fscy100} ANDA
+Dialogue: 0,0:00:16.02,0:00:16.28,Kar,,0,0,0,,DAN URUTLAH KEPALA {\c&H7AFF3D&\fscx115\fscy115}ANDA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:16.28,0:00:16.74,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}SELAMA{\c&HFFFFFF&\fscx100\fscy100} 2-3 MINIT
+Dialogue: 0,0:00:16.74,0:00:17.38,Kar,,0,0,0,,SELAMA {\c&H7AFF3D&\fscx115\fscy115}2-3{\c&HFFFFFF&\fscx100\fscy100} MINIT
+Dialogue: 0,0:00:17.38,0:00:18.45,Kar,,0,0,0,,SELAMA 2-3 {\c&H7AFF3D&\fscx115\fscy115}MINIT{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:18.54,0:00:18.90,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}INI{\c&HFFFFFF&\fscx100\fscy100} ADALAH HAIR TREATMENT
+Dialogue: 0,0:00:18.90,0:00:19.32,Kar,,0,0,0,,INI {\c&H7AFF3D&\fscx115\fscy115}ADALAH{\c&HFFFFFF&\fscx100\fscy100} HAIR TREATMENT
+Dialogue: 0,0:00:19.32,0:00:19.62,Kar,,0,0,0,,INI ADALAH {\c&H7AFF3D&\fscx115\fscy115}HAIR{\c&HFFFFFF&\fscx100\fscy100} TREATMENT
+Dialogue: 0,0:00:19.62,0:00:19.98,Kar,,0,0,0,,INI ADALAH HAIR {\c&H7AFF3D&\fscx115\fscy115}TREATMENT{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:19.98,0:00:20.28,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}YANG{\c&HFFFFFF&\fscx100\fscy100} DIPERBUAT DARIPADA
+Dialogue: 0,0:00:20.28,0:00:20.76,Kar,,0,0,0,,YANG {\c&H7AFF3D&\fscx115\fscy115}DIPERBUAT{\c&HFFFFFF&\fscx100\fscy100} DARIPADA
+Dialogue: 0,0:00:20.76,0:00:21.38,Kar,,0,0,0,,YANG DIPERBUAT {\c&H7AFF3D&\fscx115\fscy115}DARIPADA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:21.38,0:00:22.06,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}GREEN{\c&HFFFFFF&\fscx100\fscy100} GINGER!
+Dialogue: 0,0:00:22.06,0:00:22.60,Kar,,0,0,0,,GREEN {\c&H7AFF3D&\fscx115\fscy115}GINGER!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:22.66,0:00:23.16,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}SEKARANG{\c&HFFFFFF&\fscx100\fscy100} SELLER TENGAH
+Dialogue: 0,0:00:23.16,0:00:23.38,Kar,,0,0,0,,SEKARANG {\c&H7AFF3D&\fscx115\fscy115}SELLER{\c&HFFFFFF&\fscx100\fscy100} TENGAH
+Dialogue: 0,0:00:23.38,0:00:23.72,Kar,,0,0,0,,SEKARANG SELLER {\c&H7AFF3D&\fscx115\fscy115}TENGAH{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:23.72,0:00:23.88,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}BUAT{\c&HFFFFFF&\fscx100\fscy100} PROMO TAU!
+Dialogue: 0,0:00:23.88,0:00:24.18,Kar,,0,0,0,,BUAT {\c&H7AFF3D&\fscx115\fscy115}PROMO{\c&HFFFFFF&\fscx100\fscy100} TAU!
+Dialogue: 0,0:00:24.18,0:00:24.98,Kar,,0,0,0,,BUAT PROMO {\c&H7AFF3D&\fscx115\fscy115}TAU!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:25.04,0:00:25.30,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}BELI{\c&HFFFFFF&\fscx100\fscy100} BEBERAPA BOTOL
+Dialogue: 0,0:00:25.30,0:00:26.02,Kar,,0,0,0,,BELI {\c&H7AFF3D&\fscx115\fscy115}BEBERAPA{\c&HFFFFFF&\fscx100\fscy100} BOTOL
+Dialogue: 0,0:00:26.02,0:00:26.46,Kar,,0,0,0,,BELI BEBERAPA {\c&H7AFF3D&\fscx115\fscy115}BOTOL{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:26.46,0:00:26.70,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}ANDA{\c&HFFFFFF&\fscx100\fscy100} BOLEH DAPAT
+Dialogue: 0,0:00:26.70,0:00:26.90,Kar,,0,0,0,,ANDA {\c&H7AFF3D&\fscx115\fscy115}BOLEH{\c&HFFFFFF&\fscx100\fscy100} DAPAT
+Dialogue: 0,0:00:26.90,0:00:27.16,Kar,,0,0,0,,ANDA BOLEH {\c&H7AFF3D&\fscx115\fscy115}DAPAT{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.16,0:00:27.66,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}POTONGAN{\c&HFFFFFF&\fscx100\fscy100} HARGA YANG LEBIH
+Dialogue: 0,0:00:27.66,0:00:27.94,Kar,,0,0,0,,POTONGAN {\c&H7AFF3D&\fscx115\fscy115}HARGA{\c&HFFFFFF&\fscx100\fscy100} YANG LEBIH
+Dialogue: 0,0:00:27.94,0:00:28.14,Kar,,0,0,0,,POTONGAN HARGA {\c&H7AFF3D&\fscx115\fscy115}YANG{\c&HFFFFFF&\fscx100\fscy100} LEBIH
+Dialogue: 0,0:00:28.14,0:00:28.40,Kar,,0,0,0,,POTONGAN HARGA YANG {\c&H7AFF3D&\fscx115\fscy115}LEBIH{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:28.40,0:00:29.50,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}RENDAH{\c&HFFFFFF&\fscx100\fscy100} DARIPADA BELI SATU!
+Dialogue: 0,0:00:29.50,0:00:30.12,Kar,,0,0,0,,RENDAH {\c&H7AFF3D&\fscx115\fscy115}DARIPADA{\c&HFFFFFF&\fscx100\fscy100} BELI SATU!
+Dialogue: 0,0:00:30.12,0:00:30.58,Kar,,0,0,0,,RENDAH DARIPADA {\c&H7AFF3D&\fscx115\fscy115}BELI{\c&HFFFFFF&\fscx100\fscy100} SATU!
+Dialogue: 0,0:00:30.58,0:00:31.35,Kar,,0,0,0,,RENDAH DARIPADA BELI {\c&H7AFF3D&\fscx115\fscy115}SATU!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:31.42,0:00:31.74,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}PILIH{\c&HFFFFFF&\fscx100\fscy100} BEG KUNING SEKARANG
+Dialogue: 0,0:00:31.74,0:00:31.84,Kar,,0,0,0,,PILIH {\c&H7AFF3D&\fscx115\fscy115}BEG{\c&HFFFFFF&\fscx100\fscy100} KUNING SEKARANG
+Dialogue: 0,0:00:31.84,0:00:32.12,Kar,,0,0,0,,PILIH BEG {\c&H7AFF3D&\fscx115\fscy115}KUNING{\c&HFFFFFF&\fscx100\fscy100} SEKARANG
+Dialogue: 0,0:00:32.12,0:00:32.40,Kar,,0,0,0,,PILIH BEG KUNING {\c&H7AFF3D&\fscx115\fscy115}SEKARANG{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.40,0:00:32.64,Kar,,0,0,0,,{\fscx75\fscy75\t(0,120,\fscx100\fscy100)}{\c&H7AFF3D&\fscx115\fscy115}UNTUK{\c&HFFFFFF&\fscx100\fscy100} TENGOK BERAPA HARGA!
+Dialogue: 0,0:00:32.64,0:00:32.94,Kar,,0,0,0,,UNTUK {\c&H7AFF3D&\fscx115\fscy115}TENGOK{\c&HFFFFFF&\fscx100\fscy100} BERAPA HARGA!
+Dialogue: 0,0:00:32.94,0:00:33.24,Kar,,0,0,0,,UNTUK TENGOK {\c&H7AFF3D&\fscx115\fscy115}BERAPA{\c&HFFFFFF&\fscx100\fscy100} HARGA!
+Dialogue: 0,0:00:33.24,0:00:33.93,Kar,,0,0,0,,UNTUK TENGOK BERAPA {\c&H7AFF3D&\fscx115\fscy115}HARGA!{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:00.00,0:00:04.20,Top,,0,0,0,,{\fad(120,120)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}RAMBUT NIPIS & GUGUR?
+Dialogue: 1,0:00:22.66,0:00:24.98,Top,,0,0,0,,{\fad(120,120)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}PROMO SEKARANG!
+Dialogue: 1,0:00:31.42,0:00:33.93,Top,,0,0,0,,{\fad(120,120)\fscx80\fscy80\t(0,150,\fscx100\fscy100)}PILIH BEG KUNING
